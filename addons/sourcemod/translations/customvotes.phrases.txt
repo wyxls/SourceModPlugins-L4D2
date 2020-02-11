@@ -1,0 +1,53 @@
+﻿"Phrases"
+{
+	"Already Voted"
+	{
+		"en"	"[SM] You have already voted for this item."
+		"chi"	"[SM] 你已经进行过此项投票."
+	}
+
+	"No Valid Clients"
+	{
+		"en"	"[SM] No clients available."
+		"chi"	"[SM] 无有效客户端."
+	}
+
+	"No Votes Remaining"
+	{
+		"en"	"[SM] You may no longer vote for this item."
+		"chi"	"[SM] 你不能再进行此项投票."
+	}
+
+	"Voting No Longer Available"
+	{
+		"en"	"[SM] This vote is no longer available to players."
+		"chi"	"[SM] 此项投票不再向玩家开放."
+	}
+
+	"Not Enough Valid Clients"
+	{
+		"en"	"[SM] There are not enough players to vote for this."
+		"chi"	"[SM] 没有足够的玩家参与投票."
+	}
+
+	"Votes Remaining"
+	{
+		"#format"	"{1:i}"
+		"en"		"[SM] You may vote for this {1} more time(s)."
+		"chi"		"[SM] 你还可以进行此项投票{1}次."
+	}
+
+	"Vote Delay"
+	{
+		"#format"	"{1:i}"
+		"en"		"[SM] You must wait {1} more second(s) before voting."
+		"chi"		"[SM] 你必须等待{1}秒才能进行投票."
+	}
+
+	"Vote Cooldown"
+	{
+		"#format"	"{1:i}"
+		"en"		"[SM] You must wait {1} more second(s) before voting for this again."
+		"chi"		"[SM] 你必须等待{1}秒才能再次进行此项投票."
+	}
+}

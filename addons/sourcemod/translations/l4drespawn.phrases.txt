@@ -1,0 +1,16 @@
+"Phrases"
+{
+	"Respawn"
+	{
+		"en"			"Respawn Survivor"
+		"ru"			"Респавн Выживших"
+		"chi"			"复活生还者"
+		"zho"			"復活生還者"
+	}
+	"Respawne"
+	{
+		"#format"		"{1:s}"
+		"en"			"Respawned target {1}"
+		"ru"			"Pеспавнится игрок {1}"
+	}
+}

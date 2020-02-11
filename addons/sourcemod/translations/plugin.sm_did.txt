@@ -1,0 +1,314 @@
+"Phrases"
+{
+	"About"
+	{
+		"ru"	"Спросите у админов о"
+		"en"	"Ask admins about"
+		"de"	"Frage den Admin nach"
+		"es"	"Pregunale al administrador por"
+		"pl"	"Zapytaj administratora o"
+		"pt"	"Pergunte ao administrador sobre"
+		"chi"	"请咨询管理员"
+		"zho"	"請咨詢管理員"
+	}
+
+	"HintsTextBlocked"
+	{
+		"ru"	"HintInfo заблокированы для выживших"
+		"en"	"HintInfo are blocked for survivors"
+		"de"	"HintInfo sind für die Überlebenden ausgeschaltet"
+		"es"	"HintInfo está desactivado para los supervivientes"
+		"pl"	"HintInfo jest wyłączone dla Ocalałych"
+		"pt"	"HintInfo está bloqueado para os sobreviventes"
+		"chi"	"对生还者停止伤害显示"
+		"zho"	"對生還者停止傷害顯示"
+	}
+
+	"DID Menu"
+	{
+		"ru"	"Панель повреждений"
+		"en"	"Set Damage Display mode"
+		"de"	"Modus des Schadenfensters einstellen"
+		"es"	"Cambiar el modo de la pantalla de daño"
+		"pl"	"Wybierz tryb"
+		"pt"	"Definir modo de exibição de dano"
+		"chi"	"设置伤害显示模式"
+		"zho"	"設置傷害顯示模式"
+	}
+
+	"menu stay mode"
+	{
+		"ru"	"Режим не изменен"
+		"en"	"Display mode not changed"
+		"de"	"Anzeigemodus nicht gewechselt"
+		"es"	"El modo de la pantalla de daño no se ha cambiado"
+		"pl"	"Tryb nie został zmieniony"
+		"pt"	"Modo de exibição não foi alterado"
+		"chi"	"显示模式未改变"
+		"zho"	"顯示模式未改變"
+	}
+
+	"menu get mode"
+	{
+		"ru"	"Режим изменен на"
+		"en"	"Display mode changed to"
+		"de"	"Anzeigemodus gewechselt zu"
+		"es"	"El modo de la pantalla de daño ha cambiado a"
+		"pl"	"Tryb został zmieniony na"
+		"pt"	"Modo de exibição alterado para"
+		"chi"	"显示模式切换至"
+		"zho"	"顯示模式切換至"
+	}
+
+	"menu current use"
+	{
+		"ru"	"Выбрано"
+		"en"	"Current"
+		"de"	"Aktuell"
+		"es"	"Actual"
+		"pl"	"Aktualnie"
+		"pt"	"Atual"
+		"chi"	"目前"
+		"zho"	"目前"
+	}
+
+	"menu all mode"
+	{
+		"ru"	"Отображать все"
+		"en"	"Show all damage"
+		"de"	"Zeige jeden Schaden"
+		"es"	"Muestra todo el daño"
+		"pl"	"Pokaż wszystkie obrażenia"
+		"pt"	"Mostrar todo o dano"
+		"chi"	"显示所有伤害"
+		"zho"	"顯示所有傷害"
+	}
+
+	"menu done mode"
+	{
+		"ru"	"Отображать нанесенные"
+		"en"	"Show only damage done"
+		"de"	"Zeige ausgeteilten Schaden"
+		"es"	"Muestra solamente el daño repartido"
+		"pl"	"Pokaż tylko zadane obrażenia"
+		"pt"	"Mostrar apenas o dano causado"
+		"chi"	"只显示造成的伤害"
+		"zho"	"只顯示造成的傷害"
+	}
+
+	"menu received mode"
+	{
+		"ru"	"Отображать полученные"
+		"en"	"Show only damage received"
+		"de"	"Zeiger erhaltenen Schaden"
+		"es"	"Muestra solamente el daño recibido"
+		"pl"	"Pokaż tylko otrzymane obrażenia"
+		"pt"	"Mostrar apenas o dano recebido"
+		"chi"	"只显示受到的伤害"
+		"zho"	"只顯示受到的傷害"
+	}
+
+	"menu disable mode"
+	{
+		"ru"	"Отключить"
+		"en"	"Disable"
+		"de"	"Ausgeschaltet"
+		"es"	"Deactivado"
+		"pl"	"Wyłącz"
+		"pt"	"Desativado"
+		"chi"	"关闭"
+		"zho"	"關閉"
+	}
+
+	"DID PDeath Menu"
+	{
+		"ru"	"Показать при смерти"
+		"en"	"Display On Death"
+		"de"	"Bei Tod anzeigen"
+		"es"	"Mostrar al morir"
+		"pl"	"Pokaż po śmierci"
+		"pt"	"Mostrar ao morrer"
+		"chi"	"死亡时显示"
+		"zho"	"死亡時顯示"
+	}
+
+	"menu PDeath total"
+	{
+		"ru"	"Тотальные повреждения"
+		"en"	"Total Damage"
+		"de"	"Gesamtschaden"
+		"es"	"Daño total"
+		"pl"	"Całkowite obrażenia"
+		"pt"	"Dano Total"
+		"chi"	"总伤害"
+		"zho"	"总傷害"
+	}
+
+	"menu PDeath current"
+	{
+		"ru"	"Повреждения за текущий спаун"
+		"en"	"Damage Since Last Spawn"
+		"de"	"Schaden seit den letzten Spawn"
+		"es"	"Daño desde el comienzo"
+		"pl"	"Obrażenia od ostatniego rozpoczęcia"
+		"pt"	"Dano desde o último spawn"
+		"chi"	"自上次出生造成的伤害"
+		"zho"	"自上次出生造成的傷害"
+	}
+
+	"DID Current Total Menu"
+	{
+		"ru"	"Показать"
+		"en"	"Show"
+		"de"	"Zeigen"
+		"es"	"Mostrar"
+		"pl"	"Pokaż"
+		"pt"	"Mostrar"
+		"chi"	"显示"
+		"zho"	"顯示"
+	}
+
+	"Hint EtoP Hurt"
+	{
+		"ru"	"нанес вам повреждений:"
+		"en"	"hit you for:"
+		"de"	"Schaden erhalten:"
+		"es"	"Daño recibidio:"
+		"pl"	"odebrał Ci:"
+		"pt"	"lhe causou:"
+		"chi"	"对你造成的伤害:"
+		"zho"	"对你造成的傷害:"
+	}
+
+	"Hint PtoE Hurt"
+	{
+		"ru"	"Вы нанесли повреждений"
+		"en"	"Damage done to"
+		"de"	"Schaden ausgeteilt an"
+		"es"	"Daño repartido a:"
+		"pl"	"Zadałeś obrażenia"
+		"pt"	"Dano causado a"
+		"chi"	"造成的伤害对"
+		"zho"	"造成的傷害对"
+	}
+
+	"Hint Noob Hurt"
+	{
+		"ru"	"Я нуб!!! Нанес себе повреждений"
+		"en"	"I noob!!! Dealt damage to yourself"
+		"de"	"Ich noob habe mir selber Schaden zugefügt"
+		"es"	"Que perdedor, te has hecho daño a ti mismo"
+		"pl"	"Jestem noobem! Odebrałem sobie"
+		"pt"	"Que pitoco, causou dano a ele mesmo"
+		"chi"	"菜鸟阿! 你伤害自己"
+		"zho"	"新手嗎? 你傷害自己"
+	}
+
+	"DID Current Panel"
+	{
+		"ru"	"ПОВРЕЖДЕНИЯ ЗА СПАУН"
+		"en"	"DAMAGE SINCE SPAWN"
+		"de"	"SCHADEN SEIT DEM SPAWN"
+		"es"	"DAÑO DESDE EL COMIENZO"
+		"pl"	"OBRAŻENIA OD ROZPOCZĘCIA"
+		"pt"	"DANO DESDE O ÚLTIMO SPAWN"
+		"chi"	"伤害输出统计"
+		"zho"	"傷害輸出計算"
+	}
+
+	"DID Total Panel"
+	{
+		"ru"	"ТОТАЛЬНЫЕ ПОВРЕЖДЕНИЯ"
+		"en"	"TOTAL DAMAGE"
+		"de"	"GESAMTSCHADEN"
+		"es"	"DAÑO TOTAL"
+		"pl"	"CAŁKOWITE OBRAŻNIA"
+		"pt"	"DANO TOTAL"
+		"chi"	"伤害输出统计"
+		"zho"	"傷害輸出計算"
+	}
+
+	"pnl dmg done"
+	{
+		"ru"	"Нанесено повреждений врагу"
+		"en"	"Damage done to enemy"
+		"de"	"Schaden an Feind"
+		"es"	"Daño repartido al enemigo"
+		"pl"	"Obrażenia zadane przeciwnikowi"
+		"pt"	"Dano causado ao inimigo"
+		"chi"	"给感染者的伤害"
+		"zho"	"給感染者的傷害"
+	}
+
+	"pnl dmg doneta"
+	{
+		"ru"	"Нанесено повреждений по своим"
+		"en"	"Damage done to team"
+		"de"	"Schaden an eigenen Team"
+		"es"	"Daño repartido al propio equipo"
+		"pl"	"Obrażenia zadane zespołowi"
+		"pt"	"Dano causado ao time"
+		"chi"	"给同伴的伤害"
+		"zho"	"給隊友的傷害"
+	}
+
+	"pnl dmg receive"
+	{
+		"ru"	"Получено повреждений от врага"
+		"en"	"Damage received from enemy"
+		"de"	"Schaden von Feind erhalten"
+		"es"	"Daño recibido del enemigo"
+		"pl"	"Przeciwnicy zadali obrażeń"
+		"pt"	"Dano recebido pelo inimigo"
+		"chi"	"受到感染者的伤害"
+		"zho"	"受到感染者的傷害"
+	}
+
+	"pnl dmg zombie"
+	{
+		"ru"	"Получено повреждений от зомби"
+		"en"	"Damage received from infected"
+		"de"	"Schaden durch Infizierten erhalten"
+		"es"	"Daño recibido por los zombies"
+		"pl"	"Zarażeni zadali obrażeń"
+		"pt"	"Dano recebido pelos infectados"
+		"chi"	"受到特殊感染者的伤害"
+		"zho"	"受到特殊感染者的傷害"
+	}
+
+	"pnl dmg receiveta"
+	{
+		"ru"	"Получено повреждений от своих"
+		"en"	"Damage received from team"
+		"de"	"Schaden durch Team erhalten"
+		"es"	"Daño recibido por el propio equipo"
+		"pl"	"Zespół zadał obrażeń"
+		"pt"	"Dano recebido pelo time"
+		"chi"	"受到同伴的伤害"
+		"zho"	"受到隊友的傷害"
+	}
+
+	"pnl kill zombie"
+	{
+		"ru"	"Убито инфицированных"
+		"en"	"Infected killed"
+		"de"	"Infizierte getötet"
+		"es"	"Zombies matados"
+		"pl"	"Zabitych zarażonych"
+		"pt"	"Infectados mortos"
+		"chi"	"杀死感染者数量"
+		"zho"	"殺死感染者數量"
+	}
+
+	"pnl kill player"
+	{
+		"ru"	"Убито игроков"
+		"en"	"Players killed"
+		"de"	"Spieler getötet"
+		"es"	"Jugadores matados"
+		"pl"	"Zabitych graczy"
+		"pt"	"Jogadores mortos"
+		"chi"	"杀死特殊感染者数量"
+		"zho"	"殺死特殊感染者數量"
+	}
+}

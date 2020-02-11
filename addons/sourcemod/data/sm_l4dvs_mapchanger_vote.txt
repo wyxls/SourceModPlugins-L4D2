@@ -1,0 +1,6 @@
+c1m1_hotel<>Dead Center
+c6m1_riverbank<>The Passing
+c2m1_highway<>Dark Carnival
+c3m1_plankcountry<>Swamp Fever
+c4m1_milltown_a<>Hard Rain
+c5m1_waterfront<>The Parish

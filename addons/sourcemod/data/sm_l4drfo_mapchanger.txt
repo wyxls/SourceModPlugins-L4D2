@@ -1,0 +1,34 @@
+"ForceMissionChangerSettings"
+{
+	"c1m4_atrium"
+	{
+		"next mission map" "c6m3_port"
+                "next mission name" "The Passing - Port"
+	}
+        "c6m3_port"
+	{
+		"next mission map" "c2m5_concert"
+                "next mission name" "Dark Carnival - Concert"
+	}
+	"c2m5_concert"
+	{
+		"next mission map" "c3m4_plantation"
+                "next mission name" "Swamp Fever - Plantation"
+	}
+	"c3m4_plantation"
+	{
+		"next mission map" "c4m5_milltown_escape"
+                "next mission name" "Hard Rain - Milltown Escape"
+	}
+	"c4m5_milltown_escape"
+	{
+		"next mission map" "c5m5_bridge"
+                "next mission name" "The Parish - Bridge"
+	}
+        "c5m5_bridge"
+	{
+		"next mission map" "c1m4_atrium"
+                "next mission name" "Dead Center - Atrium"
+        }
+}
+

@@ -1,0 +1,243 @@
+"ForceMissionChangerSettings"
+{
+	"c1m4_atrium"
+	{
+		"next mission map" "c6m1_riverbank"
+		"next mission name" "短暫之時(The Passing)"
+	}
+	"c6m3_port"
+	{
+		"next mission map" "c2m1_highway"
+		"next mission name" "黑色嘉年華(Dark Carniva)"	
+	}
+	"c2m5_concert"
+	{
+		"next mission map" "c3m1_plankcountry"
+		"next mission name" "沼澤瘧疾(Swamp Fever)"
+	}
+	"c3m4_plantation"
+	{
+		"next mission map" "c4m1_milltown_a"
+		"next mission name" "大雨(Hard Rain)"
+	}	
+	"c4m5_milltown_escape"
+	{
+		"next mission map" "c5m1_waterfront"
+		"next mission name" "教區(The Parish)"
+	}
+	"c5m5_bridge"
+	{
+		"next mission map" "c7m1_docks"
+		"next mission name" "犧牲(The Sacrifice)"
+	}
+	"c7m3_port"
+	{
+		"next mission map" "c8m1_apartment"
+		"next mission name" "毫不留情(No Mercy)"	
+	}
+	"c8m5_rooftop"
+	{
+		"next mission map" "c9m1_alleys"
+		"next mission name" "速成課程(Crash Course)"
+	}
+	"c9m2_lots"
+	{
+		"next mission map" "c10m1_caves"
+		"next mission name" "死亡喪鐘(Death Toll)"
+	}
+	"c10m5_houseboat"
+	{
+		"next mission map" "c11m1_greenhouse"
+		"next mission name" "死亡機場(Dead Air)"
+	}
+	"c11m5_runway"
+	{
+		"next mission map" "c12m1_hilltop"
+		"next mission name" "嗜血豐收(Blood Harvest)"	
+	}
+	"c12m5_cornfield"
+	{
+		"next mission map" "c13m1_alpinecreek"
+		"next mission name" "冷澗溪流(Cold Stream)"
+	}
+	"c13m4_cutthroatcreek"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_zero05_villa"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_apocalypse05"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"beldurra2_5"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"bwm5_bridge"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4dblackoutbasement4"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"bp_map_03"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"cbm3_bunker"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_cc_escape"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"bombshelter"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_yama_5"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_tbm_5"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"re_decisionsfinale"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_pdmesa06_xen"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"qe2_ep5"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"qe_4_ultimate_test"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"re1m6"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"re2a4"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"re2b4"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"saltwell_5_d"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_sh_credits"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"tbm_survivor_03"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"ch_map3_greatwall"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"uf4_airfield"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_vanillaghosthouse"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_wanli03"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"wfp4_commstation"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"2ee_06"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_bts06_school"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_city17_05"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_deathaboard05_light"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d2_deathcraft_05_lighthouse"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"msd3_square"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"l4d_149_5"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"c1_mario1_4"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+	"the_end"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "死亡都心(Dead Center)"
+	}
+}

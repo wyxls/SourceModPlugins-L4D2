@@ -1,0 +1,68 @@
+"ForceMissionChangerSettings"
+{
+	"c12m5_cornfield"
+	{
+		"next mission map" "c6m1_riverbank"
+		"next mission name" "The Passing"
+	}
+	"c6m3_port"
+	{
+		"next mission map" "c2m1_highway"
+		"next mission name" "Dark Carnival"
+	}
+	"c2m5_concert"
+	{
+		"next mission map" "c3m1_plankcountry"
+		"next mission name" "Swamp Fever"
+	}
+	"c3m4_plantation"
+	{
+		"next mission map" "c4m1_milltown_a"
+		"next mission name" "Hard Rain"
+	}
+	"c4m5_milltown_escape"
+	{
+		"next mission map" "c5m1_waterfront"
+		"next mission name" "The Parish"
+	}
+	"c5m5_bridge"
+	{
+		"next mission map" "c8m1_apartment"
+		"next mission name" "No Mercy"
+	}
+	"c8m5_rooftop"
+	{
+		"next mission map" "c9m1_alleys"
+		"next mission name" "Crash Course"
+	}
+	"c9m2_lots"
+	{
+		"next mission map" "c10m1_caves"
+		"next mission name" "死亡喪鐘(Death Toll)"
+	}
+	"c10m5_houseboat"
+	{
+		"next mission map" "c11m1_greenhouse"
+		"next mission name" "Dead Air"
+	}
+	"c11m5_runway"
+	{
+		"next mission map" "c7m1_docks"
+		"next mission name" "The Sacrifice"
+	}
+	"c7m3_port"
+	{
+		"next mission map" "c1m1_hotel"
+		"next mission name" "Dead Center"
+	}
+	"c1m4_atrium"
+	{
+		"next mission map" "c13m1_alpinecreek"
+		"next mission name" "冷澗溪流(Cold Stream)"
+	}
+	"c13m4_cutthroatcreek"
+	{
+		"next mission map" "c12m1_hilltop"
+		"next mission name" "Blood Harvest"
+	}
+}

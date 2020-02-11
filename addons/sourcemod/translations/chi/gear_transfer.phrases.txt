@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Gave"
+	{
+		"chi"			"拿"
+	}
+	"Grabbed"
+	{
+		"chi"			"取得"
+	}
+	"Switched"
+	{
+		"chi"			"更换"
+	}
+	"From"
+	{
+		"chi"			"从"
+	}
+	"To"
+	{
+		"chi"			"给"
+	}
+	"With"
+	{
+		"chi"			"给"
+	}
+	"weapon_molotov"
+	{
+		"chi"			"一个燃烧瓶"
+	}
+	"weapon_pipe_bomb"
+	{
+		"chi"			"一个计时炸弹"
+	}
+	"weapon_vomitjar"
+	{
+		"chi"			"一个胆汁瓶"
+	}
+	"weapon_first_aid_kit"
+	{
+		"chi"			"一个医疗包"
+	}
+	"weapon_pain_pills"
+	{
+		"chi"			"一瓶止痛药丸"
+	}
+	"weapon_adrenaline"
+	{
+		"chi"			"一支肾上腺素"
+	}
+	"weapon_upgradepack_explosive"
+	{
+		"chi"			"高爆弹"
+	}
+	"weapon_upgradepack_incendiary"
+	{
+		"chi"			"燃烧弹"
+	}
+	"weapon_defibrillator"
+	{
+		"chi"			"一个心脏起搏器"
+	}
+}

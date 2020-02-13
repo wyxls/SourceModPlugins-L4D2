@@ -53,7 +53,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_upgradepackfix.smx        | 多人配件 Bug 修复         |                                                              |
 | l4d2_WeaponUnlock.smx          | 武器解锁                  | 搭配guncontrol使用                                           |
 | l4dcsm_c.smx                   | 换角色或者外观            |                                                              |
-| l4d_balance.smx                | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(玩家过于安全则提高难度)       |
+| l4d_balance.smx                | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(即玩家过于安全则提高难度), 修复玩家在安全区域仍会刷怪的问题 |
 | l4d_botcreator.smx             | 多人自动添加 Bot          |                                                              |
 | l4d_dissolve_infected.smx      | 感染者云消雾散            |                                                              |
 | l4d_gear_transfer.smx          | R 键给物品、Bot自动给物品 |                                                              |

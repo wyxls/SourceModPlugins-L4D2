@@ -44,6 +44,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_damage_sdkhooks.smx       | 武器伤害倍数              | 相关文件: configs\l4d2damagemod.cfg                          |
 | l4d2_freeroam.smx              | 观察者自由视角            | !freecam 自由观察视角                                        |
 | l4d2_guncontrol.smx            | 枪械武器控制              | 修改备用弹药量、M60&榴弹枪子弹补充等, 需要搭配WeaponUnlock使用 |
+| l4d2_infiniteammo.smx          | 无限子弹菜单              | 内嵌SM管理员菜单，提示信息小改                               |
 | l4d2_kill_counter.smx          | 击杀统计&友伤提示         | !counter 开关, !kills 个人数据, !teamkills 团队数据, 默认开启友伤提示、关闭通知 |
 | l4d2_meleemod.smx              | 近战武器控制              | 设置疲累值, 攻击间隔等                                       |
 | l4d2_multislots.smx            | 多人BOT管理               | 中途玩家加入生成BOT提供接管, 自动踢出多余BOT                 |

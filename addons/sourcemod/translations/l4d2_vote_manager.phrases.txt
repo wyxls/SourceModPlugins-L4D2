@@ -1,0 +1,180 @@
+"Phrases"
+{
+	"Vetoed"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has vetoed current vote!"
+		"chi"		"{1} 反对当前投票"
+	}
+	
+	"Passed"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has passed current vote!"
+		"chi"		"{1} 赞成当前投票"
+	}
+	
+	"Cant Pass"
+	{
+		"en"		"Not enough undecided players to pass this vote!"
+		"chi"		"没有足够的玩家赞成这次投票"
+	}
+	
+	"Cant Veto"
+	{
+		"en"		"Not enough undecided players to veto this vote!"
+		"chi"		"没有足够的玩家反对这次投票"
+	}	
+	
+	"No Vote"
+	{
+		"en"		"No vote is currently in progress!"
+		"chi"		"目前没有投票在进行"
+	}
+	
+	"Log Error"
+	{
+		"en"		"Vote Manager 3 failed to log an action to its own file!"
+		"chi"		"Vote Manager 3 未能将一项操作记录到日志文件里"
+	}
+	
+	"Conflict"
+	{
+		"en"		"A vote is active right now! Wait until that vote is over!"
+		"chi"		"投票正在进行中! 请等待这次投票结束"
+	}
+	
+	"Wait"
+	{
+		"#format"	"{1:d}"
+		"en"		"You must wait {1} seconds before calling a vote!"
+		"chi"		"你必须等待 {1} 秒才能进行一次投票"
+	}
+	
+	"No Access"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} was prevented from starting a {2} vote! Reason: no access!"
+		"chi"		"{1} 被拒绝发起投票! 原因：没有权限"
+	}	
+	
+	"Vote Called"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} started a {2} vote!"
+		"chi"		"{1} 发起一次 {2} 投票!"
+	}
+	
+	"Custom Vote"
+	{
+		"#format"	"{1:N},{2:s},{3:s},{4:s}"
+		"en"		"{1} started custom vote: '{3}' for team {2}, with command: '{4}'!"
+		"chi"		"{1} 发起自定义投票: '{3}' 为队伍 {2} 执行指令 '{4}'!"
+	}
+	
+	"Custom Vote Passed"
+	{
+		"en"		"Custom vote has passed..."
+		"chi"		"自定义投票通过..."
+	}
+	
+	"Use sm_customvote"
+	{
+		"en"		"Please use sm_customvote to call custom votes!"
+		"chi"		"请使用sm_customvote举行自定义投票"
+	}
+	
+	"Custom Passed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Custom vote called by, {1}, has passed! Issue was: '{2}'"
+		"chi"		"{1} 举行的自定义投票通过! 条件：'{2}'"
+	}
+	
+	"Custom Failed"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"Custom vote called by, {1}, has failed! Issue was: '{2}'"
+		"chi"		"{1} 举行的自定义投票不通过! 条件：'{2}'"
+	}	
+	
+	"Vote Failed"
+	{
+		"en"		"Called vote has failed!"
+		"chi"		"投票不通过!"
+	}
+	
+	"Vote Called 2 Arguments"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"{1} started a {2} vote with option {3}!"
+		"chi"		"{1} 发起一次选项为{3} 的 {2} 投票!"
+	}
+	
+	"Vote Passed"
+	{
+		"en"		"Called vote has passed!"
+		"chi"		"投票通过!"
+	}
+
+	"Kick Vote"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} has started a Kick vote against {2}!"
+		"chi"		"{1} 发起一次对 {2} 的踢出玩家投票!"
+	}
+
+	"Kick Vote Call Failed"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was prevented from starting a Kick vote against {2}! Reason: can't target player!"
+		"chi"		"{1} 被拒绝发起一次对 {2} 的踢出投票! 原因：不能将该玩家作为目标"
+	}
+	
+	"Kick Immunity"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was prevented from starting a Kick vote against {2}! Reason: player is immune to kick votes!"
+		"chi"		"{1} 被拒绝发起一次对 {2} 的踢出投票! 原因：该玩家免踢"
+	}	
+	
+	"Invalid Kick Userid"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} was prevented from starting a Kick vote against userid {2}! Reason: invalid player!"
+		"chi"		"{1} 被拒绝发起一次对 {2} 的踢出投票! 原因：该玩家无效"
+	}
+	
+	"Tank Immune Response"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was prevented from starting a Kick vote against {2}! Reason: tanks are immune!"
+		"chi"		"{1} 被拒绝发起一次对 {2} 的踢出投票! 原因：Tank免踢"
+	}
+	
+	"Spectator Response"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"		"{1} was prevented from starting a Kick vote against {2}! Reason: spectators can't call kick votes!"
+		"chi"		"{1} 被拒绝发起一次对 {2} 的踢出投票! 原因：观察者不能发起踢出投票"
+	}
+	
+	"Client Exploit Attempt"
+	{
+		"#format"	"{1:N},{2:d},{3:s}"
+		"en"		"{1}(clientid:{2}) tried to start a fake vote type to block further votes({3})!"
+		"chi"		"{1}(clientid:{2}) 尝试发起一次阻止后续投票的无效投票"
+	}
+	
+	"Usage"
+	{
+		"en"		"Usage: sm_customvote: <string: text to display> <string: command to run if passed>!"
+		"chi"		"用法: sm_customvote: <string: text to display> <string: command to run if passed>!"
+	}
+	
+	"Invalid Handle"
+	{
+		"en"		"Failed to create custom vote, consult developer!"
+		"chi"		"创建自定义投票失败, 请咨询开发者"
+	}	
+}	

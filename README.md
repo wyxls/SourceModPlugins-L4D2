@@ -34,7 +34,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | advertisements.smx             | 广告插件                  |                                                              |
 | all4dead2.smx                  | 额外的管理员菜单          | 相关文件: configs\advertisements.txt                         |
 | autoupdate.smx                 | all4dead2组件             | 不可删除                                                     |
-| customvotes.smx                | 自定义投票菜单            | !votemenu 投票菜单, 相关文件: configs\customvotes.cfg        |
+| customvotes.smx                | 自定义投票菜单            | !votemenu 投票菜单, 修复投票冷却时间不生效bug, 相关文件: configs\customvotes.cfg |
 | fix_l4dafkfix.smx              | 修复AFK BUG               |                                                              |
 | GrabLasersight.smx             | 自动红外线                |                                                              |
 | hostname.smx                   | 中文服务器名              |                                                              |
@@ -52,6 +52,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_sgfix.smx                 | 修复sg552换弹bug          | SG552默认换弹动画结束到可开枪有延迟的BUG                     |
 | l4d2_survivorai_triggerfix.smx | 全 Bot 队伍               |                                                              |
 | l4d2_upgradepackfix.smx        | 多人配件 Bug 修复         |                                                              |
+| l4d2_vote_manager3.smx         | 投票管理                  | 添加权限o和p, 管理员防踢                                     |
 | l4d2_WeaponUnlock.smx          | 武器解锁                  | 搭配guncontrol使用                                           |
 | l4dcsm_c.smx                   | 换角色或者外观            |                                                              |
 | l4d_balance.smx                | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(即玩家过于安全则提高难度), 修复玩家在安全区域仍会刷怪的问题 |

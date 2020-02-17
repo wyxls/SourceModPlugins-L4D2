@@ -35,15 +35,16 @@ https://github.com/HMBSbige/SouceModPlugins
 | all4dead2.smx                  | 额外的管理员菜单          | 相关文件: configs\advertisements.txt                         |
 | autoupdate.smx                 | all4dead2组件             | 不可删除                                                     |
 | customvotes.smx                | 自定义投票菜单            | !votemenu 投票菜单, 修复投票冷却时间不生效bug, 相关文件: configs\customvotes.cfg |
-| fix_l4dafkfix.smx              | 修复AFK BUG               |                                                              |
+| fix_l4dafkfix.smx              | 修复AFK BUG               | 相关文件: gamedata\l4dafkfix.txt                             |
 | GrabLasersight.smx             | 自动红外线                |                                                              |
-| hostname.smx                   | 中文服务器名              |                                                              |
+| hostname.smx                   | 中文服务器名              | 相关文件: configs\hostname\hostname.txt                      |
 | item_give.smx                  | 管理员功能菜单            | !give                                                        |
 | l4d2_autoIS.smx                | 多特感生成                |                                                              |
 | l4d2_custom_commands.smx       | 更多玩家指令              | 菜单汉化, 相关文件: gamedata\l4d2_custom_commands.txt        |
 | l4d2_damage_sdkhooks.smx       | 武器伤害倍数              | 相关文件: configs\l4d2damagemod.cfg                          |
 | l4d2_freeroam.smx              | 观察者自由视角            | !freecam 自由观察视角                                        |
 | l4d2_guncontrol.smx            | 枪械武器控制              | 修改备用弹药量、M60&榴弹枪子弹补充等, 需要搭配WeaponUnlock使用 |
+| l4d2_incap_magnum.smx          | 倒地马格南                | 倒地时武器切换成马格南 (默认只有近战会切换)                  |
 | l4d2_infiniteammo.smx          | 无限子弹菜单              | 内嵌SM管理员菜单，提示信息小改                               |
 | l4d2_kill_counter.smx          | 击杀统计&友伤提示         | !counter 开关, !kills 个人数据, !teamkills 团队数据, 默认开启友伤提示、关闭通知 |
 | l4d2_meleemod.smx              | 近战武器控制              | 设置疲累值, 攻击间隔等                                       |

@@ -14,7 +14,7 @@
 	}
 	"From"
 	{
-		"chi"			"从"
+		"chi"			"来自"
 	}
 	"To"
 	{
@@ -26,38 +26,38 @@
 	}
 	"weapon_molotov"
 	{
-		"chi"			"一个燃烧瓶"
+		"chi"			"燃烧瓶"
 	}
 	"weapon_pipe_bomb"
 	{
-		"chi"			"一个计时炸弹"
+		"chi"			"计时炸弹"
 	}
 	"weapon_vomitjar"
 	{
-		"chi"			"一个胆汁瓶"
+		"chi"			"胆汁瓶"
 	}
 	"weapon_first_aid_kit"
 	{
-		"chi"			"一个医疗包"
+		"chi"			"医疗包"
 	}
 	"weapon_pain_pills"
 	{
-		"chi"			"一瓶止痛药丸"
+		"chi"			"止痛药丸"
 	}
 	"weapon_adrenaline"
 	{
-		"chi"			"一支肾上腺素"
+		"chi"			"肾上腺素"
 	}
 	"weapon_upgradepack_explosive"
 	{
-		"chi"			"高爆弹"
+		"chi"			"高爆弹药包"
 	}
 	"weapon_upgradepack_incendiary"
 	{
-		"chi"			"燃烧弹"
+		"chi"			"燃烧弹药包"
 	}
 	"weapon_defibrillator"
 	{
-		"chi"			"一个心脏起搏器"
+		"chi"			"心脏起搏器"
 	}
 }

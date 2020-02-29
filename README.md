@@ -31,6 +31,7 @@ https://github.com/HMBSbige/SouceModPlugins
 
 | 插件文件名                     | 描述                      | 备注                                                         |
 | :----------------------------- | :------------------------ | :----------------------------------------------------------- |
+| admin_chatcolor.smx            | 管理员聊天                | 将管理员聊天信息颜色变更                                     |
 | advertisements.smx             | 广告插件                  |                                                              |
 | all4dead2.smx                  | 额外的管理员菜单          | 相关文件: configs\advertisements.txt                         |
 | autoupdate.smx                 | all4dead2组件             | 不可删除                                                     |
@@ -64,8 +65,8 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d_infectedhp.smx             | 显示特感&Tank&Witch血量   |                                                              |
 | l4d_kill.smx                   | 自杀                      | !zs 自杀                                                     |
 | l4d_multi_item.smx             | 多重补给                  | 修改地图生成的枪支、物品数量                                 |
-| l4d_nightvision.smx            | 夜视仪                    | 双击手电筒开关(默认F键)                                      |
-| l4d_sm_respawn.smx             | 复活指令                  | 嵌入管理员菜单                                               |
+| l4d_nightvision.smx            | 夜视仪                    | 双击手电筒开关(默认F键)，与大部分HUD Mod冲突，建议不装       |
+| l4d_sm_respawn.smx             | 复活指令                  | 内嵌管理员菜单—玩家菜单内                                    |
 | l4d_stuckzombiemeleefix.smx    | Bug 修复                  |                                                              |
 | l4d_survivorai_pouncedfix.smx  | 修复人工智障              |                                                              |
 | playerinfo.smx                 | 玩家进入离开提示          |                                                              |

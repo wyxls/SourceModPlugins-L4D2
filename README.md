@@ -40,7 +40,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | GrabLasersight.smx             | 自动红外线                |                                                              |
 | hostname.smx                   | 中文服务器名              | 相关文件: configs\hostname\hostname.txt                      |
 | item_give.smx                  | 管理员功能菜单            | !give                                                        |
-| l4d2_autoIS.smx                | 多特感生成                |                                                              |
+| l4d2_autoIS.smx                | 多特感生成                | 修改新增根据存活玩家(剔除BOT)数量调整特感数量以及刷新间隔功能, 相关参数: l4d2_ais_spawn_size_on_player, l4d2_ais_spawn_size_add_amount, l4d2_ais_time_on_player |
 | l4d2_custom_commands.smx       | 更多玩家指令              | 菜单汉化, 相关文件: gamedata\l4d2_custom_commands.txt        |
 | l4d2_damage_sdkhooks.smx       | 武器伤害倍数              | 相关文件: configs\l4d2damagemod.cfg                          |
 | l4d2_freeroam.smx              | 观察者自由视角            | !freecam 自由观察视角                                        |
@@ -57,7 +57,8 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_vote_manager3.smx         | 投票管理                  | 添加权限o和p, 管理员防踢                                     |
 | l4d2_WeaponUnlock.smx          | 武器解锁                  | 搭配guncontrol使用                                           |
 | l4dcsm_c.smx                   | 换角色或者外观            |                                                              |
-| l4d_balance.smx                | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(即玩家过于安全则提高难度), 修复玩家在安全区域仍会刷怪的问题 |
+| l4d_balance_fix.smx            | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(即玩家过于安全则提高难度), 修复玩家在安全区域仍会刷怪的问题 |
+| l4d_blackandwhite.smx          | 黑白提示                  | 更改默认提示模式为聊天栏, 文本汉化                           |
 | l4d_botcreator.smx             | 多人自动添加 Bot          |                                                              |
 | l4d_dissolve_infected.smx      | 感染者云消雾散            |                                                              |
 | l4d_gear_transfer.smx          | R 键给物品、Bot自动给物品 |                                                              |

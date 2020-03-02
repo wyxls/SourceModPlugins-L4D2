@@ -40,7 +40,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | GrabLasersight.smx             | 自动红外线                |                                                              |
 | hostname.smx                   | 中文服务器名              | 相关文件: configs\hostname\hostname.txt                      |
 | item_give.smx                  | 管理员功能菜单            | !give                                                        |
-| l4d2_autoIS_extend.smx         | 多特生成                  | 修改新增根据存活玩家(剔除BOT)数量调整特感数量以及刷新间隔功能, 相关参数: l4d2_ais_spawn_size_on_player, l4d2_ais_spawn_size_add_amount, l4d2_ais_time_on_player, l4d2_ais_time_reduce_amount |
+| l4d2_autoIS_extend.smx         | 多特生成                  | 新增Tank在场时是否继续生成特感，根据存活玩家数量调整特感数量以及刷新间隔等功能, 相关参数: l4d2_ais_spawn_si_with_tank ,l4d2_ais_spawn_size_on_player, l4d2_ais_spawn_size_add_amount, l4d2_ais_time_on_player, l4d2_ais_time_reduce_amount |
 | l4d2_custom_commands.smx       | 更多玩家指令              | 菜单汉化, 相关文件: gamedata\l4d2_custom_commands.txt        |
 | l4d2_damage_sdkhooks.smx       | 武器伤害倍数              | 相关文件: configs\l4d2damagemod.cfg                          |
 | l4d2_freeroam.smx              | 观察者自由视角            | !freecam 自由观察视角                                        |

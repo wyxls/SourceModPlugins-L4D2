@@ -48,10 +48,12 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_incap_magnum.smx          | 倒地马格南                | 倒地时武器切换成马格南 (默认只有近战会切换)                  |
 | l4d2_infiniteammo.smx          | 无限子弹菜单              | 内嵌SM管理员菜单，提示信息小改                               |
 | l4d2_kill_counter.smx          | 击杀统计&友伤提示         | !counter 开关, !kills 个人数据, !teamkills 团队数据, 默认开启友伤提示、关闭通知 |
+| l4d2_lethal.smx                | 狙击枪电磁炮              | 保持蹲下蓄力满, 射出电磁炮, 增加仅限管理员使用参数           |
 | l4d2_meleemod.smx              | 近战武器控制              | 设置疲累值, 攻击间隔等                                       |
 | l4d2_memorizer.smx             | 记忆恢复玩家状态          | 望夜防止4+角色装备混乱的原版, 无任何提示                     |
 | l4d2_multislots.smx            | 多人BOT管理               | 中途玩家加入生成BOT提供接管, 自动踢出多余BOT                 |
 | l4d2_reload_rate.smx           | 更改换弹速度              | 摘自Perkmod2源码                                             |
+| l4d2_satellite_cn.smx          | 马格南卫星炮              | 装备马格南, 缩放键弹出菜单切换模式, 射出从天而降的攻击       |
 | l4d2_sgfix.smx                 | 修复sg552换弹bug          | SG552默认换弹动画结束到可开枪有延迟的BUG                     |
 | l4d2_survivorai_triggerfix.smx | 全 Bot 队伍               |                                                              |
 | l4d2_upgradepackfix.smx        | 多人配件 Bug 修复         |                                                              |

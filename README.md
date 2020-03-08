@@ -49,6 +49,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d2_infiniteammo.smx          | 无限子弹菜单              | 内嵌SM管理员菜单，提示信息小改                               |
 | l4d2_kill_counter.smx          | 击杀统计&友伤提示         | !counter 开关, !kills 个人数据, !teamkills 团队数据, 默认开启友伤提示、关闭通知 |
 | l4d2_meleemod.smx              | 近战武器控制              | 设置疲累值, 攻击间隔等                                       |
+| l4d2_memorizer.smx             | 记忆恢复玩家状态          | 望夜防止4+角色装备混乱的原版, 无任何提示                     |
 | l4d2_multislots.smx            | 多人BOT管理               | 中途玩家加入生成BOT提供接管, 自动踢出多余BOT                 |
 | l4d2_reload_rate.smx           | 更改换弹速度              | 摘自Perkmod2源码                                             |
 | l4d2_sgfix.smx                 | 修复sg552换弹bug          | SG552默认换弹动画结束到可开枪有延迟的BUG                     |

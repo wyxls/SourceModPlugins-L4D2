@@ -27,6 +27,8 @@ L4DToolZ的GitHub：https://github.com/ivailosp/l4dtoolz/
 
 https://github.com/HMBSbige/SouceModPlugins
 
+https://forums.alliedmods.net/forumdisplay.php?f=123
+
 #### 插件说明：
 
 | 插件文件名                     | 描述                      | 备注                                                         |
@@ -41,6 +43,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | hostname.smx                   | 中文服务器名              | 相关文件: configs\hostname\hostname.txt                      |
 | item_give.smx                  | 管理员功能菜单            | !give                                                        |
 | l4d2_autoIS_extend.smx         | 多特生成                  | 新增Tank在场时是否继续生成特感，根据存活玩家数量调整特感数量以及刷新间隔等功能, 相关参数: l4d2_ais_spawn_si_with_tank ,l4d2_ais_spawn_size_on_player, l4d2_ais_spawn_size_add_amount, l4d2_ais_time_on_player, l4d2_ais_time_reduce_amount |
+| l4d2_automatic_weapons         | 自动武器                  | 使指定weapon_class的武器按住射击键自动连射, 默认对手枪开启   |
 | l4d2_custom_commands.smx       | 更多玩家指令              | 菜单汉化, 相关文件: gamedata\l4d2_custom_commands.txt        |
 | l4d2_damage_sdkhooks.smx       | 武器伤害倍数              | 相关文件: configs\l4d2damagemod.cfg                          |
 | l4d2_freeroam.smx              | 观察者自由视角            | !freecam 自由观察视角                                        |
@@ -67,6 +70,7 @@ https://github.com/HMBSbige/SouceModPlugins
 | l4d_gear_transfer.smx          | R 键给物品、Bot自动给物品 |                                                              |
 | l4d_hp_rewards.smx             | 击杀特感&Tank&Witch回血   | 原版消灭Tank&Witch只回复100HP, 改成与l4d_hp_rewards_max参数一致 |
 | l4d_infectedhp.smx             | 显示特感&Tank&Witch血量   |                                                              |
+| l4d_info_editor                | 武器&地图参数修改         | 能对游戏的武器和地图脚本进行修改, 比如修改上膛弹夹容量       |
 | l4d_kill.smx                   | 自杀                      | !zs 自杀                                                     |
 | l4d_multi_item.smx             | 多重补给                  | 修改地图生成的枪支、物品数量                                 |
 | l4d_nightvision.smx            | 夜视仪                    | 双击手电筒开关(默认F键)，与大部分HUD Mod冲突，建议不装       |

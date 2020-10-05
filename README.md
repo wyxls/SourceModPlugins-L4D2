@@ -3,9 +3,9 @@
 #### 我自己私人搭建服务器的SourceMod插件合集，欢迎自取
 
 ```
-Version 2.1.5.5 (left4dead2)
-Network Version 2.0.4.2
-Exe build: 14:46:56 Jul 16 2019 (7227) (550)
+Version 2.2.0.3 (left4dead2)
+Network Version 2.1.0.0
+Exe build: 21:05:11 Sep 15 2020 (7970) (550)
 MetaMod Version: 1.10
 SourceMod Version: 1.10.0.6453
 L4D2ToolZ: 1.0.0.9h
@@ -38,7 +38,7 @@ https://forums.alliedmods.net/forumdisplay.php?f=123
 | all4dead2.smx                  | 额外的管理员菜单          | 相关文件: configs\advertisements.txt                         |
 | autoupdate.smx                 | all4dead2组件             | 不可删除                                                     |
 | customvotes.smx                | 自定义投票菜单            | !votemenu 投票菜单, 修复投票冷却时间不生效bug, 相关文件: configs\customvotes.cfg |
-| fix_l4dafkfix.smx              | 修复AFK BUG               | 相关文件: gamedata\l4dafkfix.txt                             |
+| survivor_afk_fix.smx           | 修复AFK BUG               | 相关文件: gamedata\survivor_afk_fix.txt                      |
 | GrabLasersight.smx             | 自动红外线                |                                                              |
 | hostname.smx                   | 中文服务器名              | 相关文件: configs\hostname\hostname.txt                      |
 | item_give.smx                  | 管理员功能菜单            | !give                                                        |
@@ -54,14 +54,13 @@ https://forums.alliedmods.net/forumdisplay.php?f=123
 | l4d2_lethal.smx                | 狙击枪电磁炮              | 保持蹲下蓄力满后射出电磁炮, 修改为消耗后备弹药，后备弹药不足时会直接耗光，增加仅限管理员使用参数以及对应权限要求, 新增参数: lethal_weapon (admin_overrides.cfg) |
 | l4d2_meleemod.smx              | 近战武器控制              | 设置疲累值, 攻击间隔等                                       |
 | l4d2_memorizer.smx             | 记忆恢复玩家状态          | 望夜防止4+角色装备混乱的原版, 无任何提示                     |
-| l4d2_multislots.smx            | 多人BOT管理               | 中途玩家加入生成BOT提供接管, 自动踢出多余BOT                 |
+| l4dmultislots.smx              | 多人BOT管理               | 中途玩家加入生成BOT提供接管, 自动踢出多余BOT                 |
 | l4d2_reload_rate.smx           | 更改换弹速度              | 摘自Perkmod2源码                                             |
 | l4d2_satellite_cn.smx          | 马格南卫星炮              | 装备马格南, 缩放键弹出菜单切换模式, 射出从天而降的攻击, 增加仅限管理员使用和管理员无限能量参数, 新增参数: magnum_satellite, magnum_satellite_unlimit (admin_overrides.cfg) |
 | l4d2_sgfix.smx                 | 修复sg552换弹bug          | SG552默认换弹动画结束到可开枪有延迟的BUG                     |
 | l4d2_survivorai_triggerfix.smx | 全 Bot 队伍               |                                                              |
 | l4d2_upgradepackfix.smx        | 多人配件 Bug 修复         |                                                              |
 | l4d2_vote_manager3.smx         | 投票管理                  | 添加权限o和p, 管理员防踢                                     |
-| l4d2_WeaponUnlock.smx          | 武器解锁                  | 搭配guncontrol使用                                           |
 | l4dcsm_c.smx                   | 换角色或者外观            |                                                              |
 | l4d_balance_fix.smx            | 难度平衡系统              | 根据玩家危险系数更改导演AI运作(即玩家过于安全则提高难度), 修复玩家在安全区域仍会刷怪的问题 |
 | l4d_blackandwhite.smx          | 黑白提示                  | 更改默认提示模式为聊天栏, 文本汉化                           |

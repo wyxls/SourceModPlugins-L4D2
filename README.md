@@ -6,8 +6,8 @@
 Version 2.2.0.3 (left4dead2)
 Network Version 2.1.0.0
 Exe build: 21:05:11 Sep 15 2020 (7970) (550)
-MetaMod Version: 1.10
-SourceMod Version: 1.10.0.6453
+MetaMod Version: 1.10 build 971
+SourceMod Version: 1.10 build 6497
 L4D2ToolZ: 1.0.0.9h
 
 SourceMod

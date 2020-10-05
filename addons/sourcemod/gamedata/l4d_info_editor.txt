@@ -127,15 +127,16 @@
 	{
 		"Signatures"
 		{
-			"CDirectorItemManager::IsMeleeWeaponAllowedToExist" //found by V10
+			"CDirectorItemManager::IsMeleeWeaponAllowedToExist"
 			{
 				"library"		"server"
 				"linux"			"@_ZN20CDirectorItemManager27IsMeleeWeaponAllowedToExistEPKc"
-				"windows"		"\x55\x8B\xEC\x56\x8B\xF1\x8B\x0D\x2A\x2A\x2A\x2A\x8B\x01\x8B\x90\x2A\x2A\x2A\x2A\xFF\xD2\x84\xC0\x75\x2A\x8B\x45\x2A\x6A\x2A\x68\x2A\x2A\x2A\x2A\x50\xE8\x2A\x2A\x2A\x2A\x83\xC4\x2A\x85\xC0"
-				/* 55 8B EC 56 8B F1 8B 0D ? ? ? ? 8B 01 8B 90 ? ? ? ? FF D2 84 C0 75 ? 8B 45 ? 6A ? 68 ? ? ? ? 50 E8 ? ? ? ? 83 C4 ? 85 C0 */
+				"windows"		"\x55\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xFF\x2A\x84"
+				/* 55 8B ? 8B ? ? ? ? ? 8B ? 8B ? ? ? ? ? FF ? 84 */
+				/* Updated by Silvers. Search "scripts/melee/%s.txt". Call above. */
 			}
 
-			"CTerrorGameRules::GetMissionInfo" //found by V10
+			"CTerrorGameRules::GetMissionInfo" // Found by V10
 			{
 				"library"		"server"
 				"linux"			"@_ZN16CTerrorGameRules14GetMissionInfoEv"

@@ -1,0 +1,29 @@
+﻿"Phrases"
+{
+	"Chat Damage Text"
+	{
+		"#format"		"{1:d}"
+		"en"			"{green}- {1} HP"
+		"ru"			"{green}- {1} HP"
+	}
+	
+	"HintText Damage Text"
+	{
+		"#format"		"{1:d}"
+		"en"			"- {1} HP"
+		"ru"			"- {1} HP"
+	}
+	
+	"CenterText Damage Text"
+	{
+		"#format"		"{1:d}"
+		"en"			"- {1} HP"
+		"ru"			"- {1} HP"
+	}
+
+	"Cookie Show Damage"
+	{
+		"en"			"Show Damage"
+		"ru"			"Показ урона"
+	}
+}

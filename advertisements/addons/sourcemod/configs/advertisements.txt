@@ -1,0 +1,32 @@
+// Advertisements 2.1
+// by Tsunami
+//
+// Types
+// -----
+// center: Center message
+// chat: Chat message
+// hint: Hint message
+// menu: Menu message
+// top: Top message
+//
+// Flags (optional)
+// -----
+// Accepts flags of admins that will not see the advertisement.
+// When omitted everyone will see the advertisement.
+// When left empty only admins will see the advertisement.
+
+"Advertisements"
+{
+	"1"
+    {
+		"chat"			"{yellow}[服务器信息] {lightgreen}这是Zakikun的高级难度求生服务器, 详细信息请按{green}H键{lightgreen}或控制台输入{green}motd{lightgreen}查看"
+	}
+	"2"
+    {
+		"chat"			"{yellow}[服务器信息] {lightgreen}输入{green}!votemenu{lightgreen}打开投票菜单, 包括更换地图、踢出玩家等功能, 游戏自带投票已禁止"
+	}	
+	"3"
+    {
+		"chat"			"{yellow}[服务器信息] {lightgreen}服务器管理员: {green}Zakikun{lightgreen}、{green}kings"
+	}
+}

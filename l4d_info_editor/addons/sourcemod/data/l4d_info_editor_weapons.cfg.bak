@@ -1,0 +1,350 @@
+// These examples are from L4D2. Extract the mission.txt and weapon.txt files from your games VPK archives to find keynames and what's possible.
+"weapon_info"
+{
+	// The "all" section must be above map specific sections. Any partial matching map names will overwrite duplicate data from the "all" section.
+	"all"
+	{
+		// ====================================================================================================
+		// MELEE WEAPONS DATA EDITING
+		// ====================================================================================================
+		/*
+		// Makes the knife ignite zombies with fire instead of using the default damage type of "4" - slash.
+		"knife"
+		{
+			"damage_flags"			"8"
+		}
+		"fireaxe"
+		{
+		}
+		"frying_pan"
+		{
+		}
+		"machete"
+		{
+		}
+		"baseball_bat"
+		{
+		}
+		"crowbar"
+		{
+		}
+		"cricket_bat"
+		{
+		}
+		"tonfa"
+		{
+		}
+		"katana"
+		{
+		}
+		"electric_guitar"
+		{
+		}
+		"golfclub"
+		{
+		}
+		"pitchfork"
+		{
+		}
+		"shovel"
+		{
+		}
+		// */
+
+
+
+		// ====================================================================================================
+		// WEAPONS DATA EDITING
+		// ====================================================================================================
+		/* Ammo count example:
+		"weapon_pistol"
+		{
+			"clip_size"				"20"
+		}
+		"weapon_pistol_magnum"
+		{
+			"clip_size"				"10"
+		}
+		// */
+
+
+
+		// ====================================================================================================
+		// L4D2 DATA:
+		// ====================================================================================================
+		// Games default values are shown.
+		// Clip size, reload duration, interval between shots, damage, damage range and damage range drop off.
+		// The key "ReloadDuration" is missing from many weapons, the game uses "2.0" as default value (it seems).
+		/*
+		// Melee:
+		"weapon_chainsaw"
+		{
+			"clip_size"					"30"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.175"
+			"Damage"					"36"
+		}
+		"weapon_melee"
+		{
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.175"
+			"Damage"					"36"
+		}
+
+		// Pistols:
+		"weapon_pistol"
+		{
+			"clip_size"					"15"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.175"
+			"Damage"					"36"
+			"Range"						"2500"
+			"RangeModifier"				"0.75"
+		}
+		"weapon_pistol_magnum"
+		{
+			"clip_size"					"8"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.3"
+			"Damage"					"80"
+			"Range"						"3500"
+			"RangeModifier"				"0.75"
+		}
+
+		// Shotguns:
+		"weapon_autoshotgun"
+		{
+			"clip_size"					"10"
+			"ReloadDuration"			"0.396"
+			"CycleTime"					"0.15"
+			"Damage"					"23"
+			"Range"						"3000"
+			"RangeModifier"				"0.7"
+		}
+		"weapon_pumpshotgun"
+		{
+			"clip_size"					"8"
+			"ReloadDuration"			"0.473"
+			"CycleTime"					"0.5"
+			"Damage"					"25"
+			"Range"						"3000"
+			"RangeModifier"				"0.7"
+		}
+		"weapon_shotgun_chrome"
+		{
+			"clip_size"					"8"
+			"ReloadDuration"			"0.473"
+			"CycleTime"					"0.5"
+			"Damage"					"31"
+			"Range"						"3000"
+			"RangeModifier"				"0.7"
+		}
+		"weapon_shotgun_spas"
+		{
+			"clip_size"					"10"
+			"ReloadDuration"			"0.396"
+			"CycleTime"					"0.15"
+			"Damage"					"28"
+			"Range"						"3000"
+			"RangeModifier"				"0.7"
+		}
+
+		// SMG:
+		"weapon_smg"
+		{
+			"clip_size"					"50"
+			"ReloadDuration"			"1.5"
+			"CycleTime"					"0.0625"
+			"Damage"					"20"
+			"Range"						"2500"
+			"RangeModifier"				"0.84"
+		}
+		"weapon_smg_mp5"
+		{
+			"clip_size"					"50"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.075"
+			"Damage"					"24"
+			"Range"						"2500"
+			"RangeModifier"				"0.84"
+		}
+		"weapon_smg_silenced"
+		{
+			"clip_size"					"50"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.0625"
+			"Damage"					"25"
+			"GainRange"					"900"
+			"Range"						"2200"
+		}
+
+		// Rifles:
+		"weapon_rifle"
+		{
+			"clip_size"					"50"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.0875"
+			"Damage"					"33"
+			"Range"						"3000"
+			"RangeModifier"				"0.97"
+		}
+		"weapon_rifle_ak47"
+		{
+			"clip_size"					"40"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.13"
+			"Damage"					"58"
+			"Range"						"3000"
+			"RangeModifier"				"0.97"
+		}
+		"weapon_rifle_desert"
+		{
+			"clip_size"					"60"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.07"
+			"Damage"					"44"
+			"Range"						"3000"
+			"RangeModifier"				"0.97"
+		}
+		"weapon_rifle_sg552"
+		{
+			"clip_size"					"50"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.0825"
+			"Damage"					"33"
+			"Range"						"3000"
+			"RangeModifier"				"0.97"
+		}
+
+		// Snipers:
+		"weapon_hunting_rifle"
+		{
+			"clip_size"					"15"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.25"
+			"Damage"					"90"
+			"Range"						"8192"
+			"RangeModifier"				"1.0"
+		}
+		"weapon_sniper_awp"
+		{
+			"clip_size"					"20"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"1.05"
+			"Damage"					"115"
+			"Range"						"8192"
+			"RangeModifier"				"1.0"
+		}
+		"weapon_sniper_military"
+		{
+			"clip_size"					"30"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.25"
+			"Damage"					"90"
+			"Range"						"8192"
+			"RangeModifier"				"1.0"
+		}
+		"weapon_sniper_scout"
+		{
+			"clip_size"					"15"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.9"
+			"Damage"					"90"
+			"Range"						"8192"
+			"RangeModifier"				"1.0"
+		}
+
+		// Big guns:
+		"weapon_grenade_launcher"
+		{
+			"clip_size"					"1"
+			"ReloadDuration"			"-1"
+			"CycleTime"					"0.5"
+			"Damage"					"33"
+			"Range"						"3000"
+			"RangeModifier"				"0.97"
+		}
+		"weapon_rifle_m60"
+		{
+			"clip_size"					"150"
+			"ReloadDuration"			"2.0"
+			"CycleTime"					"0.11"
+		}
+		// */
+
+
+
+		// ====================================================================================================
+		// CHAINSAW BOTS:
+		// ====================================================================================================
+		// Requirements: Chainsaw vScripts needs to be added?
+		// Allow bots to carry and use chainsaws? Untested.
+		/*
+		"weapon_chainsaw"
+		{
+			"WeaponType"			"pistol"
+			"Tier"					"2"		// valid entries are 0, 1, 2
+			"primary_ammo"			"None"
+			"secondary_ammo"		"AMMO_TYPE_CHAINSAW"
+			// Not required?
+			"CharacterViewmodelAddon/Manager"    	 "models/weapons/arms/v_arms_louis.mdl"
+			"CharacterViewmodelAddon/Biker"      	 "models/weapons/arms/v_arms_francis.mdl"
+			"CharacterViewmodelAddon/TeenGirl"   	 "models/weapons/arms/v_arms_zoey.mdl"
+			"CharacterViewmodelAddon/NamVet"     	 "models/weapons/arms/v_arms_bill.mdl"
+		}
+		// */
+	}
+
+
+
+	// ====================================================================================================
+	// Partial map name matching
+	// ====================================================================================================
+	// Supports matching partial map names, or multiple map names using comma separation
+	/* // This line is commenting out this section, shown here for an example. Remove this line to use this section
+	// Matches all chapters from Dead Center.
+	"c1m"
+	{
+	}
+
+	// Matches "c1m3_mall" (Dead Center - Mall chapter)
+	"c1m3"
+	{
+	}
+
+	// Matches "c1m2_streets" and "c1m3_mall" maps
+	"c1m2,c1m3"
+	{
+	}
+
+	// Matches L4D1 - No Mercy campaign
+	"l4d_hospital"
+	{
+	}
+	// */
+
+
+
+	// ====================================================================================================
+	// Game mode specific
+	// ====================================================================================================
+	// SUpports loading game mode specific sections matching the mp_gamemode cvar value, these will overwrite duplicate data loaded from the "all" or map specific sections
+	// The game mode must be set before the map ends or loads
+	/*
+	"coop"
+	{
+		"weapon_rifle"
+		{
+			"clip_size"					"75"
+		}
+	}
+
+	"versus"
+	{
+		"weapon_rifle"
+		{
+			"clip_size"					"55"
+		}
+	}
+	// */
+}

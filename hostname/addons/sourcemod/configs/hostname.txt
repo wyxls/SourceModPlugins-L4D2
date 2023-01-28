@@ -1,0 +1,13 @@
+"Settings"
+{
+	"HostName"
+	{
+		// ONLY use these two settings below if you want to display the hostname with Unicode characters. (e.g. Simplified Chinese)
+		// Reading Unicode characters from a ".cfg" file does not seem to work, so this is the workaround.
+		
+		// Hostname used by the {hostname} tag.
+		"{HostName}#01"							"[Zakikun]高级难度房#1"
+		"{HostName}#02"							"[Zakikun]高级难度房#2"
+		"{HostName}#03"							"[Zakikun]高级难度房#3"
+	}
+}

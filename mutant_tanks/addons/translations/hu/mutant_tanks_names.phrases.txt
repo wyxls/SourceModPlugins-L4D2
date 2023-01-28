@@ -1,0 +1,1300 @@
+"Phrases"
+{
+	// MT Chat Színek helyőrzői
+	// --
+	// Megjegyzés: Nem mindegyik kifejezés támogatja ezeket a helyőrzőket.
+	// --
+	// "{default}" - Normál -> \x01
+	// --
+	// "{mint}" - Ég zöld -> \x03
+	// --
+	// "{yellow}" - Sárgás narancs -> \x04
+	// --
+	// "{olive}" - Sárgászöld -> \x05
+	// --
+	// "{percent}" - "%%" -> %
+
+	"Tank #1 Name"
+	{
+		"hu"			"Elnyelő Tank"
+	}
+
+	"Tank #1"
+	{
+		"hu"			"{mint}Ez a Tank elnyeli a sebzések nagy részét amit kap."
+	}
+
+	"Tank #2 Name"
+	{
+		"hu"			"Savas Tank"
+	}
+
+	"Tank #2"
+	{
+		"hu"			"{mint}Ez a Tank savas pocsolyákat hozhat létre a túlélők alatt."
+	}
+
+	"Tank #3 Name"
+	{
+		"hu"			"Céltalan Tank"
+	}
+
+	"Tank #3"
+	{
+		"hu"			"{mint}Ez a Tank megakadályozza a túlélőket a célzásban."
+	}
+
+	"Tank #4 Name"
+	{
+		"hu"			"Lőszer Tank"
+	}
+
+	"Tank #4"
+	{
+		"hu"			"{mint}Ez a Tank ellophat tőled egy kis lőszert, vagy az egészet."
+	}
+
+	"Tank #5 Name"
+	{
+		"hu"			"Vak Tank"
+	}
+
+	"Tank #5"
+	{
+		"hu"			"{mint}Ez a Tank megvakíthatja a túlélőket."
+	}
+
+	"Tank #6 Name"
+	{
+		"hu"			"Bombázó Tank"
+	}
+
+	"Tank #6"
+	{
+		"hu"			"{mint}Ez a Tank robbanásokat okozhat és immunis a robbanásokra."
+	}
+
+	"Tank #7 Name"
+	{
+		"hu"			"Pukkancs Tank"
+	}
+
+	"Tank #7"
+	{
+		"hu"			"{mint}Ez a Tank pukkancsokat hozhat létre, és dobhat is párat a túlélők felé."
+	}
+
+	"Tank #8 Name"
+	{
+		"hu"			"Golyóálló Tank"
+	}
+
+	"Tank #8"
+	{
+		"hu"			"{mint}Ez a Tank immunis a lőszer sebzésre."
+	}
+
+	"Tank #9 Name"
+	{
+		"hu"			"Eltemető Tank"
+	}
+
+	"Tank #9"
+	{
+		"hu"			"{mint}Ez a Tank eltemetheti a túlélőket."
+	}
+
+	"Tank #10 Name"
+	{
+		"hu"			"Autó Tank"
+	}
+
+	"Tank #10"
+	{
+		"hu"			"{mint}Ez a Tank autókat dobhat a túlélők felé. Az autók eltűnnek 30mp után"
+	}
+
+	"Tank #11 Name"
+	{
+		"hu"			"Rohanó Tank"
+	}
+
+	"Tank #11"
+	{
+		"hu"			"{mint}Ez a Tank rohanókat hozhat létre, és dobhat is párat a túlélők felé."
+	}
+
+	"Tank #12 Name"
+	{
+		"hu"			"Elzáró Tank"
+	}
+
+	"Tank #12"
+	{
+		"hu"			"{mint}Ez a Tank fojtogatja a túlélőket a levegőben."
+	}
+
+	"Tank #13 Name"
+	{
+		"hu"			"Klón Tank"
+	}
+
+	"Tank #13"
+	{
+		"hu"			"{mint}Ez a Tank klónokat hozhat létre, és dobhat is párat a túlélők felé."
+	}
+
+	"Tank #14 Name"
+	{
+		"hu"			"Felhős Tank"
+	}
+
+	"Tank #14"
+	{
+		"hu"			"{mint}Ez a Tank füstfelhőket hoz létre, ami sebzi a benne lévő túlélőket"
+	}
+
+	"Tank #15 Name"
+	{
+		"hu"			"Dobó Tank"
+	}
+
+	"Tank #15"
+	{
+		"hu"			"{mint}Ez a Tank véletlenszerű fegyvereket dob a halála után."
+	}
+
+	"Tank #16 Name"
+	{
+		"hu"			"Drogozó Tank"
+	}
+
+	"Tank #16"
+	{
+		"hu"			"{mint}Ez a Tank bedrogozhatja a túlélőket."
+	}
+
+	"Tank #17 Name"
+	{
+		"hu"			"Részeg Tank"
+	}
+
+	"Tank #17"
+	{
+		"hu"			"{mint}Ez a Tank részeggé teheti a túlélőket."
+	}
+
+	"Tank #18 Name"
+	{
+		"hu"			"Elektromos Tank"
+	}
+
+	"Tank #18"
+	{
+		"hu"			"{mint}Ez a Tank megrázhatja a túlélőket."
+	}
+
+	"Tank #19 Name"
+	{
+		"hu"			"Végrehajtó Tank"
+	}
+
+	"Tank #19"
+	{
+		"hu"			"{mint}Ez a Tank ráveheti a túlélőket arra hogy bizonyos fegyvereket használjanak egy bizonyos ideig."
+	}
+
+	"Tank #20 Name"
+	{
+		"hu"			"Gyors Tank"
+	}
+
+	"Tank #20"
+	{
+		"hu"			"{mint}Ez a Tank olyan gyorsan fut mint Flash."
+	}
+
+	"Tank #21 Name"
+	{
+		"hu"			"Tűzálló Tank"
+	}
+
+	"Tank #21"
+	{
+		"hu"			"{mint}Ez a Tank tüzeket hozhat létre és immunis a tűzre."
+	}
+
+	"Tank #22 Name"
+	{
+		"hu"			"Hajító Tank"
+	}
+
+	"Tank #22"
+	{
+		"hu"			"{mint}Ez a Tank elhajítja a túlélőket a levegőbe."
+	}
+
+	"Tank #23 Name"
+	{
+		"hu"			"Repülő Tank"
+	}
+
+	"Tank #23"
+	{
+		"hu"			"{mint}Ez a Tank körbe-körbe repül, áldozatokat keresve."
+	}
+
+	"Tank #24 Name"
+	{
+		"hu"			"Törékeny Tank"
+	}
+
+	"Tank #24"
+	{
+		"hu"			"{mint}Ez a Tank érzékenyebb a sebzésre, de közben többet sebez és gyorsabban fut."
+	}
+
+	"Tank #25 Name"
+	{
+		"hu"			"Szellem Tank"
+	}
+
+	"Tank #25"
+	{
+		"hu"			"{mint}Ez a Tank álcázhatja magát és lefegyverezheti a túlélőket."
+	}
+
+	"Tank #26 Name"
+	{
+		"hu"			"Isteni Tank"
+	}
+
+	"Tank #26"
+	{
+		"hu"			"{mint}Ez a Tank ideiglenes legyőzhetetlenséget kaphat."
+	}
+
+	"Tank #27 Name"
+	{
+		"hu"			"Gravitációs Tank"
+	}
+
+	"Tank #27"
+	{
+		"hu"			"{mint}Ez a Tank magához húzhatja a túlélőket és a fertőzötteket és csökkentheti a túlélők gravitációját."
+	}
+
+	"Tank #28 Name"
+	{
+		"hu"			"Tüzér Tank"
+	}
+
+	"Tank #28"
+	{
+		"hu"			"{mint}Ez a tank képes felfegyverkezni és lövéseket leadni a túlélőkre."
+	}
+
+	"Tank #29 Name"
+	{
+		"hu"			"Egészséges Tank"
+	}
+
+	"Tank #29"
+	{
+		"hu"			"{mint}Ez a Tank ideiglenes életerőt adhat a túlélőknek, és életerőt nyelhet el a közeli fertőzöttektől."
+	}
+
+	"Tank #30 Name"
+	{
+		"hu"			"Ütős Tank"
+	}
+
+	"Tank #30"
+	{
+		"hu"			"{mint}Ezt a Tankot csak a fejlövés sebzi."
+	}
+
+	"Tank #31 Name"
+	{
+		"hu"			"Vadász Tank"
+	}
+
+	"Tank #31"
+	{
+		"hu"			"{mint}Ez a Tank Vadászokat hozhat létre, és dobhat is párat a túlélők felé."
+	}
+
+	"Tank #32 Name"
+	{
+		"hu"			"Bántó Tank"
+	}
+
+	"Tank #32"
+	{
+		"hu"			"{mint}Ez a Tank folyamatosan bántja a túlélőket egy bizonyos időn belül."
+	}
+
+	"Tank #33 Name"
+	{
+		"hu"			"Hipnotizáló Tank"
+	}
+
+	"Tank #33"
+	{
+		"hu"			"{mint}Ez a Tank hipnotizálhatja a túlélőket, hogy magukat vagy a társaikat támadják."
+	}
+
+	"Tank #34 Name"
+	{
+		"hu"			"Fagyos Tank"
+	}
+
+	"Tank #34"
+	{
+		"hu"			"{mint}Ez a Tank megfagyasztja a túlélőket."
+	}
+
+	"Tank #35 Name"
+	{
+		"hu"			"Tétlen Tank"
+	}
+
+	"Tank #35"
+	{
+		"hu"			"{mint}Ez a Tank ráveheti a túlélőket arra hogy szünetet tartsanak. (Botokra ez nem hat.)"
+	}
+
+	"Tank #36 Name"
+	{
+		"hu"			"Felcserélő Tank"
+	}
+
+	"Tank #36"
+	{
+		"hu"			"{mint}Ez a Tank felcserélheti a túlélők irányítási gombjait."
+	}
+
+	"Tank #37 Name"
+	{
+		"hu"			"Áru Tank"
+	}
+
+	"Tank #37"
+	{
+		"hu"			"{mint}Ez a Tank árukat adhat a túlélőknek miután meghalt."
+	}
+
+	"Tank #38 Name"
+	{
+		"hu"			"Zsoké Tank"
+	}
+
+	"Tank #38"
+	{
+		"hu"			"{mint}Ez a Tank Zsokékat hozhat létre és dobhat egy párat a túlélők felé is."
+	}
+
+	"Tank #39 Name"
+	{
+		"hu"			"Ugró Tank"
+	}
+
+	"Tank #39"
+	{
+		"hu"			"{mint}Ez a Tank időszakosan ugrálhat és ráveheti a túlélőket a kontrollálhatatlan ugrálásra is."
+	}
+
+	"Tank #40 Name"
+	{
+		"hu"			"Öngyilkos Tank"
+	}
+
+	"Tank #40"
+	{
+		"hu"			"{mint}Ez a Tank megölheti magát, vihet egy túlélő áldozatot is."
+	}
+
+	"Tank #41 Name"
+	{
+		"hu"			"Késleltető Tank"
+	}
+
+	"Tank #41"
+	{
+		"hu"			"{mint}Ez a Tank késleltetheti a túlélőket."
+	}
+
+	"Tank #42 Name"
+	{
+		"hu"			"Lézer Tank"
+	}
+
+	"Tank #42"
+	{
+		"hu"			"{mint}Ez a Tank lézereket lőhet a túlélők felé."
+	}
+
+	"Tank #43 Name"
+	{
+		"hu"			"Pióca Tank"
+	}
+
+	"Tank #43"
+	{
+		"hu"			"{mint}Ez a Tank életet szívhat el a túlélőktől."
+	}
+
+	"Tank #44 Name"
+	{
+		"hu"			"Villám Tank"
+	}
+
+	"Tank #44"
+	{
+		"hu"			"{mint}Ez a Tank villám viharokat indít."
+	}
+
+	"Tank #45 Name"
+	{
+		"hu"			"Gyógyító Tank"
+	}
+
+	"Tank #45"
+	{
+		"hu"			"{mint}Ez a Tank gyógyítja a közeli speciális fertőzötteket a halála pillanatában."
+	}
+
+	"Tank #46 Name"
+	{
+		"hu"			"Meteor Tank"
+	}
+
+	"Tank #46"
+	{
+		"hu"			"{mint}Ez a Tank meteor záport indíthat, meteorokkal ami elég és felrobban pár másodperc múlva."
+	}
+
+	"Tank #47 Name"
+	{
+		"hu"			"Nekromanta Tank"
+	}
+
+	"Tank #47"
+	{
+		"hu"			"{mint}Ez a Tank visszahozhatja a halott speciális fertőzötteket."
+	}
+
+	"Tank #48 Name"
+	{
+		"hu"			"Hatástalanító Tank"
+	}
+
+	"Tank #48"
+	{
+		"hu"			"{mint}Ez a Tank hatástalanítja a túlélők sebzését, ezáltal védve önmagát."
+	}
+
+	"Tank #49 Name"
+	{
+		"hu"			"Mindenható Tank"
+	}
+
+	"Tank #49"
+	{
+		"hu"			"{mint}Ez a Tank hozzáfér a többi közel lévő Mutáns Tank képességeihez."
+	}
+
+	"Tank #50 Name"
+	{
+		"hu"			"Pánik Tank"
+	}
+
+	"Tank #50"
+	{
+		"hu"			"{mint}Ez a Tank pánik eseményt indíthat, nagyon sok zombival."
+	}
+
+	"Tank #51 Name"
+	{
+		"hu"			"Háziállat Tank"
+	}
+
+	"Tank #51"
+	{
+		"hu"			"{mint}Ez a Tank lojális a túlélőkhöz és szeret öleléseket adni."
+	}
+
+	"Tank #52 Name"
+	{
+		"hu"			"Csapdosó Tank"
+	}
+
+	"Tank #52"
+	{
+		"hu"			"{mint}Ez a Tank folyamatosan csapdossa a túlélőket, megmutatja nekik ki a főnök."
+	}
+
+	"Tank #53 Name"
+	{
+		"hu"			"Platina Tank"
+	}
+
+	"Tank #53"
+	{
+		"hu"			"{mint}Ez a Tank immunis a közelharci sebzésre."
+	}
+
+	"Tank #54 Name"
+	{
+		"hu"			"Hányó Tank"
+	}
+
+	"Tank #54"
+	{
+		"hu"			"{mint}Ez a Tank lehányhatja a túlélőket."
+	}
+
+	"Tank #55 Name"
+	{
+		"hu"			"Piromániás Tank"
+	}
+
+	"Tank #55"
+	{
+		"hu"			"{mint}Ez Tank gyorsabb lesz ha felgyújtják."
+	}
+
+	"Tank #56 Name"
+	{
+		"hu"			"Csendes Tank"
+	}
+
+	"Tank #56"
+	{
+		"hu"			"{mint}Ez a Tank lenémíthatja magát a túlélők elől."
+	}
+
+	"Tank #57 Name"
+	{
+		"hu"			"Visszarúgó Tank"
+	}
+
+	"Tank #57"
+	{
+		"hu"			"{mint}Ez a Tank erős visszarúgást adhat a túlélőknek."
+	}
+
+	"Tank #58 Name"
+	{
+		"hu"			"Regeneráló Tank"
+	}
+
+	"Tank #58"
+	{
+		"hu"			"{mint}Ez a Tank életerőt regenerál minden másodpercben."
+	}
+
+	"Tank #59 Name"
+	{
+		"hu"			"Újjászülető Tank"
+	}
+
+	"Tank #59"
+	{
+		"hu"			"{mint}Ez a Tank újjászülethet a halála pillanatában."
+	}
+
+	"Tank #60 Name"
+	{
+		"hu"			"Újraindító Tank"
+	}
+
+	"Tank #60"
+	{
+		"hu"			"{mint}Ez a Tank ráveheti a túlélőket arra, hogy új felszereléssel kezdjenek előröl."
+	}
+
+	"Tank #61 Name"
+	{
+		"hu"			"Szikla Tank"
+	}
+
+	"Tank #61"
+	{
+		"hu"			"{mint}Ez a Tank szikla záporokat indít."
+	}
+
+	"Tank #62 Name"
+	{
+		"hu"			"Rakétaszakértő Tank"
+	}
+
+	"Tank #62"
+	{
+		"hu"			"{mint}Ez a Tank az űrbe küldheti a túlélőket."
+	}
+
+	"Tank #63 Name"
+	{
+		"hu"			"Öndobó Tank"
+	}
+
+	"Tank #63"
+	{
+		"hu"			"{mint}Ez a Tank eldobhatja magát a túlélők felé."
+	}
+
+	"Tank #64 Name"
+	{
+		"hu"			"Rázó Tank"
+	}
+
+	"Tank #64"
+	{
+		"hu"			"{mint}Ez a Tank megrázza a túlélők képernyőjét."
+	}
+
+	"Tank #65 Name"
+	{
+		"hu"			"Pajzs Tank"
+	}
+
+	"Tank #65"
+	{
+		"hu"			"{mint}Ez a Tank egy pajzzsal születik, propán tartályokat vagy benzines kannákat dobál. Ezek segítségével a túlélők áttörhetnek a pajzson."
+	}
+
+	"Tank #66 Name"
+	{
+		"hu"			"Lökő Tank"
+	}
+
+	"Tank #66"
+	{
+		"hu"			"{mint}Ez a Tank mindenhova lökdösi a túlélőket."
+	}
+
+	"Tank #67 Name"
+	{
+		"hu"			"Lassú Tank"
+	}
+
+	"Tank #67"
+	{
+		"hu"			"{mint}Ez a Tank letudja lassítani a túlélőket."
+	}
+
+	"Tank #68 Name"
+	{
+		"hu"			"Zúzó Tank"
+	}
+
+	"Tank #68"
+	{
+		"hu"			"{mint}Ez a Tank a halálba tudja zúzni a túlélőket."
+	}
+
+	"Tank #69 Name"
+	{
+		"hu"			"Lecsapó Tank"
+	}
+
+	"Tank #69"
+	{
+		"hu"			"{mint}Ez a Tank letudja csapni a túlélőket, ezzel azonnali halált okozva."
+	}
+
+	"Tank #70 Name"
+	{
+		"hu"			"Füstös Tank"
+	}
+
+	"Tank #70"
+	{
+		"hu"			"{mint}Ez a Tank tud Füstösöket létrehozni, és dobni is egy párat a túlélők felé."
+	}
+
+	"Tank #71 Name"
+	{
+		"hu"			"Kéretlen Tank"
+	}
+
+	"Tank #71"
+	{
+		"hu"			"{mint}Ez a Tank folyamatosan sziklákat dobál a túlélők felé."
+	}
+
+	"Tank #72 Name"
+	{
+		"hu"			"Speciális Tank"
+	}
+
+	"Tank #72"
+	{
+		"hu"			"{mint}Ez a Tank tud létrehozni véletlenszerű speciális fertőzötteket, és dobni is egy párat a túlélők felé."
+	}
+
+	"Tank #73 Name"
+	{
+		"hu"			"köpködő Tank"
+	}
+
+	"Tank #73"
+	{
+		"hu"			"{mint}Ez a Tank tud Köpködőket létrehozni, és dobni is egy párat a túlélők felé."
+	}
+
+	"Tank #74 Name"
+	{
+		"hu"			"Területsebző Tank"
+	}
+
+	"Tank #74"
+	{
+		"hu"			"{mint}Ez a Tank területi sebzést okoz egy bizonyos távolságon belül."
+	}
+
+	"Tank #75 Name"
+	{
+		"hu"			"Fröcskölő Tank"
+	}
+
+	"Tank #75"
+	{
+		"hu"			"{mint}Ez a Tank mindenki képernyőjét befröcsköli."
+	}
+
+	"Tank #76 Name"
+	{
+		"hu"			"Eldobó Tank"
+	}
+
+	"Tank #76"
+	{
+		"hu"			"{mint}Ez a Tank tud dobni autókat, speciális fertőzötteket, Tankokat, Boszorkákat, és saját magát!"
+	}
+
+	"Tank #77 Name"
+	{
+		"hu"			"Követő Tank"
+	}
+
+	"Tank #77"
+	{
+		"hu"			"{mint}Ez a Tank olyan sziklákat dob, ami követi a közelben lévő túlélőket."
+	}
+
+	"Tank #78 Name"
+	{
+		"hu"			"Végső Tank"
+	}
+
+	"Tank #78"
+	{
+		"hu"			"{mint}Ez a Tank ideiglenes halhatatlanságot és sebzést növelést kap, amikor már kevés az életereje."
+	}
+
+	"Tank #79 Name"
+	{
+		"hu"			"Halhatatlan Tank"
+	}
+
+	"Tank #79"
+	{
+		"hu"			"{mint}Ez a Tank visszanyeri a teljes életerejét, amikor már közel jár a halálhoz."
+	}
+
+	"Tank #80 Name"
+	{
+		"hu"			"Vámpír Tank"
+	}
+
+	"Tank #80"
+	{
+		"hu"			"{mint}Ez a Tank életerőt lophat a túlélőktől."
+	}
+
+	"Tank #81 Name"
+	{
+		"hu"			"Vizuális Tank"
+	}
+
+	"Tank #81"
+	{
+		"hu"			"{mint}Ez a Tank megváltoztatja a túlélők látómezejét."
+	}
+
+	"Tank #82 Name"
+	{
+		"hu"			"Teleportáló Tank"
+	}
+
+	"Tank #82"
+	{
+		"hu"			"{mint}Ez a Tank véletlenszerűen egy túlélőhöz teleportál."
+	}
+
+	"Tank #83 Name"
+	{
+		"hu"			"Örvénylő Tank"
+	}
+
+	"Tank #83"
+	{
+		"hu"			"{mint}Ez a Tank megpörgeti a túlélőket."
+	}
+
+	"Tank #84 Name"
+	{
+		"hu"			"Boszorka Tank"
+	}
+
+	"Tank #84"
+	{
+		"hu"			"{mint}Ez a Tank Boszorkává alakítja a közeli fertőzötteket, és dob is párat a túlélők felé."
+	}
+
+	"Tank #85 Name"
+	{
+		"hu"			"Xiphos Tank"
+	}
+
+	"Tank #85"
+	{
+		"hu"			"{mint}Ez a Tank tud életerőt lopni a túlélőktől és fordítva."
+	}
+
+	"Tank #86 Name"
+	{
+		"hu"			"Üvöltő Tank"
+	}
+
+	"Tank #86"
+	{
+		"hu"			"{mint}Ez a Tank tud üvölteni, így megsüketítve a túlélőket."
+	}
+
+	"Tank #87 Name"
+	{
+		"hu"			"Zombi Tank"
+	}
+
+	"Tank #87"
+	{
+		"hu"			"{mint}Ez a Tank hordákat hoz létre."
+	}
+
+	"Tank #88 Name"
+	{
+		"hu"			"Armageddon Tank"
+	}
+
+	"Tank #88"
+	{
+		"hu"			"{mint}Ez a Tank immunis a robbanásokra, magához húzza a túlélőket és fertőzötteket, meteor záport indít."
+	}
+
+	"Tank #89 Name"
+	{
+		"hu"			"Főnök Tank"
+	}
+
+	"Tank #89"
+	{
+		"hu"			"{mint}Tűz immunitás, gyors, álcázza magát, lefegyverzi a túlélőket, magához húzza és megváltoztatja a túlélők gravitációját, időszakosan ugrik, meteor záport indít, pajzzsal születik, lecsapja a túlélőket, túlélőkhöz teleportál, és Boszorkákat/zombikat hozz létre."
+	}
+
+	"Tank #90 Name"
+	{
+		"hu"			"Kobalt Tank"
+	}
+
+	"Tank #90"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre és nagyon gyorsan fut."
+	}
+
+	"Tank #91 Name"
+	{
+		"hu"			"Elterelő Tank"
+	}
+
+	"Tank #91"
+	{
+		"hu"			"{mint}Ez a Tank időszakosan ugrik, ráveszi a túlélőket arra hogy kontrollálhatatlanul ugráljanak, és a túlélőkhöz teleportál."
+	}
+
+	"Tank #92 Name"
+	{
+		"hu"			"Visszaverő Tank"
+	}
+
+	"Tank #92"
+	{
+		"hu"			"{mint}Ez a Tank ellöki magától a túlélőket."
+	}
+
+	"Tank #93 Name"
+	{
+		"hu"			"Flash Tank"
+	}
+
+	"Tank #93"
+	{
+		"hu"			"{mint}Ez a Tank nagyon gyorsan tud futni, elektromosságot dob a túlélőkre, lelassítja az időt maga körül, miközben ideiglenesen legyőzhetetlen."
+	}
+
+	"Tank #94 Name"
+	{
+		"hu"			"Góliát Tank"
+	}
+
+	"Tank #94"
+	{
+		"hu"			"{mint}Tűz immunitás, lassan mozog, ideiglenes életerőt ad a túlélőknek, életerőt szív el a közeli fertőzöttektől, pajzzsal születik, és lecsapja a túlélőket."
+	}
+
+	"Tank #95 Name"
+	{
+		"hu"			"Hallucináció Tank"
+	}
+
+	"Tank #95"
+	{
+		"hu"			"{mint}Tűz immunitás, álcázza magát, és a túlélőkhöz teleportál."
+	}
+
+	"Tank #96 Name"
+	{
+		"hu"			"Mém Tank"
+	}
+
+	"Tank #96"
+	{
+		"hu"			"{mint}Tűz immunitás, sebzés elnyelés, gyorsan fut, álcázza magát, magához vonzza a túlélőket és megváltoztatja a gravitációjukat, magasra ugrik, meteor záport indít, lecsapja a túlélőket, sziklákat dobál folyamatosan, túlélőkhöz teleportál, és Boszorkákat/zombikat hoz létre."
+	}
+
+	"Tank #97 Name"
+	{
+		"hu"			"Káprázat Tank"
+	}
+
+	"Tank #97"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre, gyorsan fut, és a túlélőkhöz teleportál."
+	}
+
+	"Tank #98 Name"
+	{
+		"hu"			"Kísértet Tank"
+	}
+
+	"Tank #98"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre, gyorsan fut, álcázza magát, és a túlélőkhöz teleportál."
+	}
+
+	"Tank #99 Name"
+	{
+		"hu"			"Elmebeteg Tank"
+	}
+
+	"Tank #99"
+	{
+		"hu"			"{mint}Ez a Tank ideiglenes életerőt ad a túlélőknek, életerőt szív el a közeli fertőzöttektől, meteor záport indít, pajzzsal születik, és a túlélőkhöz teleportál."
+	}
+
+	"Tank #100 Name"
+	{
+		"hu"			"Fordító Tank"
+	}
+
+	"Tank #100"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre, nagyon gyorsan fut, és teleportál a túlélőkhöz."
+	}
+
+	"Tank #101 Name"
+	{
+		"hu"			"Létrehozó Tank"
+	}
+
+	"Tank #101"
+	{
+		"hu"			"{mint}Ez a Tank zombikat hoz létre egy füstfelhő mögött."
+	}
+
+	"Tank #102 Name"
+	{
+		"hu"			"Közelítő Tank"
+	}
+
+	"Tank #102"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre, nagyon gyorsan fut, és teleportál a túlélőkhöz."
+	}
+
+	"Tank #103 Name"
+	{
+		"hu"			"Csapda Tank"
+	}
+
+	"Tank #103"
+	{
+		"hu"			"{mint}Ez a Tank nem az aminek látszik."
+	}
+
+	"Tank #104 Name"
+	{
+		"hu"			"Félelemkeltő Tank"
+	}
+
+	"Tank #104"
+	{
+		"hu"			"{mint}Ez a Tank megtudja részben vakítani a túlélőket."
+	}
+
+	"Tank #105 Name"
+	{
+		"hu"			"Fanatikus Tank"
+	}
+
+	"Tank #105"
+	{
+		"hu"			"{mint}Ez a Tank részben bedrogozza és bántja a túlélőket."
+	}
+
+	"Tank #106 Name"
+	{
+		"hu"			"Remegő Tank"
+	}
+
+	"Tank #106"
+	{
+		"hu"			"{mint}Ez a Tank odadobja a sziklákat a túlélőkre."
+	}
+
+	"Tank #107 Name"
+	{
+		"hu"			"Elmeb3teg Tank"
+	}
+
+	"Tank #107"
+	{
+		"hu"			"{mint}Ez a Tank extra sebzést okozz, nagyon gyorsan fut miközben álcázza magát és lelassítja a túlélőket."
+	}
+
+	"Tank #108 Name"
+	{
+		"hu"			"Apokalipszis Tank"
+	}
+
+	"Tank #108"
+	{
+		"hu"			"{mint}Ez a Tank immunis a tűzre, kicsit gyorsabban fut, meteor záport, pánik eseményt, és szikla záport indít."
+	}
+
+	"Tank #109 Name"
+	{
+		"hu"			"Darth Vader Tank"
+	}
+
+	"Tank #109"
+	{
+		"hu"			"{mint}Ez Darth Vader... És ő egy... Mutáns Tank az erővel!"
+	}
+
+	"Tank #110 Name"
+	{
+		"hu"			"Drog Szenvedélye Tank"
+	}
+
+	"Tank #110"
+	{
+		"hu"			"{mint}Ennek a Tanknak fertőző a szenvedélye."
+	}
+
+	"Tank #111 Name"
+	{
+		"hu"			"SokSzerencsét Tank"
+	}
+
+	"Tank #111"
+	{
+		"hu"			"{mint}Ez a tank immunis a tűzre, nagyon gyorsan fut, és a túlélőkhöz tud teleportálni."
+	}
+
+	"Tank #112 Name"
+	{
+		"hu"			"Zord Kaszás Tank"
+	}
+
+	"Tank #112"
+	{
+		"hu"			"{mint}Ez a Tank egy kicsit gyorsabban fut, eltemeti a túlélőket, álcázza magát, túlélőkhöz teleportál."
+	}
+
+	"Tank #113 Name"
+	{
+		"hu"			"Horda Tank"
+	}
+
+	"Tank #113"
+	{
+		"hu"			"{mint}Ez a Tank pánik eseményt indíthat és lehányhatja a túlélőket hogy segítsen."
+	}
+
+	"Tank #114 Name"
+	{
+		"hu"			"Hulk Tank"
+	}
+
+	"Tank #114"
+	{
+		"hu"			"{mint}Bemutatom a Hihetetlen Hulk-ot! Ennek a Tanknak nagyrészt olyan képességei vannak mint Hulk-nak!"
+	}
+
+	"Tank #115 Name"
+	{
+		"hu"			"Nindzsa Tank"
+	}
+
+	"Tank #115"
+	{
+		"hu"			"{mint}Ez a Tank tud teleportálni, csendben mozogni, és tudja álcázni magát. Légy óvatos!"
+	}
+
+	"Tank #116 Name"
+	{
+		"hu"			"Zen Tank"
+	}
+
+	"Tank #116"
+	{
+		"hu"			"{mint}Ez a Tank éppen meditál, túl elfoglalt hogy foglalkozzon veled."
+	}
+
+	"Tank #117 Name"
+	{
+		"hu"			"A Főnök (1. Alak)"
+	}
+
+	"Tank #117"
+	{
+		"hu"			"{mint}Ez a Tank robbanó sziklákat dob és időszakosan teleportál egy túlélőkhöz."
+	}
+
+	"Tank #118 Name"
+	{
+		"hu"			"Acél Hűbérúr (2. Alak)"
+	}
+
+	"Tank #118"
+	{
+		"hu"			"{mint}Ez a Tank egy kicsit gyorsabban fut, immunis a közelharcra, erősebb a szokásosnál, robbanó sziklákat dob, megváltoztathatja a túlélők gravitációját, időszakosan teleportál egy túlélőhöz."
+	}
+
+	"Tank #119 Name"
+	{
+		"hu"			"Éjjeli Orvvadász (3. Alak)"
+	}
+
+	"Tank #119"
+	{
+		"hu"			"{mint}Ez a Tank egy kicsit gyorsabban fut, immunis a tűzre, gyengébb a szokásosnál, robbanó sziklákat dob, megvakítja a túlélőket, láthatatlanná tud válni, időszakosan teleportál egy túlélőhöz."
+	}
+
+	"Tank #120 Name"
+	{
+		"hu"			"Tűz Szelleme (4. Alak)"
+	}
+
+	"Tank #120"
+	{
+		"hu"			"{mint}Ez a Tank egy kicsit gyorsabban fut, immunis a tűzre, erősebb a szokásosnál, robbanó sziklákat dob, tüzet okoz, ideiglenes életerőt ad a túlélőknek, időszakosan ugrál, időszakosan teleportál egy túlélőhöz."
+	}
+
+	"Tank #121 Name"
+	{
+		"hu"			"Randomizáló Tank"
+	}
+
+	"Tank #121"
+	{
+		"hu"			"{mint}Ez a tank véletlenszerűen átalakul egy másik típusú Mutáns Tankká, a sebzése megnő. Légy óvatos..."
+	}
+
+	"Tank #122 Name"
+	{
+		"hu"			"Alakváltó Tank"
+	}
+
+	"Tank #122"
+	{
+		"hu"			"{mint}Ez a tank át tud alakulni egy másik típusú Mutáns Tankká. Ne becsüld le..."
+	}
+
+	"Tank #123 Name"
+	{
+		"hu"			"Villanó Tank"
+	}
+
+	"Tank #123"
+	{
+		"hu"			"{mint}Ez a tank villanásokat okoz, amitől ő maga, de mindenki más is megbénul akit megsebez."
+	}
+
+	"Tank #124 Name"
+	{
+		"hu"			"Mocsárember Tank"
+	}
+
+	"Tank #124"
+	{
+		"hu"			"{mint}Ez a Tank ugyanolyan bosszantó mint bármelyik sárember."
+	}
+
+	"Tank #125 Name"
+	{
+		"hu"			"Végjáték Tank"
+	}
+
+	"Tank #125"
+	{
+		"hu"			"{mint}Viszlát mindenki!"
+	}
+
+	"Tank #126 Name"
+	{
+		"hu"			"Játékos Tank"
+	}
+
+	"Tank #126"
+	{
+		"hu"			"{mint}Ez a Tank nem okoz sebzést. Csak játszani szeretne!"
+	}
+
+	"Tank #127 Name"
+	{
+		"hu"			"Bosszantó Tank"
+	}
+
+	"Tank #127"
+	{
+		"hu"			"{mint}Ez a Tank egyszerűen csak nem megy el."
+	}
+
+	// Ez egy valós Steam32ID. Ne töröld! Ez csak egy példa.
+	// --
+	// "STEAM_0:1:23456789 Name"
+	// {
+	//	"hu"			"Tank"
+	// }
+	//
+	// "STEAM_0:1:23456789"
+	// {
+	//	"hu"			"{mint}Ezt a Tankot valaki irányítja."
+	// }
+	// --
+	// Adj saját kifejezést a saját Mutáns Tankjaidnak lentebb!
+}

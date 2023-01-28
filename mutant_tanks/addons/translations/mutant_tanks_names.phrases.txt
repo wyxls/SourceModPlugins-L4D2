@@ -1,0 +1,1300 @@
+"Phrases"
+{
+	// MT Chat Color Placeholders
+	// --
+	// Note: Not all phrases support these placeholders.
+	// --
+	// "{default}" - Normal -> \x01
+	// --
+	// "{mint}" - Sky-green -> \x03
+	// --
+	// "{yellow}" - Yellow-orange -> \x04
+	// --
+	// "{olive}" - Yellow-green -> \x05
+	// --
+	// "{percent}" - "%%" -> %
+
+	"Tank #1 Name"
+	{
+		"en"			"Absorber Tank"
+	}
+
+	"Tank #1"
+	{
+		"en"			"{mint}This Tank can absorb most of the damage it receives."
+	}
+
+	"Tank #2 Name"
+	{
+		"en"			"Acidic Tank"
+	}
+
+	"Tank #2"
+	{
+		"en"			"{mint}This Tank can create acid puddles underneath survivors."
+	}
+
+	"Tank #3 Name"
+	{
+		"en"			"Aimless Tank"
+	}
+
+	"Tank #3"
+	{
+		"en"			"{mint}This Tank can prevent survivors from aiming."
+	}
+
+	"Tank #4 Name"
+	{
+		"en"			"Ammo Tank"
+	}
+
+	"Tank #4"
+	{
+		"en"			"{mint}This Tank can steal some or all of your ammunition."
+	}
+
+	"Tank #5 Name"
+	{
+		"en"			"Blind Tank"
+	}
+
+	"Tank #5"
+	{
+		"en"			"{mint}This Tank can blind survivors."
+	}
+
+	"Tank #6 Name"
+	{
+		"en"			"Bomber Tank"
+	}
+
+	"Tank #6"
+	{
+		"en"			"{mint}This Tank can cause explosions and is immune to explosive damage."
+	}
+
+	"Tank #7 Name"
+	{
+		"en"			"Boomer Tank"
+	}
+
+	"Tank #7"
+	{
+		"en"			"{mint}This Tank can spawn Boomers behind it and throw some at survivors too."
+	}
+
+	"Tank #8 Name"
+	{
+		"en"			"Bulletproof Tank"
+	}
+
+	"Tank #8"
+	{
+		"en"			"{mint}This Tank is immune to bullet damage."
+	}
+
+	"Tank #9 Name"
+	{
+		"en"			"Burier Tank"
+	}
+
+	"Tank #9"
+	{
+		"en"			"{mint}This Tank can bury survivors."
+	}
+
+	"Tank #10 Name"
+	{
+		"en"			"Car Tank"
+	}
+
+	"Tank #10"
+	{
+		"en"			"{mint}This Tank can throw cars at survivors. The cars disappear after 30 seconds."
+	}
+
+	"Tank #11 Name"
+	{
+		"en"			"Charger Tank"
+	}
+
+	"Tank #11"
+	{
+		"en"			"{mint}This Tank can spawn Chargers behind it and throw some at survivors too."
+	}
+
+	"Tank #12 Name"
+	{
+		"en"			"Choker Tank"
+	}
+
+	"Tank #12"
+	{
+		"en"			"{mint}This Tank can choke survivors in the air."
+	}
+
+	"Tank #13 Name"
+	{
+		"en"			"Clone Tank"
+	}
+
+	"Tank #13"
+	{
+		"en"			"{mint}This Tank can spawn clones behind it and throw some at survivors too."
+	}
+
+	"Tank #14 Name"
+	{
+		"en"			"Cloudy Tank"
+	}
+
+	"Tank #14"
+	{
+		"en"			"{mint}This Tank can emit clouds of smoke that damage survivors caught in them."
+	}
+
+	"Tank #15 Name"
+	{
+		"en"			"Dropper Tank"
+	}
+
+	"Tank #15"
+	{
+		"en"			"{mint}This Tank can drop a random weapon upon death."
+	}
+
+	"Tank #16 Name"
+	{
+		"en"			"Drugger Tank"
+	}
+
+	"Tank #16"
+	{
+		"en"			"{mint}This Tank can drug survivors."
+	}
+
+	"Tank #17 Name"
+	{
+		"en"			"Drunk Tank"
+	}
+
+	"Tank #17"
+	{
+		"en"			"{mint}This Tank can make survivors drunk."
+	}
+
+	"Tank #18 Name"
+	{
+		"en"			"Electric Tank"
+	}
+
+	"Tank #18"
+	{
+		"en"			"{mint}This Tank can electrocute survivors."
+	}
+
+	"Tank #19 Name"
+	{
+		"en"			"Enforcer Tank"
+	}
+
+	"Tank #19"
+	{
+		"en"			"{mint}This Tank can force survivors to equip a specific weapon slot for a certain period of time."
+	}
+
+	"Tank #20 Name"
+	{
+		"en"			"Fast Tank"
+	}
+
+	"Tank #20"
+	{
+		"en"			"{mint}This Tank can run really fast like the Flash."
+	}
+
+	"Tank #21 Name"
+	{
+		"en"			"Fireproof Tank"
+	}
+
+	"Tank #21"
+	{
+		"en"			"{mint}This Tank can start fires and is immune to fire damage."
+	}
+
+	"Tank #22 Name"
+	{
+		"en"			"Flinger Tank"
+	}
+
+	"Tank #22"
+	{
+		"en"			"{mint}This Tank can fling survivors away or into the air."
+	}
+
+	"Tank #23 Name"
+	{
+		"en"			"Flying Tank"
+	}
+
+	"Tank #23"
+	{
+		"en"			"{mint}This Tank flies around looking for victims."
+	}
+
+	"Tank #24 Name"
+	{
+		"en"			"Fragile Tank"
+	}
+
+	"Tank #24"
+	{
+		"en"			"{mint}This Tank takes extra damage while dealing more damage and running faster."
+	}
+
+	"Tank #25 Name"
+	{
+		"en"			"Ghost Tank"
+	}
+
+	"Tank #25"
+	{
+		"en"			"{mint}This Tank can cloak itself and disarm survivors."
+	}
+
+	"Tank #26 Name"
+	{
+		"en"			"Godly Tank"
+	}
+
+	"Tank #26"
+	{
+		"en"			"{mint}This Tank can gain temporary invincibility."
+	}
+
+	"Tank #27 Name"
+	{
+		"en"			"Gravity Tank"
+	}
+
+	"Tank #27"
+	{
+		"en"			"{mint}This Tank can pull survivors and infected towards it and lower survivors' gravity."
+	}
+
+	"Tank #28 Name"
+	{
+		"en"			"Gunner Tank"
+	}
+
+	"Tank #28"
+	{
+		"en"			"{mint}This Tank can arm itself with guns and fire gunshots at survivors."
+	}
+
+	"Tank #29 Name"
+	{
+		"en"			"Healthy Tank"
+	}
+
+	"Tank #29"
+	{
+		"en"			"{mint}This Tank can give survivors temporary health, and it can absorb health from nearby infected."
+	}
+
+	"Tank #30 Name"
+	{
+		"en"			"Hitter Tank"
+	}
+
+	"Tank #30"
+	{
+		"en"			"{mint}This Tank can only be damaged by headshots."
+	}
+
+	"Tank #31 Name"
+	{
+		"en"			"Hunter Tank"
+	}
+
+	"Tank #31"
+	{
+		"en"			"{mint}This Tank can spawn Hunters behind it and throw some at survivors too."
+	}
+
+	"Tank #32 Name"
+	{
+		"en"			"Hurtful Tank"
+	}
+
+	"Tank #32"
+	{
+		"en"			"{mint}This Tank can constantly hurt survivors for a certain period of time."
+	}
+
+	"Tank #33 Name"
+	{
+		"en"			"Hypnotizer Tank"
+	}
+
+	"Tank #33"
+	{
+		"en"			"{mint}This Tank can hypnotize survivors to hurt themselves or their teammates."
+	}
+
+	"Tank #34 Name"
+	{
+		"en"			"Icy Tank"
+	}
+
+	"Tank #34"
+	{
+		"en"			"{mint}This Tank can freeze survivors."
+	}
+
+	"Tank #35 Name"
+	{
+		"en"			"Idler Tank"
+	}
+
+	"Tank #35"
+	{
+		"en"			"{mint}This Tank can make survivors go idle. (This doesn't affect bots.)"
+	}
+
+	"Tank #36 Name"
+	{
+		"en"			"Inverter Tank"
+	}
+
+	"Tank #36"
+	{
+		"en"			"{mint}This Tank can invert survivors' movement keys."
+	}
+
+	"Tank #37 Name"
+	{
+		"en"			"Item Tank"
+	}
+
+	"Tank #37"
+	{
+		"en"			"{mint}This Tank can give survivors items upon death."
+	}
+
+	"Tank #38 Name"
+	{
+		"en"			"Jockey Tank"
+	}
+
+	"Tank #38"
+	{
+		"en"			"{mint}This Tank can spawn Jockeys behind it and throw some at survivors too."
+	}
+
+	"Tank #39 Name"
+	{
+		"en"			"Jumper Tank"
+	}
+
+	"Tank #39"
+	{
+		"en"			"{mint}This Tank can jump periodically and make survivors jump uncontrollably."
+	}
+
+	"Tank #40 Name"
+	{
+		"en"			"Kamikaze Tank"
+	}
+
+	"Tank #40"
+	{
+		"en"			"{mint}This Tank can kill itself along with a survivor victim."
+	}
+
+	"Tank #41 Name"
+	{
+		"en"			"Lagger Tank"
+	}
+
+	"Tank #41"
+	{
+		"en"			"{mint}This Tank can make survivors lag."
+	}
+
+	"Tank #42 Name"
+	{
+		"en"			"Laser Tank"
+	}
+
+	"Tank #42"
+	{
+		"en"			"{mint}This Tank can shoot lasers at survivors."
+	}
+
+	"Tank #43 Name"
+	{
+		"en"			"Leecher Tank"
+	}
+
+	"Tank #43"
+	{
+		"en"			"{mint}This Tank can leech off health from survivors."
+	}
+
+	"Tank #44 Name"
+	{
+		"en"			"Lightning Tank"
+	}
+
+	"Tank #44"
+	{
+		"en"			"{mint}This Tank creates lightning storms."
+	}
+
+	"Tank #45 Name"
+	{
+		"en"			"Medic Tank"
+	}
+
+	"Tank #45"
+	{
+		"en"			"{mint}This Tank can heal nearby special infected upon death."
+	}
+
+	"Tank #46 Name"
+	{
+		"en"			"Meteor Tank"
+	}
+
+	"Tank #46"
+	{
+		"en"			"{mint}This Tank can start meteor showers with meteorites that burn and explode after a few seconds."
+	}
+
+	"Tank #47 Name"
+	{
+		"en"			"Necromancer Tank"
+	}
+
+	"Tank #47"
+	{
+		"en"			"{mint}This Tank can resurrect dead special infected."
+	}
+
+	"Tank #48 Name"
+	{
+		"en"			"Nullifier Tank"
+	}
+
+	"Tank #48"
+	{
+		"en"			"{mint}This Tank can nullify survivors' damage to protect itself from damage."
+	}
+
+	"Tank #49 Name"
+	{
+		"en"			"Omni Tank"
+	}
+
+	"Tank #49"
+	{
+		"en"			"{mint}This Tank can access other nearby Mutant Tanks' abilities."
+	}
+
+	"Tank #50 Name"
+	{
+		"en"			"Panic Tank"
+	}
+
+	"Tank #50"
+	{
+		"en"			"{mint}This Tank can start panic events with hordes of zombies."
+	}
+
+	"Tank #51 Name"
+	{
+		"en"			"Pet Tank"
+	}
+
+	"Tank #51"
+	{
+		"en"			"{mint}This Tank is loyal to the survivors and loves to give hugs."
+	}
+
+	"Tank #52 Name"
+	{
+		"en"			"Pimp Tank"
+	}
+
+	"Tank #52"
+	{
+		"en"			"{mint}This Tank can pimp slap survivors repeatedly to show them who's boss."
+	}
+
+	"Tank #53 Name"
+	{
+		"en"			"Platinum Tank"
+	}
+
+	"Tank #53"
+	{
+		"en"			"{mint}This Tank is immune to melee damage."
+	}
+
+	"Tank #54 Name"
+	{
+		"en"			"Puke Tank"
+	}
+
+	"Tank #54"
+	{
+		"en"			"{mint}This Tank can puke on survivors."
+	}
+
+	"Tank #55 Name"
+	{
+		"en"			"Pyromaniac Tank"
+	}
+
+	"Tank #55"
+	{
+		"en"			"{mint}This Tank gains a speed boost when set on fire."
+	}
+
+	"Tank #56 Name"
+	{
+		"en"			"Quiet Tank"
+	}
+
+	"Tank #56"
+	{
+		"en"			"{mint}This Tank can silence itself from survivors."
+	}
+
+	"Tank #57 Name"
+	{
+		"en"			"Recoil Tank"
+	}
+
+	"Tank #57"
+	{
+		"en"			"{mint}This Tank can give survivors high gun recoil."
+	}
+
+	"Tank #58 Name"
+	{
+		"en"			"Regenerative Tank"
+	}
+
+	"Tank #58"
+	{
+		"en"			"{mint}This Tank regenerates health every second."
+	}
+
+	"Tank #59 Name"
+	{
+		"en"			"Respawner Tank"
+	}
+
+	"Tank #59"
+	{
+		"en"			"{mint}This Tank can respawn upon death."
+	}
+
+	"Tank #60 Name"
+	{
+		"en"			"Restarter Tank"
+	}
+
+	"Tank #60"
+	{
+		"en"			"{mint}This Tank can force survivors to restart with a new loadout."
+	}
+
+	"Tank #61 Name"
+	{
+		"en"			"Rock Tank"
+	}
+
+	"Tank #61"
+	{
+		"en"			"{mint}This Tank can start rock showers."
+	}
+
+	"Tank #62 Name"
+	{
+		"en"			"Rocketeer Tank"
+	}
+
+	"Tank #62"
+	{
+		"en"			"{mint}This Tank can send survivors into space."
+	}
+
+	"Tank #63 Name"
+	{
+		"en"			"Self-throwing Tank"
+	}
+
+	"Tank #63"
+	{
+		"en"			"{mint}This Tank can throw itself towards survivors."
+	}
+
+	"Tank #64 Name"
+	{
+		"en"			"Shaker Tank"
+	}
+
+	"Tank #64"
+	{
+		"en"			"{mint}This Tank can shake survivors' screens."
+	}
+
+	"Tank #65 Name"
+	{
+		"en"			"Shield Tank"
+	}
+
+	"Tank #65"
+	{
+		"en"			"{mint}This Tank spawns with a shield and throws propane tanks or gas cans which survivors can use to break the shield."
+	}
+
+	"Tank #66 Name"
+	{
+		"en"			"Shover Tank"
+	}
+
+	"Tank #66"
+	{
+		"en"			"{mint}This Tank can shove survivors around."
+	}
+
+	"Tank #67 Name"
+	{
+		"en"			"Slow Tank"
+	}
+
+	"Tank #67"
+	{
+		"en"			"{mint}This Tank can slow survivors down."
+	}
+
+	"Tank #68 Name"
+	{
+		"en"			"Smasher Tank"
+	}
+
+	"Tank #68"
+	{
+		"en"			"{mint}This Tank can smash survivors to death."
+	}
+
+	"Tank #69 Name"
+	{
+		"en"			"Smiter Tank"
+	}
+
+	"Tank #69"
+	{
+		"en"			"{mint}This Tank can smite survivors for an instant kill."
+	}
+
+	"Tank #70 Name"
+	{
+		"en"			"Smoker Tank"
+	}
+
+	"Tank #70"
+	{
+		"en"			"{mint}This Tank can spawn Smokers behind it and throw some at survivors too."
+	}
+
+	"Tank #71 Name"
+	{
+		"en"			"Spammer Tank"
+	}
+
+	"Tank #71"
+	{
+		"en"			"{mint}This Tank can spam rocks at survivors."
+	}
+
+	"Tank #72 Name"
+	{
+		"en"			"Special Tank"
+	}
+
+	"Tank #72"
+	{
+		"en"			"{mint}This Tank can spawn random special infected behind it and throw some at survivors too."
+	}
+
+	"Tank #73 Name"
+	{
+		"en"			"Spitter Tank"
+	}
+
+	"Tank #73"
+	{
+		"en"			"{mint}This Tank can spawn Spitters behind it and throw some at survivors too."
+	}
+
+	"Tank #74 Name"
+	{
+		"en"			"Splasher Tank"
+	}
+
+	"Tank #74"
+	{
+		"en"			"{mint}This Tank can release a splash of damage within a certain radius."
+	}
+
+	"Tank #75 Name"
+	{
+		"en"			"Splatter Tank"
+	}
+
+	"Tank #75"
+	{
+		"en"			"{mint}This Tank can cover everyone's screens with splatters."
+	}
+
+	"Tank #76 Name"
+	{
+		"en"			"Thrower Tank"
+	}
+
+	"Tank #76"
+	{
+		"en"			"{mint}This Tank can throw cars, special infected, Tanks, Witches, and itself!"
+	}
+
+	"Tank #77 Name"
+	{
+		"en"			"Tracker Tank"
+	}
+
+	"Tank #77"
+	{
+		"en"			"{mint}This Tank throws rocks which can track nearby survivors."
+	}
+
+	"Tank #78 Name"
+	{
+		"en"			"Ultimate Tank"
+	}
+
+	"Tank #78"
+	{
+		"en"			"{mint}This Tank gains temporary godmode and damage boost when low on health."
+	}
+
+	"Tank #79 Name"
+	{
+		"en"			"Undead Tank"
+	}
+
+	"Tank #79"
+	{
+		"en"			"{mint}This Tank regains full HP when close to dying."
+	}
+
+	"Tank #80 Name"
+	{
+		"en"			"Vampire Tank"
+	}
+
+	"Tank #80"
+	{
+		"en"			"{mint}This Tank can steal health from survivors."
+	}
+
+	"Tank #81 Name"
+	{
+		"en"			"Visual Tank"
+	}
+
+	"Tank #81"
+	{
+		"en"			"{mint}This Tank can change the FOV of survivors."
+	}
+
+	"Tank #82 Name"
+	{
+		"en"			"Warper Tank"
+	}
+
+	"Tank #82"
+	{
+		"en"			"{mint}This Tank can warp to a random survivor."
+	}
+
+	"Tank #83 Name"
+	{
+		"en"			"Whirler Tank"
+	}
+
+	"Tank #83"
+	{
+		"en"			"{mint}This Tank can make survivors whirl."
+	}
+
+	"Tank #84 Name"
+	{
+		"en"			"Witch Tank"
+	}
+
+	"Tank #84"
+	{
+		"en"			"{mint}This Tank can convert nearby common infected into Witches and throw some at survivors too."
+	}
+
+	"Tank #85 Name"
+	{
+		"en"			"Xiphos Tank"
+	}
+
+	"Tank #85"
+	{
+		"en"			"{mint}This Tank can steal health from survivors and vice-versa."
+	}
+
+	"Tank #86 Name"
+	{
+		"en"			"Yeller Tank"
+	}
+
+	"Tank #86"
+	{
+		"en"			"{mint}This Tank can yell to defean survivors."
+	}
+
+	"Tank #87 Name"
+	{
+		"en"			"Zombie Tank"
+	}
+
+	"Tank #87"
+	{
+		"en"			"{mint}This Tank can create a mob of zombies within the area."
+	}
+
+	"Tank #88 Name"
+	{
+		"en"			"Armageddon Tank"
+	}
+
+	"Tank #88"
+	{
+		"en"			"{mint}This Tank is immune to explosives, can pull survivors and infected towards it, and can start meteor showers."
+	}
+
+	"Tank #89 Name"
+	{
+		"en"			"Boss Tank"
+	}
+
+	"Tank #89"
+	{
+		"en"			"{mint}Fire immunity, fast, cloak itself, disarm survivors, pull survivors in and change their gravity, jump periodically, start meteor showers, spawn with a shield, smite survivors, warp to survivors, and spawn Witches/zombies."
+	}
+
+	"Tank #90 Name"
+	{
+		"en"			"Cobalt Tank"
+	}
+
+	"Tank #90"
+	{
+		"en"			"{mint}This Tank is immune to fire damage and can run really fast."
+	}
+
+	"Tank #91 Name"
+	{
+		"en"			"Distraction Tank"
+	}
+
+	"Tank #91"
+	{
+		"en"			"{mint}This Tank can jump periodically, make survivors jump uncontrollably, and warp to survivors."
+	}
+
+	"Tank #92 Name"
+	{
+		"en"			"Feedback Tank"
+	}
+
+	"Tank #92"
+	{
+		"en"			"{mint}This Tank pushes survivors away."
+	}
+
+	"Tank #93 Name"
+	{
+		"en"			"Flash Tank"
+	}
+
+	"Tank #93"
+	{
+		"en"			"{mint}This Tank can run really fast, throw electricity at survivors, and slow down time around itself, all while having temporary invincibility."
+	}
+
+	"Tank #94 Name"
+	{
+		"en"			"Goliath Tank"
+	}
+
+	"Tank #94"
+	{
+		"en"			"{mint}Fire immunity, moves slowly, give survivors temporary health, absorbs health from nearby infected, spawns with a shield, and smites survivors."
+	}
+
+	"Tank #95 Name"
+	{
+		"en"			"Hallucination Tank"
+	}
+
+	"Tank #95"
+	{
+		"en"			"{mint}Fire immunity, cloaks itself, and warps to survivors."
+	}
+
+	"Tank #96 Name"
+	{
+		"en"			"Meme Tank"
+	}
+
+	"Tank #96"
+	{
+		"en"			"{mint}Fire immunity, absorbs damage, runs fast, cloaks itself, pulls survivors in and changes their gravity, jumps high, starts meteor showers, smites survivors, spams rocks, warps to survivors, and spawns Witches/zombies."
+	}
+
+	"Tank #97 Name"
+	{
+		"en"			"Mirage Tank"
+	}
+
+	"Tank #97"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs fast, and warps to survivors."
+	}
+
+	"Tank #98 Name"
+	{
+		"en"			"Poltergeist Tank"
+	}
+
+	"Tank #98"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs fast, cloaks itself, and warps to survivors."
+	}
+
+	"Tank #99 Name"
+	{
+		"en"			"Psychotic Tank"
+	}
+
+	"Tank #99"
+	{
+		"en"			"{mint}This Tank can give survivors temporary health, absorb health from nearby infected, start meteor showers, spawn with a shield, and warp to survivors."
+	}
+
+	"Tank #100 Name"
+	{
+		"en"			"Reverse-Flash Tank"
+	}
+
+	"Tank #100"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs really fast, and warps to survivors."
+	}
+
+	"Tank #101 Name"
+	{
+		"en"			"Spawner Tank"
+	}
+
+	"Tank #101"
+	{
+		"en"			"{mint}This Tank spawns zombies behind clouds of smoke within the area."
+	}
+
+	"Tank #102 Name"
+	{
+		"en"			"Zoom Tank"
+	}
+
+	"Tank #102"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs really fast, and warps to survivors."
+	}
+
+	"Tank #103 Name"
+	{
+		"en"			"Trap Tank"
+	}
+
+	"Tank #103"
+	{
+		"en"			"{mint}This Tank is not what it seems."
+	}
+
+	"Tank #104 Name"
+	{
+		"en"			"Dread Tank"
+	}
+
+	"Tank #104"
+	{
+		"en"			"{mint}This Tank can partially blind survivors."
+	}
+
+	"Tank #105 Name"
+	{
+		"en"			"Rabid Tank"
+	}
+
+	"Tank #105"
+	{
+		"en"			"{mint}This Tank can partially drug and hurt survivors."
+	}
+
+	"Tank #106 Name"
+	{
+		"en"			"Tremor Tank"
+	}
+
+	"Tank #106"
+	{
+		"en"			"{mint}This Tank can hurl rocks at survivors."
+	}
+
+	"Tank #107 Name"
+	{
+		"en"			"Psyk0tik Tank"
+	}
+
+	"Tank #107"
+	{
+		"en"			"{mint}This Tank does extra damage and runs really fast while cloaking itself and slowing survivors down."
+	}
+
+	"Tank #108 Name"
+	{
+		"en"			"Apocalyptic Tank"
+	}
+
+	"Tank #108"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs a little faster, starts meteor showers, panic events, and rock showers."
+	}
+
+	"Tank #109 Name"
+	{
+		"en"			"Darth Vader Tank"
+	}
+
+	"Tank #109"
+	{
+		"en"			"{mint}It's Darth Vader... And he is... A Mutant Tank with the Force!"
+	}
+
+	"Tank #110 Name"
+	{
+		"en"			"Drug Addict Tank"
+	}
+
+	"Tank #110"
+	{
+		"en"			"{mint}This Tank has a contagious addiction."
+	}
+
+	"Tank #111 Name"
+	{
+		"en"			"Godspeed Tank"
+	}
+
+	"Tank #111"
+	{
+		"en"			"{mint}This Tank is immune to fire damage, runs really fast, and warps to survivors."
+	}
+
+	"Tank #112 Name"
+	{
+		"en"			"Grim Reaper Tank"
+	}
+
+	"Tank #112"
+	{
+		"en"			"{mint}This Tank runs a little faster, buries survivors, cloaks itself, and warps to survivors."
+	}
+
+	"Tank #113 Name"
+	{
+		"en"			"Horde Tank"
+	}
+
+	"Tank #113"
+	{
+		"en"			"{mint}This Tank can start panic events and puke on survivors to help prolong them."
+	}
+
+	"Tank #114 Name"
+	{
+		"en"			"Hulk Tank"
+	}
+
+	"Tank #114"
+	{
+		"en"			"{mint}Meet the Incredible Hulk! This Tank has most of the abilities of the Hulk!"
+	}
+
+	"Tank #115 Name"
+	{
+		"en"			"Ninja Tank"
+	}
+
+	"Tank #115"
+	{
+		"en"			"{mint}This Tank can teleport, move around silently, and cloak itself. Be very careful!"
+	}
+
+	"Tank #116 Name"
+	{
+		"en"			"Zen Tank"
+	}
+
+	"Tank #116"
+	{
+		"en"			"{mint}This Tank is too busy meditating to care about you."
+	}
+
+	"Tank #117 Name"
+	{
+		"en"			"The Boss (1st Form)"
+	}
+
+	"Tank #117"
+	{
+		"en"			"{mint}This Tank throws explosive rocks and periodically warps to survivors."
+	}
+
+	"Tank #118 Name"
+	{
+		"en"			"Steel Overlord (2nd Form)"
+	}
+
+	"Tank #118"
+	{
+		"en"			"{mint}This Tank runs a little faster, is immune to melee, is a bit stronger than usual, throws explosive rocks, can change survivors' gravity, and periodically warps to survivors."
+	}
+
+	"Tank #119 Name"
+	{
+		"en"			"Night Stalker (3rd Form)"
+	}
+
+	"Tank #119"
+	{
+		"en"			"{mint}This Tank runs a little faster, is immune to fire, is a bit weaker than usual, throws explosive rocks, can blind survivors, can go invisible, and periodically warps to survivors."
+	}
+
+	"Tank #120 Name"
+	{
+		"en"			"Spirit of Fire (4th Form)"
+	}
+
+	"Tank #120"
+	{
+		"en"			"{mint}This Tank runs a little faster, is immune to fire, is stronger than usual, throws explosive rocks, create fires, give survivors temporary health, jump periodically, and periodically warps to survivors."
+	}
+
+	"Tank #121 Name"
+	{
+		"en"			"Randomizer Tank"
+	}
+
+	"Tank #121"
+	{
+		"en"			"{mint}This Tank randomly switches into different Mutant Tank types and deals increased damage. Be careful..."
+	}
+
+	"Tank #122 Name"
+	{
+		"en"			"Shapeshifter Tank"
+	}
+
+	"Tank #122"
+	{
+		"en"			"{mint}This Tank can shapeshift into different Mutant Tank types. Don't underestimate it..."
+	}
+
+	"Tank #123 Name"
+	{
+		"en"			"Flashbanger Tank"
+	}
+
+	"Tank #123"
+	{
+		"en"			"{mint}This Tank causes flashbangs which staggers it and anyone affected by its attacks."
+	}
+
+	"Tank #124 Name"
+	{
+		"en"			"Mudman Tank"
+	}
+
+	"Tank #124"
+	{
+		"en"			"{mint}This Tank is as annoying as any mudman."
+	}
+
+	"Tank #125 Name"
+	{
+		"en"			"Endgame Tank"
+	}
+
+	"Tank #125"
+	{
+		"en"			"{mint}Goodbye everyone!"
+	}
+
+	"Tank #126 Name"
+	{
+		"en"			"Playful Tank"
+	}
+
+	"Tank #126"
+	{
+		"en"			"{mint}This Tank doesn't do any damage. It just wants to play!"
+	}
+
+	"Tank #127 Name"
+	{
+		"en"			"Annoying Tank"
+	}
+
+	"Tank #127"
+	{
+		"en"			"{mint}This Tank just won't go away."
+	}
+
+	// This is actually a valid Steam32ID, so don't uncomment this; it's just an example.
+	// --
+	// "STEAM_0:1:23456789 Name"
+	// {
+	//	"en"			"Tank"
+	// }
+	//
+	// "STEAM_0:1:23456789"
+	// {
+	//	"en"			"{mint}This Tank is controlled by someone."
+	// }
+	// --
+	// Add Tank Note phrases for your own Mutant Tanks below!
+}

@@ -1,0 +1,26 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"m_iUpgradePackCanUseCount"
+			{
+				"windows"	"5172"
+				"linux"		"5180"
+			}
+
+		}
+		"Signatures"
+		{
+			"CTerrorPlayer::FindUseEntity"
+			{
+				"library"	"server"
+				"windows"	"\xB8\x64\x13\x00\x00\xE8****\xD9\xEE\xD9\x84\x24\x6C"
+				"linux"		"@_ZN13CTerrorPlayer13FindUseEntityEfffPbb"
+			}
+		}
+	}
+       
+}
+

@@ -1,0 +1,5026 @@
+"Phrases"
+{
+	// MT Chat Színek helyőrzői
+	// --
+	// Megjegyzés: Nem mindegyik kifejezés támogatja ezeket a helyőrzőket.
+	// --
+	// "{default}" - Normál -> \x01
+	// --
+	// "{mint}" - Ég zöld -> \x03
+	// --
+	// "{yellow}" - Sárgás narancs -> \x04
+	// --
+	// "{olive}" - Sárgászöld -> \x05
+	// --
+	// "{percent}" - "%%" -> %
+
+	"MutantTanks"
+	{
+		"hu"			"Mutáns Tankok"
+	}
+
+	"MTAbilitiesMenu"
+	{
+		"hu"			"Mutáns Tank Képességek"
+	}
+
+	"MTConfigMenu"
+	{
+		"hu"			"Konfiguráció Elemző Menü"
+	}
+
+	"MTDefaultItem"
+	{
+		"hu"			"Alapértelmezett Tank"
+	}
+
+	"MTFavoriteMenu"
+	{
+		"hu"			"Használjuk a kedvenc Mutáns Tank típusodat?"
+	}
+
+	"MTInfoMenu"
+	{
+		"hu"			"Mutáns Tankok Információ"
+	}
+
+	"MTListMenu"
+	{
+		"hu"			"Mutáns Tankok Listája"
+	}
+
+	"MTPathMenu"
+	{
+		"hu"			"Fájl elérési Menü"
+	}
+
+	"MTPrefsInfo"
+	{
+		"hu"			"Írd be{olive} !mt_prefs{default} hogy megváltoztasd{mint} a vizuális jutalom beállításokat{default}!"
+	}
+
+	"MTPrefsMenu"
+	{
+		"hu"			"Mutáns Tankok Preferenciák Menü"
+	}
+
+	"MTReloadMenu"
+	{
+		"hu"			"Konfig menü újratöltése"
+	}
+
+	"MTSettingsItem"
+	{
+		"hu"			"Plugin Beállítások"
+	}
+
+	"MTTankItem"
+	{
+		"hu"			"{1} (Tank #{2}) [Tank #{3}]"
+	}
+
+	"MTVersionMenu"
+	{
+		"hu"			"Mutáns Tank Verzió"
+	}
+
+	"Ammunition"
+	{
+		"hu"			"Lőszer"
+	}
+
+	"AbilityAmmo"
+	{
+		"hu"			"A képességednek{olive} {1}{mint}/{olive}{2}{mint} lőszere maradt."
+	}
+
+	"AbilityAmmo2"
+	{
+		"hu"			"A távolsági képességednek{olive} {1}{mint}/{olive}{2}{mint} lőszere maradt."
+	}
+
+	"AndConjunction"
+	{
+		"hu"			"és"
+	}
+
+	"ButtonMode"
+	{
+		"hu"			"Gomb Mód"
+	}
+
+	"AbilityButtonMode1"
+	{
+		"hu"			"Nyomj gombo(kat)t hogy aktiváld a képesége(idet)det."
+	}
+
+	"AbilityButtonMode2"
+	{
+		"hu"			"Tarts lenyomva gombo(kat) a képessége(ek)id használatához."
+	}
+
+	"Buttons"
+	{
+		"hu"			"Gombok"
+	}
+
+	"AbilityButtons"
+	{
+		"hu"			"{olive}+use (alapért.: E):{mint} Aktiválja a fő képességedet."
+	}
+
+	"AbilityButtons2"
+	{
+		"hu"			"{olive}+reload (alapért.: R):{mint} Aktiválja a távolsági képességedet."
+	}
+
+	"AbilityButtons3"
+	{
+		"hu"			"{olive}+zoom (alapért.: Egér3/Görgő):{mint} Aktiválja a speciális képességedet."
+	}
+
+	"AbilityButtons4"
+	{
+		"hu"			"{olive}+duck (alapért.: CTRL):{mint} Aktiválja a halál utáni képességedet."
+	}
+
+	"Cooldown"
+	{
+		"hu"			"Újratöltés"
+	}
+
+	"AbilityCooldown"
+	{
+		"hu"			"Újratöltés:{olive} {1} másodperc"
+	}
+
+	"Details"
+	{
+		"hu"			"Részletek"
+	}
+
+	"Duration"
+	{
+		"hu"			"Élettartam"
+	}
+
+	"AbilityDuration"
+	{
+		"hu"			"Élettartam:{olive} {1} másodperc"
+	}
+
+	"AbilityDuration2"
+	{
+		"hu"			"Élettartam:{olive} {1} másodperc"
+	}
+
+	"HumanSupport"
+	{
+		"hu"			"Emberi Támogatás"
+	}
+
+	"AbilityHumanSupport1"
+	{
+		"hu"			"Engedélyezve:{olive} Nem"
+	}
+
+	"AbilityHumanSupport2"
+	{
+		"hu"			"Engedélyezve:{olive} Igen"
+	}
+
+	"RangeCooldown"
+	{
+		"hu"			"Távolsági Újratöltés"
+	}
+
+	"AbilityRangeCooldown"
+	{
+		"hu"			"Távolsági Újratöltés:{olive} {1} másodperc"
+	}
+
+	"RockCooldown"
+	{
+		"hu"			"Szikla Újratöltés"
+	}
+
+	"AbilityRockCooldown"
+	{
+		"hu"			"Szikla Újratöltés:{olive} {1} másodperc"
+	}
+
+	"Status"
+	{
+		"hu"			"Állapot"
+	}
+
+	"AbilityInstalled"
+	{
+		"hu"			"{1}{olive} telepítve."
+	}
+
+	"AbilityInstalled2"
+	{
+		"hu"			"{1} telepítve."
+	}
+
+	"AbilityStatus1"
+	{
+		"hu"			"Állapot:{olive} Tiltva"
+	}
+
+	"AbilityStatus2"
+	{
+		"hu"			"Állapot:{olive} Engedélyezve"
+	}
+
+	"Arrival1"
+	{
+		"hu"			"{olive}{1}{default} megérkezett!"
+	}
+
+	"Arrival2"
+	{
+		"hu"			"Itt jön a(z){olive} {1}{default}!"
+	}
+
+	"Arrival3"
+	{
+		"hu"			"{olive}{1}{default} készen áll gyilkolni!"
+	}
+
+	"Arrival4"
+	{
+		"hu"			"Készen állsz szembenézni a(z){olive} {1}{default}-al?"
+	}
+
+	"Arrival5"
+	{
+		"hu"			"{olive}{1}{default} kihívásra érkezett!"
+	}
+
+	"Arrival6"
+	{
+		"hu"			"Állj készen!{olive} {1}{default} érkezik!"
+	}
+
+	"Arrival7"
+	{
+		"hu"			"{olive}{1}{default} itt van!"
+	}
+
+	"Arrival8"
+	{
+		"hu"			"Jaj ne!{olive} {1}{default} közeledik!"
+	}
+
+	"Arrival9"
+	{
+		"hu"			"{olive}{1}{default} csatlakozott a játékba"
+	}
+
+	"Arrival10"
+	{
+		"hu"			"Úgy látszik{olive} {1}{default} csatlakozik a társasághoz!"
+	}
+
+	"Assist1"
+	{
+		"hu"			"{olive}{1}{default} legyőzve!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist2"
+	{
+		"hu"			"A túlélők legyőzték a(z){olive} {1}{default}!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist3"
+	{
+		"hu"			"{olive}{1}{default} elindult a pokolba!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist4"
+	{
+		"hu"			"A(z){olive} {1}{default} tényleg halott...?{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist5"
+	{
+		"hu"			"{olive}{1}{default} elvesztette a kihívást a túlélőkkel szemben!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist6"
+	{
+		"hu"			"A(z){olive} {1}{default} elbukta a túlélők megölését!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist7"
+	{
+		"hu"			"{olive}{1}{default} találkozott a halállal!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist8"
+	{
+		"hu"			"Éljen!{olive} {1}{default} halott!{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist9"
+	{
+		"hu"			"{olive}{1}{default} elhagyta a játékot{yellow} MVP:{mint} {2}"
+	}
+
+	"Assist10"
+	{
+		"hu"			"Úgy látszik a(z){olive} {1}{default} végül is nem tuddta legyőzni a túlélőket.{yellow} MVP:{mint} {2}"
+	}
+
+	"BodyVisualOn"
+	{
+		"hu"			"Vizuális Test Szín: BE"
+	}
+
+	"BodyVisualOff"
+	{
+		"hu"			"Vizuális Test Szín: KI"
+	}
+
+	"ChangeType"
+	{
+		"hu"			"A személyes Mutáns Tank típusod megváltozott."
+	}
+
+	"CheckConsole"
+	{
+		"hu"			"Nézd meg a konzolban a teljes kimenetett."
+	}
+
+	"CommandUsage"
+	{
+		"hu"			"Használat: {1} <írd {2}-{3}> <mennyíség: 1-32> <0: születés célkeresztnél|1: születés automatikusan>"
+	}
+
+	"CommandUsage2"
+	{
+		"hu"			"Használat: {1} \"képesség név\""
+	}
+
+	"CompletedParsing"
+	{
+		"hu"			"Elemzés befejezve!"
+	}
+
+	"Death1"
+	{
+		"hu"			"{olive}{1}{default} legyőzve!"
+	}
+
+	"Death2"
+	{
+		"hu"			"A túlélők legyőzték a(z){olive} {1}{default}-ot!"
+	}
+
+	"Death3"
+	{
+		"hu"			"{olive}{1}{default} elindult a pokolba!"
+	}
+
+	"Death4"
+	{
+		"hu"			"A(z){olive} {1}{default} tényleg halott...?"
+	}
+
+	"Death5"
+	{
+		"hu"			"{olive}{1}{default} elvesztette a kihívást a túlélőkkel szemben!"
+	}
+
+	"Death6"
+	{
+		"hu"			"A(z){olive} {1}{default} elbukta a túlélők megölését!"
+	}
+
+	"Death7"
+	{
+		"hu"			"{olive}{1}{default} találkozott a halállal!"
+	}
+
+	"Death8"
+	{
+		"hu"			"Éljen!{olive} {1}{default} halott!"
+	}
+
+	"Death9"
+	{
+		"hu"			"{olive}{1}{default} elhagyta a játékot"
+	}
+
+	"Death10"
+	{
+		"hu"			"Úgy látszik a(z){olive} {1}{default} végül is nem tuddta legyőzni a túlélőket!"
+	}
+
+	"ErrorParsing"
+	{
+		"hu"			"Hiba a fájl elemzésekor \"{1}\". Hiba üzenet: {2}."
+	}
+
+	"Evolved"
+	{
+		"hu"			"{olive}{1}{mint} tovább fejlődött{olive} {2}{yellow} (Stage {3}){mint}!"
+	}
+
+	"FailedParsing"
+	{
+		"hu"			"Nem sikerült elemezni a \"{1}\" fájlt."
+	}
+
+	"FavoriteUnused"
+	{
+		"hu"			"Úgy döntöttél nem használod a kedvenc Mutáns Tank típusodat."
+	}
+
+	"GeneralDetails"
+	{
+		"hu"			"A Mutáns Tankok újra izgalmassá teszik a küzdelmet!"
+	}
+
+	"GlowVisualOn"
+	{
+		"hu"			"Vizuális Fénylő Körvonal: BE"
+	}
+
+	"GlowVisualOff"
+	{
+		"hu"			"Vizuális Fénylő Körvonal: KI"
+	}
+
+	"HumanCooldown"
+	{
+		"hu"			"Várnod kell még{olive} {1} másodpercet{mint} mielőtt egy másik típusú Mutáns Tankra váltasz."
+	}
+
+	"HumanTag"
+	{
+		"hu"			"[EMBER]"
+	}
+
+	"Kill1"
+	{
+		"hu"			"{olive}{1}{default} kivégezte:{mint} {2}{default}!"
+	}
+
+	"Kill2"
+	{
+		"hu"			"{olive}{1}{default} legyőzte{mint} {2}{default}!"
+	}
+
+	"Kill3"
+	{
+		"hu"			"{olive}{1}{default} elküldte{mint} {2}{default} a pokolba!"
+	}
+
+	"Kill4"
+	{
+		"hu"			"Biztos hogy a{olive} {1}{default} tényleg megölte{mint} {2}{default}-t...?"
+	}
+
+	"Kill5"
+	{
+		"hu"			"{mint}{2}{default} elvesztette a kihívást{olive} {1}{default} ellen!"
+	}
+
+	"Kill6"
+	{
+		"hu"			"{mint}{2}{default}-nak nem sikerült megölnie{olive} {1}{default}!"
+	}
+
+	"Kill7"
+	{
+		"hu"			"{mint}{2}{default} elérte a pusztulás{olive} {1}{default} keze által!"
+	}
+
+	"Kill8"
+	{
+		"hu"			"Éljen!{mint} {2}{default} halott, hála{olive} {1}{default}-nak!"
+	}
+
+	"Kill9"
+	{
+		"hu"			"{olive}{1}{default} rávette{mint} {2}{default}-t hogy mérgében kilépjen!"
+	}
+
+	"Kill10"
+	{
+		"hu"			"Úgy látszik{mint} {2}{default} nem tudta legyőzni{olive} {1}{default} végül is!"
+	}
+
+	"Killer1"
+	{
+		"hu"			"{mint}{1}{default} kivégezte:{olive} {2}{default}!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer2"
+	{
+		"hu"			"{mint}{1}{default} legyőzte{olive} {2}{default}!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer3"
+	{
+		"hu"			"{mint}{1}{default} elküldte{olive} {2}{default} a pokolba!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer4"
+	{
+		"hu"			"Biztos hogy a{mint} {1}{default} tényleg megölte{olive} {2}{default}-t...?{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer5"
+	{
+		"hu"			"{olive}{2}{default} elvesztette a kihívást{mint} {1}{default} ellen!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer6"
+	{
+		"hu"			"A(z){olive} {2}{default}-nak nem sikerült megölnie{mint} {1}{default}!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer7"
+	{
+		"hu"			"{olive}{2}{default} elérte a pusztulás{mint} {1}{default} keze által!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer8"
+	{
+		"hu"			"Éljen!{olive} {2}{default} halott, hála{mint} {1}{default}!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer9"
+	{
+		"hu"			"{mint}{1}{default} rávette{olive} {2}{default}-t hogy mérgében kilépjen!{yellow} MVP:{mint} {3}"
+	}
+
+	"Killer10"
+	{
+		"hu"			"Úgy látszik{olive} {2}{default} nem tudta legyőzni{mint} {1}{default} végül is!{yellow} MVP:{mint} {3}"
+	}
+
+	"LightVisualOn"
+	{
+		"hu"			"Vizuális Fényszóró Szín: BE"
+	}
+
+	"LightVisualOff"
+	{
+		"hu"			"Vizuális Fényszóró Szín: KI"
+	}
+
+	"LogEnded"
+	{
+		"hu"			"[{1}] --- NAPLÓZÁS VÉGE EZEN A PÁLYÁN: {2} ---"
+	}
+
+	"LogStarted"
+	{
+		"hu"			"[{1}] --- NAPLÓZÁS ELINDULT EZEN A PÁLYÁN: {2} ---"
+	}
+
+	"MultipleMatches"
+	{
+		"hu"			"Többféle típushoz illik a név.{olive} Választunk véletlenszerűen{yellow} (Tank #{1}) [Tank #{2}]{olive}."
+	}
+
+	"NoAbilities"
+	{
+		"hu"			"Nem találtunk képességeket."
+	}
+
+	"NoCommandAccess"
+	{
+		"hu"			"Nincs hozzáférésed ehhez a parancshoz."
+	}
+
+	"NoItems"
+	{
+		"hu"			"Nincsenek elérhető tételek."
+	}
+
+	"NoName"
+	{
+		"hu"			"Tank"
+	}
+
+	"NoNote"
+	{
+		"hu"			"Nincs jegyzet ehhez a Szuper Tankhoz."
+	}
+
+	"NoTypeAccess"
+	{
+		"hu"			"Nincs hozzáférésed ehhez a Mutáns Tank típushoz."
+	}
+
+	"OptionNo"
+	{
+		"hu"			"Nem"
+	}
+
+	"OptionYes"
+	{
+		"hu"			"Igen"
+	}
+
+	"ParticleVisualOn"
+	{
+		"hu"			"Vizuális Részecske Effekt: BE"
+	}
+
+	"ParticleVisualOff"
+	{
+		"hu"			"Vizuális Részecske Effekt: KI"
+	}
+
+	"PersonalType"
+	{
+		"hu"			"Születéskor{olive} {1}{yellow} (Tank #{2}) [Tank #{3}]{default} leszel miután átveszed a{mint} Tank{default} irányítását."
+	}
+
+	"PitchVisualOn"
+	{
+		"hu"			"Vizuális Hangmagasság: BE"
+	}
+
+	"PitchVisualOff"
+	{
+		"hu"			"Vizuális Hangmagasság: KI"
+	}
+
+	"PluginDisabled"
+	{
+		"hu"			"Mutáns Tankok{default} letiltva."
+	}
+
+	"Randomized"
+	{
+		"hu"			"{olive}{1}{mint} randomizálva{olive} {2}{mint}!"
+	}
+
+	"ReloadedConfig"
+	{
+		"hu"			"Az összes konfig fájl újra lett töltve."
+	}
+
+	"ReloadingConfig"
+	{
+		"hu"			"Konfig fájl újratöltése \"{1}\" fájl..."
+	}
+
+	"RequestFailed"
+	{
+		"hu"			"Nem találtunk ilyen nevű típust.{olive} Kérés sikertelen."
+	}
+
+	"RequestSucceeded"
+	{
+		"hu"			"Találtunk ilyen nevű típust{yellow} (Tank #{1}) [Tank #{2}]{mint}.{olive} Kérés sikeres!"
+	}
+
+	"RewardAmmo"
+	{
+		"hu"			"lőszert növelést"
+	}
+
+	"RewardAttackBoost"
+	{
+		"hu"			"támadás növelést"
+	}
+
+	"RewardDamageBoost"
+	{
+		"hu"			"sebzés növelést"
+	}
+
+	"RewardEnd"
+	{
+		"hu"			"A{yellow} {1}{default} véget ért!"
+	}
+
+	"RewardGod"
+	{
+		"hu"			"halhatatlanságot"
+	}
+
+	"RewardHealth"
+	{
+		"hu"			"életet növelést"
+	}
+
+	"RewardInfAmmo"
+	{
+		"hu"			"végtelen lőszert"
+	}
+
+	"RewardLadyKiller"
+	{
+		"hu"			"{1}{mint} nőcsábász{default} használatot"
+	}
+
+	"RewardLadyKiller2"
+	{
+		"hu"			"Van még neked{yellow} {1}{mint} nőcsábász{default} használatod."
+	}
+
+	"RewardList"
+	{
+		"hu"			"Most{default} kaptál{yellow} {1}{default} mert megölted{olive} {2}{default}!"
+	}
+
+	"RewardList2"
+	{
+		"hu"			"Most{default} kaptál{yellow} {1}{default} mert nagyrészt segítettél{olive} {2}{default}ellen!"
+	}
+
+	"RewardList3"
+	{
+		"hu"			"Most{default} kaptál{yellow} {1}{default} mert segítettél{olive} {2}{default}ellen!"
+	}
+
+	"RewardList4"
+	{
+		"hu"			"Most{default} kaptál{yellow} {1}{default} mert megölted és nagyrészt segítettél{olive} {2}{default}!"
+	}
+
+	"RewardNone"
+	{
+		"hu"			"Nem{default} okoztál elég sebzést{olive} {1}{default} nak, hogy jutalmat kapj."
+	}
+
+	"RewardReceived"
+	{
+		"hu"			"Most{default} kaptál{yellow} {1}{default}."
+	}
+
+	"RewardRefill"
+	{
+		"hu"			"életet és lőszert"
+	}
+
+	"RewardRespawn"
+	{
+		"hu"			"újjászületést"
+	}
+
+	"RewardShared"
+	{
+		"hu"			"{1}{default} megosztotta a(z){yellow} {2}{default} veled{default}!"
+	}
+
+	"RewardSolo"
+	{
+		"hu"			"{1}{default} legyőzte{olive} {2}{default}-ot!"
+	}
+
+	"RewardSpeedBoost"
+	{
+		"hu"			"sebesség növelést"
+	}
+
+	"ScreenVisualOn"
+	{
+		"hu"			"Képernyő Vizualitások: BE"
+	}
+
+	"ScreenVisualOff"
+	{
+		"hu"			"Képernyő Vizualitások: KI"
+	}
+
+	"SpawnManually"
+	{
+		"hu"			"Manuálisan kell megszületned."
+	}
+
+	"SpawnMessage"
+	{
+		"hu"			"Mutáns Tank lettél! Használhatod a következőket:"
+	}
+
+	"StartParsing"
+	{
+		"hu"			"Konfig fájl ellenőrzése..."
+	}
+
+	"StillParsing"
+	{
+		"hu"			"A plugin még elemzi a konfig fájlt."
+	}
+
+	"TankDisabled"
+	{
+		"hu"			"{1}{yellow} (Tank #{2}) [Tank #{3}]{default} letiltva."
+	}
+
+	"TeammatesList"
+	{
+		"hu"			"Az összes okozott sebzés a(z) to{olive} {1}{default}-nak:{mint} {2}"
+	}
+
+	"Transformed"
+	{
+		"hu"			"{olive}{1}{mint} átalakult{olive} {2}{mint}!"
+	}
+
+	"Untransformed"
+	{
+		"hu"			"{olive}{1}{mint} visszaváltozott{olive} {2}{mint}!"
+	}
+
+	"VoicelineVisualOn"
+	{
+		"hu"			"Vizuális Ismétlődő Hangsor: BE"
+	}
+
+	"VoicelineVisualOff"
+	{
+		"hu"			"Vizuális Ismétlődő Hangsor: KI"
+	}
+
+	"Absorb"
+	{
+		"hu"			"{olive}{1}{mint} ideiglenesen elnyeli a sebzésed nagy részét!"
+	}
+
+	"Absorb2"
+	{
+		"hu"			"{olive}{1}{mint} már nem nyeli el a sebzésed nagy részét!"
+	}
+
+	"AbsorbAmmo"
+	{
+		"hu"			"Elhasználtad az elnyelő képességed összes lőszerét."
+	}
+
+	"AbsorbDetails"
+	{
+		"hu"			"Elnyeled a sebzések nagy részét amit kapsz."
+	}
+
+	"AbsorbHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik elnyelő képességedet!"
+	}
+
+	"AbsorbHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni az elnyelő képességedet. Próbáld újra."
+	}
+
+	"AbsorbHuman3"
+	{
+		"hu"			"Már aktiváltad az elnyelő képességedet."
+	}
+
+	"AbsorbHuman4"
+	{
+		"hu"			"Az elnyelő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"AbsorbHuman5"
+	{
+		"hu"			"Az elnyelő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"AbsorbMenu"
+	{
+		"hu"			"Elnyelő képesség információ"
+	}
+
+	"AbsorbMenu2"
+	{
+		"hu"			"Elnyelő Képesség"
+	}
+
+	"Acid"
+	{
+		"hu"			"{olive}{1}{mint} létrehozott egy savas pocsolyát{olive} {2}{mint}alatt!"
+	}
+
+	"Acid2"
+	{
+		"hu"			"{olive}{1}{mint} sziklája létrehozott egy savas pocsolyát."
+	}
+
+	"AcidAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági savas képességed összes lőszerét."
+	}
+
+	"AcidDetails"
+	{
+		"hu"			"Savas pocsolyákat hozol létre."
+	}
+
+	"AcidHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik sav képességedet!"
+	}
+
+	"AcidHuman2"
+	{
+		"hu"			"A sav képességed aktiválása nem sikerült. Próbáld újra"
+	}
+
+	"AcidHuman3"
+	{
+		"hu"			"A sav képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"AcidHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a sav képességedet."
+	}
+
+	"AcidHuman5"
+	{
+		"hu"			"A sav képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"AcidMenu"
+	{
+		"hu"			"Sav képesség információ"
+	}
+
+	"AcidMenu2"
+	{
+		"hu"			"Sav Képesség"
+	}
+
+	"Aimless"
+	{
+		"hu"			"{olive}{1}{mint} akadályozza{olive} {2}{mint} a célzásban!"
+	}
+
+	"Aimless2"
+	{
+		"hu"			"{olive}{1}{mint} újra tud célozni!"
+	}
+
+	"AimlessAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági céltalan képességed összes lőszerét."
+	}
+
+	"AimlessDetails"
+	{
+		"hu"			"Megakadályozod a túlélőket a célzásban."
+	}
+
+	"AimlessHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik céltalan képességed!"
+	}
+
+	"AimlessHuman2"
+	{
+		"hu"			"A céltalan képességed aktiválása nem sikerült. Próbáld újra."
+	}
+
+	"AimlessHuman3"
+	{
+		"hu"			"A céltalan képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"AimlessHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a céltalan képességedet."
+	}
+
+	"AimlessHuman5"
+	{
+		"hu"			"A céltalan képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"AimlessMenu"
+	{
+		"hu"			"Céltalan képesség információ"
+	}
+
+	"AimlessMenu2"
+	{
+		"hu"			"Céltalan Képesség"
+	}
+
+	"Ammo"
+	{
+		"hu"			"{olive}{1}{mint} elvette{olive} {2}{mint}-tól az összes lőszert!"
+	}
+
+	"AmmoAmmo"
+	{
+		"hu"			"Elhasználtad az összes távolsági lőszer képességed lőszerét."
+	}
+
+	"AmmoDetails"
+	{
+		"hu"			"Elveszed a túlélők lőszerét."
+	}
+
+	"AmmoHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lőszer képességedet!"
+	}
+
+	"AmmoHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a lőszer képességedet. Próbáld újra."
+	}
+
+	"AmmoHuman3"
+	{
+		"hu"			"A lőszer képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"AmmoHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a lőszer képességedet."
+	}
+
+	"AmmoHuman5"
+	{
+		"hu"			"A lőszer képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"AmmoMenu"
+	{
+		"hu"			"Lőszer Képesség Információ"
+	}
+
+	"AmmoMenu2"
+	{
+		"hu"			"Lőszer Képesség"
+	}
+
+	"Blind"
+	{
+		"hu"			"{olive}{1}{mint} megvakította{olive} {2}{mint}!"
+	}
+
+	"Blind2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem vak!"
+	}
+
+	"BlindAmmo"
+	{
+		"hu"			"Elhasználtad az összes távolsági vakító képességed lőszerét."
+	}
+
+	"BlindDetails"
+	{
+		"hu"			"Megvakítod a túlélőket."
+	}
+
+	"BlindHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik vakító képességedet!"
+	}
+
+	"BlindHuman2"
+	{
+		"hu"			"A vakító képességed aktiválása nem sikerült. Próbáld újra."
+	}
+
+	"BlindHuman3"
+	{
+		"hu"			"A vakító képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"BlindHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a vakító képességedet."
+	}
+
+	"BlindHuman5"
+	{
+		"hu"			"A vakító képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"BlindMenu"
+	{
+		"hu"			"Távolsági Vakító Információ"
+	}
+
+	"BlindMenu2"
+	{
+		"hu"			"Vakító Képesség"
+	}
+
+	"Bomb"
+	{
+		"hu"			"{olive}{1}{mint} létrehozott egy robbanást{olive} {2}{mint} helyzeténél!"
+	}
+
+	"Bomb2"
+	{
+		"hu"			"{olive}{1}{mint} sziklája robbanást okozott."
+	}
+
+	"BombAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági robbantás képességed összes lőszerét."
+	}
+
+	"BombDetails"
+	{
+		"hu"			"Robbantásokat hozol létre."
+	}
+
+	"BombHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik robbantás képességedet!"
+	}
+
+	"BombHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a bomba képességedet. Próbáld újra."
+	}
+
+	"BombHuman3"
+	{
+		"hu"			"A bomba képességedet még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"BombHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a bomba képességedet."
+	}
+
+	"BombHuman5"
+	{
+		"hu"			"A bomba képességed véget ért az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"BombMenu"
+	{
+		"hu"			"Bomba Képesség Információ"
+	}
+
+	"BombMenu2"
+	{
+		"hu"			"Bomba Képesség"
+	}
+
+	"Bury"
+	{
+		"hu"			"{olive}{1}{mint} eltemette{olive} {2}-t{yellow} {3}{mint} lábra a föld alá!"
+	}
+
+	"Bury2"
+	{
+		"hu"			"{olive}{1}{mint} nincs többé eltemetve!"
+	}
+
+	"BuryAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági eltemetés képességed összes lőszerét."
+	}
+
+	"BuryDetails"
+	{
+		"hu"			"Eltemeted a túlélőket."
+	}
+
+	"BuryHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik eltemetés képességedet!"
+	}
+
+	"BuryHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a eltemetés képességedet. Próbáld újra."
+	}
+
+	"BuryHuman3"
+	{
+		"hu"			"A eltemetés képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"BuryHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a eltemetés képességedet."
+	}
+
+	"BuryHuman5"
+	{
+		"hu"			"A eltemető képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"BuryMenu"
+	{
+		"hu"			"Eltemetés Képesség Információ"
+	}
+
+	"BuryMenu2"
+	{
+		"hu"			"Eltemetés Képesség"
+	}
+
+	"Car"
+	{
+		"hu"			"{olive}{1}{mint} autó záport{yellow} indított{mint}!"
+	}
+
+	"Car2"
+	{
+		"hu"			"{olive}{1}{mint} autó zápora véget ért!"
+	}
+
+	"CarAmmo"
+	{
+		"hu"			"Elhasználtad az összes autó záporod."
+	}
+
+	"CarDetails"
+	{
+		"hu"			"Autó záporokat hozol létre."
+	}
+
+	"CarHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik autó zápor képességedet!"
+	}
+
+	"CarHuman2"
+	{
+		"hu"			"Nem sikerült autó záport létrehoznod. Próbáld újra."
+	}
+
+	"CarHuman3"
+	{
+		"hu"			"Már létrehoztál egy autó záport."
+	}
+
+	"CarHuman4"
+	{
+		"hu"			"Az autó záporodnak még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"CarHuman5"
+	{
+		"hu"			"Az autó záporod véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"CarMenu"
+	{
+		"hu"			"Autó Képesség Információ"
+	}
+
+	"CarMenu2"
+	{
+		"hu"			"Autó Képesség"
+	}
+
+	"Choke"
+	{
+		"hu"			"{olive}{1}{mint} fojtogatja{olive} {2}{mint} -t a levegőben!"
+	}
+
+	"Choke2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem fuldoklik a levegőben!"
+	}
+
+	"ChokeAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági fojtogatás képességed összes lőszerét."
+	}
+
+	"ChokeDetails"
+	{
+		"hu"			"A levegőben fojtogatod a túlélőket."
+	}
+
+	"ChokeHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik fojtogatás képességedet!"
+	}
+
+	"ChokeHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a fojtogatás képességedet. Próbáld újra."
+	}
+
+	"ChokeHuman3"
+	{
+		"hu"			"A fojtogatás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"ChokeHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a fojtogatás képességedet."
+	}
+
+	"ChokeHuman5"
+	{
+		"hu"			"A fojtogató képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"ChokeMenu"
+	{
+		"hu"			"Fojtogató Képesség Információ"
+	}
+
+	"ChokeMenu2"
+	{
+		"hu"			"Fojtógató Képesség"
+	}
+
+	"Clone"
+	{
+		"hu"			"{olive}{1}{mint} klónozta magát!"
+	}
+
+	"CloneAmmo"
+	{
+		"hu"			"Elhasználtad az összes klónodat."
+	}
+
+	"CloneDetails"
+	{
+		"hu"			"Klónozni tudod önmagad."
+	}
+
+	"CloneHuman"
+	{
+		"hu"			"Létrehoztál{olive} {1}{mint}/{olive}{2}{mint} klónt!"
+	}
+
+	"CloneHuman2"
+	{
+		"hu"			"Nem sikerült klónt létrehozni. Próbáld újra."
+	}
+
+	"CloneHuman3"
+	{
+		"hu"			"Nem tudod klónozni magad klónként."
+	}
+
+	"CloneHuman4"
+	{
+		"hu"			"A klónozó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"CloneHuman5"
+	{
+		"hu"			"Az egyik klónod meghalt."
+	}
+
+	"CloneHuman6"
+	{
+		"hu"			"Az összes klónod meghalt, a klón képességed újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"CloneMenu"
+	{
+		"hu"			"Klón Képesség Információ"
+	}
+
+	"CloneMenu2"
+	{
+		"hu"			"Klonozó Képesség"
+	}
+
+	"Cloud"
+	{
+		"hu"			"{olive}{1}{mint} füstfelhőt bocsát ki!"
+	}
+
+	"Cloud2"
+	{
+		"hu"			"{olive}{1}{mint} már nem bocsát ki füstfelhőt!"
+	}
+
+	"CloudAmmo"
+	{
+		"hu"			"Elhasználtad a felhő képességed összes lőszerét."
+	}
+
+	"CloudDetails"
+	{
+		"hu"			"Folyamatosan füstfelhőt bocsátasz ki, ami sebzi a túlélőket."
+	}
+
+	"CloudHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik felhő képességedet!"
+	}
+
+	"CloudHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a felhő képességedet. Próbáld újra."
+	}
+
+	"CloudHuman3"
+	{
+		"hu"			"Már aktiváltad a felhő képességedet."
+	}
+
+	"CloudHuman4"
+	{
+		"hu"			"A felhő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"CloudHuman5"
+	{
+		"hu"			"A felhő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"CloudMenu"
+	{
+		"hu"			"Felhő Képesség Információ"
+	}
+
+	"CloudMenu2"
+	{
+		"hu"			"Felhő Képesség"
+	}
+
+	"Drop"
+	{
+		"hu"			"{olive}{1}{mint} dobott egy fegyvert!"
+	}
+
+	"Drop2"
+	{
+		"hu"			"{olive}{1}{mint} dobott egy közelharci fegyvert!"
+	}
+
+	"DropDetails"
+	{
+		"hu"			"Fegyvert dobsz a halálod után."
+	}
+
+	"DropHuman"
+	{
+		"hu"			"Fegyvert dobsz miután meghalsz!"
+	}
+
+	"DropHuman2"
+	{
+		"hu"			"Azonnal fegyvert dobsz a halálod után."
+	}
+
+	"DropMenu"
+	{
+		"hu"			"Dobás Képesség Információ"
+	}
+
+	"DropMenu2"
+	{
+		"hu"			"Dobás Képesség"
+	}
+
+	"Drug"
+	{
+		"hu"			"{olive}{1}{mint} bedrogozta{olive} {2}{mint}-t!"
+	}
+
+	"Drug2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs bedrogozva!"
+	}
+
+	"DrugAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági bedrogozás képességed összes lőszerét."
+	}
+
+	"DrugDetails"
+	{
+		"hu"			"Bedrogozod a túlélőket."
+	}
+
+	"DrugHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik bedrogozás képességedet!"
+	}
+
+	"DrugHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a bedrogozás képességedet. Próbáld újra."
+	}
+
+	"DrugHuman3"
+	{
+		"hu"			"A bedrogozás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"DrugHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a bedrogozás képességedet."
+	}
+
+	"DrugHuman5"
+	{
+		"hu"			"A bedrogozás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"DrugMenu"
+	{
+		"hu"			"Bedrogozás Képesség Információ"
+	}
+
+	"DrugMenu2"
+	{
+		"hu"			"Bedrogozás Képesség"
+	}
+
+	"Drunk"
+	{
+		"hu"			"{olive}{1}{mint} részeggé tette{olive} {2}{mint} -t!"
+	}
+
+	"Drunk2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem részeg!"
+	}
+
+	"DrunkAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági részegítő képességed összes lőszerét."
+	}
+
+	"DrunkDetails"
+	{
+		"hu"			"Részeggé teszed a túlélőket."
+	}
+
+	"DrunkHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik részegítő képességedet!"
+	}
+
+	"DrunkHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a részegítő képességedet. Próbáld újra."
+	}
+
+	"DrunkHuman3"
+	{
+		"hu"			"A részegítő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"DrunkHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a részegítő képességedet."
+	}
+
+	"DrunkHuman5"
+	{
+		"hu"			"A részegítő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"DrunkMenu"
+	{
+		"hu"			"Részeg Képesség Információ"
+	}
+
+	"DrunkMenu2"
+	{
+		"hu"			"Részeg Képesség"
+	}
+
+	"Electric"
+	{
+		"hu"			"{olive}{1}{mint} megrázta{olive} {2}{mint}-t!"
+	}
+
+	"Electric2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs megrázva!"
+	}
+
+	"ElectricAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági elektromos képességed összes lőszerét."
+	}
+
+	"ElectricDetails"
+	{
+		"hu"			"Megrázod a túlélőket."
+	}
+
+	"ElectricHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik elektromos képességedet!"
+	}
+
+	"ElectricHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a elektromos képességedet. Próbáld újra."
+	}
+
+	"ElectricHuman3"
+	{
+		"hu"			"A elektromos képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"ElectricHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a elektromos képességedet."
+	}
+
+	"ElectricHuman5"
+	{
+		"hu"			"A elektromos képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"ElectricMenu"
+	{
+		"hu"			"Elektromos Képesség Információ"
+	}
+
+	"ElectricMenu2"
+	{
+		"hu"			"Elektromos Képesség"
+	}
+
+	"Enforce"
+	{
+		"hu"			"{olive}{1}{mint} kényszeríti{olive} {2}{mint} hogy csak a{yellow} #{3} slottot használja{mint}!"
+	}
+
+	"Enforce2"
+	{
+		"hu"			"{olive}{1}{mint} újra használhatja minden fegyverét!"
+	}
+
+	"EnforceAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági kényszerítő képességed összes lőszerét."
+	}
+
+	"EnforceDetails"
+	{
+		"hu"			"Kényszeríted a túlélőket hogy csak bizonyos fegyvereket használhassanak."
+	}
+
+	"EnforceHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik kényszerítő képességedet!"
+	}
+
+	"EnforceHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a kényszerítő képességedet. Próbáld újra."
+	}
+
+	"EnforceHuman3"
+	{
+		"hu"			"A kényszerítő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"EnforceHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a kényszerítő képességedet."
+	}
+
+	"EnforceHuman5"
+	{
+		"hu"			"A kényszerítő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"EnforceMenu"
+	{
+		"hu"			"Kényszerítő Képesség Információ"
+	}
+
+	"EnforceMenu2"
+	{
+		"hu"			"Kényszerítő Képesség"
+	}
+
+	"Fast"
+	{
+		"hu"			"{olive}{1}{mint} speciális sebessége aktiválva!"
+	}
+
+	"Fast2"
+	{
+		"hu"			"{olive}{1}{mint} speciális sebessége deaktiválva!"
+	}
+
+	"FastAmmo"
+	{
+		"hu"			"Elhasználtad a gyorsaság képességed összes lőszerét."
+	}
+
+	"FastDetails"
+	{
+		"hu"			"Olyan gyorsan futsz mint Flash."
+	}
+
+	"FastHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik gyorsaság képességedet!"
+	}
+
+	"FastHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a gyorsaság képességedet. Próbáld újra!"
+	}
+
+	"FastHuman3"
+	{
+		"hu"			"Már aktiváltad a gyorsaság képességedet."
+	}
+
+	"FastHuman4"
+	{
+		"hu"			"A gyorsaság képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"FastHuman5"
+	{
+		"hu"			"A gyorsaság képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"FastMenu"
+	{
+		"hu"			"Gyorsaság Képesség Információ"
+	}
+
+	"FastMenu2"
+	{
+		"hu"			"Gyorsaság Képesség"
+	}
+
+	"Fire"
+	{
+		"hu"			"{olive}{1}{mint} tüzet okozott{olive} {2}{mint}alatt!"
+	}
+
+	"Fire2"
+	{
+		"hu"			"{olive}{1}{mint} sziklája tüzet okozott."
+	}
+
+	"FireAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági tűz képességed összes lőszerét."
+	}
+
+	"FireDetails"
+	{
+		"hu"			"Tüzet okozol."
+	}
+
+	"FireHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik tűz képességedet!"
+	}
+
+	"FireHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a tűz képességedet. Próbáld újra."
+	}
+
+	"FireHuman3"
+	{
+		"hu"			"A tűz képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"FireHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a tűz képességedet."
+	}
+
+	"FireHuman5"
+	{
+		"hu"			"A tűz képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"FireMenu"
+	{
+		"hu"			"Tűz Képesség Információ"
+	}
+
+	"FireMenu2"
+	{
+		"hu"			"Tűz Képesség"
+	}
+
+	"Fling"
+	{
+		"hu"			"{olive}{1}{mint} feldobta{olive} {2}{mint} -t a levegőbe!"
+	}
+
+	"FlingAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági dobás képességed összes lőszerét."
+	}
+
+	"FlingDetails"
+	{
+		"hu"			"Magasba dobod a túlélőket."
+	}
+
+	"FlingHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik dobás képességedet!"
+	}
+
+	"FlingHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a dobás képességedet. Próbáld újra."
+	}
+
+	"FlingHuman3"
+	{
+		"hu"			"A dobás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"FlingHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a dobás képességedet."
+	}
+
+	"FlingHuman5"
+	{
+		"hu"			"A dobás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"FlingMenu"
+	{
+		"hu"			"Dobás Képesség Információ"
+	}
+
+	"FlingMenu2"
+	{
+		"hu"			"Dobás Képesség"
+	}
+
+	"Fly"
+	{
+		"hu"			"{olive}{1}{mint} repül!"
+	}
+
+	"Fly2"
+	{
+		"hu"			"{olive}{1}{mint} abbahagyta a repülést!"
+	}
+
+	"FlyAmmo"
+	{
+		"hu"			"Elhasználtad a repülő képességed összes lőszerét."
+	}
+
+	"FlyDetails"
+	{
+		"hu"			"Tudsz repülni."
+	}
+
+	"FlyHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik repülő képességedet!"
+	}
+
+	"FlyHuman2"
+	{
+		"hu"			"A repülő képességed aktiválása nem sikerült. Próbáld újra."
+	}
+
+	"FlyHuman3"
+	{
+		"hu"			"Már aktiváltad a repülő képességedet."
+	}
+
+	"FlyHuman4"
+	{
+		"hu"			"A repülő képességednek kell még{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"FlyHuman5"
+	{
+		"hu"			"A repülő képességed véget ért, az újratöltéshez kell még{yellow} {1} másodperc{mint}."
+	}
+
+	"FlyHuman6"
+	{
+		"hu"			"A hely ahol éppen vagy, túl keskeny ahhoz hogy repülhess."
+	}
+
+	"FlyMenu"
+	{
+		"hu"			"Repülő Képesség Információ"
+	}
+
+	"FlyMenu2"
+	{
+		"hu"			"Repülő Képesség"
+	}
+
+	"Fragile"
+	{
+		"hu"			"{olive}{1}{mint} ideiglenesen érzékeny a sebzésre, de többet sebez és gyorsabban fut!"
+	}
+
+	"Fragile2"
+	{
+		"hu"			"{olive}{1}{mint} már nem érzékeny a sebzésre"
+	}
+
+	"FragileAmmo"
+	{
+		"hu"			"Elhasználtad a sebzés érzékenység képességed összes lőszerét."
+	}
+
+	"FragileDetails"
+	{
+		"hu"			"Több sebzést szenvedsz el de közben többet sebzel és gyorsabban futsz."
+	}
+
+	"FragileHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik sebzés érzékeny képességedet!"
+	}
+
+	"FragileHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a sebzés érzékeny képességedet. Próbáld újra."
+	}
+
+	"FragileHuman3"
+	{
+		"hu"			"Már aktiváltad a sebzés érzékeny képességedet."
+	}
+
+	"FragileHuman4"
+	{
+		"hu"			"A sebzés érzékeny képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"FragileHuman5"
+	{
+		"hu"			"A sebzés érzékeny képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"FragileMenu"
+	{
+		"hu"			"Érzékeny Képesség Információ"
+	}
+
+	"FragileMenu2"
+	{
+		"hu"			"Érzékeny Képesség"
+	}
+
+	"Ghost"
+	{
+		"hu"			"{olive}{1}{mint} lefegyverezte{olive} {2}{mint}-t!"
+	}
+
+	"Ghost2"
+	{
+		"hu"			"{olive}{1}{mint} álcázza magát!"
+	}
+
+	"Ghost3"
+	{
+		"hu"			"{olive}{1}{mint} újra látható!"
+	}
+
+	"GhostAmmo"
+	{
+		"hu"			"Elhasználtad az álcázó képességed összes lőszerét."
+	}
+
+	"GhostAmmo2"
+	{
+		"hu"			"Elhasználtad a távolsági lefegyverző képességed összes lőszerét."
+	}
+
+	"GhostDetails"
+	{
+		"hu"			"Álcázod magad és lefegyverzed a túlélőket."
+	}
+
+	"GhostHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik álcázó képességedet!"
+	}
+
+	"GhostHuman2"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lefegyverző képességedet!"
+	}
+
+	"GhostHuman3"
+	{
+		"hu"			"Nem sikerült aktiválni a lefegyverző képességedet. Próbáld újra."
+	}
+
+	"GhostHuman4"
+	{
+		"hu"			"Már aktiváltad az álcázó képességedet."
+	}
+
+	"GhostHuman5"
+	{
+		"hu"			"Az álcázó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"GhostHuman6"
+	{
+		"hu"			"A lefegyverző képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"GhostHuman7"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a lefegyverző képességedet."
+	}
+
+	"GhostHuman8"
+	{
+		"hu"			"Az álcázó képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"GhostHuman9"
+	{
+		"hu"			"A lefegyverző képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"GhostMenu"
+	{
+		"hu"			"Szellem Képesség Információ"
+	}
+
+	"GhostMenu2"
+	{
+		"hu"			"Szellem Képesség"
+	}
+
+	"God"
+	{
+		"hu"			"{olive}{1}{mint} ideiglenesen legyőzhetetlen!"
+	}
+
+	"God2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem legyőzhetetlen!"
+	}
+
+	"GodAmmo"
+	{
+		"hu"			"Elhasználtad az isteni képességed összes lőszerét."
+	}
+
+	"GodDetails"
+	{
+		"hu"			"Ideiglenesen védett vagy az összes fajta sebzés ellen."
+	}
+
+	"GodHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik isteni képességedet!"
+	}
+
+	"GodHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni az isteni képességedet. Próbáld újra."
+	}
+
+	"GodHuman3"
+	{
+		"hu"			"Már aktiváltad az isteni képességedet."
+	}
+
+	"GodHuman4"
+	{
+		"hu"			"Az isteni képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"GodHuman5"
+	{
+		"hu"			"Az isteni képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"GodMenu"
+	{
+		"hu"			"Isteni Képesség Információ"
+	}
+
+	"GodMenu2"
+	{
+		"hu"			"Isteni Képesség"
+	}
+
+	"Gravity"
+	{
+		"hu"			"{olive}{1}{mint} megváltoztatta{olive} {2}{mint} gravitációját{yellow} {3}{mint}-re/ra!"
+	}
+
+	"Gravity2"
+	{
+		"hu"			"{olive}{1}{mint} gravitációja újra normális!"
+	}
+
+	"Gravity3"
+	{
+		"hu"			"{olive}{1}{mint} gravitációs vonzást/taszítást hozott létre!"
+	}
+
+	"Gravity4"
+	{
+		"hu"			"{olive}{1}{mint} gravitációs vonzása/taszítása véget ért!"
+	}
+
+	"GravityAmmo"
+	{
+		"hu"			"Elhasználtad a gravitációs vonzásod/taszításod összes lőszerét."
+	}
+
+	"GravityAmmo2"
+	{
+		"hu"			"Elhasználtad a távolsági alacsony gravitáció képességed összes lőszerét."
+	}
+
+	"GravityDetails"
+	{
+		"hu"			"Eltolsz vagy magadhoz húzol mindenkit, és megváltoztatod a túlélők gravitációját."
+	}
+
+	"GravityHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik gravitációs vonzás/taszítás képességedet!"
+	}
+
+	"GravityHuman2"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik alacsony gravitáció képességedet!"
+	}
+
+	"GravityHuman3"
+	{
+		"hu"			"Nem sikerült aktiválni a alacsony gravitáció képességedet. Próbáld újra."
+	}
+
+	"GravityHuman4"
+	{
+		"hu"			"Már aktiváltad a gravitációs vonzás/taszítás képességedet."
+	}
+
+	"GravityHuman5"
+	{
+		"hu"			"A gravitációs vonzás/taszítás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"GravityHuman6"
+	{
+		"hu"			"A alacsony gravitációs képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"GravityHuman7"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a alacsony gravitáció képességedet."
+	}
+
+	"GravityHuman8"
+	{
+		"hu"			"A gravitációs vonzás/taszítás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"GravityHuman9"
+	{
+		"hu"			"Az alacsony gravitációs képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"GravityMenu"
+	{
+		"hu"			"Gravitációs Képesség Információ"
+	}
+
+	"GravityMenu2"
+	{
+		"hu"			"Gravitációs Képesség"
+	}
+
+	"Gunner"
+	{
+		"hu"			"{olive}{1}{mint} lövéseket ad le{olive} {2}{mint}felé!"
+	}
+
+	"Gunner2"
+	{
+		"hu"			"{olive}{1}{mint} már nem lövöldözik!"
+	}
+
+	"GunnerAmmo"
+	{
+		"hu"			"Elhasználtad a tüzér képességed összes lőszerét."
+	}
+
+	"GunnerDetails"
+	{
+		"hu"			"Fel vagy fegyverkezve."
+	}
+
+	"GunnerHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik tüzér képességedet!"
+	}
+
+	"GunnerHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a tüzér képességedet. Próbáld újra."
+	}
+
+	"GunnerHuman3"
+	{
+		"hu"			"Már aktiváltad a tüzér képességedet."
+	}
+
+	"GunnerHuman4"
+	{
+		"hu"			"A tüzér képességednek kell még {yellow} {1} másodperc(ek){mint} az újratöltéshez."
+	}
+
+	"GunnerHuman5"
+	{
+		"hu"			"A tüzér képességed véget ért, az újratöltéshez kell még {yellow} {1} másodperc(ek){mint}."
+	}
+
+	"GunnerMenu"
+	{
+		"hu"			"Tüzér Képesség Információ"
+	}
+
+	"GunnerMenu2"
+	{
+		"hu"			"Tüzér Képesség"
+	}
+
+	"Heal"
+	{
+		"hu"			"{olive}{1}{mint} átállította{olive} {2}{mint} életerejét ideiglenesre, aki meghal amint eléri a 0-át!"
+	}
+
+	"Heal2"
+	{
+		"hu"			"{olive}{1}{mint} épp elnyeli az életerőt a közelben lévő fertőzőtektől!"
+	}
+
+	"Heal3"
+	{
+		"hu"			"{olive}{1}{mint} már nem nyeli az életerőt a közelben lévő fertőzőtektől!"
+	}
+
+	"HealAmmo"
+	{
+		"hu"			"Elhasználtad a gyógyító képességed összes lőszerét."
+	}
+
+	"HealAmmo2"
+	{
+		"hu"			"Elhasználtad a távolsági rossz-életerő képességed összes lőszerét."
+	}
+
+	"HealDetails"
+	{
+		"hu"			"Életerőt nyelsz el a közelben lévő fertőzöttektől és ideiglenes életerőre állítod a túlélőket, akik meghalnak ha elérik a 0-át."
+	}
+
+	"HealHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik gyógyító képességedet!"
+	}
+
+	"HealHuman2"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik rossz-életerő képességedet!"
+	}
+
+	"HealHuman3"
+	{
+		"hu"			"Nem sikerült aktiválni a rossz-életerő képességedet. Próbáld újra."
+	}
+
+	"HealHuman4"
+	{
+		"hu"			"Már aktiváltad a gyógyító képességedet."
+	}
+
+	"HealHuman5"
+	{
+		"hu"			"A gyógyító képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"HealHuman6"
+	{
+		"hu"			"A rossz-életerő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"HealHuman7"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a rossz-életerő képességedet."
+	}
+
+	"HealHuman8"
+	{
+		"hu"			"A gyógyító képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"HealHuman9"
+	{
+		"hu"			"A rossz-életerő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"HealMenu"
+	{
+		"hu"			"Gyógyító Képesség Információ"
+	}
+
+	"HealMenu2"
+	{
+		"hu"			"Gyógyító Képesség"
+	}
+
+	"HitDetails"
+	{
+		"hu"			"Csak a tested bizonyos pontjain vagy sebezhető."
+	}
+
+	"HitMenu"
+	{
+		"hu"			"Ütő Képesség Információ"
+	}
+
+	"HitMenu2"
+	{
+		"hu"			"Ütő Képesség"
+	}
+
+	"Hurt"
+	{
+		"hu"			"{olive}{1}{mint} bántja{olive} {2}{mint}-t!"
+	}
+
+	"Hurt2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs bántalmazás alatt!"
+	}
+
+	"HurtAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági bántalmazás képességed összes lőszerét."
+	}
+
+	"HurtDetails"
+	{
+		"hu"			"Többször bántalmazod a túlélőket."
+	}
+
+	"HurtHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik bántalmazó képességedet!"
+	}
+
+	"HurtHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a bántalmazó képességedet. Próbáld újra."
+	}
+
+	"HurtHuman3"
+	{
+		"hu"			"A bántalmazó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"HurtHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a bántalmazó képességedet."
+	}
+
+	"HurtHuman5"
+	{
+		"hu"			"A bántalmazó képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"HurtMenu"
+	{
+		"hu"			"Bántalmazó Képesség Információ"
+	}
+
+	"HurtMenu2"
+	{
+		"hu"			"Bántalmazó Képesség"
+	}
+
+	"Hypno"
+	{
+		"hu"			"{olive}{1}{mint} hipnotizálja{olive} {2}{mint}-t!"
+	}
+
+	"Hypno2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs hipnotizálva!"
+	}
+
+	"HypnoAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági hipnotizáló képességed összes lőszerét."
+	}
+
+	"HypnoDetails"
+	{
+		"hu"			"Hipnotizálod a túlélőket hogy sebezzék magukat vagy a társaikat."
+	}
+
+	"HypnoHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik hipnotizáló képességedet!"
+	}
+
+	"HypnoHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a hipnotizálás képességedet. Próbáld újra."
+	}
+
+	"HypnoHuman3"
+	{
+		"hu"			"A hipnotizálás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"HypnoHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a hipnotizálás képességedet."
+	}
+
+	"HypnoHuman5"
+	{
+		"hu"			"A hipnotizálás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"HypnoMenu"
+	{
+		"hu"			"Hipnotizáló Képesség Információ"
+	}
+
+	"HypnoMenu2"
+	{
+		"hu"			"Hipnotizáló Képesség"
+	}
+
+	"Ice"
+	{
+		"hu"			"{olive}{1}{mint} lefagyasztotta{olive} {2}{mint}-t!"
+	}
+
+	"Ice2"
+	{
+		"hu"			"{olive}{1}{mint} felolvasztva!"
+	}
+
+	"IceAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági fagyasztás képességed összes lőszerét."
+	}
+
+	"IceDetails"
+	{
+		"hu"			"Lefagyasztod a túlélőket."
+	}
+
+	"IceHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik fagyasztás képességedet!"
+	}
+
+	"IceHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a fagyasztás képességedet. Próbáld újra."
+	}
+
+	"IceHuman3"
+	{
+		"hu"			"A fagyasztás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"IceHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a fagyasztás képességedet."
+	}
+
+	"IceHuman5"
+	{
+		"hu"			"A fagyasztás képességed vége ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"IceMenu"
+	{
+		"hu"			"Fagyasztás Képesség Információ"
+	}
+
+	"IceMenu2"
+	{
+		"hu"			"Fagyasztás Képesség"
+	}
+
+	"Idle"
+	{
+		"hu"			"{olive}{1}{mint} kényszerítette{olive} {2}{mint} hogy szünetet tartson!"
+	}
+
+	"IdleAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági szüneteltetés képességed összes lőszerét."
+	}
+
+	"IdleDetails"
+	{
+		"hu"			"Kényszeríted a túlélőket arra hogy szünetet tartsanak."
+	}
+
+	"IdleHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik szüneteltetés képességedet!"
+	}
+
+	"IdleHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a szüneteltetés képességedet. Próbáld újra."
+	}
+
+	"IdleHuman3"
+	{
+		"hu"			"A szüneteltetés képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"IdleHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a szüneteltetés képességedet."
+	}
+
+	"IdleHuman5"
+	{
+		"hu"			"A szüneteltetés képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"IdleMenu"
+	{
+		"hu"			"Szüneteltetés Képesség Információ"
+	}
+
+	"IdleMenu2"
+	{
+		"hu"			"Szüneteltetés Képesség"
+	}
+
+	"Invert"
+	{
+		"hu"			"{olive}{1}{mint} megfordította{olive} {2}{mint} gomb kiosztását!"
+	}
+
+	"Invert2"
+	{
+		"hu"			"{olive}{1}{mint} gomb kiosztása nincs többé megfordítva!"
+	}
+
+	"InvertAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági megfordítás képességed összes lőszerét."
+	}
+
+	"InvertDetails"
+	{
+		"hu"			"Megfordítod a túlélők gomb kiosztását."
+	}
+
+	"InvertHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik megfordítás képességedet!"
+	}
+
+	"InvertHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a megfordítás képességedet. Próbáld újra."
+	}
+
+	"InvertHuman3"
+	{
+		"hu"			"A megfordítás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"InvertHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a megfordítás képességedet."
+	}
+
+	"InvertHuman5"
+	{
+		"hu"			"A megfordítás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"InvertMenu"
+	{
+		"hu"			"Megfordítás Képesség Információ"
+	}
+
+	"InvertMenu2"
+	{
+		"hu"			"Megfordítás Képesség"
+	}
+
+	"Item"
+	{
+		"hu"			"{olive}{1}{mint} tételeket adott{yellow} a túlélőknek{mint}!"
+	}
+
+	"ItemDetails"
+	{
+		"hu"			"Tételeket adsz a túlélőknek halálod után."
+	}
+
+	"ItemHuman"
+	{
+		"hu"			"Tételeket adsz a túlélőknek miután meghalsz!"
+	}
+
+	"ItemHuman2"
+	{
+		"hu"			"Már adtál tételeket a túlélőknek a halálod után."
+	}
+
+	"ItemMenu"
+	{
+		"hu"			"Tétel Képesség Információ"
+	}
+
+	"ItemMenu2"
+	{
+		"hu"			"Tétel Képesség"
+	}
+
+	"Jump"
+	{
+		"hu"			"{olive}{1}{mint} kényszeríti{olive} {2}{mint} -t hogy kontrollálhatatlanul ugráljon!"
+	}
+
+	"Jump2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs kényszerítve arra hogy ugráljon!"
+	}
+
+	"Jump3"
+	{
+		"hu"			"{olive}{1}{mint} időszakosan ugrálni fog!"
+	}
+
+	"JumpAmmo"
+	{
+		"hu"			"Elhasználtad az időszakos ugrálás képességed összes lőszerét."
+	}
+
+	"JumpAmmo2"
+	{
+		"hu"			"Elhasználtad a távolsági ugrás képességed összes lőszerét."
+	}
+
+	"JumpDetails"
+	{
+		"hu"			"Időszakosan vagy szórványosan ugrálsz és kontrollálhatatlanul ugráltatod a túlélőket."
+	}
+
+	"JumpHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik időszakos ugrálás képességedet!"
+	}
+
+	"JumpHuman2"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik ugrás képességedet!"
+	}
+
+	"JumpHuman3"
+	{
+		"hu"			"Nem sikerült aktiválni a ugrás képességedet. Próbáld újra."
+	}
+
+	"JumpHuman4"
+	{
+		"hu"			"Már aktiváltad az időszakos ugrás képességedet."
+	}
+
+	"JumpHuman5"
+	{
+		"hu"			"Az időszakos ugrás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"JumpHuman6"
+	{
+		"hu"			"A ugrás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"JumpHuman7"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a ugrás képességedet."
+	}
+
+	"JumpHuman8"
+	{
+		"hu"			"Az időszakos ugrás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"JumpHuman9"
+	{
+		"hu"			"A ugrás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"JumpMenu"
+	{
+		"hu"			"Ugrás Képesség Információ"
+	}
+
+	"JumpMenu2"
+	{
+		"hu"			"Ugrás Képesség"
+	}
+
+	"Kamikaze"
+	{
+		"hu"			"{olive}{1}{mint} kamikazét adott{olive} {2}{mint}-nak!"
+	}
+
+	"KamikazeDetails"
+	{
+		"hu"			"Megölöd magad és áldozatként viszed magaddal a túlélőket is."
+	}
+
+	"KamikazeHuman"
+	{
+		"hu"			"Aktiváltad a kamikaze képességedet!"
+	}
+
+	"KamikazeHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a kamikaze képességedet. Próbáld újra."
+	}
+
+	"KamikazeHuman3"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a kamikaze képességedet."
+	}
+
+	"KamikazeMenu"
+	{
+		"hu"			"Kamikaze Képesség Információ"
+	}
+
+	"KamikazeMenu2"
+	{
+		"hu"			"Kamikaze Képesség"
+	}
+
+	"Lag"
+	{
+		"hu"			"{olive}{1}{mint} késlelteti{olive} {2}{mint} -t!"
+	}
+
+	"Lag2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem késik!"
+	}
+
+	"LagAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági késleltetés képességed összes lőszerét."
+	}
+
+	"LagDetails"
+	{
+		"hu"			"Késlelteted a túlélőket."
+	}
+
+	"LagHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik késleltetés képességedet!"
+	}
+
+	"LagHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a késleltetés képességedet. Próbáld újra."
+	}
+
+	"LagHuman3"
+	{
+		"hu"			"A késleltetés képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"LagHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a késleltetés képességedet."
+	}
+
+	"LagHuman5"
+	{
+		"hu"			"A késleltetés képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"LagMenu"
+	{
+		"hu"			"Késleltetés Képesség Információ"
+	}
+
+	"LagMenu2"
+	{
+		"hu"			"Késleltetés Képesség"
+	}
+
+	"Laser"
+	{
+		"hu"			"{olive}{1}{mint} lézert lő{olive} {2}{mint}felé!"
+	}
+
+	"Laser2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem lő lézert!"
+	}
+
+	"LaserAmmo"
+	{
+		"hu"			"Elhasználtad a lézer képességed összes lőszerét."
+	}
+
+	"LaserDetails"
+	{
+		"hu"			"Lézert lősz a túlélőkre."
+	}
+
+	"LaserHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lézer képességedet!"
+	}
+
+	"LaserHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a lézer képességedet. Próbáld újra."
+	}
+
+	"LaserHuman3"
+	{
+		"hu"			"Már aktiváltad a lézer képességedet."
+	}
+
+	"LaserHuman4"
+	{
+		"hu"			"A lézer képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"LaserHuman5"
+	{
+		"hu"			"A lézer képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"LaserMenu"
+	{
+		"hu"			"Lézer Képesség Információ"
+	}
+
+	"LaserMenu2"
+	{
+		"hu"			"Lézer Képesség"
+	}
+
+	"Leech"
+	{
+		"hu"			"{olive}{1}{mint} életet{yellow} szív{mint} el{olive} {2}{mint}-tól!"
+	}
+
+	"Leech2"
+	{
+		"hu"			"{olive}{1}{mint} már nem szív{yellow} életet{mint} el{olive} {2}{mint}-tól!"
+	}
+
+	"LeechAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági pióca képességed összes lőszerét."
+	}
+
+	"LeechDetails"
+	{
+		"hu"			"Elszívod az életet a túlélőktől."
+	}
+
+	"LeechHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik pióca képességedet!"
+	}
+
+	"LeechHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a pióca képességedet. Próbáld újra."
+	}
+
+	"LeechHuman3"
+	{
+		"hu"			"A pióca képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"LeechHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz hogy használni tudd a pióca képességedet."
+	}
+
+	"LeechHuman5"
+	{
+		"hu"			"A pióca képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"LeechMenu"
+	{
+		"hu"			"Pióca Képesség Információ"
+	}
+
+	"LeechMenu2"
+	{
+		"hu"			"Pióca Képesség"
+	}
+
+	"Lightning"
+	{
+		"hu"			"{olive}{1}{mint} elindított egy{yellow} villám vihart{mint}!"
+	}
+
+	"Lightning2"
+	{
+		"hu"			"{olive}{1}{mint} villám vihara véget ért!"
+	}
+
+	"LightningAmmo"
+	{
+		"hu"			"Elhasználtad az összes villám viharodat."
+	}
+
+	"LightningDetails"
+	{
+		"hu"			"Villám viharokat indítasz."
+	}
+
+	"LightningHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik villám vihar képességedet!"
+	}
+
+	"LightningHuman2"
+	{
+		"hu"			"A villám vihar aktiválása nem sikerült. Próbáld újra."
+	}
+
+	"LightningHuman3"
+	{
+		"hu"			"Már aktiváltad a villám viharodat."
+	}
+
+	"LightningHuman4"
+	{
+		"hu"			"A villám viharodnak kell még{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"LightningHuman5"
+	{
+		"hu"			"A villám viharod véget ért, az újratöltéshez kell még{yellow} {1} másodperc{mint}."
+	}
+
+	"LightningMenu"
+	{
+		"hu"			"Villám Képesség Információ"
+	}
+
+	"LightningMenu2"
+	{
+		"hu"			"Villám Képesség"
+	}
+
+	"Medic"
+	{
+		"hu"			"{olive}{1}{mint} gyógyítja a közelben lévő speciális fertőzötteket!"
+	}
+
+	"Medic2"
+	{
+		"hu"			"{olive}{1}{mint} épp meggyógyította{yellow} {2}{mint}"
+	}
+
+	"Medic3"
+	{
+		"hu"			"{olive}{1}{mint} épp meggyógyította{yellow} {2}{mint}"
+	}
+
+	"Medic4"
+	{
+		"hu"			"{olive}{1}{mint} abbahagyta a közelben lévő spec. fertőzöttek gyógyítását!"
+	}
+
+	"MedicAmmo"
+	{
+		"hu"			"Elhasználtad az orvos képességed összes lőszerét."
+	}
+
+	"MedicDetails"
+	{
+		"hu"			"Gyógyítod a közelben lévő spec. fertőzötteket."
+	}
+
+	"MedicHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik orvos képességedet!"
+	}
+
+	"MedicHuman2"
+	{
+		"hu"			"Az orvos képességed aktiválása nem sikerült. Próbáld újra."
+	}
+
+	"MedicHuman3"
+	{
+		"hu"			"Már aktiváltad az orvos képességedet."
+	}
+
+	"MedicHuman4"
+	{
+		"hu"			"Az orvos képességednek kell még{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"MedicHuman5"
+	{
+		"hu"			"Az orvos képességed véget ért, az újratöltéshez kell még{yellow} {1} másodperc{mint}."
+	}
+
+	"MedicMenu"
+	{
+		"hu"			"Orvos Képesség Információ"
+	}
+
+	"MedicMenu2"
+	{
+		"hu"			"Orvos Képesség"
+	}
+
+	"Meteor"
+	{
+		"hu"			"{olive}{1}{mint} Meteor záport{yellow} indított{mint}!"
+	}
+
+	"Meteor2"
+	{
+		"hu"			"{olive}{1}{mint} meteor zápora véget ért!"
+	}
+
+	"MeteorAmmo"
+	{
+		"hu"			"Elhasználtad az összes meteor záporodat."
+	}
+
+	"MeteorDetails"
+	{
+		"hu"			"Meteor záporokat hozol létre."
+	}
+
+	"MeteorHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik meteor záporodat!"
+	}
+
+	"MeteorHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a meteor záporodat. Próbáld újra."
+	}
+
+	"MeteorHuman3"
+	{
+		"hu"			"Már aktiváltad a meteor záporodat."
+	}
+
+	"MeteorHuman4"
+	{
+		"hu"			"A meteor zápor képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"MeteorHuman5"
+	{
+		"hu"			"A meteor zápor képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"MeteorMenu"
+	{
+		"hu"			"Meteor Képesség Információ"
+	}
+
+	"MeteorMenu2"
+	{
+		"hu"			"Meteor Képesség"
+	}
+
+	"Minion"
+	{
+		"hu"			"{olive}{1}{mint} megidézett egy{yellow} minyont{mint}!"
+	}
+
+	"MinionAmmo"
+	{
+		"hu"			"Elhasználtad az összes minyonodat."
+	}
+
+	"MinionDetails"
+	{
+		"hu"			"Minyonokat hozol létre."
+	}
+
+	"MinionHuman"
+	{
+		"hu"			"Készítettél{olive} {1}{mint}/{olive}{2}{mint} minyonokat!"
+	}
+
+	"MinionHuman2"
+	{
+		"hu"			"Nem sikerült minyonokat létrehozni. Próbáld újra."
+	}
+
+	"MinionHuman3"
+	{
+		"hu"			"A minyon létrehozó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"MinionHuman4"
+	{
+		"hu"			"Az egyik minyonod meghalt."
+	}
+
+	"MinionHuman5"
+	{
+		"hu"			"Az összes minyonod meghalt, a minyon létrehozó képességed újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"MinionMenu"
+	{
+		"hu"			"Minyon Képesség Információ"
+	}
+
+	"MinionMenu2"
+	{
+		"hu"			"Minyon Képesség"
+	}
+
+	"Necro"
+	{
+		"hu"			"{olive}{1}{mint} visszahozta a közelben lévő speciális fertőzötteket!"
+	}
+
+	"NecroAmmo"
+	{
+		"hu"			"Elhasználtad a haláli képességed összes lőszerét."
+	}
+
+	"NecroDetails"
+	{
+		"hu"			"Visszahozod a közelben lévő speciális fertőzötteket amikor meghalnak."
+	}
+
+	"NecroHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik haláli képességedet!"
+	}
+
+	"NecroHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a haláli képességedet. Próbáld újra."
+	}
+
+	"NecroHuman3"
+	{
+		"hu"			"Már aktiváltad a haláli képességedet."
+	}
+
+	"NecroHuman4"
+	{
+		"hu"			"A haláli képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"NecroHuman5"
+	{
+		"hu"			"A haláli képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"NecroMenu"
+	{
+		"hu"			"Haláli Képesség Információ"
+	}
+
+	"NecroMenu2"
+	{
+		"hu"			"Haláli Képesség"
+	}
+
+	"Nullify"
+	{
+		"hu"			"{olive}{1}{mint} hatástalanítja{olive} {2}{mint} összes sebzését!"
+	}
+
+	"Nullify2"
+	{
+		"hu"			"{olive}{1}{mint} sebzése többé már nincs hatástalanítva!"
+	}
+
+	"NullifyAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági sebzés hatástalanító képességed összes lőszerét."
+	}
+
+	"NullifyDetails"
+	{
+		"hu"			"Hatástalanítod a túlélők összes sebzését."
+	}
+
+	"NullifyHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik sebzés hatástalanító képességedet!"
+	}
+
+	"NullifyHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a sebzés hatástalanító képességedet. Próbáld újra."
+	}
+
+	"NullifyHuman3"
+	{
+		"hu"			"A hatástalanító képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"NullifyHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a hatástalanító képességedet."
+	}
+
+	"NullifyHuman5"
+	{
+		"hu"			"A hatástalanító képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"NullifyMenu"
+	{
+		"hu"			"Hatástalanító Képesség Információ"
+	}
+
+	"NullifyMenu2"
+	{
+		"hu"			"Hatástalanító Képesség"
+	}
+
+	"Omni"
+	{
+		"hu"			"{olive}{1}{mint} mindenség képessége aktiválva!"
+	}
+
+	"Omni2"
+	{
+		"hu"			"{olive}{1}{mint} mindenség képessége deaktiválva!"
+	}
+
+	"OmniAmmo"
+	{
+		"hu"			"Elhasználtad a mindenség képességed összes lőszerét."
+	}
+
+	"OmniDetails"
+	{
+		"hu"			"Mindenség-szintű hozzáférésed van a többi közelben lévő Mutáns tank képességeihez."
+	}
+
+	"OmniHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik mindenség képességedet!"
+	}
+
+	"OmniHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a mindenség képességedet. Próbáld újra."
+	}
+
+	"OmniHuman3"
+	{
+		"hu"			"Már aktiváltad a mindenség képességedet."
+	}
+
+	"OmniHuman4"
+	{
+		"hu"			"A mindenség képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"OmniHuman5"
+	{
+		"hu"			"A mindenség képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"OmniMenu"
+	{
+		"hu"			"Mindenség Képesség Információ"
+	}
+
+	"OmniMenu2"
+	{
+		"hu"			"Mindenség Képesség"
+	}
+
+	"Panic"
+	{
+		"hu"			"{olive}{1}{mint} időszakosan pánikot indít!"
+	}
+
+	"Panic2"
+	{
+		"hu"			"{olive}{1}{mint} pánikot{yellow} indított{mint}!"
+	}
+
+	"PanicAmmo"
+	{
+		"hu"			"Elhasználtad a pánik képességed összes lőszerét."
+	}
+
+	"PanicDetails"
+	{
+		"hu"			"Pánikot indítasz."
+	}
+
+	"PanicHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik pánik képességedet!"
+	}
+
+	"PanicHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a pánik képességedet. Próbáld újra."
+	}
+
+	"PanicHuman3"
+	{
+		"hu"			"Már aktiváltad a pánik képességedet."
+	}
+
+	"PanicHuman4"
+	{
+		"hu"			"A pánik képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"PanicHuman5"
+	{
+		"hu"			"A pánik képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"PanicMenu"
+	{
+		"hu"			"Pánik Képesség Információ"
+	}
+
+	"PanicMenu2"
+	{
+		"hu"			"Pánik Képesség"
+	}
+
+	"Pimp"
+	{
+		"hu"			"{olive}{1}{mint} csapdossa{olive} {2}{mint}-t!"
+	}
+
+	"Pimp2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs csapdosva!"
+	}
+
+	"PimpAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági csapdosó képességed összes lőszerét."
+	}
+
+	"PimpDetails"
+	{
+		"hu"			"Lecsapod a túlélőket."
+	}
+
+	"PimpHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik csapdosó képességedet!"
+	}
+
+	"PimpHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a csapdosó képességedet. Próbáld újra."
+	}
+
+	"PimpHuman3"
+	{
+		"hu"			"A csapdosó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"PimpHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a csapdosó képességedet."
+	}
+
+	"PimpHuman5"
+	{
+		"hu"			"A csapdosó képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"PimpMenu"
+	{
+		"hu"			"Csapdosó Képesség Információ"
+	}
+
+	"PimpMenu2"
+	{
+		"hu"			"Csapdosó Képesség"
+	}
+
+	"Puke"
+	{
+		"hu"			"{olive}{1}{mint} lehányta{olive} {2}{mint}-t!"
+	}
+
+	"PukeAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági hányás képességed összes lőszerét."
+	}
+
+	"PukeDetails"
+	{
+		"hu"			"Lehányod a túlélőket."
+	}
+
+	"PukeHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik hányás képességedet!"
+	}
+
+	"PukeHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a hányás képességedet. Próbáld újra."
+	}
+
+	"PukeHuman3"
+	{
+		"hu"			"A hányás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"PukeHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a hányás képességedet."
+	}
+
+	"PukeHuman5"
+	{
+		"hu"			"A hányás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"PukeMenu"
+	{
+		"hu"			"Hányás Képesség Információ"
+	}
+
+	"PukeMenu2"
+	{
+		"hu"			"Hányás Képesség"
+	}
+
+	"Pyro"
+	{
+		"hu"			"{olive}{1}{mint} meggyújtotta önmagát!"
+	}
+
+	"Pyro2"
+	{
+		"hu"			"{olive}{1}{mint} ég és nagyon gyorsan fut!"
+	}
+
+	"Pyro3"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem ég és a sebessége is normális lett!"
+	}
+
+	"PyroAmmo"
+	{
+		"hu"			"Elhasználtad a piro képességed összes lőszerét."
+	}
+
+	"PyroDetails"
+	{
+		"hu"			"Meggyújtod önmagad, a sebességed gyorsabb lesz miközben égsz."
+	}
+
+	"PyroHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik piro képességedet!"
+	}
+
+	"PyroHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a piro képességedet. Próbáld újra."
+	}
+
+	"PyroHuman3"
+	{
+		"hu"			"Már aktiváltad a piro képességedet."
+	}
+
+	"PyroHuman4"
+	{
+		"hu"			"A piro képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"PyroHuman5"
+	{
+		"hu"			"A piro képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"PyroMenu"
+	{
+		"hu"			"Piro Képesség Információ"
+	}
+
+	"PyroMenu2"
+	{
+		"hu"			"Piro Képesség"
+	}
+
+	"Quiet"
+	{
+		"hu"			"{olive}{1}{mint} lenémította magát{olive} {2}{mint} körül!"
+	}
+
+	"Quiet2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem csendes{olive} {2}{mint} körül!"
+	}
+
+	"QuietAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági csend képességed összes lőszerét."
+	}
+
+	"QuietDetails"
+	{
+		"hu"			"Lenémítod magad a túlélők körül."
+	}
+
+	"QuietHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik csend képességedet!"
+	}
+
+	"QuietHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a csend képességedet. Próbáld újra."
+	}
+
+	"QuietHuman3"
+	{
+		"hu"			"A csend képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"QuietHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a csend képességedet."
+	}
+
+	"QuietHuman5"
+	{
+		"hu"			"A csend képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"QuietMenu"
+	{
+		"hu"			"Csend Képesség Információ"
+	}
+
+	"QuietMenu2"
+	{
+		"hu"			"Csend Képesség"
+	}
+
+	"Recoil"
+	{
+		"hu"			"{olive}{1}{mint} erős visszarúgást adott{olive} {2}{mint} -nak!"
+	}
+
+	"Recoil2"
+	{
+		"hu"			"{olive}{1}{mint} -nak többé már nincs erős visszarúgása!"
+	}
+
+	"RecoilAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági visszarúgás képességed összes lőszerét."
+	}
+
+	"RecoilDetails"
+	{
+		"hu"			"Erős fegyver visszarúgást adsz a túlélőknek."
+	}
+
+	"RecoilHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik visszarúgás képességedet!"
+	}
+
+	"RecoilHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a visszarúgás képességedet. Próbáld újra."
+	}
+
+	"RecoilHuman3"
+	{
+		"hu"			"A visszarúgás képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"RecoilHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a visszarúgás képességedet."
+	}
+
+	"RecoilHuman5"
+	{
+		"hu"			"A visszarúgás képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"RecoilMenu"
+	{
+		"hu"			"Visszarúgás Képesség Információ"
+	}
+
+	"RecoilMenu2"
+	{
+		"hu"			"Visszarúgás Képesség"
+	}
+
+	"Regen"
+	{
+		"hu"			"{olive}{1}{mint} regenerálja az életerejét minden{yellow} {2}{mint} másodpercben!"
+	}
+
+	"Regen2"
+	{
+		"hu"			"{olive}{1}{mint} már nem regenerálja az életerejét!"
+	}
+
+	"RegenAmmo"
+	{
+		"hu"			"Elhasználtad a regeneráló képességed összes lőszerét."
+	}
+
+	"RegenDetails"
+	{
+		"hu"			"Regenerálod az életerődet."
+	}
+
+	"RegenHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik regeneráló képességedet!"
+	}
+
+	"RegenHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a regeneráló képességedet. Próbáld újra."
+	}
+
+	"RegenHuman3"
+	{
+		"hu"			"Már aktiváltad a regeneráló képességedet."
+	}
+
+	"RegenHuman4"
+	{
+		"hu"			"A regeneráló képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"RegenHuman5"
+	{
+		"hu"			"A regeneráló képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"RegenMenu"
+	{
+		"hu"			"Regeneráló Képesség Információ"
+	}
+
+	"RegenMenu2"
+	{
+		"hu"			"Regeneráló Képesség"
+	}
+
+	"Respawn"
+	{
+		"hu"			"{olive}{1}{mint} visszahozta önmagát!"
+	}
+
+	"RespawnAmmo"
+	{
+		"hu"			"Elhasználtad az összes szikla záporodat."
+	}
+
+	"RespawnDetails"
+	{
+		"hu"			"Újjászületsz a halálod pillanatában."
+	}
+
+	"RespawnHuman"
+	{
+		"hu"			"Újjászületsz miután meghalsz!"
+	}
+
+	"RespawnHuman2"
+	{
+		"hu"			"Azonnal újjászületsz a halálod pillanatában."
+	}
+
+	"RespawnHuman3"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik újjászületésedet!"
+	}
+
+	"RespawnMenu"
+	{
+		"hu"			"Újjászületés Képesség Információ"
+	}
+
+	"RespawnMenu2"
+	{
+		"hu"			"Újjászületés Képesség"
+	}
+
+	"Restart"
+	{
+		"hu"			"{olive}{1}{mint} rávette{olive} {2}{mint} -t hogy újrakezdje egy eltérő felszereléssel!"
+	}
+
+	"RestartAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági újrakezdő képességed összes lőszerét."
+	}
+
+	"RestartDetails"
+	{
+		"hu"			"Ráveszed a túlélőket arra hogy eltérő felszereléssel kezdjenek a pálya elejétől vagy egy társuk közelében."
+	}
+
+	"RestartHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik újrakezdő képességedet!"
+	}
+
+	"RestartHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a újrakezdő képességedet. Próbáld újra."
+	}
+
+	"RestartHuman3"
+	{
+		"hu"			"A újrakezdő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"RestartHuman4"
+	{
+		"hu"			"Nincsenek túlélők az közelben ahhoz, hogy használni tudd a újrakezdő képességedet."
+	}
+
+	"RestartHuman5"
+	{
+		"hu"			"A újrakezdő képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"RestartMenu"
+	{
+		"hu"			"Újrakezdő Képesség Információ"
+	}
+
+	"RestartMenu2"
+	{
+		"hu"			"Újrakezdő Képesség"
+	}
+
+	"Rock"
+	{
+		"hu"			"{olive}{1}{mint} szikla záport{yellow} indított{mint}!"
+	}
+
+	"Rock2"
+	{
+		"hu"			"{olive}{1}{mint} szikla zápora véget ért!"
+	}
+
+	"RockAmmo"
+	{
+		"hu"			"Elhasználtad az összes szikla záporodat."
+	}
+
+	"RockDetails"
+	{
+		"hu"			"Szikla záporokat indítasz."
+	}
+
+	"RockHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik szikla záporodat!"
+	}
+
+	"RockHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a szikla záporodat. Próbáld újra."
+	}
+
+	"RockHuman3"
+	{
+		"hu"			"Már aktiváltad a szikla záporodat."
+	}
+
+	"RockHuman4"
+	{
+		"hu"			"A szikla zápor képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"RockHuman5"
+	{
+		"hu"			"A szikla zápor képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"RockMenu"
+	{
+		"hu"			"Szikla Képesség Információ"
+	}
+
+	"RockMenu2"
+	{
+		"hu"			"Szikla Képesség"
+	}
+
+	"Rocket"
+	{
+		"hu"			"{olive}{1}{mint} elküldte{olive} {2}{mint}-t az űrbe!"
+	}
+
+	"RocketAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági rakéta képességed összes lőszerét."
+	}
+
+	"RocketDetails"
+	{
+		"hu"			"Az űrbe küldöd a túlélőket."
+	}
+
+	"RocketHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik rakéta képességedet!"
+	}
+
+	"RocketHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a rakéta képességedet. Próbáld újra."
+	}
+
+	"RocketHuman3"
+	{
+		"hu"			"A rakéta képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"RocketHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a rakéta képességedet."
+	}
+
+	"RocketHuman5"
+	{
+		"hu"			"A rakéta képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"RocketMenu"
+	{
+		"hu"			"Rakéta Képesség Információ"
+	}
+
+	"RocketMenu2"
+	{
+		"hu"			"Rakéta Képesség"
+	}
+
+	"Shake"
+	{
+		"hu"			"{olive}{1}{mint} rázza{olive} {2}{mint}-t!"
+	}
+
+	"Shake2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem rázkódik!"
+	}
+
+	"ShakeAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági rázó képességed összes lőszerét."
+	}
+
+	"ShakeDetails"
+	{
+		"hu"			"Rázod a túlélők képernyőjét."
+	}
+
+	"ShakeHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik rázó képességedet!"
+	}
+
+	"ShakeHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a rázó képességedet. Próbáld újra."
+	}
+
+	"ShakeHuman3"
+	{
+		"hu"			"A rázó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"ShakeHuman4"
+	{
+		"hu"			"nincsenek túlélők a közelben ahhoz, hogy használni tudd a rázó képességedet."
+	}
+
+	"ShakeHuman5"
+	{
+		"hu"			"A rázó képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"ShakeMenu"
+	{
+		"hu"			"Rázó Képesség Információ"
+	}
+
+	"ShakeMenu2"
+	{
+		"hu"			"Rázó Képesség"
+	}
+
+	"Shield"
+	{
+		"hu"			"{olive}{1}{mint} pajzsa{yellow} aktiválva{mint}!"
+	}
+
+	"Shield2"
+	{
+		"hu"			"{olive}{1}{mint} pajzsa{yellow} deaktiválva{mint}!"
+	}
+
+	"ShieldAmmo"
+	{
+		"hu"			"Elhasználtad az összes pajzsodat."
+	}
+
+	"ShieldDetails"
+	{
+		"hu"			"Megvéded magad egy pajzzsal, propán tartályt vagy benzines kannát dobsz."
+	}
+
+	"ShieldHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik pajzsodat!"
+	}
+
+	"ShieldHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a pajzsodat. Próbáld újra."
+	}
+
+	"ShieldHuman3"
+	{
+		"hu"			"Már aktiváltad a pajzsodat."
+	}
+
+	"ShieldHuman4"
+	{
+		"hu"			"A pajzsodnak még kell{yellow} {1} másodperc{mint} a regenerálódáshoz."
+	}
+
+	"ShieldHuman5"
+	{
+		"hu"			"A pajzsod eltört, a regenerálódáshoz még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"ShieldMenu"
+	{
+		"hu"			"Pajzs Képesség Információ"
+	}
+
+	"ShieldMenu2"
+	{
+		"hu"			"Pajzs Képesség"
+	}
+
+	"ShieldOwner"
+	{
+		"hu"			"{1} Pajzsa"
+	}
+
+	"Shove"
+	{
+		"hu"			"{olive}{1}{mint} lökdösi{olive} {2}{mint}-t!"
+	}
+
+	"Shove2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs lökdösve!"
+	}
+
+	"ShoveAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági lökés képességed összes lőszerét."
+	}
+
+	"ShoveDetails"
+	{
+		"hu"			"Ismétlődően lököd a túlélőket."
+	}
+
+	"ShoveHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lökés képességedet!"
+	}
+
+	"ShoveHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a lökés képességedet. Próbáld újra."
+	}
+
+	"ShoveHuman3"
+	{
+		"hu"			"A lökés képességednek még kell{yellow} {1} másodperc{mint} sz újratöltéshez."
+	}
+
+	"ShoveHuman4"
+	{
+		"hu"			"Nincsenek a közelben túlélők ahhoz, hogy használni tudd a lökés képességedet."
+	}
+
+	"ShoveHuman5"
+	{
+		"hu"			"A lökés képességed véget ért, Az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"ShoveMenu"
+	{
+		"hu"			"Lökés Képesség Információ"
+	}
+
+	"ShoveMenu2"
+	{
+		"hu"			"Lökés Képesség"
+	}
+
+	"Slow"
+	{
+		"hu"			"{olive}{1}{mint} lelassította{olive} {2}{mint}-t{yellow} {3}{percent}{mint}-ra!"
+	}
+
+	"Slow2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nincs lelassítva!"
+	}
+
+	"SlowAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági lassító képességed összes lőszerét."
+	}
+
+	"SlowDetails"
+	{
+		"hu"			"Lelassítod a túlélőket."
+	}
+
+	"SlowHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lassító képességedet!"
+	}
+
+	"SlowHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a lassító képességedet. Próbáld újra."
+	}
+
+	"SlowHuman3"
+	{
+		"hu"			"A lassító képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"SlowHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a lassító képességedet."
+	}
+
+	"SlowHuman5"
+	{
+		"hu"			"A lassító képességed véget ért, az újratöltéséhez még kell{yellow} {1} másodperc{mint}."
+	}
+
+	"SlowMenu"
+	{
+		"hu"			"Lassító Képesség Információ"
+	}
+
+	"SlowMenu2"
+	{
+		"hu"			"Lassító Képesség"
+	}
+
+	"Smash"
+	{
+		"hu"			"{olive}{1}{mint} halálra zúzta{olive} {2}{mint} -t!"
+	}
+
+	"SmashAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági zúzó képességed összes lőszerét."
+	}
+
+	"SmashDetails"
+	{
+		"hu"			"Halálra zúzod a túlélőket."
+	}
+
+	"SmashHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik zúzó képességedet!"
+	}
+
+	"SmashHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a zúzó képességedet. Próbáld újra."
+	}
+
+	"SmashHuman3"
+	{
+		"hu"			"A zúzó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"SmashHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a zúzó képességedet."
+	}
+
+	"SmashHuman5"
+	{
+		"hu"			"A zúzó képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"SmashMenu"
+	{
+		"hu"			"Zúzó Képesség Információ"
+	}
+
+	"SmashMenu2"
+	{
+		"hu"			"Zúzó Képesség"
+	}
+
+	"Smite"
+	{
+		"hu"			"{olive}{1}{mint} lesújtott{olive} {2}{mint}-ra!"
+	}
+
+	"SmiteAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági lesújtó képességed összes lőszerét."
+	}
+
+	"SmiteDetails"
+	{
+		"hu"			"Lesújtól a túlélőkre."
+	}
+
+	"SmiteHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik lesújtó képességedet!"
+	}
+
+	"SmiteHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a lesújtó képességedet. Próbáld újra."
+	}
+
+	"SmiteHuman3"
+	{
+		"hu"			"A lesújtó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"SmiteHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a lesújtó képességedet."
+	}
+
+	"SmiteHuman5"
+	{
+		"hu"			"A zúzó képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"SmiteMenu"
+	{
+		"hu"			"Lesújtó Képesség Információ"
+	}
+
+	"SmiteMenu2"
+	{
+		"hu"			"Lesújtó Képesség"
+	}
+
+	"Spam"
+	{
+		"hu"			"{olive}{1}{mint} folyamatosan sziklákat dobál!"
+	}
+
+	"Spam2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem dobál folyamatosan sziklákat!"
+	}
+
+	"SpamAmmo"
+	{
+		"hu"			"Elhasználtad a folyamatos képességed összes lőszerét."
+	}
+
+	"SpamDetails"
+	{
+		"hu"			"Folyamatosan sziklákat dobálsz a túlélőkre."
+	}
+
+	"SpamHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik folyamatos szikla képességedet!"
+	}
+
+	"SpamHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a folyamatos szikla képességedet. Próbáld újra."
+	}
+
+	"SpamHuman3"
+	{
+		"hu"			"Már aktiváltad a folyamatos szikla képességedet."
+	}
+
+	"SpamHuman4"
+	{
+		"hu"			"A folyamatos szikla képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"SpamHuman5"
+	{
+		"hu"			"A folyamatos szikla képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"SpamMenu"
+	{
+		"hu"			"Folyamatos Képesség Információ"
+	}
+
+	"SpamMenu2"
+	{
+		"hu"			"Folyamatos Képesség"
+	}
+
+	"Splash"
+	{
+		"hu"			"{olive}{1}{mint} területi sebzést okoz a közelben lévő túlélőkre!"
+	}
+
+	"Splash2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem okoz területi sebzést a túlélőkre!"
+	}
+
+	"SplashAmmo"
+	{
+		"hu"			"Elhasználtad a területi sebzés képességed összes lőszerét."
+	}
+
+	"SplashDetails"
+	{
+		"hu"			"Folyamatosan területi sebzést okozol a közelben lévő túlélőkre."
+	}
+
+	"SplashHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik területi sebzés képességedet!"
+	}
+
+	"SplashHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a területi képességedet. Próbáld újra."
+	}
+
+	"SplashHuman3"
+	{
+		"hu"			"Már aktiváltad a területi képességedet."
+	}
+
+	"SplashHuman4"
+	{
+		"hu"			"A területi képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"SplashHuman5"
+	{
+		"hu"			"A területi képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"SplashMenu"
+	{
+		"hu"			"Területi Képesség Információ"
+	}
+
+	"SplashMenu2"
+	{
+		"hu"			"Területi Képesség"
+	}
+
+	"Splatter"
+	{
+		"hu"			"{olive}{1}{mint} épp összefröcsköli{olive} {2}{mint} képernyőjét!"
+	}
+
+	"Splatter2"
+	{
+		"hu"			"{olive}{1}képernyője{mint} többé már nincs összefröcskölve{mint}!"
+	}
+
+	"SplatterAmmo"
+	{
+		"hu"			"Elhasználtad a Fröcskölő képességed összes lőszerét."
+	}
+
+	"SplatterDetails"
+	{
+		"hu"			"Összefröcskölöd a túlélők képernyőjét."
+	}
+
+	"SplatterHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} fröcskölő képességedet!"
+	}
+
+	"SplatterHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a fröcskölő képességedet. Próbáld újra."
+	}
+
+	"SplatterHuman3"
+	{
+		"hu"			"A fröccsenő képességednek még kell{yellow} {1} másodperc(ek){mint} az újratöltéshez.."
+	}
+
+	"SplatterHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közeledben akiken használhatnád a fröccsenő képességedet."
+	}
+
+	"SplatterHuman5"
+	{
+		"hu"			"A fröcskölő képességed véget ért, az újratöltéshez kell még{yellow} {1} másodperc{mint}."
+	}
+
+	"SplatterMenu"
+	{
+		"hu"			"Fröcskölő Képesség Információ"
+	}
+
+	"SplatterMenu2"
+	{
+		"hu"			"Fröcskölő Képesség"
+	}
+
+	"Throw"
+	{
+		"hu"			"{olive}{1}{mint} dobott egy autót!"
+	}
+
+	"Throw2"
+	{
+		"hu"			"{olive}{1}{mint} dobott egy{yellow} speciális fertőzöttet{mint}!"
+	}
+
+	"Throw3"
+	{
+		"hu"			"{olive}{1}{mint} eldobta magát!"
+	}
+
+	"Throw4"
+	{
+		"hu"			"{olive}{1}{mint} dobott egy boszorkát!"
+	}
+
+	"ThrowAmmo"
+	{
+		"hu"			"Elhasználtad a dobó képességed összes lőszerét."
+	}
+
+	"ThrowDetails"
+	{
+		"hu"			"Dobsz kocsikat, speciális fertőzötteket, boszorkákat, vagy saját magadat."
+	}
+
+	"ThrowHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik dobó képességedet!"
+	}
+
+	"ThrowHuman2"
+	{
+		"hu"			"Már aktiváltad a dobó képességedet."
+	}
+
+	"ThrowHuman3"
+	{
+		"hu"			"A dobó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"ThrowHuman4"
+	{
+		"hu"			"A dobó képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"ThrowMenu"
+	{
+		"hu"			"Dobó Képesség Információ"
+	}
+
+	"ThrowMenu2"
+	{
+		"hu"			"Dobó Képesség"
+	}
+
+	"Track"
+	{
+		"hu"			"{olive}{1}{mint} sziklája{yellow} követ{mint} egy túlélőt!"
+	}
+
+	"TrackAmmo"
+	{
+		"hu"			"Elhasználtad a követő képességed összes lőszerét."
+	}
+
+	"TrackDetails"
+	{
+		"hu"			"Hőkereső sziklákat dobsz, ami követi a legközelebbi túlélőt."
+	}
+
+	"TrackHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik követő képességedet!"
+	}
+
+	"TrackHuman2"
+	{
+		"hu"			"Már aktiváltad a követő képességedet."
+	}
+
+	"TrackHuman3"
+	{
+		"hu"			"A követő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"TrackHuman4"
+	{
+		"hu"			"A követő képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"TrackMenu"
+	{
+		"hu"			"Követő Képesség Információ"
+	}
+
+	"TrackMenu2"
+	{
+		"hu"			"Követő Képesség"
+	}
+
+	"Ultimate"
+	{
+		"hu"			"{olive}{1}{mint} aktiválta a végső módját!"
+	}
+
+	"Ultimate2"
+	{
+		"hu"			"{olive}{1}{mint} deaktiválta a végső módját!"
+	}
+
+	"Ultimate3"
+	{
+		"hu"			"Ennyi sebzést{yellow} {1}{mint}/{yellow}{2}{mint} okoztál a túlélőknek ahhoz hogy felold a végső módodat."
+	}
+
+	"Ultimate4"
+	{
+		"hu"			"Ideje használni a végső módot!"
+	}
+
+	"UltimateAmmo"
+	{
+		"hu"			"Elhasználtad a végső képességed összes lőszerét."
+	}
+
+	"UltimateDetails"
+	{
+		"hu"			"Aktiválod a végső módot, amikor már kevés az életerőd, hogy ideiglenesen sebezhetetlen legyél és sebzés növelést kapj."
+	}
+
+	"UltimateHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik végső képességedet!"
+	}
+
+	"UltimateHuman2"
+	{
+		"hu"			"Még nem áll készen a végső képességed."
+	}
+
+	"UltimateHuman3"
+	{
+		"hu"			"Már aktiváltad a végső képességedet."
+	}
+
+	"UltimateHuman4"
+	{
+		"hu"			"A végső képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"UltimateHuman5"
+	{
+		"hu"			"A végső képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"UltimateMenu"
+	{
+		"hu"			"Végső Képesség Információ"
+	}
+
+	"UltimateMenu2"
+	{
+		"hu"			"Végső Képesség"
+	}
+
+	"Undead"
+	{
+		"hu"			"{olive}{1}{mint} növelte az életerejét!"
+	}
+
+	"Undead2"
+	{
+		"hu"			"{olive}{1}{mint} újra teljes életerőn van!"
+	}
+
+	"UndeadAmmo"
+	{
+		"hu"			"Elhasználtad az élőholt képességed összes lőszerét."
+	}
+
+	"UndeadDetails"
+	{
+		"hu"			"Nem tudsz meghalni."
+	}
+
+	"UndeadHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik élőholt képességedet!"
+	}
+
+	"UndeadHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni az élőholt képességedet. Próbáld újra."
+	}
+
+	"UndeadHuman3"
+	{
+		"hu"			"Már aktiváltad az élőholt képességedet."
+	}
+
+	"UndeadHuman4"
+	{
+		"hu"			"Az élőholt képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"UndeadHuman5"
+	{
+		"hu"			"Az élőholt képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"UndeadMenu"
+	{
+		"hu"			"Élőholt Képesség Információ"
+	}
+
+	"UndeadMenu2"
+	{
+		"hu"			"Élőholt Képesség"
+	}
+
+	"Vampire"
+	{
+		"hu"			"{olive}{1}{mint} életerőt lopott{olive} {2}{mint}-tol!"
+	}
+
+	"VampireDetails"
+	{
+		"hu"			"Életerőt kapsz ha bántod a túlélőket."
+	}
+
+	"VampireMenu"
+	{
+		"hu"			"Vámpír Képesség Információ"
+	}
+
+	"VampireMenu2"
+	{
+		"hu"			"Vámpír Képesség"
+	}
+
+	"Vision"
+	{
+		"hu"			"{olive}{1}{mint} megváltoztatta{olive} {2}{mint} látómezejét{yellow} {3}{mint}-ra/re!"
+	}
+
+	"Vision2"
+	{
+		"hu"			"{olive}{1}{mint} látómezeje visszaállt{yellow} {2}{mint}-ra/re!"
+	}
+
+	"VisionAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági vizuális képességed összes lőszerét."
+	}
+
+	"VisionDetails"
+	{
+		"hu"			"Megváltoztatod a túlélők látómezejét."
+	}
+
+	"VisionHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik vizuális képességedet!"
+	}
+
+	"VisionHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a vizuális képességedet. Próbáld újra."
+	}
+
+	"VisionHuman3"
+	{
+		"hu"			"A látómező képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"VisionHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a vizuális képességedet."
+	}
+
+	"VisionHuman5"
+	{
+		"hu"			"A látómező képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"VisionMenu"
+	{
+		"hu"			"Látómező Képesség Információ"
+	}
+
+	"VisionMenu2"
+	{
+		"hu"			"Látómező Képesség"
+	}
+
+	"Warp"
+	{
+		"hu"			"{olive}{1}{mint} éppen{olive} {2}{mint} odateleportált{olive} {3}{mint}-hoz!"
+	}
+
+	"Warp2"
+	{
+		"hu"			"{olive}{1}{mint} időszakosan a túlélőkhöz teleportál!"
+	}
+
+	"Warp3"
+	{
+		"hu"			"{olive}{1}{mint} odateleportált{olive} {2}{mint}-hoz!"
+	}
+
+	"Warp4"
+	{
+		"hu"			"{olive}{1}{mint} helyet cserélt{yellow} a sziklájával{mint}."
+	}
+
+	"WarpAmmo"
+	{
+		"hu"			"Elhasználtad az időszakos teleportálás képességed összes lőszerét."
+	}
+
+	"WarpAmmo2"
+	{
+		"hu"			"Elhasználtad a távolsági teleportálás képességed összes lőszerét."
+	}
+
+	"WarpDetails"
+	{
+		"hu"			"A túlélőkhöz teleportálsz vagy túlélőket teleportálsz véletlenszerűen a társaikhoz."
+	}
+
+	"WarpHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik időszakos teleportáló képességedet!"
+	}
+
+	"WarpHuman2"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik teleportáló képességedet!"
+	}
+
+	"WarpHuman3"
+	{
+		"hu"			"Nem sikerült aktiválni a teleportáló képességedet. Próbáld újra."
+	}
+
+	"WarpHuman4"
+	{
+		"hu"			"Már aktiváltad a teleportáló képességedet."
+	}
+
+	"WarpHuman5"
+	{
+		"hu"			"Az időszakos teleportálási képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"WarpHuman6"
+	{
+		"hu"			"A teleportáló képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"WarpHuman7"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tudd a teleportáló képességedet."
+	}
+
+	"WarpHuman8"
+	{
+		"hu"			"Az időszakos teleportáló képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"WarpHuman9"
+	{
+		"hu"			"A teleportáló képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"WarpMenu"
+	{
+		"hu"			"Teleportáló Képesség Információ"
+	}
+
+	"WarpMenu2"
+	{
+		"hu"			"Teleportáló Képesség"
+	}
+
+	"Whirl"
+	{
+		"hu"			"{olive}{1}{mint} éppen megpörgeti{olive} {2}{mint} -t."
+	}
+
+	"Whirl2"
+	{
+		"hu"			"{olive}{1}{mint} többé már nem pörög."
+	}
+
+	"WhirlAmmo"
+	{
+		"hu"			"Elhasználtad a távolsági megpörgető képességed összes lőszerét."
+	}
+
+	"WhirlDetails"
+	{
+		"hu"			"Megpörgeted a túlélők képernyőjét."
+	}
+
+	"WhirlHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik megpörgető képességedet!"
+	}
+
+	"WhirlHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a megpörgető képességedet. Próbáld újra."
+	}
+
+	"WhirlHuman3"
+	{
+		"hu"			"A megpörgető képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"WhirlHuman4"
+	{
+		"hu"			"Nincsenek túlélők a közelben ahhoz, hogy használni tud a megpörgető képességedet."
+	}
+
+	"WhirlHuman5"
+	{
+		"hu"			"A megpörgető képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"WhirlMenu"
+	{
+		"hu"			"Megpörgető Képesség Információ"
+	}
+
+	"WhirlMenu2"
+	{
+		"hu"			"Megpörgető Képesség"
+	}
+
+	"Witch"
+	{
+		"hu"			"{olive}{1}{mint} átalakított pár közönséges fertőzöttet{olive} Boszorka minyonná{mint}!"
+	}
+
+	"WitchAmmo"
+	{
+		"hu"			"Elhasználtad a boszorka létrehozás képességed összes lőszerét."
+	}
+
+	"WitchDetails"
+	{
+		"hu"			"Átalakítod a közelben lévő közönséges fertőzöttet Boszorka minyonná."
+	}
+
+	"WitchHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik boszorka létrehozó képességedet!"
+	}
+
+	"WitchHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a boszorka létrehozó képességedet. Próbáld újra."
+	}
+
+	"WitchHuman3"
+	{
+		"hu"			"A boszorka létrehozó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"WitchHuman4"
+	{
+		"hu"			"A boszorka létrehozó képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"WitchMenu"
+	{
+		"hu"			"Boszorka Képesség Információ"
+	}
+
+	"WitchMenu2"
+	{
+		"hu"			"Boszorka Képesség"
+	}
+
+	"Xiphos"
+	{
+		"hu"			"{olive}{1}{mint} ellopott egy kis életerőt{olive} {2}{mint}-tol!"
+	}
+
+	"Xiphos2"
+	{
+		"hu"			"{olive}{1}{mint} ellopott egy kis életerőt{olive} {2}{mint}-tol!"
+	}
+
+	"XiphosDetails"
+	{
+		"hu"			"Életerőt tudsz lopni a túlélőktől, és fordítva."
+	}
+
+	"XiphosMenu"
+	{
+		"hu"			"Xipho Képesség Információ"
+	}
+
+	"XiphosMenu2"
+	{
+		"hu"			"Xipho Képesség"
+	}
+
+	"Yell"
+	{
+		"hu"			"{olive}{1}{mint} ráordított a túlélőkre"
+	}
+
+	"Yell2"
+	{
+		"hu"			"{olive}{1}{mint} abbahagyta az ordítást!"
+	}
+
+	"YellAmmo"
+	{
+		"hu"			"Elhasználtad az üvöltő képességed összes lőszerét."
+	}
+
+	"YellDetails"
+	{
+		"hu"			"Rá üvöltesz a túlélőkre hogy megsüketítsd őket."
+	}
+
+	"YellHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik üvöltő képességedet!"
+	}
+
+	"YellHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni az üvöltő képességedet. Próbáld újra."
+	}
+
+	"YellHuman3"
+	{
+		"hu"			"Már aktiváltad az üvöltő képességedet."
+	}
+
+	"YellHuman4"
+	{
+		"hu"			"Az üvöltő képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"YellHuman5"
+	{
+		"hu"			"Az üvöltő képességed véget ért, az újratöltés ideje{yellow} {1} másodperc{mint}."
+	}
+
+	"YellMenu"
+	{
+		"hu"			"Üvöltő Képesség Információ"
+	}
+
+	"YellMenu2"
+	{
+		"hu"			"Üvöltő Képesség"
+	}
+
+	"Zombie"
+	{
+		"hu"			"{olive}{1}{mint} időszakosan zombikat hozz létre!"
+	}
+
+	"Zombie2"
+	{
+		"hu"			"{olive}{1}{mint} zombikat{yellow} hozott létre{mint}!"
+	}
+
+	"ZombieAmmo"
+	{
+		"hu"			"Elhasználtad a zombi létrehozó képességed összes lőszerét."
+	}
+
+	"ZombieDetails"
+	{
+		"hu"			"Zombikat hozol létre."
+	}
+
+	"ZombieHuman"
+	{
+		"hu"			"Aktiváltad{olive} {1}{mint}/{olive}{2}{mint} az egyik zombi létrehozó képességedet!"
+	}
+
+	"ZombieHuman2"
+	{
+		"hu"			"Nem sikerült aktiválni a zombi létrehozó képességedet. Próbáld újra."
+	}
+
+	"ZombieHuman3"
+	{
+		"hu"			"Már aktiváltad a zombi létrehozó képességedet."
+	}
+
+	"ZombieHuman4"
+	{
+		"hu"			"A zombi létrehozó képességednek még kell{yellow} {1} másodperc{mint} az újratöltéshez."
+	}
+
+	"ZombieHuman5"
+	{
+		"hu"			"A zombi létrehozó képességed véget ért, az újratöltés időtartama{yellow} {1} másodperc{mint}."
+	}
+
+	"ZombieMenu"
+	{
+		"hu"			"Zombi Képesség Információ"
+	}
+
+	"ZombieMenu2"
+	{
+		"hu"			"Zombi Képesség"
+	}
+}

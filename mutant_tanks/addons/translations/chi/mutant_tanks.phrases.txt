@@ -1,0 +1,5026 @@
+"Phrases"
+{
+	// MT 的 聊天框文本颜色占位符
+	// --
+	// 注意： 并不是所有的短语文本都支持这些占位符。
+	// --
+	// "{default}" - 普通颜色 -> \x01
+	// --
+	// "{mint}" - 天青色 -> \x03
+	// --
+	// "{yellow}" - 橘黄色 -> \x04
+	// --
+	// "{olive}" - 黄绿色 -> \x05
+	// --
+	// "{percent}" - "%%" -> %
+
+	"MutantTanks"
+	{
+		"chi"			"突变坦克"
+	}
+
+	"MTAbilitiesMenu"
+	{
+		"chi"			"突变坦克能力"
+	}
+
+	"MTConfigMenu"
+	{
+		"chi"			"配置信息解析"
+	}
+
+	"MTDefaultItem"
+	{
+		"chi"			"默认坦克"
+	}
+
+	"MTFavoriteMenu"
+	{
+		"chi"			"使用你喜爱的突变坦克类型？"
+	}
+
+	"MTInfoMenu"
+	{
+		"chi"			"突变坦克信息"
+	}
+
+	"MTListMenu"
+	{
+		"chi"			"突变坦克清单"
+	}
+
+	"MTPathMenu"
+	{
+		"chi"			"文件路径菜单"
+	}
+
+	"MTPrefsInfo"
+	{
+		"chi"			"输入{olive} ！mt_prefs{default} 来变更你的{mint} 可视化奖励设定{default}！"
+	}
+
+	"MTPrefsMenu"
+	{
+		"chi"			"突变坦克 首选项菜单"
+	}
+
+	"MTReloadMenu"
+	{
+		"chi"			"重新加载配置菜单"
+	}
+
+	"MTSettingsItem"
+	{
+		"chi"			"插件设置"
+	}
+
+	"MTTankItem"
+	{
+		"chi"			"{1} (坦克 #{2}) [坦克 #{3}]"
+	}
+
+	"MTVersionMenu"
+	{
+		"chi"			"突变坦克版本"
+	}
+
+	"Ammunition"
+	{
+		"chi"			"次数"
+	}
+
+	"AbilityAmmo"
+	{
+		"chi"			"你的主要/特殊/临终能力还剩余{olive} {1}{mint}/{olive}{2}{mint} 次。"
+	}
+
+	"AbilityAmmo2"
+	{
+		"chi"			"你的范围能力还剩余{olive} {1}{mint}/{olive}{2}{mint} 次。"
+	}
+
+	"AndConjunction"
+	{
+		"chi"			"和"
+	}
+
+	"ButtonMode"
+	{
+		"chi"			"按键模式"
+	}
+
+	"AbilityButtonMode1"
+	{
+		"chi"			"按下按键触发你的能力。"
+	}
+
+	"AbilityButtonMode2"
+	{
+		"chi"			"按住按键触发你的能力。"
+	}
+
+	"Buttons"
+	{
+		"chi"			"按键"
+	}
+
+	"AbilityButtons"
+	{
+		"chi"			"{mint}按{olive}使用键 (默认： E)：{mint} 触发你的主要能力。"
+	}
+
+	"AbilityButtons2"
+	{
+		"chi"			"{mint}按{olive}换弹键 (默认： R)：{mint} 触发你的 范围能力。"
+	}
+
+	"AbilityButtons3"
+	{
+		"chi"			"{mint}按{olive}瞄镜键 (默认： 中键/滚轮)：{mint} 触发你的特殊能力。"
+	}
+
+	"AbilityButtons4"
+	{
+		"chi"			"{mint}按{olive}蹲伏键 (默认： CTRL)：{mint} 触发你的临终能力。"
+	}
+
+	"Cooldown"
+	{
+		"chi"			"冷却时间"
+	}
+
+	"AbilityCooldown"
+	{
+		"chi"			"冷却时间：{olive} {1} 秒"
+	}
+
+	"Details"
+	{
+		"chi"			"详细信息"
+	}
+
+	"Duration"
+	{
+		"chi"			"持续时间"
+	}
+
+	"AbilityDuration"
+	{
+		"chi"			"持续时间：{olive} {1} 秒"
+	}
+
+	"AbilityDuration2"
+	{
+		"chi"			"持续时间：{olive} {1} 秒"
+	}
+
+	"HumanSupport"
+	{
+		"chi"			"玩家支持"
+	}
+
+	"AbilityHumanSupport1"
+	{
+		"chi"			"启用：{olive} 否"
+	}
+
+	"AbilityHumanSupport2"
+	{
+		"chi"			"启用：{olive} 是"
+	}
+
+	"RangeCooldown"
+	{
+		"chi"			"范围冷却时间"
+	}
+
+	"AbilityRangeCooldown"
+	{
+		"chi"			"范围冷却时间：{olive} {1} 秒"
+	}
+
+	"RockCooldown"
+	{
+		"chi"			"岩石冷却时间"
+	}
+
+	"AbilityRockCooldown"
+	{
+		"chi"			"岩石冷却时间：{olive} {1} 秒"
+	}
+
+	"Status"
+	{
+		"chi"			"状态"
+	}
+
+	"AbilityInstalled"
+	{
+		"chi"			"{1}{olive} 已安装。"
+	}
+
+	"AbilityInstalled2"
+	{
+		"chi"			"{1} 已安装。"
+	}
+
+	"AbilityStatus1"
+	{
+		"chi"			"状态：{olive} 已禁用"
+	}
+
+	"AbilityStatus2"
+	{
+		"chi"			"状态：{olive} 已启用"
+	}
+
+	"Arrival1"
+	{
+		"chi"			"{olive}{1}{default} 已经出现了！"
+	}
+
+	"Arrival2"
+	{
+		"chi"			"{olive}{1}{default} 来了！"
+	}
+
+	"Arrival3"
+	{
+		"chi"			"{olive}{1}{default} 已准备好杀戮了！"
+	}
+
+	"Arrival4"
+	{
+		"chi"			"准备好面对{olive} {1}{default} 了么？"
+	}
+
+	"Arrival5"
+	{
+		"chi"			"{olive}{1}{default} 来了， 迎接挑战吧！"
+	}
+
+	"Arrival6"
+	{
+		"chi"			"都给我准备好！{olive} {1}{default} 来了！"
+	}
+
+	"Arrival7"
+	{
+		"chi"			"{olive}{1}{default} 在这里！"
+	}
+
+	"Arrival8"
+	{
+		"chi"			"糟糕！{olive} {1}{default} 正在靠近！"
+	}
+
+	"Arrival9"
+	{
+		"chi"			"{olive}{1}{default} 加入游戏"
+	}
+
+	"Arrival10"
+	{
+		"chi"			"看来{olive} {1}{default} 正往你们那边去！"
+	}
+
+	"Assist1"
+	{
+		"chi"			"{olive}{1}{default} 被击败了！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist2"
+	{
+		"chi"			"幸存者消灭了{olive} {1}{default}！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist3"
+	{
+		"chi"			"{olive}{1}{default} 被打入地狱了！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist4"
+	{
+		"chi"			"{olive}{1}{default} 真的死了。。。？{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist5"
+	{
+		"chi"			"{olive}{1}{default} 挑战幸存者失败！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist6"
+	{
+		"chi"			"{olive}{1}{default} 未能团灭幸存者！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist7"
+	{
+		"chi"			"{olive}{1}{default} 已经消逝了！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist8"
+	{
+		"chi"			"哎呀！{olive} {1}{default} 死了！{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist9"
+	{
+		"chi"			"{olive}{1}{default} 被打出游戏{yellow} MVP：{mint} {2}"
+	}
+
+	"Assist10"
+	{
+		"chi"			"看来{olive} {1}{default} 根本无法团灭幸存者嘛。{yellow} MVP：{mint} {2}"
+	}
+
+	"BodyVisualOn"
+	{
+		"chi"			"身体颜色： 开"
+	}
+
+	"BodyVisualOff"
+	{
+		"chi"			"身体颜色： 关"
+	}
+
+	"ChangeType"
+	{
+		"chi"			"你的突变坦克类型已变更。"
+	}
+
+	"CheckConsole"
+	{
+		"chi"			"完整的输出信息请查看控制台。"
+	}
+
+	"CommandUsage"
+	{
+		"chi"			"用法： {1} <类型 {2}-{3}> <数量： 1-32> <0： 在十字准星处生成|1： 自动生成>"
+	}
+
+	"CommandUsage2"
+	{
+		"chi"			"用法： {1} \"能力名称\""
+	}
+
+	"CompletedParsing"
+	{
+		"chi"			"解析完成！"
+	}
+
+	"Death1"
+	{
+		"chi"			"{olive}{1}{default} 被击败了！"
+	}
+
+	"Death2"
+	{
+		"chi"			"幸存者消灭了{olive} {1}{default}！"
+	}
+
+	"Death3"
+	{
+		"chi"			"{olive}{1}{default} 被打下入地狱了！"
+	}
+
+	"Death4"
+	{
+		"chi"			"{olive}{1}{default} 真的死了。。。？"
+	}
+
+	"Death5"
+	{
+		"chi"			"{olive}{1}{default} 挑战幸存者失败！"
+	}
+
+	"Death6"
+	{
+		"chi"			"{olive}{1}{default} 未能团灭幸存者！"
+	}
+
+	"Death7"
+	{
+		"chi"			"{olive}{1}{default} 已经消逝了！"
+	}
+
+	"Death8"
+	{
+		"chi"			"哎呀！{olive} {1}{default} 死了！"
+	}
+
+	"Death9"
+	{
+		"chi"			"{olive}{1}{default} 被打出游戏"
+	}
+
+	"Death10"
+	{
+		"chi"			"看来{olive} {1}{default} 根本无法团灭幸存者嘛！"
+	}
+
+	"ErrorParsing"
+	{
+		"chi"			"解析文件 \"{1}\" 时出错。 错误信息： {2}。"
+	}
+
+	"Evolved"
+	{
+		"chi"			"{olive}{1}{mint} 演变为{olive} {2}{yellow} (阶段 {3}){mint}！"
+	}
+
+	"FailedParsing"
+	{
+		"chi"			"无法解析文件 \"{1}\"。"
+	}
+
+	"FavoriteUnused"
+	{
+		"chi"			"你选择不使用自己喜爱的坦克类型。"
+	}
+
+	"GeneralDetails"
+	{
+		"chi"			"突变坦克让坦克对抗更加多姿多彩！"
+	}
+
+	"GlowVisualOn"
+	{
+		"chi"			"发光轮廓： 开"
+	}
+
+	"GlowVisualOff"
+	{
+		"chi"			"发光轮廓： 关"
+	}
+
+	"HumanCooldown"
+	{
+		"chi"			"你需要等待{olive} {1} 秒{mint} 才能变更为其他突变坦克类型。"
+	}
+
+	"HumanTag"
+	{
+		"chi"			"[玩家控制]"
+	}
+
+	"Kill1"
+	{
+		"chi"			"{olive}{1}{default} 终结了{mint} {2}{default}！"
+	}
+
+	"Kill2"
+	{
+		"chi"			"{olive}{1}{default} 击败了{mint} {2}{default}！"
+	}
+
+	"Kill3"
+	{
+		"chi"			"{olive}{1}{default} 把{mint} {2}{default} 打入地狱了！"
+	}
+
+	"Kill4"
+	{
+		"chi"			"{olive}{1}{default} 真的杀死{mint} {2}{default}。。。了吗？"
+	}
+
+	"Kill5"
+	{
+		"chi"			"{mint}{2}{default} 挑战{olive} {1}{default} 失败了！"
+	}
+
+	"Kill6"
+	{
+		"chi"			"{mint}{2}{default} 无法杀死{olive} {1}{default}！"
+	}
+
+	"Kill7"
+	{
+		"chi"			"{mint}{2}{default} 在{olive} {1}{default} 手中灭亡！"
+	}
+
+	"Kill8"
+	{
+		"chi"			"哎呀！{mint} {2}{default} 死了， 这要感谢{olive} {1}{default}！"
+	}
+
+	"Kill9"
+	{
+		"chi"			"{olive}{1}{default} 气得{mint} {2}{default} 愤怒退场！"
+	}
+
+	"Kill10"
+	{
+		"chi"			"看来{mint} {2}{default} 无法击败{olive} {1}{default}！"
+	}
+
+	"Killer1"
+	{
+		"chi"			"{mint}{1}{default} 终结了{olive} {2}{default}！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer2"
+	{
+		"chi"			"{mint}{1}{default} 击败了{olive} {2}{default}！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer3"
+	{
+		"chi"			"{mint}{1}{default} 把{olive} {2}{default} 打入地狱了！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer4"
+	{
+		"chi"			"{mint}{1}{default} 真的杀死{olive} {2}{default}。。。了吗？{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer5"
+	{
+		"chi"			"{olive}{2}{default} 挑战{mint} {1}{default} 失败了！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer6"
+	{
+		"chi"			"{olive}{2}{default} 无法杀死{mint} {1}{default}！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer7"
+	{
+		"chi"			"{olive}{2}{default} 在{mint} {1}{default} 手中灭亡！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer8"
+	{
+		"chi"			"哎呀！{olive} {2}{default} 死了， 这要感谢{mint} {1}{default}！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer9"
+	{
+		"chi"			"{mint}{1}{default} 把{olive} {2}{default} 气得愤怒退场！{yellow} MVP：{mint} {3}"
+	}
+
+	"Killer10"
+	{
+		"chi"			"看来{olive} {2}{default} 无法击败{mint} {1}{default}！{yellow} MVP：{mint} {3}"
+	}
+
+	"LightVisualOn"
+	{
+		"chi"			"灯颜色： 开"
+	}
+
+	"LightVisualOff"
+	{
+		"chi"			"灯颜色： 关"
+	}
+
+	"LogEnded"
+	{
+		"chi"			"[{1}] --- 地图： {2} 结束日志记录 ---"
+	}
+
+	"LogStarted"
+	{
+		"chi"			"[{1}] --- 地图： {2} 开始日志记录---"
+	}
+
+	"MultipleMatches"
+	{
+		"chi"			"该名称与多种类型相匹配。{olive} 选择一个随机匹配项{yellow} (坦克 #{1}) [坦克 #{2}]{olive}。"
+	}
+
+	"NoAbilities"
+	{
+		"chi"			"找不到此能力。"
+	}
+
+	"NoCommandAccess"
+	{
+		"chi"			"你无权使用此指令。"
+	}
+
+	"NoItems"
+	{
+		"chi"			"没有可用的物品。"
+	}
+
+	"NoName"
+	{
+		"chi"			"坦克"
+	}
+
+	"NoNote"
+	{
+		"chi"			"找不到该突变坦克的注释文本。"
+	}
+
+	"NoTypeAccess"
+	{
+		"chi"			"你无权使用此突变坦克类型。"
+	}
+
+	"OptionNo"
+	{
+		"chi"			"否"
+	}
+
+	"OptionYes"
+	{
+		"chi"			"是"
+	}
+
+	"ParticleVisualOn"
+	{
+		"chi"			"粒子特效： 开"
+	}
+
+	"ParticleVisualOff"
+	{
+		"chi"			"粒子特效： 关"
+	}
+
+	"PersonalType"
+	{
+		"chi"			"当你控制{mint} 坦克{default} 时， 将以{olive} {1}{yellow} (坦克 #{2}) [坦克 #{3}]{default} 的身份出现。"
+	}
+
+	"PitchVisualOn"
+	{
+		"chi"			"音高特效： 开"
+	}
+
+	"PitchVisualOff"
+	{
+		"chi"			"音高特效： 关"
+	}
+
+	"PluginDisabled"
+	{
+		"chi"			"突变坦克{default} 已禁用。"
+	}
+
+	"Randomized"
+	{
+		"chi"			"{olive}{1}{mint} 随机为{olive} {2}{mint}！"
+	}
+
+	"ReloadedConfig"
+	{
+		"chi"			"所有配置文件均已重新加载。"
+	}
+
+	"ReloadingConfig"
+	{
+		"chi"			"正在重新加载配置文件 \"{1}\"。。。"
+	}
+
+	"RequestFailed"
+	{
+		"chi"			"没有与该名称匹配的类型。{olive} 请求失败。"
+	}
+
+	"RequestSucceeded"
+	{
+		"chi"			"一种名称{yellow} (坦克 #{1}) [坦克 #{2}]{mint} 与该名称匹配。{olive} 请求成功！"
+	}
+
+	"RewardAmmo"
+	{
+		"chi"			"弹药加成"
+	}
+
+	"RewardAttackBoost"
+	{
+		"chi"			"攻击加成"
+	}
+
+	"RewardDamageBoost"
+	{
+		"chi"			"伤害加成"
+	}
+
+	"RewardEnd"
+	{
+		"chi"			"你的{yellow} {1}{default} 结束了！"
+	}
+
+	"RewardGod"
+	{
+		"chi"			"无敌"
+	}
+
+	"RewardHealth"
+	{
+		"chi"			"生命值加成"
+	}
+
+	"RewardInfAmmo"
+	{
+		"chi"			"无限弹药"
+	}
+
+	"RewardLadyKiller"
+	{
+		"chi"			"{1}{default} 次{mint} 女巫杀手{default} 的使用权"
+	}
+
+	"RewardLadyKiller2"
+	{
+		"chi"			"你的{mint} 女巫杀手{default} 还剩下{yellow} {1}{default} 次可用。"
+	}
+
+	"RewardList"
+	{
+		"chi"			"你击杀了{olive} {2}{default}， 获得了{yellow} {1}{default}！"
+	}
+
+	"RewardList2"
+	{
+		"chi"			"你协助队友击杀了{olive} {2}{default} 且频繁支援， 获得了{yellow} {1}{default}！"
+	}
+
+	"RewardList3"
+	{
+		"chi"			"你协助队友击杀了{olive} {2}{default}， 获得了{yellow} {1}{default}！"
+	}
+
+	"RewardList4"
+	{
+		"chi"			"你击杀了{olive} {2}{default} 且频繁支援， 获得了{yellow} {1}{default}！"
+	}
+
+	"RewardNone"
+	{
+		"chi"			"你对{default}{olive} {1}{default} 的伤害不足， 无法获得任何奖励。"
+	}
+
+	"RewardReceived"
+	{
+		"chi"			"你{default} 获得了{yellow} {1}{default}。"
+	}
+
+	"RewardRefill"
+	{
+		"chi"			"生命值和弹药"
+	}
+
+	"RewardRespawn"
+	{
+		"chi"			"复活"
+	}
+
+	"RewardShared"
+	{
+		"chi"			"{1}{default} 分享他的{yellow} {2}{default} 给{mint} 你{default}!"
+	}
+
+	"RewardSolo"
+	{
+		"chi"			"{1}{default} 独自击杀了{olive} {2}{default}！"
+	}
+
+	"RewardSpeedBoost"
+	{
+		"chi"			"速度加成"
+	}
+
+	"ScreenVisualOn"
+	{
+		"chi"			"屏幕特效： 开"
+	}
+
+	"ScreenVisualOff"
+	{
+		"chi"			"屏幕特效： 关"
+	}
+
+	"SpawnManually"
+	{
+		"chi"			"你必须手动生成。"
+	}
+
+	"SpawnMessage"
+	{
+		"chi"			"你变成突变坦克了！你可以使用以下功能："
+	}
+
+	"StartParsing"
+	{
+		"chi"			"正在解析配置文件。。。"
+	}
+
+	"StillParsing"
+	{
+		"chi"			"插件还在解析配置文件。"
+	}
+
+	"TankDisabled"
+	{
+		"chi"			"{1}{yellow} (坦克 #{2}) [坦克 #{3}]{default} 已禁用。"
+	}
+
+	"TeammatesList"
+	{
+		"chi"			"玩家对{olive} {1}{default} 造成的总伤害比：{mint} {2}"
+	}
+
+	"Transformed"
+	{
+		"chi"			"{olive}{1}{mint} 变成了{olive} {2}{mint}！"
+	}
+
+	"Untransformed"
+	{
+		"chi"			"{olive}{1}{mint} 恢复为{olive} {2}{mint}！"
+	}
+
+	"VoicelineVisualOn"
+	{
+		"chi"			"循环声音线： 开"
+	}
+
+	"VoicelineVisualOff"
+	{
+		"chi"			"循环声音线： 关"
+	}
+
+	"Absorb"
+	{
+		"chi"			"{olive}{1}{mint} 正在吸收你受到的大部分伤害！"
+	}
+
+	"Absorb2"
+	{
+		"chi"			"{olive}{1}{mint} 不再吸收你受到的大部分伤害！"
+	}
+
+	"AbsorbAmmo"
+	{
+		"chi"			"你已经用光了所有 吸收 能力次数。"
+	}
+
+	"AbsorbDetails"
+	{
+		"chi"			"你可以吸收对你造成的大部分伤害。"
+	}
+
+	"AbsorbHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次吸收 能力！"
+	}
+
+	"AbsorbHuman2"
+	{
+		"chi"			"你的 吸收 能力未能激活， 请重试。"
+	}
+
+	"AbsorbHuman3"
+	{
+		"chi"			"你已经激活了 吸收 能力。"
+	}
+
+	"AbsorbHuman4"
+	{
+		"chi"			"你的 吸收 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AbsorbHuman5"
+	{
+		"chi"			"你的 吸收 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AbsorbMenu"
+	{
+		"chi"			"吸收能力信息"
+	}
+
+	"AbsorbMenu2"
+	{
+		"chi"			"吸收能力"
+	}
+
+	"Acid"
+	{
+		"chi"			"{olive}{1}{mint} 刚刚在{olive} {2}{mint} 脚下生成一个酸液地带！"
+	}
+
+	"Acid2"
+	{
+		"chi"			"{olive}{1}{mint} 的岩石创造了一个酸液地带。"
+	}
+
+	"AcidAmmo"
+	{
+		"chi"			"你已经用光了所有 酸液 范围能力次数。"
+	}
+
+	"AcidDetails"
+	{
+		"chi"			"你可以制造酸液地带。"
+	}
+
+	"AcidHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 酸液 能力！"
+	}
+
+	"AcidHuman2"
+	{
+		"chi"			"你的 酸液 能力未能激活， 请重试。"
+	}
+
+	"AcidHuman3"
+	{
+		"chi"			"你的 酸液 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AcidHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 酸液 能力。"
+	}
+
+	"AcidHuman5"
+	{
+		"chi"			"你的 酸液 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AcidMenu"
+	{
+		"chi"			"酸液能力信息"
+	}
+
+	"AcidMenu2"
+	{
+		"chi"			"酸液能力"
+	}
+
+	"Aimless"
+	{
+		"chi"			"{olive}{1}{mint} 正在阻止{olive} {2}{mint} 使用瞄准！"
+	}
+
+	"Aimless2"
+	{
+		"chi"			"{olive}{1}{mint} 又可以进行瞄准了！"
+	}
+
+	"AimlessAmmo"
+	{
+		"chi"			"你已经用光了所有 禁瞄 范围能力次数。"
+	}
+
+	"AimlessDetails"
+	{
+		"chi"			"你可以阻止玩家瞄准"
+	}
+
+	"AimlessHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 禁瞄 能力！"
+	}
+
+	"AimlessHuman2"
+	{
+		"chi"			"你的 禁瞄 能力未能激活， 请重试。"
+	}
+
+	"AimlessHuman3"
+	{
+		"chi"			"你的 禁瞄 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AimlessHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 禁瞄 能力。"
+	}
+
+	"AimlessHuman5"
+	{
+		"chi"			"你的 禁瞄 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AimlessMenu"
+	{
+		"chi"			"禁瞄能力信息"
+	}
+
+	"AimlessMenu2"
+	{
+		"chi"			"禁瞄能力"
+	}
+
+	"Ammo"
+	{
+		"chi"			"{olive}{1}{mint} 夺走了{olive} {2}{mint} 全部弹药！"
+	}
+
+	"AmmoAmmo"
+	{
+		"chi"			"你已经用光了所有 掠弹 范围能力次数。"
+	}
+
+	"AmmoDetails"
+	{
+		"chi"			"你可以夺走幸存者弹药。"
+	}
+
+	"AmmoHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 掠弹 能力！"
+	}
+
+	"AmmoHuman2"
+	{
+		"chi"			"你的 掠弹 能力未能激活， 请重试。"
+	}
+
+	"AmmoHuman3"
+	{
+		"chi"			"你的 掠弹 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AmmoHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 掠弹 能力。"
+	}
+
+	"AmmoHuman5"
+	{
+		"chi"			"你的 掠弹 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"AmmoMenu"
+	{
+		"chi"			"掠弹能力信息"
+	}
+
+	"AmmoMenu2"
+	{
+		"chi"			"掠弹能力"
+	}
+
+	"Blind"
+	{
+		"chi"			"{olive}{1}{mint} 致盲了{olive} {2}{mint}！"
+	}
+
+	"Blind2"
+	{
+		"chi"			"{olive}{1}{mint} 可以看见东西了！"
+	}
+
+	"BlindAmmo"
+	{
+		"chi"			"你已经用光了所有 致盲 范围能力次数。"
+	}
+
+	"BlindDetails"
+	{
+		"chi"			"你可以致盲幸存者。"
+	}
+
+	"BlindHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 致盲 能力！"
+	}
+
+	"BlindHuman2"
+	{
+		"chi"			"你的 致盲 能力未能激活， 请重试。"
+	}
+
+	"BlindHuman3"
+	{
+		"chi"			"你的 致盲 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BlindHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 致盲 能力。"
+	}
+
+	"BlindHuman5"
+	{
+		"chi"			"你的 致盲 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BlindMenu"
+	{
+		"chi"			"致盲能力信息"
+	}
+
+	"BlindMenu2"
+	{
+		"chi"			"致盲能力"
+	}
+
+	"Bomb"
+	{
+		"chi"			"{olive}{1}{mint} 刚刚在{olive} {2}{mint} 的位置爆炸了！"
+	}
+
+	"Bomb2"
+	{
+		"chi"			"{olive}{1}{mint} 的岩石爆炸了。。"
+	}
+
+	"BombAmmo"
+	{
+		"chi"			"你已经用光了所有 爆炸 范围能力次数。"
+	}
+
+	"BombDetails"
+	{
+		"chi"			"你可以制造爆炸。"
+	}
+
+	"BombHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 爆炸 能力！"
+	}
+
+	"BombHuman2"
+	{
+		"chi"			"你的 爆炸 能力未能激活， 请重试。"
+	}
+
+	"BombHuman3"
+	{
+		"chi"			"你的 爆炸 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BombHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 爆炸 能力。"
+	}
+
+	"BombHuman5"
+	{
+		"chi"			"你的 爆炸 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BombMenu"
+	{
+		"chi"			"爆炸能力信息"
+	}
+
+	"BombMenu2"
+	{
+		"chi"			"爆炸能力"
+	}
+
+	"Bury"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 埋入地下{yellow} {3}{mint} 尺！"
+	}
+
+	"Bury2"
+	{
+		"chi"			"{olive}{1}{mint} 爬出地面了！"
+	}
+
+	"BuryAmmo"
+	{
+		"chi"			"你已经用光了所有 埋葬 范围能力次数。"
+	}
+
+	"BuryDetails"
+	{
+		"chi"			"你可以埋葬幸存者"
+	}
+
+	"BuryHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 埋葬 能力！"
+	}
+
+	"BuryHuman2"
+	{
+		"chi"			"你的 埋葬 能力未能激活， 请重试。"
+	}
+
+	"BuryHuman3"
+	{
+		"chi"			"你的 埋葬 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BuryHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 埋葬 能力。"
+	}
+
+	"BuryHuman5"
+	{
+		"chi"			"你的 埋葬 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"BuryMenu"
+	{
+		"chi"			"埋葬能力信息"
+	}
+
+	"BuryMenu2"
+	{
+		"chi"			"埋葬能力"
+	}
+
+	"Car"
+	{
+		"chi"			"{olive}{1}{mint} 开始召唤{yellow} 汽车雨{mint}！"
+	}
+
+	"Car2"
+	{
+		"chi"			"{olive}{1}{mint} 的 汽车雨 结束了！"
+	}
+
+	"CarAmmo"
+	{
+		"chi"			"你已经用光了所有 汽车雨 次数。"
+	}
+
+	"CarDetails"
+	{
+		"chi"			"你可以召唤汽车雨"
+	}
+
+	"CarHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 汽车雨！"
+	}
+
+	"CarHuman2"
+	{
+		"chi"			"你的 汽车雨 未能激活， 请重试。"
+	}
+
+	"CarHuman3"
+	{
+		"chi"			"你已经激活了 汽车雨。"
+	}
+
+	"CarHuman4"
+	{
+		"chi"			"你的 汽车雨 还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CarHuman5"
+	{
+		"chi"			"你的 汽车雨 已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CarMenu"
+	{
+		"chi"			"汽车雨能力信息"
+	}
+
+	"CarMenu2"
+	{
+		"chi"			"汽车雨能力"
+	}
+
+	"Choke"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 弄到窒息！"
+	}
+
+	"Choke2"
+	{
+		"chi"			"{olive}{1}{mint} 可以呼吸了！"
+	}
+
+	"ChokeAmmo"
+	{
+		"chi"			"你已经用光了所有 窒息 范围能力次数。"
+	}
+
+	"ChokeDetails"
+	{
+		"chi"			"你可以在半空窒息幸存者。"
+	}
+
+	"ChokeHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 窒息 能力！"
+	}
+
+	"ChokeHuman2"
+	{
+		"chi"			"你的 窒息 能力未能激活， 请重试。"
+	}
+
+	"ChokeHuman3"
+	{
+		"chi"			"你的 窒息 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ChokeHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 窒息 能力。"
+	}
+
+	"ChokeHuman5"
+	{
+		"chi"			"你的 窒息 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ChokeMenu"
+	{
+		"chi"			"窒息能力信息"
+	}
+
+	"ChokeMenu2"
+	{
+		"chi"			"窒息能力"
+	}
+
+	"Clone"
+	{
+		"chi"			"{olive}{1}{mint} 创造了自己的 克隆体！"
+	}
+
+	"CloneAmmo"
+	{
+		"chi"			"你已经用光了所有 克隆 次数。"
+	}
+
+	"CloneDetails"
+	{
+		"chi"			"你可以制造克隆体。"
+	}
+
+	"CloneHuman"
+	{
+		"chi"			"你创造了{olive} {1}{mint}/{olive}{2}{mint} 克隆体！"
+	}
+
+	"CloneHuman2"
+	{
+		"chi"			"你制造 克隆体 失败， 请重试。"
+	}
+
+	"CloneHuman3"
+	{
+		"chi"			"你无法为克隆体制造克隆体。"
+	}
+
+	"CloneHuman4"
+	{
+		"chi"			"你的 克隆 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CloneHuman5"
+	{
+		"chi"			"你的一个 克隆体 死了。"
+	}
+
+	"CloneHuman6"
+	{
+		"chi"			"你的 克隆体 已全部死亡， 克隆能力需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CloneMenu"
+	{
+		"chi"			"克隆能力信息"
+	}
+
+	"CloneMenu2"
+	{
+		"chi"			"克隆能力"
+	}
+
+	"Cloud"
+	{
+		"chi"			"{olive}{1}{mint} 正在释放烟雾！"
+	}
+
+	"Cloud2"
+	{
+		"chi"			"{olive}{1}{mint} 停止了释放烟雾！"
+	}
+
+	"CloudAmmo"
+	{
+		"chi"			"你已经用光了所有 毒云 能力次数。"
+	}
+
+	"CloudDetails"
+	{
+		"chi"			"你可以制造不断伤害幸存者的毒云。"
+	}
+
+	"CloudHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 毒云 能力！"
+	}
+
+	"CloudHuman2"
+	{
+		"chi"			"你的 毒云 能力未能激活， 请重试。"
+	}
+
+	"CloudHuman3"
+	{
+		"chi"			"你已经激活了你的 毒云 能力。"
+	}
+
+	"CloudHuman4"
+	{
+		"chi"			"你的 毒云 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CloudHuman5"
+	{
+		"chi"			"你的 毒云 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"CloudMenu"
+	{
+		"chi"			"毒云能力信息"
+	}
+
+	"CloudMenu2"
+	{
+		"chi"			"毒云能力"
+	}
+
+	"Drop"
+	{
+		"chi"			"{olive}{1}{mint} 掉落了枪械！"
+	}
+
+	"Drop2"
+	{
+		"chi"			"{olive}{1}{mint} 掉落了近战武器！"
+	}
+
+	"DropDetails"
+	{
+		"chi"			"你死亡时掉落武器。"
+	}
+
+	"DropHuman"
+	{
+		"chi"			"你死亡后会掉落武器。"
+	}
+
+	"DropHuman2"
+	{
+		"chi"			"你将在死亡后掉落武器。"
+	}
+
+	"DropMenu"
+	{
+		"chi"			"掉落能力信息"
+	}
+
+	"DropMenu2"
+	{
+		"chi"			"掉落能力"
+	}
+
+	"Drug"
+	{
+		"chi"			"{olive}{1}{mint} 对{olive} {2}{mint} 投毒了！"
+	}
+
+	"Drug2"
+	{
+		"chi"			"{olive}{1}{mint} 的毒药失效！"
+	}
+
+	"DrugAmmo"
+	{
+		"chi"			"你已经用光了所有 中毒 范围能力次数。"
+	}
+
+	"DrugDetails"
+	{
+		"chi"			"你可以让幸存者中毒。"
+	}
+
+	"DrugHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 中毒 能力！"
+	}
+
+	"DrugHuman2"
+	{
+		"chi"			"你的 中毒 能力未能激活， 请重试。"
+	}
+
+	"DrugHuman3"
+	{
+		"chi"			"你的 中毒 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"DrugHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 中毒 能力。"
+	}
+
+	"DrugHuman5"
+	{
+		"chi"			"你的 中毒 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"DrugMenu"
+	{
+		"chi"			"中毒能力信息"
+	}
+
+	"DrugMenu2"
+	{
+		"chi"			"中毒能力"
+	}
+
+	"Drunk"
+	{
+		"chi"			"{olive}{1}{mint} 让{olive} {2}{mint} 喝醉了！"
+	}
+
+	"Drunk2"
+	{
+		"chi"			"{olive}{1}{mint} 醒酒了！"
+	}
+
+	"DrunkAmmo"
+	{
+		"chi"			"你已经用光了所有 醉酒 范围能力次数。"
+	}
+
+	"DrunkDetails"
+	{
+		"chi"			"你可以让幸存者喝醉。"
+	}
+
+	"DrunkHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 醉酒 能力！"
+	}
+
+	"DrunkHuman2"
+	{
+		"chi"			"你的 醉酒 能力未能激活， 请重试。"
+	}
+
+	"DrunkHuman3"
+	{
+		"chi"			"你的 醉酒 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"DrunkHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 醉酒 能力。"
+	}
+
+	"DrunkHuman5"
+	{
+		"chi"			"你的 醉酒 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"DrunkMenu"
+	{
+		"chi"			"醉酒能力信息"
+	}
+
+	"DrunkMenu2"
+	{
+		"chi"			"醉酒能力"
+	}
+
+	"Electric"
+	{
+		"chi"			"{olive}{1}{mint} 正在电击{olive} {2}{mint}！"
+	}
+
+	"Electric2"
+	{
+		"chi"			"{olive}{1}{mint} 脱离了电击！"
+	}
+
+	"ElectricAmmo"
+	{
+		"chi"			"你已经用光了所有 电击 范围能力次数。"
+	}
+
+	"ElectricDetails"
+	{
+		"chi"			"你可以电击幸存者。"
+	}
+
+	"ElectricHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 电击 能力！"
+	}
+
+	"ElectricHuman2"
+	{
+		"chi"			"你的 电击 能力未能激活， 请重试。"
+	}
+
+	"ElectricHuman3"
+	{
+		"chi"			"你的 电击 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ElectricHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 电击 能力。"
+	}
+
+	"ElectricHuman5"
+	{
+		"chi"			"你的 电击 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ElectricMenu"
+	{
+		"chi"			"电击能力信息"
+	}
+
+	"ElectricMenu2"
+	{
+		"chi"			"电击能力"
+	}
+
+	"Enforce"
+	{
+		"chi"			"{olive}{1}{mint} 强迫{olive} {2}{mint} 只能使用{yellow} #{3}{mint}号武器槽位！"
+	}
+
+	"Enforce2"
+	{
+		"chi"			"{olive}{1}{mint} 可以使用全部武器槽位了！"
+	}
+
+	"EnforceAmmo"
+	{
+		"chi"			"你已经用光了所有 迫用 范围能力次数。"
+	}
+
+	"EnforceDetails"
+	{
+		"chi"			"你可以迫使幸存者使用指定武器槽。"
+	}
+
+	"EnforceHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 迫用 能力！"
+	}
+
+	"EnforceHuman2"
+	{
+		"chi"			"你的 迫用 能力未能激活， 请重试。"
+	}
+
+	"EnforceHuman3"
+	{
+		"chi"			"你的 迫用 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"EnforceHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 迫用 能力。"
+	}
+
+	"EnforceHuman5"
+	{
+		"chi"			"你的 迫用 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"EnforceMenu"
+	{
+		"chi"			"迫用能力信息"
+	}
+
+	"EnforceMenu2"
+	{
+		"chi"			"迫用能力"
+	}
+
+	"Fast"
+	{
+		"chi"			"{olive}{1}{mint} 的速度加成已激活！"
+	}
+
+	"Fast2"
+	{
+		"chi"			"{olive}{1}{mint} 的速度加成已结束！"
+	}
+
+	"FastAmmo"
+	{
+		"chi"			"你已经用光了所有 迅速 能力次数。"
+	}
+
+	"FastDetails"
+	{
+		"chi"			"你可以跑的跟闪电一样快。"
+	}
+
+	"FastHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 迅速 能力！"
+	}
+
+	"FastHuman2"
+	{
+		"chi"			"你的 迅速 能力未能激活， 请重试。"
+	}
+
+	"FastHuman3"
+	{
+		"chi"			"你已经激活了你的 迅速 能力。"
+	}
+
+	"FastHuman4"
+	{
+		"chi"			"你的 迅速 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FastHuman5"
+	{
+		"chi"			"你的 迅速 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FastMenu"
+	{
+		"chi"			"迅速能力信息"
+	}
+
+	"FastMenu2"
+	{
+		"chi"			"迅速能力"
+	}
+
+	"Fire"
+	{
+		"chi"			"{olive}{1}{mint} 刚在{olive} {2}{mint} 下方生成了火焰！"
+	}
+
+	"Fire2"
+	{
+		"chi"			"{olive}{1}{mint} 的岩石生成了火焰。"
+	}
+
+	"FireAmmo"
+	{
+		"chi"			"你已经用光了所有 火焰 范围能力次数。"
+	}
+
+	"FireDetails"
+	{
+		"chi"			"你可以创造火焰。"
+	}
+
+	"FireHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 火焰 能力！"
+	}
+
+	"FireHuman2"
+	{
+		"chi"			"你的 火焰 能力未能激活， 请重试。"
+	}
+
+	"FireHuman3"
+	{
+		"chi"			"你的 火焰 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FireHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 火焰 能力。"
+	}
+
+	"FireHuman5"
+	{
+		"chi"			"你的 火焰 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FireMenu"
+	{
+		"chi"			"火焰能力信息"
+	}
+
+	"FireMenu2"
+	{
+		"chi"			"火焰能力"
+	}
+
+	"Fling"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 抛向高空！"
+	}
+
+	"FlingAmmo"
+	{
+		"chi"			"你已经用光了所有 抛空 范围能力次数。"
+	}
+
+	"FlingDetails"
+	{
+		"chi"			"你可以把幸存者抛向高空。"
+	}
+
+	"FlingHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 抛空 能力！"
+	}
+
+	"FlingHuman2"
+	{
+		"chi"			"你的 抛空 能力未能激活， 请重试。"
+	}
+
+	"FlingHuman3"
+	{
+		"chi"			"你的 抛空 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FlingHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 抛空 能力。"
+	}
+
+	"FlingHuman5"
+	{
+		"chi"			"你的 抛空 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FlingMenu"
+	{
+		"chi"			"抛空能力信息"
+	}
+
+	"FlingMenu2"
+	{
+		"chi"			"抛空能力"
+	}
+
+	"Fly"
+	{
+		"chi"			"{olive}{1}{mint} 正在飞翔！"
+	}
+
+	"Fly2"
+	{
+		"chi"			"{olive}{1}{mint} 停止飞行！"
+	}
+
+	"FlyAmmo"
+	{
+		"chi"			"你已经用完了所有飞行技能的弹药。"
+	}
+
+	"FlyDetails"
+	{
+		"chi"			"你可以飞来飞去。"
+	}
+
+	"FlyHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 飞行能力！"
+	}
+
+	"FlyHuman2"
+	{
+		"chi"			"你的飞行能力无法激活， 请重试。"
+	}
+
+	"FlyHuman3"
+	{
+		"chi"			"你已经激活了飞行能力。"
+	}
+
+	"FlyHuman4"
+	{
+		"chi"			"你的飞行能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FlyHuman5"
+	{
+		"chi"			"你的飞行能力已结束， 需要充电{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FlyHuman6"
+	{
+		"chi"			"你所处的地方太狭窄， 无法四处飞翔。"
+	}
+
+	"FlyMenu"
+	{
+		"chi"			"飞行能力信息"
+	}
+
+	"FlyMenu2"
+	{
+		"chi"			"飞行能力"
+	}
+
+	"Fragile"
+	{
+		"chi"			"{olive}{1}{mint} 的伤害抗性降低了， 同时移动速度和对你的伤害更高了！"
+	}
+
+	"Fragile2"
+	{
+		"chi"			"{olive}{1}{mint} 的伤害抗性恢复正常了！"
+	}
+
+	"FragileAmmo"
+	{
+		"chi"			"你已经用光了所有 脆弱 能力次数。"
+	}
+
+	"FragileDetails"
+	{
+		"chi"			"你会受到更多伤害， 但对幸存者造成的伤害也更多， 移动速度也更快。"
+	}
+
+	"FragileHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 脆弱 能力！"
+	}
+
+	"FragileHuman2"
+	{
+		"chi"			"你的 脆弱 能力未能激活， 请重试。"
+	}
+
+	"FragileHuman3"
+	{
+		"chi"			"你已经激活了你的 脆弱 能力。"
+	}
+
+	"FragileHuman4"
+	{
+		"chi"			"你的 脆弱 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FragileHuman5"
+	{
+		"chi"			"你的 脆弱 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"FragileMenu"
+	{
+		"chi"			"脆弱能力信息"
+	}
+
+	"FragileMenu2"
+	{
+		"chi"			"脆弱能力"
+	}
+
+	"Ghost"
+	{
+		"chi"			"{olive}{1}{mint} 让{olive} {2}{mint} 缴械了！"
+	}
+
+	"Ghost2"
+	{
+		"chi"			"{olive}{1}{mint} 给自己伪装了！"
+	}
+
+	"Ghost3"
+	{
+		"chi"			"{olive}{1}{mint} 的伪装结束了！"
+	}
+
+	"GhostAmmo"
+	{
+		"chi"			"你已经用光了所有 伪装 能力次数。"
+	}
+
+	"GhostAmmo2"
+	{
+		"chi"			"你已经用光了所有 缴械 范围能力次数。"
+	}
+
+	"GhostDetails"
+	{
+		"chi"			"你可以让自己隐身且让幸存者缴械。"
+	}
+
+	"GhostHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 伪装 能力！"
+	}
+
+	"GhostHuman2"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 缴械 能力！"
+	}
+
+	"GhostHuman3"
+	{
+		"chi"			"你的 缴械 能力未能激活， 请重试。"
+	}
+
+	"GhostHuman4"
+	{
+		"chi"			"你已经激活了你的 伪装 能力。"
+	}
+
+	"GhostHuman5"
+	{
+		"chi"			"你的 伪装 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GhostHuman6"
+	{
+		"chi"			"你的 缴械 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GhostHuman7"
+	{
+		"chi"			"附近没有幸存者可以让你使用 缴械 能力。"
+	}
+
+	"GhostHuman8"
+	{
+		"chi"			"你的 伪装 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GhostHuman9"
+	{
+		"chi"			"你的 缴械 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GhostMenu"
+	{
+		"chi"			"幽灵能力信息"
+	}
+
+	"GhostMenu2"
+	{
+		"chi"			"幽灵能力"
+	}
+
+	"God"
+	{
+		"chi"			"{olive}{1}{mint} 暂时无敌了！"
+	}
+
+	"God2"
+	{
+		"chi"			"{olive}{1}{mint} 无敌结束了！"
+	}
+
+	"GodAmmo"
+	{
+		"chi"			"你已经用光了所有 上帝 能力次数。"
+	}
+
+	"GodDetails"
+	{
+		"chi"			"你暂时免疫所有伤害。"
+	}
+
+	"GodHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 上帝 能力！"
+	}
+
+	"GodHuman2"
+	{
+		"chi"			"你的 上帝 能力未能激活， 请重试。"
+	}
+
+	"GodHuman3"
+	{
+		"chi"			"你已经激活了你的 上帝 能力。"
+	}
+
+	"GodHuman4"
+	{
+		"chi"			"你的 上帝 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GodHuman5"
+	{
+		"chi"			"你的 上帝 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GodMenu"
+	{
+		"chi"			"上帝能力信息"
+	}
+
+	"GodMenu2"
+	{
+		"chi"			"上帝能力"
+	}
+
+	"Gravity"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 的重力变成{yellow} {3}{mint}！"
+	}
+
+	"Gravity2"
+	{
+		"chi"			"{olive}{1}{mint} 的重力恢复正常了！"
+	}
+
+	"Gravity3"
+	{
+		"chi"			"{olive}{1}{mint} 生成了引力/推力！"
+	}
+
+	"Gravity4"
+	{
+		"chi"			"{olive}{1}{mint} 的引力/推力结束了！"
+	}
+
+	"GravityAmmo"
+	{
+		"chi"			"你已经用光了所有 引力/推力 能力次数。"
+	}
+
+	"GravityAmmo2"
+	{
+		"chi"			"你已经用光了所有 重力 范围能力次数。"
+	}
+
+	"GravityDetails"
+	{
+		"chi"			"你可以吸引或推开幸存者和附近的特殊感染者， 并改变幸存者的重力值。"
+	}
+
+	"GravityHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 引力/推力 能力！"
+	}
+
+	"GravityHuman2"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 重力 能力！"
+	}
+
+	"GravityHuman3"
+	{
+		"chi"			"你的 重力 能力未能激活， 请重试。"
+	}
+
+	"GravityHuman4"
+	{
+		"chi"			"你已经激活了你的 引力/推力 能力。"
+	}
+
+	"GravityHuman5"
+	{
+		"chi"			"你的 引力/推力 还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GravityHuman6"
+	{
+		"chi"			"你的 重力 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GravityHuman7"
+	{
+		"chi"			"附近没有幸存者可以让你使用 重力 能力。"
+	}
+
+	"GravityHuman8"
+	{
+		"chi"			"你的 引力/推力 已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GravityHuman9"
+	{
+		"chi"			"你的 重力 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"GravityMenu"
+	{
+		"chi"			"重力能力信息"
+	}
+
+	"GravityMenu2"
+	{
+		"chi"			"重力能力"
+	}
+
+	"Gunner"
+	{
+		"chi"			"{olive}{1}{mint} 正在向{olive} {2}{mint} 开枪！"
+	}
+
+	"Gunner2"
+	{
+		"chi"			"{olive}{1}{mint} 停止开枪了！"
+	}
+
+	"GunnerAmmo"
+	{
+		"chi"			"你已经用光了炮手能力的次数。"
+	}
+
+	"GunnerDetails"
+	{
+		"chi"			"你身上带着枪。"
+	}
+
+	"GunnerHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次炮手能力！"
+	}
+
+	"GunnerHuman2"
+	{
+		"chi"			"你的炮手能力激活失败， 请重试。"
+	}
+
+	"GunnerHuman3"
+	{
+		"chi"			"你已经激活了炮手能力。"
+	}
+
+	"GunnerHuman4"
+	{
+		"chi"			"你的炮手能力还需要充能{yellow} {1} 秒{mint}。"
+	}
+
+	"GunnerHuman5"
+	{
+		"chi"			"你的炮手能力已结束， 需要充能{yellow} {1} 秒{mint}。"
+	}
+
+	"GunnerMenu"
+	{
+		"chi"			"炮手能力信息"
+	}
+
+	"GunnerMenu2"
+	{
+		"chi"			"炮手能力"
+	}
+
+	"Heal"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 的生命值改为临时生命值， 同时生命值归0时将会死亡！"
+	}
+
+	"Heal2"
+	{
+		"chi"			"{olive}{1}{mint} 正在吸收附近特殊感染者的生命值！"
+	}
+
+	"Heal3"
+	{
+		"chi"			"{olive}{1}{mint} 停止了吸收附近特殊感染者的生命值！"
+	}
+
+	"HealAmmo"
+	{
+		"chi"			"你已经用光了所有 治疗 能力次数。"
+	}
+
+	"HealAmmo2"
+	{
+		"chi"			"你已经用光了所有 败血 范围能力次数。"
+	}
+
+	"HealDetails"
+	{
+		"chi"			"你可以从附近的特殊感染者身上获得生命值， 并把幸存者生命值改为临时生命值， 当幸存者到达0HP时将立即死亡。"
+	}
+
+	"HealHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 治疗 能力！"
+	}
+
+	"HealHuman2"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 败血 能力！"
+	}
+
+	"HealHuman3"
+	{
+		"chi"			"你的 败血 能力未能激活， 请重试。"
+	}
+
+	"HealHuman4"
+	{
+		"chi"			"你已经激活了你的 治疗 能力。"
+	}
+
+	"HealHuman5"
+	{
+		"chi"			"你的 治疗 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HealHuman6"
+	{
+		"chi"			"你的 败血 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HealHuman7"
+	{
+		"chi"			"附近没有幸存者可以让你使用 败血 能力。"
+	}
+
+	"HealHuman8"
+	{
+		"chi"			"你的 治疗 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HealHuman9"
+	{
+		"chi"			"你的 败血 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HealMenu"
+	{
+		"chi"			"生命能力信息"
+	}
+
+	"HealMenu2"
+	{
+		"chi"			"生命能力"
+	}
+
+	"HitDetails"
+	{
+		"chi"			"你只有特定部位能受到伤害。"
+	}
+
+	"HitMenu"
+	{
+		"chi"			"狙击能力信息"
+	}
+
+	"HitMenu2"
+	{
+		"chi"			"狙击能力"
+	}
+
+	"Hurt"
+	{
+		"chi"			"{olive}{1}{mint} 对{olive} {2}{mint} 造成的伤口在不断流血！"
+	}
+
+	"Hurt2"
+	{
+		"chi"			"{olive}{1}{mint} 的伤口愈合了！"
+	}
+
+	"HurtAmmo"
+	{
+		"chi"			"你已经用光了所有 创伤 范围能力次数。"
+	}
+
+	"HurtDetails"
+	{
+		"chi"			"你可以反复伤害幸存者。"
+	}
+
+	"HurtHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 创伤 能力！"
+	}
+
+	"HurtHuman2"
+	{
+		"chi"			"你的 创伤 能力未能激活， 请重试。"
+	}
+
+	"HurtHuman3"
+	{
+		"chi"			"你的 创伤 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HurtHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 创伤 能力。"
+	}
+
+	"HurtHuman5"
+	{
+		"chi"			"你的 创伤 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HurtMenu"
+	{
+		"chi"			"创伤能力信息"
+	}
+
+	"HurtMenu2"
+	{
+		"chi"			"创伤能力"
+	}
+
+	"Hypno"
+	{
+		"chi"			"{olive}{1}{mint} 催眠了{olive} {2}{mint}！"
+	}
+
+	"Hypno2"
+	{
+		"chi"			"{olive}{1}{mint} 醒来了！"
+	}
+
+	"HypnoAmmo"
+	{
+		"chi"			"你已经用光了所有 催眠 范围能力次数。"
+	}
+
+	"HypnoDetails"
+	{
+		"chi"			"你可以催眠幸存者让其伤害自身或队友。"
+	}
+
+	"HypnoHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 催眠 能力！"
+	}
+
+	"HypnoHuman2"
+	{
+		"chi"			"你的 催眠 能力未能激活， 请重试。"
+	}
+
+	"HypnoHuman3"
+	{
+		"chi"			"你的 催眠 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HypnoHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 催眠 能力。"
+	}
+
+	"HypnoHuman5"
+	{
+		"chi"			"你的 催眠 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"HypnoMenu"
+	{
+		"chi"			"催眠能力信息"
+	}
+
+	"HypnoMenu2"
+	{
+		"chi"			"催眠能力"
+	}
+
+	"Ice"
+	{
+		"chi"			"{olive}{1}{mint} 冻结了{olive} {2}{mint}！"
+	}
+
+	"Ice2"
+	{
+		"chi"			"{olive}{1}{mint} 解冻了！"
+	}
+
+	"IceAmmo"
+	{
+		"chi"			"你已经用光了所有 冻结 范围能力次数。"
+	}
+
+	"IceDetails"
+	{
+		"chi"			"你可以冻结幸存者。"
+	}
+
+	"IceHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 冻结 能力！"
+	}
+
+	"IceHuman2"
+	{
+		"chi"			"你的 冻结 能力未能激活， 请重试。"
+	}
+
+	"IceHuman3"
+	{
+		"chi"			"你的 冻结 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"IceHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 冻结 能力。"
+	}
+
+	"IceHuman5"
+	{
+		"chi"			"你的 冻结 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"IceMenu"
+	{
+		"chi"			"冻结能力信息"
+	}
+
+	"IceMenu2"
+	{
+		"chi"			"冻结能力"
+	}
+
+	"Idle"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 吓到闲置！"
+	}
+
+	"IdleAmmo"
+	{
+		"chi"			"你已经用光了所有 闲置 范围能力次数。"
+	}
+
+	"IdleDetails"
+	{
+		"chi"			"你可以让幸存者进入闲置模式。"
+	}
+
+	"IdleHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 闲置 能力！"
+	}
+
+	"IdleHuman2"
+	{
+		"chi"			"你的 闲置 能力未能激活， 请重试。"
+	}
+
+	"IdleHuman3"
+	{
+		"chi"			"你的 闲置 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"IdleHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 闲置 能力。"
+	}
+
+	"IdleHuman5"
+	{
+		"chi"			"你的 闲置 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"IdleMenu"
+	{
+		"chi"			"闲置能力信息"
+	}
+
+	"IdleMenu2"
+	{
+		"chi"			"闲置能力"
+	}
+
+	"Invert"
+	{
+		"chi"			"{olive}{1}{mint} 颠倒了{olive} {2}{mint} 的方向键！"
+	}
+
+	"Invert2"
+	{
+		"chi"			"{olive}{1}{mint} 的方向键恢复正常了！"
+	}
+
+	"InvertAmmo"
+	{
+		"chi"			"你已经用光了所有 反向 范围能力次数。"
+	}
+
+	"InvertDetails"
+	{
+		"chi"			"你可以颠倒幸存者方向键。"
+	}
+
+	"InvertHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 反向 能力！"
+	}
+
+	"InvertHuman2"
+	{
+		"chi"			"你的 反向 能力未能激活， 请重试。"
+	}
+
+	"InvertHuman3"
+	{
+		"chi"			"你的 反向 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"InvertHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 反向 能力。"
+	}
+
+	"InvertHuman5"
+	{
+		"chi"			"你的 反向 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"InvertMenu"
+	{
+		"chi"			"反向能力信息"
+	}
+
+	"InvertMenu2"
+	{
+		"chi"			"反向能力"
+	}
+
+	"Item"
+	{
+		"chi"			"{olive}{1}{mint} 给予了幸存者{yellow} 物品{mint}！"
+	}
+
+	"ItemDetails"
+	{
+		"chi"			"你死亡后会给予幸存者物品。"
+	}
+
+	"ItemHuman"
+	{
+		"chi"			"死后你会给予幸存者物品！"
+	}
+
+	"ItemHuman2"
+	{
+		"chi"			"你将在死亡后给予幸存者物品。"
+	}
+
+	"ItemMenu"
+	{
+		"chi"			"赠物能力信息"
+	}
+
+	"ItemMenu2"
+	{
+		"chi"			"赠物能力"
+	}
+
+	"Jump"
+	{
+		"chi"			"{olive}{1}{mint} 迫使{olive} {2}{mint} 乱跳！"
+	}
+
+	"Jump2"
+	{
+		"chi"			"{olive}{1}{mint} 不再乱跳了！"
+	}
+
+	"Jump3"
+	{
+		"chi"			"{olive}{1}{mint} 将进行周期性跳跃！"
+	}
+
+	"JumpAmmo"
+	{
+		"chi"			"你已经用光了所有 周期性跳跃 能力次数。"
+	}
+
+	"JumpAmmo2"
+	{
+		"chi"			"你已经用光了所有 跳跃 范围能力次数。"
+	}
+
+	"JumpDetails"
+	{
+		"chi"			"你会定期或不定期进行跳跃和使幸存者无法自控的跳跃。"
+	}
+
+	"JumpHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 周期性跳跃 能力！"
+	}
+
+	"JumpHuman2"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 跳跃 能力！"
+	}
+
+	"JumpHuman3"
+	{
+		"chi"			"你的 跳跃 能力未能激活， 请重试。"
+	}
+
+	"JumpHuman4"
+	{
+		"chi"			"你已经激活了你的 周期性跳跃 能力。"
+	}
+
+	"JumpHuman5"
+	{
+		"chi"			"你的 周期性跳跃 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"JumpHuman6"
+	{
+		"chi"			"你的 跳跃 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"JumpHuman7"
+	{
+		"chi"			"附近没有幸存者可以让你使用 跳跃 能力。"
+	}
+
+	"JumpHuman8"
+	{
+		"chi"			"你的 周期性跳跃 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"JumpHuman9"
+	{
+		"chi"			"你的 跳跃 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"JumpMenu"
+	{
+		"chi"			"跳跃能力信息"
+	}
+
+	"JumpMenu2"
+	{
+		"chi"			"跳跃能力"
+	}
+
+	"Kamikaze"
+	{
+		"chi"			"{olive}{1}{mint} 与{olive} {2}{mint} 同归于尽了！"
+	}
+
+	"KamikazeDetails"
+	{
+		"chi"			"你会与幸存者同归于尽。"
+	}
+
+	"KamikazeHuman"
+	{
+		"chi"			"你激活了你的 神风 能力！"
+	}
+
+	"KamikazeHuman2"
+	{
+		"chi"			"你的 神风 能力未能激活， 请重试。"
+	}
+
+	"KamikazeHuman3"
+	{
+		"chi"			"附近没有幸存者可以让你使用 神风 能力。"
+	}
+
+	"KamikazeMenu"
+	{
+		"chi"			"神风能力信息"
+	}
+
+	"KamikazeMenu2"
+	{
+		"chi"			"神风能力"
+	}
+
+	"Lag"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 打出延迟！"
+	}
+
+	"Lag2"
+	{
+		"chi"			"{olive}{1}{mint} 的延迟恢复正常了！"
+	}
+
+	"LagAmmo"
+	{
+		"chi"			"你已经用光了所有 滞后 范围能力次数。"
+	}
+
+	"LagDetails"
+	{
+		"chi"			"你可以让幸存者产生滞后感。"
+	}
+
+	"LagHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 滞后 能力！"
+	}
+
+	"LagHuman2"
+	{
+		"chi"			"你的 滞后 能力未能激活， 请重试。"
+	}
+
+	"LagHuman3"
+	{
+		"chi"			"你的 滞后 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LagHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 滞后 能力。"
+	}
+
+	"LagHuman5"
+	{
+		"chi"			"你的 滞后 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LagMenu"
+	{
+		"chi"			"滞后能力信息"
+	}
+
+	"LagMenu2"
+	{
+		"chi"			"滞后能力"
+	}
+
+	"Laser"
+	{
+		"chi"			"{olive}{1}{mint} 正对{olive} {2}{mint} 发射激光！"
+	}
+
+	"Laser2"
+	{
+		"chi"			"{olive}{1}{mint} 停止了发射激光！"
+	}
+
+	"LaserAmmo"
+	{
+		"chi"			"你已经用光了所有 激光 能力次数。"
+	}
+
+	"LaserDetails"
+	{
+		"chi"			"你可以向幸存者发射激光。"
+	}
+
+	"LaserHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 激光 能力！"
+	}
+
+	"LaserHuman2"
+	{
+		"chi"			"你的 激光 能力未能激活， 请重试。"
+	}
+
+	"LaserHuman3"
+	{
+		"chi"			"你已经激活了你的 激光 能力。"
+	}
+
+	"LaserHuman4"
+	{
+		"chi"			"你的 激光 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LaserHuman5"
+	{
+		"chi"			"你的 激光 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LaserMenu"
+	{
+		"chi"			"激光能力信息"
+	}
+
+	"LaserMenu2"
+	{
+		"chi"			"激光能力"
+	}
+
+	"Leech"
+	{
+		"chi"			"{olive}{1}{mint} 正用{yellow} 水蛭{mint} 汲取{olive} {2}{mint} 的生命值！"
+	}
+
+	"Leech2"
+	{
+		"chi"			"{olive}{1}{mint} 的{yellow} 水蛭{mint} 不在汲取{olive} {2}{mint} 的生命值了！"
+	}
+
+	"LeechAmmo"
+	{
+		"chi"			"你已经用光了所有 水蛭 范围能力次数。"
+	}
+
+	"LeechDetails"
+	{
+		"chi"			"你可以从幸存者身上吸取生命值。"
+	}
+
+	"LeechHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 水蛭 能力！"
+	}
+
+	"LeechHuman2"
+	{
+		"chi"			"你的 水蛭 能力未能激活， 请重试。"
+	}
+
+	"LeechHuman3"
+	{
+		"chi"			"你的 水蛭 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LeechHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 水蛭 能力。"
+	}
+
+	"LeechHuman5"
+	{
+		"chi"			"你的 水蛭 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LeechMenu"
+	{
+		"chi"			"水蛭能力信息"
+	}
+
+	"LeechMenu2"
+	{
+		"chi"			"水蛭能力"
+	}
+
+	"Lightning"
+	{
+		"chi"			"{olive}{1}{mint} 召唤了{yellow} 雷雨{mint}！"
+	}
+
+	"Lightning2"
+	{
+		"chi"			"{olive}{1}{mint} 雷雨结束了！"
+	}
+
+	"LightningAmmo"
+	{
+		"chi"			"你已经用尽了所有的雷雨。"
+	}
+
+	"LightningDetails"
+	{
+		"chi"			"你会产生雷雨。"
+	}
+
+	"LightningHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 的雷雨！"
+	}
+
+	"LightningHuman2"
+	{
+		"chi"			"你的雷雨未能激活， 请重试。"
+	}
+
+	"LightningHuman3"
+	{
+		"chi"			"你已经激活了雷雨。"
+	}
+
+	"LightningHuman4"
+	{
+		"chi"			"你的雷雨还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LightningHuman5"
+	{
+		"chi"			"你的雷雨结束了， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"LightningMenu"
+	{
+		"chi"			"雷雨能力信息"
+	}
+
+	"LightningMenu2"
+	{
+		"chi"			"雷雨能力"
+	}
+
+	"Medic"
+	{
+		"chi"			"{olive}{1}{mint} 正在治愈附近的特殊感染者！"
+	}
+
+	"Medic2"
+	{
+		"chi"			"{olive}{1}{mint} 治愈了{yellow} {2}{mint}！"
+	}
+
+	"Medic3"
+	{
+		"chi"			"{olive}{1}{mint} 治愈了{yellow} {2}{mint}！"
+	}
+
+	"Medic4"
+	{
+		"chi"			"{olive}{1}{mint} 停止治愈附近的特殊感染者！"
+	}
+
+	"MedicAmmo"
+	{
+		"chi"			"你已经用完了所有医务能力的弹药。"
+	}
+
+	"MedicDetails"
+	{
+		"chi"			"你可以治愈附近的特殊感染者。"
+	}
+
+	"MedicHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 你的医护能力！"
+	}
+
+	"MedicHuman2"
+	{
+		"chi"			"你的医护技能无法激活， 请重试。"
+	}
+
+	"MedicHuman3"
+	{
+		"chi"			"你已经激活了医护能力。"
+	}
+
+	"MedicHuman4"
+	{
+		"chi"			"你的医护能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MedicHuman5"
+	{
+		"chi"			"你的医护能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MedicMenu"
+	{
+		"chi"			"医护能力信息"
+	}
+
+	"MedicMenu2"
+	{
+		"chi"			"医护能力"
+	}
+
+	"Meteor"
+	{
+		"chi"			"{olive}{1}{mint} 开始召唤{yellow} 流星雨{mint}！"
+	}
+
+	"Meteor2"
+	{
+		"chi"			"{olive}{1}{mint} 的 流星雨 结束了！"
+	}
+
+	"MeteorAmmo"
+	{
+		"chi"			"你已经用光了所有 流星雨 次数。"
+	}
+
+	"MeteorDetails"
+	{
+		"chi"			"你可以召唤流星雨。"
+	}
+
+	"MeteorHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次你的流星雨！"
+	}
+
+	"MeteorHuman2"
+	{
+		"chi"			"你的 流星雨 未能激活， 请重试。"
+	}
+
+	"MeteorHuman3"
+	{
+		"chi"			"你已经激活了 流星雨。"
+	}
+
+	"MeteorHuman4"
+	{
+		"chi"			"你的 流星雨 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MeteorHuman5"
+	{
+		"chi"			"你的 流星雨 已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MeteorMenu"
+	{
+		"chi"			"流星雨能力信息"
+	}
+
+	"MeteorMenu2"
+	{
+		"chi"			"流星雨能力"
+	}
+
+	"Minion"
+	{
+		"chi"			"{olive}{1}{mint} 召唤了一个{yellow} 仆从{mint}！"
+	}
+
+	"MinionAmmo"
+	{
+		"chi"			"你已经用光了所有 仆从 次数。"
+	}
+
+	"MinionDetails"
+	{
+		"chi"			"你可以召唤仆从。"
+	}
+
+	"MinionHuman"
+	{
+		"chi"			"你召唤了{olive} {1}{mint}/{olive}{2}{mint} 个仆从！"
+	}
+
+	"MinionHuman2"
+	{
+		"chi"			"你召唤 仆从 失败， 请重试。"
+	}
+
+	"MinionHuman3"
+	{
+		"chi"			"你召唤 仆从 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MinionHuman4"
+	{
+		"chi"			"你的一个 仆从 死了。"
+	}
+
+	"MinionHuman5"
+	{
+		"chi"			"你的 仆从 已全部死亡， 仆从 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"MinionMenu"
+	{
+		"chi"			"仆从能力信息"
+	}
+
+	"MinionMenu2"
+	{
+		"chi"			"仆从能力"
+	}
+
+	"Necro"
+	{
+		"chi"			"{olive}{1}{mint} 复活了附近的特殊感染者！"
+	}
+
+	"NecroAmmo"
+	{
+		"chi"			"你已经用光了所有 死灵 能力次数。"
+	}
+
+	"NecroDetails"
+	{
+		"chi"			"你可以复活附近死亡的特殊感染者。"
+	}
+
+	"NecroHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 死灵 能力！"
+	}
+
+	"NecroHuman2"
+	{
+		"chi"			"你的 死灵 能力未能激活， 请重试。"
+	}
+
+	"NecroHuman3"
+	{
+		"chi"			"你已经激活了你的 死灵 能力。"
+	}
+
+	"NecroHuman4"
+	{
+		"chi"			"你的 死灵 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"NecroHuman5"
+	{
+		"chi"			"你的 死灵 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"NecroMenu"
+	{
+		"chi"			"死灵能力信息"
+	}
+
+	"NecroMenu2"
+	{
+		"chi"			"死灵能力"
+	}
+
+	"Nullify"
+	{
+		"chi"			"{olive}{1}{mint} 暂时免疫来自{olive} {2}{mint} 的伤害！"
+	}
+
+	"Nullify2"
+	{
+		"chi"			"{olive}{1}{mint} 的伤害恢复正常了！"
+	}
+
+	"NullifyAmmo"
+	{
+		"chi"			"你已经用光了所有 无效化 范围能力次数。"
+	}
+
+	"NullifyDetails"
+	{
+		"chi"			"你可以让幸存者造成的伤害无效。"
+	}
+
+	"NullifyHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 伤害无效化 能力！"
+	}
+
+	"NullifyHuman2"
+	{
+		"chi"			"你的 伤害无效化 能力未能激活， 请重试。"
+	}
+
+	"NullifyHuman3"
+	{
+		"chi"			"你的 伤害无效化 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"NullifyHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 伤害无效化 能力。"
+	}
+
+	"NullifyHuman5"
+	{
+		"chi"			"你的 伤害无效化 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"NullifyMenu"
+	{
+		"chi"			"无效化能力信息"
+	}
+
+	"NullifyMenu2"
+	{
+		"chi"			"无效化能力"
+	}
+
+	"Omni"
+	{
+		"chi"			"{olive}{1}{mint} 的 全能能力激活了！"
+	}
+
+	"Omni2"
+	{
+		"chi"			"{olive}{1}{mint} 的 全能能力失效了！"
+	}
+
+	"OmniAmmo"
+	{
+		"chi"			"你已经用光了所有 全能 能力次数。"
+	}
+
+	"OmniDetails"
+	{
+		"chi"			"你可以使用附近突变坦克的技能。"
+	}
+
+	"OmniHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 全能 能力！"
+	}
+
+	"OmniHuman2"
+	{
+		"chi"			"你的 全能 能力未能激活， 请重试。"
+	}
+
+	"OmniHuman3"
+	{
+		"chi"			"你已经激活了你的 全能 能力。"
+	}
+
+	"OmniHuman4"
+	{
+		"chi"			"你的 全能 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"OmniHuman5"
+	{
+		"chi"			"你的 全能 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"OmniMenu"
+	{
+		"chi"			"全能能力信息"
+	}
+
+	"OmniMenu2"
+	{
+		"chi"			"全能能力"
+	}
+
+	"Panic"
+	{
+		"chi"			"{olive}{1}{mint} 将定期引发尸潮！"
+	}
+
+	"Panic2"
+	{
+		"chi"			"{olive}{1}{mint} 引发了一次{yellow} 尸潮{mint}！"
+	}
+
+	"PanicAmmo"
+	{
+		"chi"			"你已经用光了所有 唤潮 能力次数。"
+	}
+
+	"PanicDetails"
+	{
+		"chi"			"你可以引发尸潮。"
+	}
+
+	"PanicHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 唤潮 能力！"
+	}
+
+	"PanicHuman2"
+	{
+		"chi"			"你的 唤潮 能力未能激活， 请重试。"
+	}
+
+	"PanicHuman3"
+	{
+		"chi"			"你已经激活了你的 唤潮 能力。"
+	}
+
+	"PanicHuman4"
+	{
+		"chi"			"你的 唤潮 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PanicHuman5"
+	{
+		"chi"			"你的 唤潮 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PanicMenu"
+	{
+		"chi"			"唤潮能力信息"
+	}
+
+	"PanicMenu2"
+	{
+		"chi"			"唤潮能力"
+	}
+
+	"Pimp"
+	{
+		"chi"			"{olive}{1}{mint} 鞭挞了{olive} {2}{mint} 好几次！"
+	}
+
+	"Pimp2"
+	{
+		"chi"			"{olive}{1}{mint} 逃过了鞭挞！"
+	}
+
+	"PimpAmmo"
+	{
+		"chi"			"你已经用光了所有 鞭挞 范围能力次数。"
+	}
+
+	"PimpDetails"
+	{
+		"chi"			"你可以鞭挞幸存者。"
+	}
+
+	"PimpHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 鞭挞 能力！"
+	}
+
+	"PimpHuman2"
+	{
+		"chi"			"你的 鞭挞 能力未能激活， 请重试。"
+	}
+
+	"PimpHuman3"
+	{
+		"chi"			"你的 鞭挞 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PimpHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 鞭挞 能力。"
+	}
+
+	"PimpHuman5"
+	{
+		"chi"			"你的 鞭挞 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PimpMenu"
+	{
+		"chi"			"鞭挞能力信息"
+	}
+
+	"PimpMenu2"
+	{
+		"chi"			"鞭挞能力"
+	}
+
+	"Puke"
+	{
+		"chi"			"{olive}{1}{mint} 吐了{olive} {2}{mint} 一身！"
+	}
+
+	"PukeAmmo"
+	{
+		"chi"			"你已经用光了所有 呕吐 范围能力次数。"
+	}
+
+	"PukeDetails"
+	{
+		"chi"			"你可以对幸存者呕吐胆汁。"
+	}
+
+	"PukeHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 呕吐 能力！"
+	}
+
+	"PukeHuman2"
+	{
+		"chi"			"你的 呕吐 能力未能激活， 请重试。"
+	}
+
+	"PukeHuman3"
+	{
+		"chi"			"你的 呕吐 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PukeHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 呕吐 能力。"
+	}
+
+	"PukeHuman5"
+	{
+		"chi"			"你的 呕吐 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PukeMenu"
+	{
+		"chi"			"呕吐能力信息"
+	}
+
+	"PukeMenu2"
+	{
+		"chi"			"呕吐能力"
+	}
+
+	"Pyro"
+	{
+		"chi"			"{olive}{1}{mint} 自燃了！"
+	}
+
+	"Pyro2"
+	{
+		"chi"			"{olive}{1}{mint} 烧起来后跑得更快了！"
+	}
+
+	"Pyro3"
+	{
+		"chi"			"{olive}{1}{mint} 灭火后恢复正常速度了！"
+	}
+
+	"PyroAmmo"
+	{
+		"chi"			"你已经用光了所有 火速 能力次数。"
+	}
+
+	"PyroDetails"
+	{
+		"chi"			"着火时， 在燃烧自己的同时也获得移动速度的提升。"
+	}
+
+	"PyroHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 火速 能力！"
+	}
+
+	"PyroHuman2"
+	{
+		"chi"			"你的 火速 能力未能激活， 请重试。"
+	}
+
+	"PyroHuman3"
+	{
+		"chi"			"你已经激活了你的 火速 能力。"
+	}
+
+	"PyroHuman4"
+	{
+		"chi"			"你的 火速 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PyroHuman5"
+	{
+		"chi"			"你的 火速 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"PyroMenu"
+	{
+		"chi"			"火速能力信息"
+	}
+
+	"PyroMenu2"
+	{
+		"chi"			"火速能力"
+	}
+
+	"Quiet"
+	{
+		"chi"			"{olive}{1}{mint} 在{olive} {2}{mint} 周围沉默了！"
+	}
+
+	"Quiet2"
+	{
+		"chi"			"{olive}{1}{mint} 不再在{olive} {2}{mint} 周围沉默了！"
+	}
+
+	"QuietAmmo"
+	{
+		"chi"			"你已经用光了所有 沉默 范围能力次数。"
+	}
+
+	"QuietDetails"
+	{
+		"chi"			"你能在幸存者附近不发出声音。"
+	}
+
+	"QuietHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 沉默 能力！"
+	}
+
+	"QuietHuman2"
+	{
+		"chi"			"你的 沉默 能力未能激活， 请重试。"
+	}
+
+	"QuietHuman3"
+	{
+		"chi"			"你的 沉默 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"QuietHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 沉默 能力。"
+	}
+
+	"QuietHuman5"
+	{
+		"chi"			"你的 沉默 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"QuietMenu"
+	{
+		"chi"			"沉默能力信息"
+	}
+
+	"QuietMenu2"
+	{
+		"chi"			"沉默能力"
+	}
+
+	"Recoil"
+	{
+		"chi"			"{olive}{1}{mint} 给予{olive} {2}{mint} 强大的后坐力！"
+	}
+
+	"Recoil2"
+	{
+		"chi"			"{olive}{1}{mint} 的后坐力恢复正常了！"
+	}
+
+	"RecoilAmmo"
+	{
+		"chi"			"你已经用光了所有 后坐力 范围能力次数。"
+	}
+
+	"RecoilDetails"
+	{
+		"chi"			"你能给予幸存者强大的后坐力。"
+	}
+
+	"RecoilHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 后坐力 能力！"
+	}
+
+	"RecoilHuman2"
+	{
+		"chi"			"你的 后坐力 能力未能激活， 请重试。"
+	}
+
+	"RecoilHuman3"
+	{
+		"chi"			"你的 后坐力 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RecoilHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 后坐力 能力。"
+	}
+
+	"RecoilHuman5"
+	{
+		"chi"			"你的 后坐力 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RecoilMenu"
+	{
+		"chi"			"后座力能力信息"
+	}
+
+	"RecoilMenu2"
+	{
+		"chi"			"后坐力能力"
+	}
+
+	"Regen"
+	{
+		"chi"			"{olive}{1}{mint} 每隔{yellow} {2}{mint} 秒会恢复一次生命值！"
+	}
+
+	"Regen2"
+	{
+		"chi"			"{olive}{1}{mint} 停止了恢复生命值！"
+	}
+
+	"RegenAmmo"
+	{
+		"chi"			"你已经用光了所有 自愈 能力次数。"
+	}
+
+	"RegenDetails"
+	{
+		"chi"			"你可以恢复血量。"
+	}
+
+	"RegenHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 自愈 能力！"
+	}
+
+	"RegenHuman2"
+	{
+		"chi"			"你的 自愈 能力未能激活， 请重试。"
+	}
+
+	"RegenHuman3"
+	{
+		"chi"			"你已经激活了你的 自愈 能力。"
+	}
+
+	"RegenHuman4"
+	{
+		"chi"			"你的 自愈 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RegenHuman5"
+	{
+		"chi"			"你的 自愈 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RegenMenu"
+	{
+		"chi"			"自愈能力信息"
+	}
+
+	"RegenMenu2"
+	{
+		"chi"			"自愈能力"
+	}
+
+	"Respawn"
+	{
+		"chi"			"{olive}{1}{mint} 复活了！"
+	}
+
+	"RespawnAmmo"
+	{
+		"chi"			"你已经用光了所有 复活 能力次数。"
+	}
+
+	"RespawnDetails"
+	{
+		"chi"			"你死亡后可以复活。"
+	}
+
+	"RespawnHuman"
+	{
+		"chi"			"你死亡后会重生！"
+	}
+
+	"RespawnHuman2"
+	{
+		"chi"			"你将在死亡后重生。"
+	}
+
+	"RespawnHuman3"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 重生！"
+	}
+
+	"RespawnMenu"
+	{
+		"chi"			"重生能力信息"
+	}
+
+	"RespawnMenu2"
+	{
+		"chi"			"重生能力"
+	}
+
+	"Restart"
+	{
+		"chi"			"{olive}{1}{mint} 让{olive} {2}{mint} 用不同的装备重新开始！"
+	}
+
+	"RestartAmmo"
+	{
+		"chi"			"你已经用光了所有 重来 范围能力次数。"
+	}
+
+	"RestartDetails"
+	{
+		"chi"			"你可以强制幸存者在地图起始点或队友附近用新的装备重新开始。"
+	}
+
+	"RestartHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 重来 能力！"
+	}
+
+	"RestartHuman2"
+	{
+		"chi"			"你的 重来 能力未能激活， 请重试。"
+	}
+
+	"RestartHuman3"
+	{
+		"chi"			"你的 重来 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RestartHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 重来 能力。"
+	}
+
+	"RestartHuman5"
+	{
+		"chi"			"你的 重来 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RestartMenu"
+	{
+		"chi"			"重来能力信息"
+	}
+
+	"RestartMenu2"
+	{
+		"chi"			"重来能力"
+	}
+
+	"Rock"
+	{
+		"chi"			"{olive}{1}{mint} 开始召唤{yellow} 岩石雨{mint}！"
+	}
+
+	"Rock2"
+	{
+		"chi"			"{olive}{1}{mint} 的 岩石雨 结束了！"
+	}
+
+	"RockAmmo"
+	{
+		"chi"			"你已经用光了所有 岩石雨 次数。"
+	}
+
+	"RockDetails"
+	{
+		"chi"			"你可以召唤 岩石雨。"
+	}
+
+	"RockHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 岩石雨！"
+	}
+
+	"RockHuman2"
+	{
+		"chi"			"你的 岩石雨 未能激活， 请重试。"
+	}
+
+	"RockHuman3"
+	{
+		"chi"			"你已经激活了你的 岩石雨。"
+	}
+
+	"RockHuman4"
+	{
+		"chi"			"你的 岩石雨 还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RockHuman5"
+	{
+		"chi"			"你的 岩石雨 能力已结束， 还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RockMenu"
+	{
+		"chi"			"岩石雨能力信息"
+	}
+
+	"RockMenu2"
+	{
+		"chi"			"岩石雨能力"
+	}
+
+	"Rocket"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 送上了太空！"
+	}
+
+	"RocketAmmo"
+	{
+		"chi"			"你已经用光了所有 火箭 范围能力次数。"
+	}
+
+	"RocketDetails"
+	{
+		"chi"			"你可以把幸存者送上太空。"
+	}
+
+	"RocketHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 火箭 能力！"
+	}
+
+	"RocketHuman2"
+	{
+		"chi"			"你的 火箭 能力未能激活， 请重试。"
+	}
+
+	"RocketHuman3"
+	{
+		"chi"			"你的 火箭 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RocketHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 火箭 能力。"
+	}
+
+	"RocketHuman5"
+	{
+		"chi"			"你的 火箭 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"RocketMenu"
+	{
+		"chi"			"火箭能力信息"
+	}
+
+	"RocketMenu2"
+	{
+		"chi"			"火箭"
+	}
+
+	"Shake"
+	{
+		"chi"			"{olive}{1}{mint} 让{olive} {2}{mint} 的屏幕疯狂抖动！"
+	}
+
+	"Shake2"
+	{
+		"chi"			"{olive}{1}{mint} 的屏幕停止了抖动！"
+	}
+
+	"ShakeAmmo"
+	{
+		"chi"			"你已经用光了所有 震动 范围能力次数。"
+	}
+
+	"ShakeDetails"
+	{
+		"chi"			"你可以晃动幸存者屏幕。"
+	}
+
+	"ShakeHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 震动 能力！"
+	}
+
+	"ShakeHuman2"
+	{
+		"chi"			"你的 震动 能力未能激活， 请重试。"
+	}
+
+	"ShakeHuman3"
+	{
+		"chi"			"你的 震动 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShakeHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 震动 能力。"
+	}
+
+	"ShakeHuman5"
+	{
+		"chi"			"你的 震动 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShakeMenu"
+	{
+		"chi"			"震动能力信息"
+	}
+
+	"ShakeMenu2"
+	{
+		"chi"			"震动"
+	}
+
+	"Shield"
+	{
+		"chi"			"{olive}{1}{mint} 的护盾{yellow} 已激活{mint}！"
+	}
+
+	"Shield2"
+	{
+		"chi"			"{olive}{1}{mint} 的护盾{yellow} 已失效{mint}！"
+	}
+
+	"ShieldAmmo"
+	{
+		"chi"			"你已经用光了所有 护盾 次数。"
+	}
+
+	"ShieldDetails"
+	{
+		"chi"			"你可以用护盾保护自己， 并且会扔出煤气瓶或汽油罐。"
+	}
+
+	"ShieldHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 护盾！"
+	}
+
+	"ShieldHuman2"
+	{
+		"chi"			"你的 护盾 未能激活， 请重试。"
+	}
+
+	"ShieldHuman3"
+	{
+		"chi"			"你已经激活了你的 护盾。"
+	}
+
+	"ShieldHuman4"
+	{
+		"chi"			"你的 护盾 还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShieldHuman5"
+	{
+		"chi"			"你的 护盾 破了， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShieldMenu"
+	{
+		"chi"			"护盾能力信息"
+	}
+
+	"ShieldMenu2"
+	{
+		"chi"			"护盾能力"
+	}
+
+	"ShieldOwner"
+	{
+		"chi"			"{1} 的护盾"
+	}
+
+	"Shove"
+	{
+		"chi"			"{olive}{1}{mint} 正在推挤{olive} {2}{mint}！"
+	}
+
+	"Shove2"
+	{
+		"chi"			"{olive}{1}{mint} 不在被推挤了！"
+	}
+
+	"ShoveAmmo"
+	{
+		"chi"			"你已经用光了所有 推挤 范围能力次数。"
+	}
+
+	"ShoveDetails"
+	{
+		"chi"			"你可以反复推挤幸存者。"
+	}
+
+	"ShoveHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 推挤 能力！"
+	}
+
+	"ShoveHuman2"
+	{
+		"chi"			"你的 推挤 能力未能激活， 请重试。"
+	}
+
+	"ShoveHuman3"
+	{
+		"chi"			"你的 推挤 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShoveHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 推挤 能力。"
+	}
+
+	"ShoveHuman5"
+	{
+		"chi"			"你的 推挤 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ShoveMenu"
+	{
+		"chi"			"推挤能力信息"
+	}
+
+	"ShoveMenu2"
+	{
+		"chi"			"推挤能力"
+	}
+
+	"Slow"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 的速度变成{yellow} {3}{percent}{mint}！"
+	}
+
+	"Slow2"
+	{
+		"chi"			"{olive}{1}{mint} 的速度恢复正常了！"
+	}
+
+	"SlowAmmo"
+	{
+		"chi"			"你已经用光了所有 减速 范围能力次数。"
+	}
+
+	"SlowDetails"
+	{
+		"chi"			"你可以减慢幸存者的移动速度。"
+	}
+
+	"SlowHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 减速 能力！"
+	}
+
+	"SlowHuman2"
+	{
+		"chi"			"你的 减速 能力未能激活， 请重试。"
+	}
+
+	"SlowHuman3"
+	{
+		"chi"			"你的 减速 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SlowHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 减速 能力。"
+	}
+
+	"SlowHuman5"
+	{
+		"chi"			"你的 减速 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SlowMenu"
+	{
+		"chi"			"减速能力信息"
+	}
+
+	"SlowMenu2"
+	{
+		"chi"			"减速能力"
+	}
+
+	"Smash"
+	{
+		"chi"			"{olive}{1}{mint} 把{olive} {2}{mint} 砸死了！"
+	}
+
+	"SmashAmmo"
+	{
+		"chi"			"你已经用光了所有 粉碎 范围能力次数。"
+	}
+
+	"SmashDetails"
+	{
+		"chi"			"你可以砸死幸存者。"
+	}
+
+	"SmashHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 粉碎 能力！"
+	}
+
+	"SmashHuman2"
+	{
+		"chi"			"你的 粉碎 能力未能激活， 请重试。"
+	}
+
+	"SmashHuman3"
+	{
+		"chi"			"你的 粉碎 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SmashHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 粉碎 能力。"
+	}
+
+	"SmashHuman5"
+	{
+		"chi"			"你的 粉碎 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SmashMenu"
+	{
+		"chi"			"粉碎能力信息"
+	}
+
+	"SmashMenu2"
+	{
+		"chi"			"粉碎能力"
+	}
+
+	"Smite"
+	{
+		"chi"			"{olive}{1}{mint} 重击了{olive} {2}{mint}！"
+	}
+
+	"SmiteAmmo"
+	{
+		"chi"			"你已经用光了所有 重击 范围能力次数。"
+	}
+
+	"SmiteDetails"
+	{
+		"chi"			"你可以重击幸存者。"
+	}
+
+	"SmiteHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 重击 能力！"
+	}
+
+	"SmiteHuman2"
+	{
+		"chi"			"你的 重击 能力未能激活， 请重试。"
+	}
+
+	"SmiteHuman3"
+	{
+		"chi"			"你的 重击 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SmiteHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 重击 能力。"
+	}
+
+	"SmiteHuman5"
+	{
+		"chi"			"你的 重击 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SmiteMenu"
+	{
+		"chi"			"重击能力信息"
+	}
+
+	"SmiteMenu2"
+	{
+		"chi"			"重击能力"
+	}
+
+	"Spam"
+	{
+		"chi"			"{olive}{1}{mint} 正在连投岩石！"
+	}
+
+	"Spam2"
+	{
+		"chi"			"{olive}{1}{mint} 停止了连投岩石！"
+	}
+
+	"SpamAmmo"
+	{
+		"chi"			"你已经用光了所有 连投 能力次数。"
+	}
+
+	"SpamDetails"
+	{
+		"chi"			"你可以对幸存者投掷一堆岩石。"
+	}
+
+	"SpamHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 岩石连投 能力！"
+	}
+
+	"SpamHuman2"
+	{
+		"chi"			"你的 岩石连投 能力未能激活， 请重试。"
+	}
+
+	"SpamHuman3"
+	{
+		"chi"			"你已经激活了你的 岩石连投 能力。"
+	}
+
+	"SpamHuman4"
+	{
+		"chi"			"你的 岩石连投 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SpamHuman5"
+	{
+		"chi"			"你的 岩石连投 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SpamMenu"
+	{
+		"chi"			"连投能力信息"
+	}
+
+	"SpamMenu2"
+	{
+		"chi"			"连投能力"
+	}
+
+	"Splash"
+	{
+		"chi"			"{olive}{1}{mint} 正在对幸存者溅射伤害！"
+	}
+
+	"Splash2"
+	{
+		"chi"			"{olive}{1}{mint} 停止了对幸存者溅射伤害！"
+	}
+
+	"SplashAmmo"
+	{
+		"chi"			"你已经用光了所有 溅射 能力次数。"
+	}
+
+	"SplashDetails"
+	{
+		"chi"			"你可以对附近的幸存者造成溅射伤害。"
+	}
+
+	"SplashHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 溅射 能力！"
+	}
+
+	"SplashHuman2"
+	{
+		"chi"			"你的 溅射 能力未能激活， 请重试。"
+	}
+
+	"SplashHuman3"
+	{
+		"chi"			"你已经激活了你的 溅射 能力。"
+	}
+
+	"SplashHuman4"
+	{
+		"chi"			"你的 溅射 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SplashHuman5"
+	{
+		"chi"			"你的 溅射 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"SplashMenu"
+	{
+		"chi"			"溅射能力信息"
+	}
+
+	"SplashMenu2"
+	{
+		"chi"			"溅射能力"
+	}
+
+	"Splatter"
+	{
+		"chi"			"{olive}{1}{mint} 的喷溅物正在遮挡{olive} {2}{mint} 的屏幕!"
+	}
+
+	"Splatter2"
+	{
+		"chi"			"{olive}{1}{mint} 不再被喷溅物遮挡{mint}!"
+	}
+
+	"SplatterAmmo"
+	{
+		"chi"			"你已经用完了所有飞溅能力的弹药。"
+	}
+
+	"SplatterDetails"
+	{
+		"chi"			"你可以用喷溅物遮挡幸存者屏幕。"
+	}
+
+	"SplatterHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 的飞溅能力！"
+	}
+
+	"SplatterHuman2"
+	{
+		"chi"			"你的飞溅技能无法激活， 请重试。"
+	}
+
+	"SplatterHuman3"
+	{
+		"chi"			"你的喷溅能力还需要{yellow} {1} 秒{mint} 进行充能。"
+	}
+
+	"SplatterHuman4"
+	{
+		"chi"			"附近没有幸存者可以给你使用喷溅能力。"
+	}
+
+	"SplatterHuman5"
+	{
+		"chi"			"你的飞溅能力结束， 需要{yellow} {1} 秒{mint}补充能量。"
+	}
+
+	"SplatterMenu"
+	{
+		"chi"			"飞溅能力信息"
+	}
+
+	"SplatterMenu2"
+	{
+		"chi"			"飞溅能力"
+	}
+
+	"Throw"
+	{
+		"chi"			"{olive}{1}{mint} 扔出了 汽车！"
+	}
+
+	"Throw2"
+	{
+		"chi"			"{olive}{1}{mint} 扔出了{yellow} 特殊感染者{mint}！"
+	}
+
+	"Throw3"
+	{
+		"chi"			"{olive}{1}{mint} 扔出了 自己！"
+	}
+
+	"Throw4"
+	{
+		"chi"			"{olive}{1}{mint} 扔出了 女巫！"
+	}
+
+	"ThrowAmmo"
+	{
+		"chi"			"你已经用光了所有 投掷 能力次数。"
+	}
+
+	"ThrowDetails"
+	{
+		"chi"			"你可以投掷汽车/特殊感染者/女巫或自己。"
+	}
+
+	"ThrowHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 投掷 能力！"
+	}
+
+	"ThrowHuman2"
+	{
+		"chi"			"你已经激活了你的 投掷 能力。"
+	}
+
+	"ThrowHuman3"
+	{
+		"chi"			"你的 投掷 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ThrowHuman4"
+	{
+		"chi"			"你的 投掷 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ThrowMenu"
+	{
+		"chi"			"投掷能力信息"
+	}
+
+	"ThrowMenu2"
+	{
+		"chi"			"投掷能力"
+	}
+
+	"Track"
+	{
+		"chi"			"{olive}{1}{mint} 的岩石{yellow} 正在追踪{mint} 幸存者！"
+	}
+
+	"TrackAmmo"
+	{
+		"chi"			"你已经用光了所有 追踪 能力次数。"
+	}
+
+	"TrackDetails"
+	{
+		"chi"			"你可以扔出追踪最近幸存者的岩石。"
+	}
+
+	"TrackHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 追踪 能力！"
+	}
+
+	"TrackHuman2"
+	{
+		"chi"			"你已经激活了你的 追踪 能力。"
+	}
+
+	"TrackHuman3"
+	{
+		"chi"			"你的 追踪 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"TrackHuman4"
+	{
+		"chi"			"你的 追踪 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"TrackMenu"
+	{
+		"chi"			"追踪能力信息"
+	}
+
+	"TrackMenu2"
+	{
+		"chi"			"追踪能力"
+	}
+
+	"Ultimate"
+	{
+		"chi"			"{olive}{1}{mint} 激活了 终极 模式！"
+	}
+
+	"Ultimate2"
+	{
+		"chi"			"{olive}{1}{mint} 的 终极 模式已结束！"
+	}
+
+	"Ultimate3"
+	{
+		"chi"			"你要对幸存者造成{yellow} {1}{mint}/{yellow}{2}{mint} 伤害才能解锁 终极 模式。"
+	}
+
+	"Ultimate4"
+	{
+		"chi"			"你现在可以使用 终极 模式了！"
+	}
+
+	"UltimateAmmo"
+	{
+		"chi"			"你已经用光了所有 终极 能力次数。"
+	}
+
+	"UltimateDetails"
+	{
+		"chi"			"生命值较低时激活终极模式， 以获得暂时的无敌和伤害加成。"
+	}
+
+	"UltimateHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 终极 能力！"
+	}
+
+	"UltimateHuman2"
+	{
+		"chi"			"你的 终极能力还没准备好。"
+	}
+
+	"UltimateHuman3"
+	{
+		"chi"			"你已经激活了你的 终极 能力。"
+	}
+
+	"UltimateHuman4"
+	{
+		"chi"			"你的 终极 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"UltimateHuman5"
+	{
+		"chi"			"你的 终极 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"UltimateMenu"
+	{
+		"chi"			"终极能力信息"
+	}
+
+	"UltimateMenu2"
+	{
+		"chi"			"终极能力"
+	}
+
+	"Undead"
+	{
+		"chi"			"{olive}{1}{mint} 延长了自己的寿命！"
+	}
+
+	"Undead2"
+	{
+		"chi"			"{olive}{1}{mint} 的生命值全满了！"
+	}
+
+	"UndeadAmmo"
+	{
+		"chi"			"你已经用光了所有 不死 能力次数。"
+	}
+
+	"UndeadDetails"
+	{
+		"chi"			"你无法死亡。"
+	}
+
+	"UndeadHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 不死 能力！"
+	}
+
+	"UndeadHuman2"
+	{
+		"chi"			"你的 不死 能力未能激活， 请重试。"
+	}
+
+	"UndeadHuman3"
+	{
+		"chi"			"你已经激活了你的 不死 能力。"
+	}
+
+	"UndeadHuman4"
+	{
+		"chi"			"你的 不死 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"UndeadHuman5"
+	{
+		"chi"			"你的 不死 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"UndeadMenu"
+	{
+		"chi"			"不死能力信息"
+	}
+
+	"UndeadMenu2"
+	{
+		"chi"			"不死能力"
+	}
+
+	"Vampire"
+	{
+		"chi"			"{olive}{1}{mint} 从{olive} {2}{mint} 偷走了一些生命值！"
+	}
+
+	"VampireDetails"
+	{
+		"chi"			"你可以通过伤害幸存者获得生命值。"
+	}
+
+	"VampireMenu"
+	{
+		"chi"			"吸血能力信息"
+	}
+
+	"VampireMenu2"
+	{
+		"chi"			"吸血能力"
+	}
+
+	"Vision"
+	{
+		"chi"			"{olive}{1}{mint} 让{olive} {2}{mint} 的视觉系数变成了{yellow} {3}{mint}！"
+	}
+
+	"Vision2"
+	{
+		"chi"			"{olive}{1}{mint} 让{yellow} {2}{mint} 的视觉系数变回去了！"
+	}
+
+	"VisionAmmo"
+	{
+		"chi"			"你已经用光了所有 视觉 范围能力次数。"
+	}
+
+	"VisionDetails"
+	{
+		"chi"			"你可以变更幸存者的视野。"
+	}
+
+	"VisionHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 视觉 能力！"
+	}
+
+	"VisionHuman2"
+	{
+		"chi"			"你的 视觉 能力未能激活， 请重试。"
+	}
+
+	"VisionHuman3"
+	{
+		"chi"			"你的 视觉 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"VisionHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 视觉 能力。"
+	}
+
+	"VisionHuman5"
+	{
+		"chi"			"你的 视觉 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"VisionMenu"
+	{
+		"chi"			"视觉能力信息"
+	}
+
+	"VisionMenu2"
+	{
+		"chi"			"视觉能力"
+	}
+
+	"Warp"
+	{
+		"chi"			"{olive}{1}{mint} 传送{olive} {2}{mint} 到{olive} {3}{mint} 身边！"
+	}
+
+	"Warp2"
+	{
+		"chi"			"{olive}{1}{mint} 将周期性的传送到幸存者身边！"
+	}
+
+	"Warp3"
+	{
+		"chi"			"{olive}{1}{mint} 传送到{olive} {2}{mint} 身边！"
+	}
+
+	"Warp4"
+	{
+		"chi"			"{olive}{1}{mint} 与它的{yellow} 石头{mint} 交换了位置。"
+	}
+
+	"WarpAmmo"
+	{
+		"chi"			"你已经用光了所有 定期传送 能力次数。"
+	}
+
+	"WarpAmmo2"
+	{
+		"chi"			"你已经用光了所有 传送 范围能力次数。"
+	}
+
+	"WarpDetails"
+	{
+		"chi"			"你可以传送到幸存者身边或者让幸存者传送到附近的队友身上。"
+	}
+
+	"WarpHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 定期传送 能力！"
+	}
+
+	"WarpHuman2"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 传送 能力！"
+	}
+
+	"WarpHuman3"
+	{
+		"chi"			"你的 传送 能力未能激活， 请重试。"
+	}
+
+	"WarpHuman4"
+	{
+		"chi"			"你已经激活了你的 定期传送 能力。"
+	}
+
+	"WarpHuman5"
+	{
+		"chi"			"你的 定期传送 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WarpHuman6"
+	{
+		"chi"			"你的 传送 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WarpHuman7"
+	{
+		"chi"			"附近没有幸存者可以让你使用 传送 能力。"
+	}
+
+	"WarpHuman8"
+	{
+		"chi"			"你的 定期传送 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WarpHuman9"
+	{
+		"chi"			"你的 传送 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WarpMenu"
+	{
+		"chi"			"传送能力信息"
+	}
+
+	"WarpMenu2"
+	{
+		"chi"			"传送能力"
+	}
+
+	"Whirl"
+	{
+		"chi"			"{olive}{1}{mint} 翻转了{olive} {2}{mint}。"
+	}
+
+	"Whirl2"
+	{
+		"chi"			"{olive}{1}{mint} 的翻转停止了。"
+	}
+
+	"WhirlAmmo"
+	{
+		"chi"			"你已经用光了所有 翻转 范围能力次数。"
+	}
+
+	"WhirlDetails"
+	{
+		"chi"			"你可以让幸存者的屏幕翻转。"
+	}
+
+	"WhirlHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 翻转 能力！"
+	}
+
+	"WhirlHuman2"
+	{
+		"chi"			"你的 翻转 能力未能激活， 请重试。"
+	}
+
+	"WhirlHuman3"
+	{
+		"chi"			"你的 翻转 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WhirlHuman4"
+	{
+		"chi"			"附近没有幸存者可以让你使用 翻转 能力。"
+	}
+
+	"WhirlHuman5"
+	{
+		"chi"			"你的 翻转 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WhirlMenu"
+	{
+		"chi"			"翻转能力信息"
+	}
+
+	"WhirlMenu2"
+	{
+		"chi"			"翻转能力"
+	}
+
+	"Witch"
+	{
+		"chi"			"{olive}{1}{mint} 将一些普通感染者转化成{olive} 女巫仆从{mint}！"
+	}
+
+	"WitchAmmo"
+	{
+		"chi"			"你已经用光了所有 女巫 召唤能力次数。"
+	}
+
+	"WitchDetails"
+	{
+		"chi"			"你可以让附近的普通感染者转化为女巫。"
+	}
+
+	"WitchHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 召唤女巫 能力！"
+	}
+
+	"WitchHuman2"
+	{
+		"chi"			"你的 召唤女巫 能力未能激活， 请重试。"
+	}
+
+	"WitchHuman3"
+	{
+		"chi"			"你的 召唤女巫 能力还需要{yellow} 秒{mint}进行充能。"
+	}
+
+	"WitchHuman4"
+	{
+		"chi"			"你的 召唤女巫 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"WitchMenu"
+	{
+		"chi"			"女巫能力信息"
+	}
+
+	"WitchMenu2"
+	{
+		"chi"			"女巫能力"
+	}
+
+	"Xiphos"
+	{
+		"chi"			"{olive}{1}{mint} 从{olive} {2}{mint} 身上偷取了一些生命值！"
+	}
+
+	"Xiphos2"
+	{
+		"chi"			"{olive}{1}{mint} 从{olive} {2}{mint} 身上偷取了一些生命值！"
+	}
+
+	"XiphosDetails"
+	{
+		"chi"			"你可以从幸存者身上窃取生命值， 反之亦然。"
+	}
+
+	"XiphosMenu"
+	{
+		"chi"			"双刃剑能力信息"
+	}
+
+	"XiphosMenu2"
+	{
+		"chi"			"双刃剑能力"
+	}
+
+	"Yell"
+	{
+		"chi"			"{olive}{1}{mint} 对幸存者大喊！"
+	}
+
+	"Yell2"
+	{
+		"chi"			"{olive}{1}{mint}不再大喊大叫！"
+	}
+
+	"YellAmmo"
+	{
+		"chi"			"你已经用光了所有 战吼 能力次数。"
+	}
+
+	"YellDetails"
+	{
+		"chi"			"你会对幸存者大吼大叫。"
+	}
+
+	"YellHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 战吼 能力！"
+	}
+
+	"YellHuman2"
+	{
+		"chi"			"你的 战吼 能力未能激活， 请重试。"
+	}
+
+	"YellHuman3"
+	{
+		"chi"			"你已经激活了你的 战吼 能力。"
+	}
+
+	"YellHuman4"
+	{
+		"chi"			"你的 战吼 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"YellHuman5"
+	{
+		"chi"			"你的 战吼 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"YellMenu"
+	{
+		"chi"			"战吼能力信息"
+	}
+
+	"YellMenu2"
+	{
+		"chi"			"战吼能力"
+	}
+
+	"Zombie"
+	{
+		"chi"			"{olive}{1}{mint} 将定期召唤僵尸！"
+	}
+
+	"Zombie2"
+	{
+		"chi"			"{olive}{1}{mint} 召唤了{yellow} 僵尸{mint}！"
+	}
+
+	"ZombieAmmo"
+	{
+		"chi"			"你已经用光了所有 僵尸 召唤能力次数。"
+	}
+
+	"ZombieDetails"
+	{
+		"chi"			"你可以召唤僵尸。"
+	}
+
+	"ZombieHuman"
+	{
+		"chi"			"你激活了{olive} {1}{mint}/{olive}{2}{mint} 次 召唤僵尸 能力！"
+	}
+
+	"ZombieHuman2"
+	{
+		"chi"			"你的 召唤僵尸 能力未能激活， 请重试。"
+	}
+
+	"ZombieHuman3"
+	{
+		"chi"			"你已经激活了你的 召唤僵尸 能力。"
+	}
+
+	"ZombieHuman4"
+	{
+		"chi"			"你的 召唤僵尸 能力还需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ZombieHuman5"
+	{
+		"chi"			"你的 召唤僵尸 能力已结束， 需要{yellow} {1} 秒{mint}进行充能。"
+	}
+
+	"ZombieMenu"
+	{
+		"chi"			"僵尸能力信息"
+	}
+
+	"ZombieMenu2"
+	{
+		"chi"			"僵尸能力"
+	}
+}

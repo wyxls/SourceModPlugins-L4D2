@@ -12,21 +12,19 @@
 
 - [Updater: v1.2.2](https://forums.alliedmods.net/showthread.php?t=169095)
 
-- WeaponHandling: v1.0.6) (Lux)
+- [WeaponHandling: v1.0.6](https://forums.alliedmods.net/showthread.php?t=319947) (Lux)
 
-- sourcescramble.ext: v0.7.0
+- [sourcescramble](https://forums.alliedmods.net/member.php?u=252787): v0.7.1 (nosoop)
 
-- survivor_afk_fix: v1.0.4 (Lux)
+- [survivor_afk_fix](https://forums.alliedmods.net/showthread.php?p=2714236): v1.0.4 (Lux)
 
-- witch_prevent_target_loss: v1.1.1 (Lux)
+- [witch_prevent_target_loss](https://forums.alliedmods.net/showthread.php?t=315481): v1.1.1 (Lux)
 
-- l4d_survivor_identity_fix: v1.7 (Merudo, Shadowysn)
+- [l4d_survivor_identity_fix](https://forums.alliedmods.net/showpost.php?p=2718792&postcount=36): v1.7 (Merudo, Shadowysn)
 
-- Defib_Fix: v2.0.1 (Lux)
+- [Defib_Fix](https://forums.alliedmods.net/showthread.php?p=2647018): v2.0.1 (Lux)
 
-- lfd_both_fixSG552: v2 (bullet28)
+- [lfd_both_fixSG552](https://forums.alliedmods.net/showthread.php?t=322141): v2 (bullet28)
 
-- : v2.0.2
-
-- l4d_reload_fix: v1.3a (Silver)
+- [l4d_reload_fix](https://forums.alliedmods.net/showthread.php?p=2716277): v1.3a (Silver)
 

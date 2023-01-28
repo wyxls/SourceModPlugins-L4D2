@@ -3,12 +3,12 @@
 #### 我自己私人搭建服务器的SourceMod插件合集，欢迎自取
 
 ```
-Version 2.2.2.2 (left4dead2)
+Version 2.2.2.6 (left4dead2)
 Network Version 2.1.0.0
-Exe build: 21:05:11 Sep 15 2020 (7970) (550)
-MetaMod Version: 1.10 build 971
-SourceMod Version: 1.10 build 6497
-L4D2ToolZ: 1.1.0.1
+Exe build: 00:10:37 Nov 18 2022 (8777) (550)
+MetaMod Version: 1.11.0.1148
+SourceMod Version: 1.11.0.6927
+L4D2ToolZ: 1.1.0.2
 Tickrate-Enabler: 1.5
 
 SourceMod

@@ -9,6 +9,7 @@
 *	-Change Speed Player
 *	-Set Health Player
 *	-Change Color Player
+*	-
 * 
 * -MENU RELATED - For menus code
 *	-Show Categories
@@ -18,7 +19,11 @@
 * 
 * -FUNCTIONS - For functions code (They do every action)
 *
+*
+*
+*
 ************************************************************************************************/
+
 
 //Include data
 #pragma semicolon 2
@@ -28,9 +33,10 @@
 #include <adminmenu>
 
 //Definitions needed for plugin functionality
-#define GETVERSION "1.0.9"
+#define GETVERSION "1.1.0"
 #define DEBUG 0
 #define DESIRED_FLAGS ADMFLAG_UNBAN
+
 
 #define ARRAY_SIZE 5000
 
@@ -58,6 +64,11 @@
 #define BURN_IGNITE_PARTICLE "fire_small_01"
 #define BLEED_PARTICLE "blood_chainsaw_constant_tp"
 
+//Models
+#define ZOEY_MODEL "models/survivors/survivor_teenangst.mdl"
+#define FRANCIS_MODEL "models/survivors/survivor_biker.mdl"
+#define LOUIS_MODEL "models/survivors/survivor_manager.mdl"
+
 /*
  *Offsets, Handles, Bools, Floats, Integers, Strings, Vecs and everything needed for the commands
  */
@@ -68,16 +79,16 @@
 /* Refers to the last selected userid by the admin client index. Doesn't matter if the admins leaves and another using the same index gets in
  * because if this admin uses the same menu item, the last userid will be reset.
  */
-new g_iCurrentUserId[MAXPLAYERS+1] = 0; 
-new g_iLastGrabbedEntity[ARRAY_SIZE+1] = -1;
+new g_iCurrentUserId[MAXPLAYERS+1] = {0}; 
+new g_iLastGrabbedEntity[ARRAY_SIZE+1] = {-1};
 
 //Bools
 new bool:g_bVehicleReady = false;
 new bool:g_bStrike = false;
 new bool:g_bGnomeRain = false;
-new bool:g_bHasGod[MAXPLAYERS+1] = false;
-new bool:g_bGrab[MAXPLAYERS+1] = false;
-new bool:g_bGrabbed[ARRAY_SIZE+1] = false;
+new bool:g_bHasGod[MAXPLAYERS+1] = {false};
+new bool:g_bGrab[MAXPLAYERS+1] = {false};
+new bool:g_bGrabbed[ARRAY_SIZE+1] = {false};
 //Floats
 
 //Handles
@@ -89,6 +100,8 @@ new Handle:sdkDetonateAcid = INVALID_HANDLE;
 new Handle:sdkAdrenaline = INVALID_HANDLE;
 new Handle:sdkSetBuffer = INVALID_HANDLE;
 new Handle:sdkRevive = INVALID_HANDLE;
+new Handle:sdkShoveSurv = INVALID_HANDLE;
+new Handle:sdkShoveInf = INVALID_HANDLE;
 
 //Offsets
 static g_flLagMovement = 0;
@@ -108,7 +121,7 @@ new Handle:g_cvarAddType = INVALID_HANDLE;
 public Plugin:myinfo = 
 {
 	name = "[L4D2] Custom admin commands",
-	author = "honorcode23",
+	author = "honorcode23 & translation by Zakikun",
 	description = "Allow admins to use new administrative or fun commands",
 	version = GETVERSION,
 	url = "http://forums.alliedmods.net/showthread.php?t=133475"
@@ -116,24 +129,30 @@ public Plugin:myinfo =
 
 public OnPluginStart()
 {
+	LogDebug("####### Initializing Plugin... #######");
 	//Left 4 dead 2 only
+	LogDebug("Obtaining current game");
 	decl String:sGame[256];
 	GetGameFolderName(sGame, sizeof(sGame));
 	if (!StrEqual(sGame, "left4dead2", false))
 	{
+		LogDebug("The game is not Left 4 Dead 2, aborting load");
 		SetFailState("[L4D2] Custom Commands supports Left 4 dead 2 only!");
 	}
+	LogDebug("The game is Left 4 Dead 2, continue...");
 	
+	LogDebug("Creating necessary ConVars...");	
 	//Cvars
 	CreateConVar("l4d2_custom_commands_version", GETVERSION, "Version of Custom Admin Commands Plugin", FCVAR_SPONLY|FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	g_cvarRadius = CreateConVar("l4d2_custom_commands_explosion_radius", "350", "Radius for the Create Explosion's command explosion");
 	g_cvarPower = CreateConVar("l4d2_custom_commands_explosion_power", "350", "Power of the Create Explosion's command explosion");
 	g_cvarDuration = CreateConVar("l4d2_custom_commands_explosion_duration", "15", "Duration of the Create Explosion's command explosion fire trace");
-	g_cvarRainDur = CreateConVar("l4d2_custom_commands_rain_duration", "10", "Time out for the gnome's rain");
-	g_cvarRainRadius = CreateConVar("l4d2_custom_commands_rain_radius", "300", "Maximum radius of the gnome rain. Will also affect the air strike radius");
+	g_cvarRainDur = CreateConVar("l4d2_custom_commands_rain_duration", "10", "Time out for the gnome's rain or l4d1 survivors rain");
+	g_cvarRainRadius = CreateConVar("l4d2_custom_commands_rain_radius", "300", "Maximum radius of the gnome rain or l4d1 rain. Will also affect the air strike radius");
 	g_cvarLog = CreateConVar("l4d2_custom_commands_log", "1", "Log admin actions when they use a command? [1: Yes 0: No]");
 	g_cvarAddType = CreateConVar("l4d2_custom_commands_menutype", "1", "How should the commands be added to the menu? 0: Create new category 1: Add to default categories");
-	AutoExecConfig(true, "l4d2_custom_commands");
+	
+	LogDebug("Registering all admin and console commands...");
 	//Commands
 	RegAdminCmd("sm_vomitplayer", CmdVomitPlayer, DESIRED_FLAGS, "Vomits the desired player");
 	RegAdminCmd("sm_incapplayer", CmdIncapPlayer, DESIRED_FLAGS, "Incapacitates a survivor or tank");
@@ -143,11 +162,13 @@ public OnPluginStart()
 	RegAdminCmd("sm_setexplosion", CmdSetExplosion, DESIRED_FLAGS, "Creates an explosion on your feet or where you are looking at");
 	RegAdminCmd("sm_sizeplayer", CmdSizePlayer, DESIRED_FLAGS, "Resize a player's model (Most likely, their pants)");
 	RegAdminCmd("sm_norescue", CmdNoRescue, DESIRED_FLAGS, "Forces the rescue vehicle to leave");
+	RegAdminCmd("sm_dontrush", CmdDontRush, DESIRED_FLAGS, "Forces a player to re-appear in the starting safe zone");
 	RegAdminCmd("sm_changehp", CmdChangeHp, DESIRED_FLAGS, "Will switch a player's health between temporal or permanent");
 	RegAdminCmd("sm_airstrike", CmdAirstrike, DESIRED_FLAGS, "Will set an airstrike attack in the player's face");
 	RegAdminCmd("sm_gnomerain", CmdGnomeRain, DESIRED_FLAGS, "Will rain gnomes within your position");
 	RegAdminCmd("sm_gnomewipe", CmdGnomeWipe, DESIRED_FLAGS, "Will delete all the gnomes in the map");
 	RegAdminCmd("sm_godmode", CmdGodMode, DESIRED_FLAGS, "Will activate or deactivate godmode from player");
+	RegAdminCmd("sm_l4drain", CmdL4dRain, DESIRED_FLAGS, "Will rain left 4 dead 1 survivors");
 	RegAdminCmd("sm_colortarget", CmdColorTarget, DESIRED_FLAGS, "Will color the aiming target entity");
 	RegAdminCmd("sm_sizetarget", CmdSizeTarget, DESIRED_FLAGS, "Will size the aiming target entity");
 	RegAdminCmd("sm_shakeplayer", CmdShakePlayer, DESIRED_FLAGS, "Will shake a player screen during the desired amount of time");
@@ -155,6 +176,7 @@ public OnPluginStart()
 	RegAdminCmd("sm_weaponrain", CmdWeaponRain, DESIRED_FLAGS, "Will rain the specified weapon");
 	RegAdminCmd("sm_cmdplayer", CmdConsolePlayer, DESIRED_FLAGS, "Will control a player's console");
 	RegAdminCmd("sm_bleedplayer", CmdBleedPlayer, DESIRED_FLAGS, "Will force a player to bleed");
+	//RegAdminCmd("sm_callrescue", CmdCallRescue, DESIRED_FLAGS, "Will call the rescue vehicle");
 	RegAdminCmd("sm_hinttext", CmdHintText, DESIRED_FLAGS, "Prints an instructor hint to all players");
 	RegAdminCmd("sm_cheat", CmdCheat, DESIRED_FLAGS, "Bypass any command and executes it. Rule: [command] [argument] EX: z_spawn tank");
 	RegAdminCmd("sm_wipeentity", CmdWipeEntity, DESIRED_FLAGS, "Wipe all entities with the given name");
@@ -173,21 +195,25 @@ public OnPluginStart()
 	RegAdminCmd("sm_revive", CmdRevive, DESIRED_FLAGS, "Revives an incapacitated player");
 	RegAdminCmd("sm_oldmovie", CmdOldMovie, DESIRED_FLAGS, "Sets a player into black and white");
 	RegAdminCmd("sm_panic", CmdPanic, DESIRED_FLAGS, "Forces a panic event");
+	RegAdminCmd("sm_shove", CmdShove, DESIRED_FLAGS, "Shoves a player");
 	
 	//Development
 	RegAdminCmd("sm_entityinfo", CmdEntityInfo, DESIRED_FLAGS, "Returns the aiming entity classname");
 	RegAdminCmd("sm_ccrefresh", CmdCCRefresh, DESIRED_FLAGS, "Refreshes the menu items");
 	RegAdminCmd("sm_cchelp", CmdHelp, DESIRED_FLAGS, "Prints the entire list of commands");
 	
+	LogDebug("Hooking events...");
 	//Events
 	HookEvent("round_end", OnRoundEnd);
 	HookEvent("finale_vehicle_ready", OnVehicleReady);
 	
+	LogDebug("Loading Translations");
 	//Translations
 	LoadTranslations("common.phrases");
 	
+	LogDebug("Preparing necessary calls...");
 	//SDKCalls
-	g_hGameConf = LoadGameConfigFile("l4d2_custom_commands");
+	g_hGameConf = LoadGameConfigFile("l4d2customcmds");
 	if(g_hGameConf == INVALID_HANDLE)
 	{
 		SetFailState("Couldn't find the offsets and signatures file. Please, check that it is installed correctly.");
@@ -200,7 +226,7 @@ public OnPluginStart()
 	sdkVomitInfected = EndPrepSDKCall();
 	if(sdkVomitInfected == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_OnHitByVomitJar\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer_OnHitByVomitJar\" signature, check the file version!");
 	}
 	
 	StartPrepSDKCall(SDKCall_Player);
@@ -212,7 +238,7 @@ public OnPluginStart()
 	sdkCallPushPlayer = EndPrepSDKCall();
 	if(sdkCallPushPlayer == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_Fling\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer_Fling\" signature, check the file version!");
 	}
 	
 	StartPrepSDKCall(SDKCall_Player);
@@ -222,7 +248,7 @@ public OnPluginStart()
 	sdkVomitSurvivor = EndPrepSDKCall();
 	if(sdkVomitSurvivor == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_OnVomitedUpon\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer_OnVomitedUpon\" signature, check the file version!");
 	}
 	
 	
@@ -231,7 +257,7 @@ public OnPluginStart()
 	sdkDetonateAcid = EndPrepSDKCall();
 	if(sdkDetonateAcid == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CSpitterProjectile_Detonate\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CSpitterProjectile::Detonate(void)\" signature, check the file version!");
 	}
 	
 	StartPrepSDKCall(SDKCall_Player);
@@ -240,7 +266,7 @@ public OnPluginStart()
 	sdkAdrenaline = EndPrepSDKCall();
 	if(sdkAdrenaline == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_OnAdrenalineUsed\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer::OnAdrenalineUsed(float)\" signature, check the file version!");
 	}
 	
 	StartPrepSDKCall(SDKCall_Player);
@@ -249,7 +275,7 @@ public OnPluginStart()
 	sdkSetBuffer = EndPrepSDKCall();
 	if(sdkSetBuffer == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_SetHealthBuffer\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer::SetHealthBuffer(float)\" signature, check the file version!");
 	}
 	
 	StartPrepSDKCall(SDKCall_Player);
@@ -257,20 +283,46 @@ public OnPluginStart()
 	sdkRevive = EndPrepSDKCall();
 	if(sdkRevive == INVALID_HANDLE)
 	{
-		PrintToServer("BROKEN SIGNATURE \"CTerrorPlayer_OnRevived\" PLEASE UPDATE GAMEDATA");
+		SetFailState("Unable to find the \"CTerrorPlayer::OnRevived(void)\" signature, check the file version!");
 	}
 	
+	StartPrepSDKCall(SDKCall_Player);
+	PrepSDKCall_SetFromConf(g_hGameConf, SDKConf_Signature, "CTerrorPlayer_OnStaggered");
+	PrepSDKCall_AddParameter(SDKType_CBaseEntity, SDKPass_Pointer);
+	PrepSDKCall_AddParameter(SDKType_Vector, SDKPass_Pointer);
+	sdkShoveSurv = EndPrepSDKCall();
+	if(sdkShoveSurv == INVALID_HANDLE)
+	{
+		SetFailState("Unable to find the \"CTerrorPlayer::OnStaggered(CBaseEntity *, Vector  const*)\" signature, check the file version!");
+	}
+	
+	StartPrepSDKCall(SDKCall_Player);
+	PrepSDKCall_SetFromConf(g_hGameConf, SDKConf_Signature, "CTerrorPlayer_OnStaggered");
+	PrepSDKCall_AddParameter(SDKType_CBasePlayer, SDKPass_Pointer);
+	PrepSDKCall_AddParameter(SDKType_Vector, SDKPass_ByRef);
+	sdkShoveInf = EndPrepSDKCall();
+	if(sdkShoveInf == INVALID_HANDLE)
+	{
+		SetFailState("Unable to find the \"CTerrorPlayer::OnShovedBySurvivor(CTerrorPlayer*, Vector  const&)\" signature, check the file version!");
+	}
+	
+	LogDebug("Addin commands to the topmenu (Admin Menu)");	
 	new Handle:topmenu = GetAdminTopMenu();
 	if (LibraryExists("adminmenu") && (topmenu != INVALID_HANDLE))
 	{
 		OnAdminMenuReady(topmenu);
 	}
+	LogDebug("####### Plugin is ready #######");
 }
 
 public OnMapStart()
 {
+	LogDebug("Map started, precaching sounds and particles");
 	PrecacheSound(EXPLOSION_SOUND);
 	
+	PrecacheModel(ZOEY_MODEL);
+	PrecacheModel(LOUIS_MODEL);
+	PrecacheModel(FRANCIS_MODEL);
 	PrecacheModel("sprites/muzzleflash4.vmt");
 	
 	PrefetchSound(EXPLOSION_SOUND);
@@ -282,10 +334,13 @@ public OnMapStart()
 	PrecacheParticle(BURN_IGNITE_PARTICLE);
 	//Get the offset
 	g_flLagMovement = FindSendPropInfo("CTerrorPlayer", "m_flLaggedMovementValue");
+	LogDebug("Done precaching sounds and particles");
+	
 }
 
 public OnMapEnd()
 {
+	LogDebug("Map end, resetting variables");
 	g_bVehicleReady = false;
 	for(new i=1; i<=MaxClients; i++)
 	{
@@ -302,6 +357,7 @@ public OnMapEnd()
 
 public Action:CmdCCRefresh(client, args)
 {
+	LogDebug("正在刷新管理员菜单");
 	PrintToChat(client, "\x04[SM] \x03正在刷新管理员菜单");
 	new Handle:topmenu = GetAdminTopMenu();
 	
@@ -323,8 +379,8 @@ public Action:CmdCCRefresh(client, args)
 			AddToTopMenu (topmenu, "l4d2shakeplayer", TopMenuObject_Item, MenuItem_ShakePlayer, players_commands, "l4d2shakeplayer", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2chargeplayer", TopMenuObject_Item, MenuItem_Charge, players_commands, "l4d2chargeplayer", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2teleplayer", TopMenuObject_Item, MenuItem_TeleportPlayer, players_commands, "l4d2teleplayer", DESIRED_FLAGS);
-			
-			AddToTopMenu (topmenu, "l4d2bleedplayer", TopMenuObject_Item, MenuItem_BleedPlayer, players_commands, "l4d2bleedplayer", DESIRED_FLAGS);
+						
+			AddToTopMenu (topmenu, "l4d2dontrush", TopMenuObject_Item, MenuItem_DontRush, players_commands, "l4d2dontrush", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2airstrike", TopMenuObject_Item, MenuItem_Airstrike, players_commands, "l4d2airstrike", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2changehp", TopMenuObject_Item, MenuItem_ChangeHp, players_commands, "l4d2changehp", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2godmode", TopMenuObject_Item, MenuItem_GodMode, players_commands, "l4d2godmode", DESIRED_FLAGS);
@@ -340,6 +396,7 @@ public Action:CmdCCRefresh(client, args)
 			AddToTopMenu (topmenu, "l4d2createexplosion", TopMenuObject_Item, MenuItem_CreateExplosion, server_commands, "l4d2createexplosion", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2norescue", TopMenuObject_Item, MenuItem_NoRescue, server_commands, "l4d2norescue", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2gnomerain", TopMenuObject_Item, MenuItem_GnomeRain, server_commands, "l4d2gnomerain", DESIRED_FLAGS);
+			AddToTopMenu (topmenu, "l4d2survrain", TopMenuObject_Item, MenuItem_SurvRain, server_commands, "l4d2survrain", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2gnomewipe", TopMenuObject_Item, MenuItem_GnomeWipe, server_commands, "l4d2gnomewipe", DESIRED_FLAGS);
 		}
 		else
@@ -380,6 +437,8 @@ public Action:CmdHelp(client, args)
 	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_norescue\": Forces the rescue vehicle to leave | Example: !norescue");
 	PrintToChat(client, " ");
+	PrintToChat(client, "- \"sm_dontrush\": Forces a player to re-appear in the starting safe zone (Usage: sm_dontrush <#userid|name>) | Example: !dontrush RusherName");
+	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_changehp\": Will switch a player's health between temporal or permanent (Usage: sm_changehp <#userid|name> <perm|temp>) | Example: !changehp @me perm");
 	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_airstrike\": Will send an airstrike attack to the target (Usage: sm_airstrike <#userid|name>) | Example: !airstrike @me");
@@ -389,6 +448,8 @@ public Action:CmdHelp(client, args)
 	PrintToChat(client, "- \"sm_gnomewipe\": Will delete all the gnomes in the map | Example: !gnomewipe");
 	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_godmode\": Will activate or deactivate godmode from player (Usage: sm_godmode <#userid|name>) | Example: !godmode @me");
+	PrintToChat(client, " ");
+	PrintToChat(client, "- \"sm_l4drain\": Will rain left 4 dead 1 survivors | Example: !l4drain");
 	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_colortarget\": Will change the color of the aiming target entity (Usage: sm_colortarget <R G B A>) | Example: !colortarget \"43 55 255 179\"");
 	PrintToChat(client, " ");
@@ -440,6 +501,8 @@ public Action:CmdHelp(client, args)
 	PrintToChat(client, " ");
 	PrintToChat(client, "- \"sm_panic\": Forces a panic event, ignoring the director | Example: !panic");
 	PrintToChat(client, " ");
+	PrintToChat(client, "- \"sm_shove\": Shoves a player (Usage: sm_shove <#userid|name>) | Example: !shove @all");
+	PrintToChat(client, " ");
 	PrintToChat(client, " ");
 	PrintToChat(client, "\x04*: Optional argument");
 	PrintToChat(client, "\x04[SM] \x03打开控制台查看命令列表");
@@ -466,12 +529,13 @@ public Action:CmdVomitPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_vomitplayer <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_vomitplayer <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -506,12 +570,14 @@ public Action:CmdIncapPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("[SM] Unable to execute this command from the server console!");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_incapplayer <#userid|name>");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -546,12 +612,13 @@ public Action:CmdSpeedPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_speedplayer <#userid|name> [value]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_speedplayer <#userid|name> [value]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65], String:arg2[65], Float:speed;
@@ -588,12 +655,13 @@ public Action:CmdSetHpPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_sethpplayer <#userid|name> [amount]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_sethpplayer <#userid|name> [amount]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65], String:arg2[65];
@@ -630,12 +698,13 @@ public Action:CmdColorPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_colorplayer <#userid|name> [R G B A]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_colorplayer <#userid|name> [R G B A]");
 	}
 	decl String:arg1[65], String:arg2[65];
 	GetCmdArg(1, arg1, sizeof(arg1));
@@ -670,12 +739,13 @@ public Action:CmdColorTarget(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_colortarget [R G B A]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_colortarget [R G B A]");
 	}
 	new target = GetClientAimTarget(client, false);
 	if(!IsValidEntity(target) || !IsValidEdict(target))
@@ -696,12 +766,13 @@ public Action:CmdSizeTarget(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_sizetarget [scale]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_sizetarget [scale]");
 	}
 	new target = GetClientAimTarget(client, false);
 	if(!IsValidEntity(target) || !IsValidEdict(target))
@@ -722,12 +793,13 @@ public Action:CmdSetExplosion(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1 || args > 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_setexplosion [position | cursor]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_setexplosion [position | cursor]");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -764,7 +836,7 @@ public Action:CmdSetExplosion(client, args)
 	}
 	else
 	{
-		PrintToChat(client, "\x04[SM] \x03指定爆炸位置");
+		PrintToChat(client, "\x04[SM] \x03请指定爆炸位置");
 		return Plugin_Handled;
 	}
 }
@@ -773,12 +845,14 @@ public Action:CmdSizePlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("一个指令通过服务器控制台执行, 但没有被允许");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_sizeplayer <#userid|name> [value]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_sizeplayer <#userid|name> [value]");
 	}
 	decl String:arg1[65], String:arg2[65], Float:scale;
 	GetCmdArg(1, arg1, sizeof(arg1));
@@ -814,7 +888,9 @@ public Action:CmdNoRescue(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("一个指令通过服务器控制台执行, 但没有被允许");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(g_bVehicleReady)
@@ -880,16 +956,143 @@ public Action:CmdNoRescue(client, args)
 	return Plugin_Handled;
 }
 
-public Action:CmdAirstrike(client, args)
+public Action:CmdDontRush(client, args)
 {
 	if(!client)
 	{
+		PrintToServer("[SM] Unable to execute this command from the server console!");
 		LogCommand("A command was executed from the server console, but is not permitted");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_airstrike <#userid|name>");
+		PrintToChat(client, "[SM] Usage: sm_dontrush <#userid|name>");
+	}
+	decl String:arg[65];
+	GetCmdArg(1, arg, sizeof(arg));
+	decl String:target_name[MAX_TARGET_LENGTH];
+	decl target_list[MAXPLAYERS], target_count, bool:tn_is_ml;
+	if ((target_count = ProcessTargetString(
+			arg,
+			client,
+			target_list,
+			MAXPLAYERS,
+			COMMAND_FILTER_ALIVE,
+			target_name,
+			sizeof(target_name),
+			tn_is_ml)) <= 0)
+	{
+		ReplyToTargetError(client, target_count);
+		return Plugin_Handled;
+	}
+	
+	for (new i = 0; i < target_count; i++)
+	{
+		TeleportBack(target_list[i], client);
+	}
+	decl String:name[256];
+	GetClientName(client, name, sizeof(name));
+	LogCommand("'%s' used the 'Anti Rush' command on '%s'", name, arg);
+	return Plugin_Handled;
+}
+
+public Action:CmdBugPlayer(client, args)
+{
+	if(!client)
+	{
+		PrintToServer("[SM] Unable to execute this command from the server console!");
+		LogCommand("A command was executed from the server console, but is not permitted");
+		return Plugin_Handled;
+	}
+	if(args < 1)
+	{
+		PrintToChat(client, "[SM] Usage: sm_bugplayer <#userid|name>");
+		return Plugin_Handled;
+	}
+	
+	decl String:arg[65];
+	GetCmdArg(1, arg, sizeof(arg));
+	decl String:target_name[MAX_TARGET_LENGTH];
+	decl target_list[MAXPLAYERS], target_count, bool:tn_is_ml;
+	if ((target_count = ProcessTargetString(
+			arg,
+			client,
+			target_list,
+			MAXPLAYERS,
+			COMMAND_FILTER_ALIVE,
+			target_name,
+			sizeof(target_name),
+			tn_is_ml)) <= 0)
+	{
+		ReplyToTargetError(client, target_count);
+		return Plugin_Handled;
+	}
+	
+	for (new i = 0; i < target_count; i++)
+	{
+		AcceptEntityInput(target_list[i], "becomeragdoll");
+	}
+	return Plugin_Handled;
+}
+
+/*public Action:CmdDestroyPlayer(client, args)
+{
+	if(args < 1)
+	{
+		PrintToChat(client, "[SM] Usage: sm_destroyplayer <#userid|name>");
+		return Plugin_Handled;
+	}
+	decl String:arg[65];
+	GetCmdArg(1, arg, sizeof(arg));
+	decl String:target_name[MAX_TARGET_LENGTH];
+	decl target_list[MAXPLAYERS], target_count, bool:tn_is_ml;
+	if ((target_count = ProcessTargetString(
+			arg,
+			client,
+			target_list,
+			MAXPLAYERS,
+			COMMAND_FILTER_ALIVE,
+			target_name,
+			sizeof(target_name),
+			tn_is_ml)) <= 0)
+	{
+		ReplyToTargetError(client, target_count);
+		return Plugin_Handled;
+	}
+	
+	for (new i = 0; i < target_count; i++)
+	{
+		LaunchMissile(target_list[i], client);
+	}
+	decl String:name[256];
+	new target;
+	for(new i=1; i<=MaxClients; i++)
+	{
+		if(AliveFilter(i))
+		{
+			GetClientName(i, name, sizeof(name));
+			if(StrEqual(name, arg))
+			{
+				target = i;
+			}
+		}
+	}
+	LaunchMissile(target, client);
+	return Plugin_Handled;
+}
+*/
+
+public Action:CmdAirstrike(client, args)
+{
+	if(!client)
+	{
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
+		return Plugin_Handled;
+	}
+	if(args < 1)
+	{
+		PrintToChat(client, "\x04[SM] \x03用法: sm_airstrike <#userid|name>");
 		return Plugin_Handled;
 	}
 	
@@ -925,12 +1128,13 @@ public Action:CmdOldMovie(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_oldmovie <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_oldmovie <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -962,12 +1166,13 @@ public Action:CmdChangeHp(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_changehp <#userid|name> [perm | temp]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_changehp <#userid|name> [perm | temp]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65], String:arg2[65];
@@ -1017,7 +1222,8 @@ public Action:CmdGnomeRain(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	decl String:name[256];
@@ -1027,11 +1233,27 @@ public Action:CmdGnomeRain(client, args)
 	return Plugin_Handled;
 }
 
+public Action:CmdL4dRain(client, args)
+{
+	if(!client)
+	{
+		PrintToServer("[SM] Unable to execute this command from the server console!");
+		LogCommand("A command was executed from the server console, but is not permitted");
+		return Plugin_Handled;
+	}
+	decl String:name[256];
+	GetClientName(client, name, sizeof(name));
+	LogCommand("'%s' used the 'L4D1 rain' command");
+	StartL4dRain(client);
+	return Plugin_Handled;
+}
+
 public Action:CmdGnomeWipe(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	decl String:classname[256];
@@ -1057,16 +1279,39 @@ public Action:CmdGnomeWipe(client, args)
 	return Plugin_Handled;
 }
 
+/*public Action:CmdWipeBody(client, args)
+{
+	decl String:classname[256];
+	new count = 0;
+	for(new i=MaxClients; i<=GetMaxEntities(); i++)
+	{
+		if(!IsValidEntity(i) || !IsValidEdict(i))
+		{
+			continue;
+		}
+		GetEdictClassname(i, classname, sizeof(classname));
+		if(StrEqual(classname, "prop_ragdoll"))
+		{
+			RemoveEdict(i);
+			count++;
+		}
+	}
+	PrintToChat(client, "[SM] Succesfully wiped %i bodies", count);
+	count = 0;
+}
+*/
+
 public Action:CmdGodMode(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_godmode <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_godmode <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -1101,12 +1346,13 @@ public Action:CmdCharge(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_charge <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_charge <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[65];
@@ -1141,12 +1387,13 @@ public Action:CmdShakePlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_shake <#userid|name> [duration]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_shake <#userid|name> [duration]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65], String:arg2[65];
@@ -1183,12 +1430,13 @@ public Action:CmdConsolePlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_cmdplayer <#userid|name> [command]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_cmdplayer <#userid|name> [command]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65], String:arg2[65];
@@ -1224,12 +1472,13 @@ public Action:CmdWeaponRain(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_weaponrain [weapon type] [Example: !weaponrain adrenaline]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_weaponrain [weapon type] [Example: !weaponrain adrenaline]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[65];
@@ -1240,7 +1489,7 @@ public Action:CmdWeaponRain(client, args)
 	}
 	else
 	{
-		PrintToChat(client, "\x04[SM] \x03错误的类型");
+		PrintToChat(client, "\x04[SM] \x03错误的武器类型");
 	}
 	decl String:name[256];
 	GetClientName(client, name, sizeof(name));
@@ -1252,12 +1501,13 @@ public Action:CmdBleedPlayer(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_bleedplayer <#userid|name> [duration]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_bleedplayer <#userid|name> [duration]");
 		return Plugin_Handled;
 	}
 	
@@ -1295,7 +1545,8 @@ public Action:CmdHintText(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	decl String:arg2[65];
@@ -1316,10 +1567,11 @@ public Action:CmdCheat(client, args)
 	{
 		if(client == 0)
 		{
+			PrintToServer("\x04[SM] \x03用法: sm_cheat <command>");
 		}
 		else
 		{
-			PrintToChat(client, "\x04[SM] \x03Usage: sm_cheat <command>");
+			PrintToChat(client, "\x04[SM] \x03用法: sm_cheat <command>");
 		}
 		return Plugin_Handled;
 	}
@@ -1344,7 +1596,8 @@ public Action:CmdWipeEntity(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	decl String:arg[256], String:class[64];
@@ -1374,12 +1627,13 @@ public Action:CmdSetModel(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_setmodel <#userid|name> [model]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_setmodel <#userid|name> [model]");
 		PrintToChat(client, "Example: !setmodel @me models/props_interiors/table_bedside.mdl ");
 		return Plugin_Handled;
 	}
@@ -1416,7 +1670,7 @@ public Action:CmdSetModelEntity(client, args)
 {
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_setmodelentity <classname> [model]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_setmodelentity <classname> [model]");
 		PrintToChat(client, "Example: !setmodelentity infected models/props_interiors/table_bedside.mdl");
 		return Plugin_Handled;
 	}
@@ -1449,12 +1703,13 @@ public Action:CmdCreateParticle(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 4)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_createparticle <#userid|name> [particle] [parent: yes|no] [duration]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_createparticle <#userid|name> [particle] [parent: yes|no] [duration]");
 		PrintToChat(client, "Example: !createparticle @me no 5 (Teleports the particle to my position, but don't parent it and stop the effect in 5 seconds)");
 		return Plugin_Handled;
 	}
@@ -1507,12 +1762,13 @@ public Action:CmdIgnite(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_ignite <#userid|name> [duration]");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_ignite <#userid|name> [duration]");
 		return Plugin_Handled;
 	}
 	decl String:arg1[256], String:arg2[256];
@@ -1548,12 +1804,13 @@ public Action:CmdTeleport(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_teleport <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_teleport <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[256];
@@ -1599,12 +1856,13 @@ public Action:CmdTeleportEnt(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_teleportent <classname>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_teleportent <classname>");
 		return Plugin_Handled;
 	}
 	decl String:arg1[256], String:class[128];
@@ -1653,7 +1911,7 @@ public Action:CmdCheatRcon(client, args)
 		}
 		else
 		{
-			PrintToChat(client, "\x04[SM] \x03Usage: sm_rcheat <command>");
+			PrintToChat(client, "\x04[SM] \x03用法: sm_rcheat <command>");
 		}
 		return Plugin_Handled;
 	}
@@ -1681,7 +1939,8 @@ public Action:CmdScanModel(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	new entity = GetLookingEntity(client);
@@ -1706,7 +1965,10 @@ public Action:CmdGrabEntity(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(!g_bGrab[client])
@@ -1725,12 +1987,13 @@ public Action:CmdAcidSpill(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_acidspill <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_acidspill <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[256];
@@ -1761,12 +2024,13 @@ public Action:CmdAdren(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_adren <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_adren <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[256];
@@ -1797,12 +2061,13 @@ public Action:CmdTempHp(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 2)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_temphp <#userid|name> <amount>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_temphp <#userid|name> <amount>");
 		return Plugin_Handled;
 	}
 	decl String:arg1[256], String:arg2[256];
@@ -1846,12 +2111,13 @@ public Action:CmdRevive(client, args)
 {
 	if(!client)
 	{
-		LogCommand("A command was executed from the server console, but is not permitted");
+		PrintToServer("\x04[SM] \x03不能在服务器控制台执行该命令!");
+		LogCommand("一个指令通过服务器控制台执行, 但没有被允许");
 		return Plugin_Handled;
 	}
 	if(args < 1)
 	{
-		PrintToChat(client, "\x04[SM] \x03Usage: sm_revive <#userid|name>");
+		PrintToChat(client, "\x04[SM] \x03用法: sm_revive <#userid|name>");
 		return Plugin_Handled;
 	}
 	decl String:arg[256];
@@ -1891,12 +2157,51 @@ public Action:CmdPanic(client, args)
 	return Plugin_Handled;
 }
 
+public Action:CmdShove(client, args)
+{
+	if(!client)
+	{
+		PrintToServer("[SM] Unable to execute this command from the server console!");
+		LogCommand("A command was executed from the server console, but is not permitted");
+		return Plugin_Handled;
+	}
+	if(args < 1)
+	{
+		PrintToChat(client, "[SM] Usage: sm_shove <#userid|name>");
+		return Plugin_Handled;
+	}
+	decl String:arg[256];
+	decl String:target_name[MAX_TARGET_LENGTH];
+	decl target_list[MAXPLAYERS], target_count, bool:tn_is_ml;
+	GetCmdArgString(arg, sizeof(arg));
+	if ((target_count = ProcessTargetString(
+			arg,
+			client,
+			target_list,
+			MAXPLAYERS,
+			COMMAND_FILTER_ALIVE,
+			target_name,
+			sizeof(target_name),
+			tn_is_ml)) <= 0)
+	{
+		ReplyToTargetError(client, target_count);
+		return Plugin_Handled;
+	}
+	for(new i=0; i < target_count; i++)
+	{
+		ShovePlayer(target_list[i], client);
+	}
+	return Plugin_Handled;
+}
+
+
 //******************************MENU RELATED****************************************
 
 public OnAdminMenuReady(Handle:topmenu)
 {
 	if(topmenu == INVALID_HANDLE) 
 	{
+		LogDebug("[WARNING!] The topmenu handle was invalid! Unable to add items to the menu");
 		LogError("[WARNING!] The topmenu handle was invalid! Unable to add items to the menu");
 		return;
 	}
@@ -1919,7 +2224,7 @@ public OnAdminMenuReady(Handle:topmenu)
 			AddToTopMenu (topmenu, "l4d2chargeplayer", TopMenuObject_Item, MenuItem_Charge, players_commands, "l4d2chargeplayer", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2teleplayer", TopMenuObject_Item, MenuItem_TeleportPlayer, players_commands, "l4d2teleplayer", DESIRED_FLAGS);
 			
-			AddToTopMenu (topmenu, "l4d2bleedplayer", TopMenuObject_Item, MenuItem_BleedPlayer, players_commands, "l4d2bleedplayer", DESIRED_FLAGS);
+			AddToTopMenu (topmenu, "l4d2dontrush", TopMenuObject_Item, MenuItem_DontRush, players_commands, "l4d2dontrush", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2airstrike", TopMenuObject_Item, MenuItem_Airstrike, players_commands, "l4d2airstrike", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2changehp", TopMenuObject_Item, MenuItem_ChangeHp, players_commands, "l4d2changehp", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2godmode", TopMenuObject_Item, MenuItem_GodMode, players_commands, "l4d2godmode", DESIRED_FLAGS);
@@ -1934,6 +2239,7 @@ public OnAdminMenuReady(Handle:topmenu)
 			AddToTopMenu (topmenu, "l4d2createexplosion", TopMenuObject_Item, MenuItem_CreateExplosion, server_commands, "l4d2createexplosion", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2norescue", TopMenuObject_Item, MenuItem_NoRescue, server_commands, "l4d2norescue", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2gnomerain", TopMenuObject_Item, MenuItem_GnomeRain, server_commands, "l4d2gnomerain", DESIRED_FLAGS);
+			AddToTopMenu (topmenu, "l4d2survrain", TopMenuObject_Item, MenuItem_SurvRain, server_commands, "l4d2survrain", DESIRED_FLAGS);
 			AddToTopMenu (topmenu, "l4d2gnomewipe", TopMenuObject_Item, MenuItem_GnomeWipe, server_commands, "l4d2gnomewipe", DESIRED_FLAGS);
 		}
 		else
@@ -1957,7 +2263,7 @@ public Category_Handler(Handle:topmenu, TopMenuAction:action, TopMenuObject:obje
 {
 	if(action == TopMenuAction_DisplayTitle)
 	{
-		Format(buffer, maxlength, "Custom Commands");
+		Format(buffer, maxlength, "自定义指令");
 	}
 	else if(action == TopMenuAction_DisplayOption)
 	{
@@ -1981,7 +2287,7 @@ public AdminMenu_General(Handle:topmenu, TopMenuAction:action, TopMenuObject:obj
 {
 	if(action == TopMenuAction_DisplayOption)
 	{
-		Format(buffer, maxlength, "General Commands");
+		Format(buffer, maxlength, "通用指令");
 	}
 	else if(action == TopMenuAction_SelectOption)
 	{
@@ -2014,7 +2320,7 @@ stock BuildPlayerMenu(client)
 	AddMenuItem(menu, "l4d2sizeplayer", "设置玩家角色模型大小");
 	AddMenuItem(menu, "l4d2shakeplayer", "摇晃玩家");
 	AddMenuItem(menu, "l4d2teleplayer", "传送玩家");
-	AddMenuItem(menu, "l4d2bleedplayer", "防止玩家Rush");
+	AddMenuItem(menu, "l4d2dontrush", "防止玩家Rush");
 	AddMenuItem(menu, "l4d2airstrike", "召唤空袭");
 	AddMenuItem(menu, "l4d2changehp", "更改血量类型");
 	AddMenuItem(menu, "l4d2godmode", "上帝模式");
@@ -2037,6 +2343,7 @@ stock BuildServerMenu(client)
 	SetMenuTitle(menu, "玩家指令");
 	SetMenuExitBackButton(menu, true);
 	AddMenuItem(menu, "l4d2gnomerain", "矮人玩具雨");
+	AddMenuItem(menu, "l4d2survrain", "幸存者雨");
 	AddMenuItem(menu, "l4d2gnomewipe", "清除所有矮人玩具");
 	DisplayMenu(menu, client, MENU_TIME_FOREVER);
 }
@@ -2081,7 +2388,7 @@ public MenuHandler_PlayerMenu(Handle:menu, MenuAction:action, param1, param2)
 			}
 			case 8:
 			{
-				DisplayBleedPlayerMenu(param1);
+				DisplayDontRushMenu(param1);
 			}
 			case 9:
 			{
@@ -2211,6 +2518,11 @@ public MenuHandler_ServerMenu(Handle:menu, MenuAction:action, param1, param2)
 			}
 			case 1:
 			{
+				StartL4dRain(param1);
+				PrintHintTextToAll("幸存者...下雨了?!");
+			}
+			case 2:
+			{
 				decl String:classname[256];
 				new count = 0;
 				for(new i=MaxClients; i<=GetMaxEntities(); i++)
@@ -2264,7 +2576,7 @@ public MenuItem_VomitPlayer(Handle:topmenu, TopMenuAction:action, TopMenuObject:
 {
 	if (action == TopMenuAction_DisplayOption)
 	{
-		Format(buffer, maxlength, "呕吐玩家", "", param);
+		Format(buffer, maxlength, "使玩家呕吐", "", param);
 	}
 	if(action == TopMenuAction_SelectOption)
 	{
@@ -2451,7 +2763,19 @@ public MenuItem_NoRescue(Handle:topmenu, TopMenuAction:action, TopMenuObject:obj
 	}
 }
 
-public MenuItem_BleedPlayer(Handle:topmenu, TopMenuAction:action, TopMenuObject:object_id, param, String:buffer[], maxlength)
+public MenuItem_BugPlayer(Handle:topmenu, TopMenuAction:action, TopMenuObject:object_id, param, String:buffer[], maxlength)
+{
+	if (action == TopMenuAction_DisplayOption)
+	{
+		Format(buffer, maxlength, "Bug Player(Caution)", "", param);
+	}
+	if(action == TopMenuAction_SelectOption)
+	{
+		DisplayBugPlayerMenu(param);
+	}
+}
+
+public MenuItem_DontRush(Handle:topmenu, TopMenuAction:action, TopMenuObject:object_id, param, String:buffer[], maxlength)
 {
 	if (action == TopMenuAction_DisplayOption)
 	{
@@ -2459,7 +2783,7 @@ public MenuItem_BleedPlayer(Handle:topmenu, TopMenuAction:action, TopMenuObject:
 	}
 	if(action == TopMenuAction_SelectOption)
 	{
-		DisplayBleedPlayerMenu(param);
+		DisplayDontRushMenu(param);
 	}
 }
 
@@ -2485,6 +2809,19 @@ public MenuItem_GnomeRain(Handle:topmenu, TopMenuAction:action, TopMenuObject:ob
 	{
 		StartGnomeRain(param);
 		PrintHintTextToAll("下矮人玩具雨啦!");
+	}
+}
+
+public MenuItem_SurvRain(Handle:topmenu, TopMenuAction:action, TopMenuObject:object_id, param, String:buffer[], maxlength)
+{
+	if (action == TopMenuAction_DisplayOption)
+	{
+		Format(buffer, maxlength, "一代幸存者雨", "", param);
+	}
+	if(action == TopMenuAction_SelectOption)
+	{
+		StartL4dRain(param);
+		PrintHintTextToAll("幸存者...下雨了?!");
 	}
 }
 
@@ -2669,10 +3006,19 @@ DisplayShakePlayerMenu(client)
 	DisplayMenu(menu8, client, MENU_TIME_FOREVER);
 }
 
-DisplayBleedPlayerMenu(client)
+DisplayBugPlayerMenu(client)
 {
-	new Handle:menu10 = CreateMenu(MenuHandler_BleedPlayer);
-	SetMenuTitle(menu10, "选择玩家:");
+	new Handle:menu9 = CreateMenu(MenuHandler_BugPlayer);
+	SetMenuTitle(menu9, "Select Player:");
+	SetMenuExitBackButton(menu9, true);
+	AddTargetsToMenu2(menu9, client, COMMAND_FILTER_CONNECTED);
+	DisplayMenu(menu9, client, MENU_TIME_FOREVER);
+}
+
+DisplayDontRushMenu(client)
+{
+	new Handle:menu10 = CreateMenu(MenuHandler_DontRush);
+	SetMenuTitle(menu10, "Select Player:");
 	SetMenuExitBackButton(menu10, true);
 	AddTargetsToMenu2(menu10, client, COMMAND_FILTER_CONNECTED);
 	DisplayMenu(menu10, client, MENU_TIME_FOREVER);
@@ -3481,7 +3827,43 @@ public MenuHandler_ShakePlayer(Handle:menu2a, MenuAction:action, param1, param2)
 	}
 }
 
-public MenuHandler_BleedPlayer(Handle:menu10, MenuAction:action, param1, param2)
+public MenuHandler_BugPlayer(Handle:menu9, MenuAction:action, param1, param2)
+{
+	if (action == MenuAction_End)
+	{
+		CloseHandle(menu9);
+	}
+	
+	else if (action == MenuAction_Cancel)
+	{
+		if (param2 == MenuCancel_ExitBack && GetAdminTopMenu() != INVALID_HANDLE)
+		{
+			DisplayTopMenu(GetAdminTopMenu(), param1, TopMenuPosition_LastCategory);
+		}
+	}
+	else if (action == MenuAction_Select)
+	{
+		decl String:info[32];
+		new userid, target;
+		GetMenuItem(menu9, param2, info, sizeof(info));
+		userid = StringToInt(info);
+		target = GetClientOfUserId(userid);
+		if(target == 0)
+		{
+			PrintToChat(param1, "[SM]Client is invalid");
+			return;
+		}
+		if(target == -1)
+		{
+			PrintToChat(param1, "[SM]No targets with the given name!");
+			return;
+		}
+		AcceptEntityInput(target, "becomeragdoll");
+		DisplayBugPlayerMenu(param1);
+	}
+}
+	
+public MenuHandler_DontRush(Handle:menu10, MenuAction:action, param1, param2)
 {
 	if (action == MenuAction_End)
 	{
@@ -3506,8 +3888,8 @@ public MenuHandler_BleedPlayer(Handle:menu10, MenuAction:action, param1, param2)
 		decl String:name[256], String:name2[256];
 		GetClientName(param1, name, sizeof(name));
 		GetClientName(target, name2, sizeof(name2));
-		LogCommand("'%s' used the 'Bleed Player' command on '%s'", name, name2);
-		DisplayBleedPlayerMenu(param1);
+		LogCommand("'%s' used the 'Antirush' command on '%s'", name, name2);
+		DisplayDontRushMenu(param1);
 	}
 }
 
@@ -3782,40 +4164,10 @@ CreateExplosion(Float:carPos[3])
 	DispatchKeyValue(exHurt, "DamageType", "8");
 	DispatchSpawn(exHurt);
 	TeleportEntity(exHurt, carPos, NULL_VECTOR, NULL_VECTOR);
-	
-	switch(GetRandomInt(1,3))
-	{
-		case 1:
-		{
-			if(!IsSoundPrecached(EXPLOSION_SOUND))
-			{
-				PrecacheSound(EXPLOSION_SOUND);
-			}
-			EmitSoundToAll(EXPLOSION_SOUND);
-		}
-		case 2:
-		{
-			if(!IsSoundPrecached(EXPLOSION_SOUND2))
-			{
-				PrecacheSound(EXPLOSION_SOUND2);
-			}
-			EmitSoundToAll(EXPLOSION_SOUND2);
-		}
-		case 3:
-		{
-			if(!IsSoundPrecached(EXPLOSION_SOUND3))
-			{
-				PrecacheSound(EXPLOSION_SOUND3);
-			}
-			EmitSoundToAll(EXPLOSION_SOUND3);
-		}
-	}
-	
-	if(!IsSoundPrecached(EXPLOSION_DEBRIS))
-	{
-		PrecacheSound(EXPLOSION_DEBRIS);
-	}
-	EmitSoundToAll(EXPLOSION_DEBRIS);
+	PrecacheSound(EXPLOSION_SOUND);
+	PrecacheSound(EXPLOSION_SOUND2);
+	PrecacheSound(EXPLOSION_SOUND3);
+	PrecacheSound(EXPLOSION_DEBRIS);
 	
 	//BOOM!
 	AcceptEntityInput(exParticle, "Start");
@@ -4360,6 +4712,13 @@ stock StartGnomeRain(client)
 	CreateTimer(0.1, timerSpawnGnome, client, TIMER_REPEAT | TIMER_FLAG_NO_MAPCHANGE);
 }
 
+stock StartL4dRain(client)
+{
+	g_bGnomeRain = true;
+	CreateTimer(GetConVarFloat(g_cvarRainDur), timerRainTimeout, _, TIMER_FLAG_NO_MAPCHANGE);
+	CreateTimer(0.7, timerSpawnL4d, client, TIMER_REPEAT | TIMER_FLAG_NO_MAPCHANGE);
+}
+
 stock GodMode(target, sender)
 {
 	if(GetClientTeam(target) == 1)
@@ -4400,6 +4759,39 @@ public Action:timerSpawnGnome(Handle:timer, any:client)
 	pos[0] += GetRandomFloat(radius*-1, radius);
 	pos[1] += GetRandomFloat(radius*-1, radius);
 	TeleportEntity(gnome, pos, NULL_VECTOR, NULL_VECTOR);	
+	return Plugin_Continue;
+}
+
+public Action:timerSpawnL4d(Handle:timer, any:client)
+{
+	decl Float:pos[3];
+	new body = CreateEntityByName("prop_ragdoll");
+	switch(GetRandomInt(1,3))
+	{
+		case 1:
+		{
+			DispatchKeyValue(body, "model", ZOEY_MODEL);
+		}
+		case 2:
+		{
+			DispatchKeyValue(body, "model", FRANCIS_MODEL);
+		}
+		case 3:
+		{
+			DispatchKeyValue(body, "model", LOUIS_MODEL);
+		}
+	}
+	DispatchSpawn(body);
+	if(!g_bGnomeRain)
+	{
+		return Plugin_Stop;
+	}
+	GetClientAbsOrigin(client, pos);
+	pos[2] += 350.0;
+	new Float:radius = GetConVarFloat(g_cvarRainRadius);
+	pos[0] += GetRandomFloat(radius*-1, radius);
+	pos[1] += GetRandomFloat(radius*-1, radius);
+	TeleportEntity(body, pos, NULL_VECTOR, NULL_VECTOR);	
 	return Plugin_Continue;
 }
 	
@@ -4672,6 +5064,24 @@ stock LogCommand(const String:format[], any:...)
 	CloseHandle(file);
 }
 
+stock LogDebug(const String:format[], any:...)
+{
+	#if DEBUG
+	decl String:buffer[512];
+	VFormat(buffer, sizeof(buffer), format, 2);
+	new Handle:file;
+	decl String:FileName[256], String:sTime[256];
+	FormatTime(sTime, sizeof(sTime), "%Y%m%d");
+	BuildPath(Path_SM, FileName, sizeof(FileName), "logs/customcmds_%s.log", sTime);
+	file = OpenFile(FileName, "a+");
+	FormatTime(sTime, sizeof(sTime), "%b %d |%H:%M:%S| %Y");
+	WriteFileLine(file, "%s: [--DEBUG--]:%s", sTime, buffer);
+	FlushFile(file);
+	CloseHandle(file);
+	#endif
+}
+
+
 stock GrabLookingEntity(client)
 {
 	new entity = GetLookingEntity(client);
@@ -4769,6 +5179,26 @@ stock RevivePlayer(iTarget, iSender)
 	else
 	{
 		PrintToChat(iSender, "\x04[SM] \x03该玩家未倒地");
+	}
+}
+
+stock ShovePlayer(iTarget, iSender)
+{
+	if(GetClientTeam(iTarget) == 2)
+	{
+		new Float:vecOrigin[3];
+		GetClientAbsOrigin(iSender, vecOrigin);
+		SDKCall(sdkShoveSurv, iTarget, iSender, vecOrigin);
+	}
+	else if(GetClientTeam(iTarget) == 3)
+	{
+		new Float:vecOrigin[3];
+		GetClientAbsOrigin(iSender, vecOrigin);
+		SDKCall(sdkShoveInf, iTarget, iSender, vecOrigin);
+	}
+	else
+	{
+		PrintToChat(iSender, "[SM] The target's team is invalid");
 	}
 }
 

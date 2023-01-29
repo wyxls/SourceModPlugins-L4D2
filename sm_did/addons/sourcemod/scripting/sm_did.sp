@@ -1,6 +1,6 @@
 #include <sourcemod>
 
-#define Version "1.3.5"
+#define Version "1.3.5b"
 #define DEBUGMODE 0
 #define BaseDisplayMode 2
 #define BaseDisplayOnDeathMode 2
@@ -43,13 +43,13 @@ new String:fileDIDUS[128]; //file for user settings
 public Plugin:myinfo = 
 {
 	name = "Damage Info Display",
-	author = "Dionys && -pk-",
+	author = "Dionys && -pk- && sheleu",
 	description = "Display the damage info.",
 	version = Version,
 	url = "skiner@inbox.ru"
 };
 
-bool:AskPluginLoad2()
+public bool AskPluginLoad2()
 {
 	lateLoaded = true;
 	return true;
@@ -60,10 +60,12 @@ public OnPluginStart()
 	decl String:ModName[50];
 	GetGameFolderName(ModName, sizeof(ModName));
 
-	if (!StrEqual(ModName, "left4dead2", false))
+	/* 2010.08.07 sheleu
+	if (!StrEqual(ModName, "left4dead", false))
 	{
-		SetFailState("Use this Left 4 Dead 2 only.");
+		SetFailState("Use this Left 4 Dead only.");
 	}
+	*/
 
 	LoadTranslations("plugin.sm_did");
 	AutoExecConfig(true, "sm_did");
@@ -116,7 +118,7 @@ public OnPluginStart()
 	    // First need to do whatever we would have done at OnMapStart()
 		SaveUserSettings();
 		// Next need to whatever we would have done as each client authorized
-		new maxClients = MaxClients;
+		new maxClients = GetMaxClients();
 		for (new i = 1; i <= maxClients; i++)
 		{
 			if (IsClientInGame(i))
@@ -136,7 +138,7 @@ public OnClientPutInServer(client)
 {
 	if (client)
 	{
-		new maxClients = MaxClients;
+		new maxClients = GetMaxClients();
 		for (new Arg = 1; Arg <= maxClients; Arg++)
 		{
 			FirstHurt[Arg][client] = 1;
@@ -167,7 +169,7 @@ public OnClientDisconnect(client)
 	decl String:steamId[20];
 	if (client && !IsFakeClient(client))
 	{
-		GetClientAuthId(client, AuthId_Steam2, steamId, 20);
+		GetClientAuthString(client, steamId, 20);
 
 		KvRewind(kvDIDUS);
 		if (KvJumpToKey(kvDIDUS, steamId))
@@ -204,7 +206,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, param1, param2)
 		}
 
 		decl String:steamId[20];
-		GetClientAuthId(param1, AuthId_Steam2, steamId, 20);
+		GetClientAuthString(param1, steamId, 20);
 		KvRewind(kvDIDUS);
 		KvJumpToKey(kvDIDUS, steamId);
 		KvSetNum(kvDIDUS, "hint preference", DisplayMode[param1]);
@@ -295,7 +297,7 @@ public DIDOnDeathMenuHandler(Handle:menu, MenuAction:action, param1, param2)
 		}
 
 		decl String:steamId[20];
-		GetClientAuthId(param1, AuthId_Steam2, steamId, 20);
+		GetClientAuthString(param1, steamId, 20);
 		KvRewind(kvDIDUS);
 		KvJumpToKey(kvDIDUS, steamId);
 		KvSetNum(kvDIDUS, "total preference", DisplayOnDeathMode[param1]);
@@ -493,7 +495,7 @@ public Action:Event_PlayerDeath(Handle:event, const String:name[], bool:dontBroa
 		new victim = GetClientOfUserId(GetEventInt(event, "userid"));
 		new attacker = GetClientOfUserId(GetEventInt(event, "attacker"));
 
-		new maxClients = MaxClients;
+		new maxClients = GetMaxClients();
 		for (new Arg = 1; Arg <= maxClients; Arg++)
 		{
 			CurrentDamage[Arg][victim] = 0;
@@ -564,7 +566,7 @@ public Action:Event_RoundStart (Handle:event, const String:name[], bool:dontBroa
 	HasRoundEnded = false;
 	ReachedSafeRoom = false;
 
-	new maxClients = MaxClients;
+	new maxClients = GetMaxClients();
 	for (new i = 1; i <= maxClients; i++)
 	{
 		PlayerReachedSafeRoom[i] = 0;
@@ -703,7 +705,7 @@ public Action:Event_RoundEnd_Finale(Handle:event, const String:name[], bool:dont
 SurvivorsAlive()
 {
 	new Survivors = 0;
-	new maxClients = MaxClients;
+	new maxClients = GetMaxClients();
 	for (new client = 1; client <= maxClients; client++)
 	{
 		if (IsClientInGame(client) && IsPlayerAlive(client) && GetClientTeam(client) == 2)
@@ -720,7 +722,7 @@ SurvivorsAlive()
 SurvivorsSafe()
 {
 	new Survivors;
-	new maxClients = MaxClients;
+	new maxClients = GetMaxClients();
 	for (new i = 1; i <= maxClients; i++)
 	{
 		if (PlayerReachedSafeRoom[i] == 1)
@@ -739,7 +741,7 @@ RoundEndMsg()
 	HasRoundEnded = true;
 	ReachedSafeRoom = false;
 
-	new maxClients = MaxClients;
+	new maxClients = GetMaxClients();
 	for (new client = 1; client <= maxClients; client++)
 	{
 		if (IsClientInGame(client) && !IsFakeClient(client))
@@ -874,7 +876,7 @@ PrepareClient(client)
 
 	if (!IsFakeClient(client))
 	{
-		GetClientAuthId(client, AuthId_Steam2, steamId, 20);
+		GetClientAuthString(client, steamId, 20);
 
 		// Get the users saved setting or create them if they don't exist
 		KvRewind(kvDIDUS);

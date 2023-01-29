@@ -13,6 +13,7 @@
 */
 
 #pragma semicolon 1
+#pragma newdecls required
 
 #include <sourcemod>
 #include <sdktools>
@@ -20,9 +21,9 @@
 #define MAXCLIENTS 32
 #define PLUGIN_VER "1.3.2"
 
-new bool:g_AutoBhop[MAXCLIENTS + 1];
+bool g_AutoBhop[MAXCLIENTS + 1];
 
-public Plugin:myinfo =
+public Plugin myinfo =
 {
 	name = "Auto Bunny Hop",
 	author = "Zakikun, noa1mbot",
@@ -34,27 +35,37 @@ public Plugin:myinfo =
 //============================================================
 //============================================================
 
-public OnPluginStart()
+public void OnPluginStart()
 {
 	RegConsoleCmd("sm_abh", Cmd_Autobhop);
 }
 
-public Action:Cmd_Autobhop(client, args)
+public Action Cmd_Autobhop(int client, int args)
 {
 	if (client == 0)
 	{
-		if (!IsDedicatedServer() && IsClientInGame(1)) client = 1;
-		else return Plugin_Handled;
+		if (!IsDedicatedServer())
+			client = 1;
+		else
+			return Plugin_Handled;
 	}
-	if (g_AutoBhop[client]) PrintToChat(client, "\x04[SM] \x03自动连跳开启");
-	else PrintToChat(client, "\x04[SM] \x03自动连跳关闭");
+
+	if (!IsClientInGame(client))
+		return Plugin_Handled;
+
 	g_AutoBhop[client] = !g_AutoBhop[client];
+
+	if (g_AutoBhop[client])
+		PrintToChat(client, "\x04[SM] \x03自动连跳开启");
+	else
+		PrintToChat(client, "\x04[SM] \x03自动连跳关闭");
+
 	return Plugin_Handled;
 }
 
-public Action:OnPlayerRunCmd(int client, int &buttons)
+public Action OnPlayerRunCmd(int client, int &buttons)
 {
-	if (!g_AutoBhop[client] && IsPlayerAlive(client))
+	if (g_AutoBhop[client] && IsPlayerAlive(client))
 	{
 		if (buttons & IN_JUMP)
 		{
@@ -68,4 +79,9 @@ public Action:OnPlayerRunCmd(int client, int &buttons)
 		}
 	}
 	return Plugin_Continue;
+}
+
+public void OnClientDisconnect(int client)
+{
+	g_AutoBhop[client]= false;
 }

@@ -1,11 +1,12 @@
 /******************************************************
-* 			L4D2: Satellite Cannon v1.3
+* 			L4D2: Satellite Cannon v1.4
 *					Author: ztar
+*					Modifier: Zakikun
 * 			Web: http://ztar.blog7.fc2.com/
 *******************************************************/
 #include <sourcemod>
 #include <sdktools>
-#define PLUGIN_VERSION "1.3"
+#define PLUGIN_VERSION "1.4"
 
 #define MODE_JUDGEMENT	1
 #define MODE_BLIZZARD	2
@@ -94,7 +95,7 @@ new Float:trsPos[MAXPLAYERS+1][3];
 public Plugin:myinfo = 
 {
 	name = "[L4D2] Satellite Cannon",
-	author = "ztar (modify by Zakikun)",
+	author = "ztar (modified by Zakikun)",
 	description = "Three kind of vertical laser launches by shooting magnum. Switch mode by pushing zoom key",
 	version = PLUGIN_VERSION,
 	url = "https://forums.alliedmods.net/showthread.php?t=131504"

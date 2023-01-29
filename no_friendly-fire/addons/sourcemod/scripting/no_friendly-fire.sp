@@ -331,8 +331,14 @@ bool bIsDamageTypeBlocked(int entity, int damagetype = 0)
 		return false;
 	}
 
+	// Disable M60/Minigun L4D2 damage by just enabling 'nff_blockguns' to 1.
+	if (g_cvNFFBlockGuns.BoolValue && (damagetype & (DMG_PLASMA + DMG_BULLET))) {
+		return true;
+	}
+
 	if ((!g_cvNFFBlockExplosions.BoolValue && ((damagetype & DMG_BLAST) || (damagetype & DMG_BLAST_SURFACE) || (damagetype & DMG_AIRBOAT) || (damagetype & DMG_PLASMA)))
-		|| (!g_cvNFFBlockFires.BoolValue && (damagetype & DMG_BURN)) || (!g_cvNFFBlockGuns.BoolValue && (damagetype & DMG_BULLET))
+		|| (!g_cvNFFBlockFires.BoolValue && (damagetype & DMG_BURN))
+		|| (!g_cvNFFBlockGuns.BoolValue && (damagetype & DMG_BULLET))
 		|| (!g_cvNFFBlockMelee.BoolValue && ((damagetype & DMG_SLASH) || (damagetype & DMG_CLUB))))
 	{
 		return false;

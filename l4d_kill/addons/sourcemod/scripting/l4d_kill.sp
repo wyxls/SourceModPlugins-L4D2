@@ -1,13 +1,13 @@
 #include <sourcemod>
 #include <sdktools>
 
-#define PLUGIN_VERSION "1.0"
+#define PLUGIN_VERSION "1.1"
 
 public Plugin:myinfo = 
 	{
 		name = "[L4D] Kill",
-		author = "Danny & FlamFlam",
-		description = "use the !kill command in chat",
+		author = "Danny & FlamFlam & Zakikun",
+		description = "use the !zs command in chat",
 		version = PLUGIN_VERSION,
 		url = ""
 	}
@@ -18,25 +18,27 @@ public Plugin:myinfo =
 	}
 
 
-	// kill
+	/* kill */
 	public Action:Kill_Me(client, args)
 	{
 		ForcePlayerSuicide(client);
 	}
 
-	//Timed Message
-	//public bool:OnClientConnect(client, String:rejectmsg[], maxlen)
+/* Disable Advertisement 
+	Timed Message
+	public bool:OnClientConnect(client, String:rejectmsg[], maxlen)
 
-	//{
-	//	CreateTimer(60.0, Timer_Advertise, client);
-	//	return true;
-	//}
+	{
+		CreateTimer(60.0, Timer_Advertise, client);
+		return true;
+	}
 
-	//public Action:Timer_Advertise(Handle:timer, any:client)
+	public Action:Timer_Advertise(Handle:timer, any:client)
 
-	//{
-	//	if(IsClientInGame(client))
-	//	PrintHintText(client, "Type in chat !kill to kill yourself");
-	//	else if (IsClientConnected(client))
-	//	CreateTimer(60.0, Timer_Advertise, client);
-	//}
+	{
+		if(IsClientInGame(client))
+		PrintHintText(client, "Type in chat !kill to kill yourself");
+		else if (IsClientConnected(client))
+		CreateTimer(60.0, Timer_Advertise, client);
+	}
+*/

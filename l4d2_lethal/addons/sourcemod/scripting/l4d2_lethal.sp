@@ -35,17 +35,20 @@
 #include <sdktools>
 #include <sdkhooks>
 
-#define PLUGIN_VERSION "2.1.13"
+#define PLUGIN_VERSION "2.1.14"
 
 /*
 
 	Modify by Zakikun
 
-	2.1.13
+	2.1.14
 	- Added "l4d2_lw_adminonly" convar to control whether only enable lethal shoot for admin
 	- Added "lethal_weapon" flag to specify which admin can use lethal shoot
 
 	Fork by Dragokas
+	
+	2.1.13
+	- Fixed "l4d2_lw_shootonce" can be walkaround by going to idle.
 
 	2.1.12
 	- Added "l4d2_lw_firelifetime" convar to control how many time should flame exist after sniper shooting.
@@ -261,7 +264,7 @@ public void OnPluginStart()
 	l4d2_lw_moveandcharge		= CreateConVar("l4d2_lw_moveandcharge", "1", "Enable charging while crouched and moving");
 	l4d2_lw_chargeparticle		= CreateConVar("l4d2_lw_chargeparticle", "1", "Enable showing electric particles when charged");
 	l4d2_lw_useammo				= CreateConVar("l4d2_lw_useammo", "1", "Enable and require use of addtional ammunition");
-	l4d2_lw_useammocount		= CreateConVar("l4d2_lw_useammocount", "999", "Number of ammo to use on each lethal shoot");
+	l4d2_lw_useammocount		= CreateConVar("l4d2_lw_useammo_count", "999", "Number of ammo to use on each lethal shoot");
 	l4d2_lw_shake				= CreateConVar("l4d2_lw_shake", "1", "Enable screen shake during explosion");
 	l4d2_lw_shake_intensity		= CreateConVar("l4d2_lw_shake_intensity", "50.0", "Intensity of screen shake");
 	l4d2_lw_shake_shooteronly	= CreateConVar("l4d2_lw_shake_shooteronly", "0", "Only the shooter experiences screen shake");
@@ -286,6 +289,8 @@ public void OnPluginStart()
 	HookEvent("mission_lost", Event_Round_End, EventHookMode_PostNoCopy);
 	HookEvent("map_transition", Event_Round_End, EventHookMode_PostNoCopy);
 	HookEvent("round_end", Event_Round_End, EventHookMode_Pre);
+	HookEvent("player_bot_replace", 	Event_PlayerBotReplace);
+	HookEvent("bot_player_replace", 	Event_BotReplacePlayer);
 	
 	// Weapon stuff
 	CurrentWeapon	= FindSendPropInfo ("CTerrorPlayer", "m_hActiveWeapon");
@@ -316,14 +321,33 @@ public void OnMapStart()
 {
 	InitPrecache();
 
-	int i;
-	for (i = 1; i <= MaxClients; i++)
+	for (int i = 1; i <= MaxClients; i++)
 	{
 		ChargeEndTime[i] = 0;
 		ReleaseLock[i] = 0;
 		ChargeLock[i] = 0;
 		ClientTimer[i] = INVALID_HANDLE;
 	}
+}
+
+public Action Event_PlayerBotReplace(Event event, char[] name, bool dontBroadcast) // player has replaced by bot
+{
+	int iBot = GetClientOfUserId(event.GetInt("bot"));
+	int client = GetClientOfUserId(event.GetInt("player"));
+	
+	ChargeLock[iBot] = ChargeLock[client];
+	ChargeLock[client] = 0;
+	return Plugin_Handled;
+}
+
+public Action Event_BotReplacePlayer(Event event, char[] name, bool dontBroadcast) // bot is replaced by player
+{
+	int iBot = GetClientOfUserId(event.GetInt("bot"));
+	int client = GetClientOfUserId(event.GetInt("player"));
+	
+	ChargeLock[client] = ChargeLock[iBot];
+	ChargeLock[iBot] = 0;
+	return Plugin_Handled;
 }
 
 /*
@@ -379,6 +403,7 @@ public Action Event_Round_Start(Event event, const char[] name, bool dontBroadca
 {
 	g_bBlockBlastDamage = false;
 	g_bBlockFireDamage = false;
+	return Plugin_Handled;
 }
 
 public Action Event_Round_End(Event event, char[] event_name, bool dontBroadcast)
@@ -399,6 +424,7 @@ public Action Event_Round_End(Event event, char[] event_name, bool dontBroadcast
 		}
 		g_bHooked[i] = false;
 	}
+	return Plugin_Handled;
 }
 
 void Set_SDKHook(int client)
@@ -431,7 +457,7 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 			// DMG_BURN | DMG_PREVENT_PHYSICS_FORCE
 			// DMG_DIRECT | DMG_PREVENT_PHYSICS_FORCE
 
-			if ((g_bBlockBlastDamage && (damagetype & DMG_BLAST == 64)) || (g_bBlockFireDamage && (damagetype & DMG_BURN == 8)))
+			if ((g_bBlockBlastDamage && damagetype == DMG_BLAST) || (g_bBlockFireDamage && (damagetype & (DMG_BURN | DMG_DIRECT) != 0)))
 			{
 				if (victim > 0 && victim <= MaxClients && GetClientTeam(victim) == 2)
 				{
@@ -440,7 +466,7 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 			}
 		}
 	}
-	return Plugin_Continue;
+	return Plugin_Handled;
 }
 
 public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
@@ -461,6 +487,7 @@ public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadc
 			}
 		}
 	}
+	return Plugin_Handled;
 }
 
 public Action Event_Player_Incap(Event event, const char[] name, bool dontBroadcast)
@@ -472,6 +499,7 @@ public Action Event_Player_Incap(Event event, const char[] name, bool dontBroadc
 		ReleaseLock[client] = 0;
 		ChargeEndTime[client] = RoundToCeil(GetGameTime()) + l4d2_lw_chargetime.IntValue;
 	}
+	return Plugin_Handled;
 }
 
 public Action Event_Bullet_Impact(Event event, const char[] name, bool dontBroadcast)
@@ -537,7 +565,7 @@ void DamageEntity(int client, int target, int damage)
 {
 	char sTemp[16];
 	int entity = CreateEntityByName("point_hurt");
-	Format(sTemp, sizeof(sTemp), "ext%d%d", EntIndexToEntRef(entity), client);
+	FormatEx(sTemp, sizeof(sTemp), "ext%d%d", EntIndexToEntRef(entity), client);
 	DispatchKeyValue(target, "targetname", sTemp);
 	DispatchKeyValue(entity, "DamageTarget", sTemp);
 	DispatchKeyValue(entity, "DamageType", "8");
@@ -638,15 +666,18 @@ public Action Event_Weapon_Fire(Event event, const char[] name, bool dontBroadca
 			ChargeLock[client] = 0;
 		}
 	}
+	return Plugin_Handled;
 }
 
 public Action Timer_AllowBlastDamage(Handle timer)
 {
 	g_bBlockBlastDamage = false;
+	return Plugin_Handled;
 }
 public Action Timer_AllowFireDamage(Handle timer)
 {
 	g_bBlockFireDamage = false;
+	return Plugin_Handled;
 }
 
 public Action ReleaseTimer(Handle timer, any client)
@@ -701,6 +732,7 @@ public Action ReleaseTimer(Handle timer, any client)
 	/* Reset flags */
 	ReleaseLock[client] = 0;
 	ChargeEndTime[client] = RoundToCeil(GetGameTime()) + GetConVarInt(l4d2_lw_chargetime);
+	return Plugin_Handled;
 }
 
 public Action ChargeTimer(Handle timer, any client)
@@ -895,6 +927,7 @@ public void ExplodeMain(float pos[3])
 public Action Timer_RestoreLifeTime(Handle timer)
 {
 	hConVar_FireLifetime.RestoreDefault(true, false);
+	return Plugin_Handled;
 }
 
 public void ShowParticle(float pos[3], char[] particlename, float time)
@@ -981,6 +1014,7 @@ public Action GetEntityAbsOrigin(int entity, float origin[3])
 	origin[0] += (mins[0] + maxs[0]) * 0.5;
 	origin[1] += (mins[1] + maxs[1]) * 0.5;
 	origin[2] += (mins[2] + maxs[2]) * 0.5;
+	return Plugin_Handled;
 }
 
 void Smash(int client, int target, float power, float powHor, float powVec)

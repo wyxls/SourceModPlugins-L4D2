@@ -33,11 +33,11 @@ ConVar g_hMoreMedics;
 
 public Plugin myinfo = 
 {
-	name 			= "l4d2_more_medical",
-	author 			= "豆瓣酱な&Zakikun修改",
+	name 			= "l4d2_more_item",
+	author 			= "Zakikun",
 	description 	= "根据玩家人数设置所有物品倍数.",
 	version 		= PLUGIN_VERSION,
-	url 			= "N/A"
+	url 			= "https://github.com/wyxls/SourceModPlugins-L4D2"
 }
 
 public void OnPluginStart()

@@ -1,0 +1,15 @@
+"Phrases"
+{
+	"SHOOT"
+	{
+		"en"			"SHOOT"
+		"ru"			"СТРЕЛЯЙ"
+		"chi"			"射击"
+	}
+	"Charging..."
+	{
+		"en"			"CHARGING..."
+		"ru"			"ЗАРЯЖАЕТСЯ..."
+		"chi"			"蓄力中..."
+	}
+}

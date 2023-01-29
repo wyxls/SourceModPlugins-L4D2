@@ -19,6 +19,13 @@
 *							move angle for the first infected. Added OnClientDisconnect() to reset commonboost if started. Changed debug
 *							text output in console after CB is completed.
 *	27/01/2020 Version 1.7.5 – Added function parameter for OnAutoCB forward to send zombie targetname.
+*	12/05/2020 Version 1.8.6b – Fixed incorrect height speed initialization; fixed rare case, when a player could touch single zombie 2 times;
+*							removed "st_autocb_const_speed" ConVar; added some additional debug message.
+*							Update #8: Method of Auto Commonboost has changed. Now player can do auto-cb from idle zombie.
+*							Vector building of SEQ_VEL_SHOVED_BACKWARD length is now depends only of player direction,
+*							by cause such method nearest to the real cb. Also, returned m_nSequence checks before execute to strict boost control.
+*							Speedrunners, Be Wise & Note: We still cannot release it as a stable tool and don't guarantee properly work for some cases.
+*							This plugin is BETA, watch out in using in non-standard situations. We don't recommend use it in speedruns w/o tests.
 */
 
 #pragma semicolon 1
@@ -27,14 +34,11 @@
 #include <sdktools>
 #include <sdkhooks>
 
-#define PLUGIN_VER "1.7.5"
+#define PLUGIN_VER "1.8.6b"
 #define MAXCLIENTS 32
 #define SEQ_VEL_SHOVED_BACKWARD 154.481
-#define JUMP_HEIGHT_DUCKING 275.326
-#define JUMP_HEIGHT 223.133
 
 new Handle:g_ConVar_CB;
-new Handle:g_ConVar_CB_ConstSpeed;
 new Handle:g_hOnAutoCB;
 new bool:g_bIsCB_RootKey[MAXCLIENTS + 1];
 new g_iTicks[MAXCLIENTS + 1];
@@ -43,8 +47,9 @@ new Float:g_fSpeed_Player[MAXCLIENTS + 1];
 new Float:g_fSpeed_Entity[MAXCLIENTS + 1];
 new Float:g_fAngles_Player[MAXCLIENTS + 1];
 new Float:g_fAngles_Entity[MAXCLIENTS + 1];
-new Float:g_fJumpHeight[MAXCLIENTS + 1];
 new Float:g_fDifference[MAXCLIENTS + 1];
+new Float:g_vecEntity[MAXCLIENTS + 1][3];
+new Float:g_vecPlayer[MAXCLIENTS + 1][3];
 
 public Plugin:myinfo =
 {
@@ -61,7 +66,6 @@ public Plugin:myinfo =
 public OnPluginStart()
 {
 	g_ConVar_CB = CreateConVar("st_autocb", "1", "Activate auto-commonboost on the server.", FCVAR_NOTIFY);
-	g_ConVar_CB_ConstSpeed = CreateConVar("st_autocb_const_speed", "0.0", "Specify constant speed for auto-commonboost.", FCVAR_NOTIFY, true, 0.0, true, 3500.0);
 	HookEvent("entity_shoved", Event_EntityShoved);
 	g_hOnAutoCB = CreateGlobalForward("OnAutoCB", ET_Ignore, Param_Cell, Param_String);
 }
@@ -79,24 +83,21 @@ public Event_EntityShoved(Event event, const char[] name, bool dontBroadcast)
 	if (GetConVarBool(g_ConVar_CB))
 	{
 		new entity = GetEventInt(event, "entityid");
-		decl String:sEntNetClass[64];
+		decl String:sEntNetClass[16];
 		GetEntityNetClass(entity, sEntNetClass, sizeof(sEntNetClass));
 		if (StrEqual(sEntNetClass, "Infected"))
 		{
-			new iSeq = GetEntProp(entity, Prop_Data, "m_nSequence");
-			if (iSeq >= 85 && iSeq <= 91)
+			new client = GetClientOfUserId(GetEventInt(event, "attacker"));
+			if (!g_bIsCB_RootKey[client])
 			{
-				new client = GetClientOfUserId(GetEventInt(event, "attacker"));
-				if (!g_bIsCB_RootKey[client])
-				{
-					decl Float:vecVel[3], Float:vecAng[3];
-					GetEntPropVector(entity, Prop_Data, "m_vecVelocity", vecVel);
-					GetVectorAngles(vecVel, vecAng);
-					g_fAngles_Entity[client] = DegToRad(vecAng[1]) + FLOAT_PI;
-					g_fSpeed_Entity[client] = GetVectorLength(vecVel);
-					g_iTicks[client] = GetGameTickCount();
-					g_iEntity[client] = entity;
-				}
+				decl Float:vecVel[3], Float:vecAng[3];
+				GetEntPropVector(entity, Prop_Data, "m_vecVelocity", vecVel);
+				GetEntPropVector(entity, Prop_Send, "m_angRotation", vecAng);
+				g_fSpeed_Entity[client] = GetVectorLength(vecVel);
+				g_fAngles_Entity[client] = vecAng[1];
+				g_iTicks[client] = GetGameTickCount();
+				g_iEntity[client] = entity;
+				g_vecEntity[client] = vecVel;
 			}
 		}
 	}
@@ -108,27 +109,35 @@ public Action:OnPlayerRunCmd(int client, int &buttons)
 	{
 		if (!g_bIsCB_RootKey[client])
 		{
-			if (buttons & IN_JUMP)
+			if (buttons & IN_JUMP && (GetGameTickCount() - g_iTicks[client]) <= 3 && GetEntPropEnt(client, Prop_Send, "m_hGroundEntity") == g_iEntity[client])
 			{
-				if ((GetGameTickCount() - g_iTicks[client]) <= 3)
+				new iSeq = GetEntProp(g_iEntity[client], Prop_Data, "m_nSequence");
+				if (iSeq >= 122 && iSeq <= 131)
 				{
-					if (GetEntPropEnt(client, Prop_Send, "m_hGroundEntity") == g_iEntity[client])
+					decl Float:vecVel[3];
+					GetEntPropVector(client, Prop_Data, "m_vecVelocity", vecVel);
+					g_fSpeed_Player[client] = GetVectorLength(vecVel);
+					if (g_fSpeed_Player[client] > 0)
 					{
-						decl Float:vecVel[3], Float:vecAng[3];
-						GetEntPropVector(client, Prop_Data, "m_vecVelocity", vecVel);
+						decl Float:vecAng[3];
 						GetVectorAngles(vecVel, vecAng);
 						g_fAngles_Player[client] = DegToRad(vecAng[1]);
-						g_fSpeed_Player[client] = GetVectorLength(vecVel);
+						g_fAngles_Entity[client] = DegToRad(g_fAngles_Entity[client]) + FLOAT_PI;
 						if (g_fAngles_Entity[client] >= FLOAT_PI*2) g_fAngles_Entity[client] -= RoundToFloor(g_fAngles_Entity[client])/6*FLOAT_PI*2;
-						if (g_fSpeed_Player[client] == 0) g_fAngles_Player[client] = g_fAngles_Entity[client];
-						g_fDifference[client] = g_fAngles_Entity[client] - g_fAngles_Player[client];
-						if (g_fDifference[client] < 0) g_fDifference[client] *= -1;
-						if (g_fDifference[client] > FLOAT_PI) g_fDifference[client] = FLOAT_PI*2 - g_fDifference[client];
-						if (g_fDifference[client] < FLOAT_PI/4)
+						float fDifference = g_fAngles_Entity[client] - g_fAngles_Player[client];
+						if (fDifference < 0) fDifference *= -1;
+						if (fDifference > FLOAT_PI) fDifference = FLOAT_PI*2 - fDifference;
+						if (fDifference < FLOAT_PI/4)
 						{
-							g_fJumpHeight[client] = GetEntityFlags(client) & FL_DUCKING ? JUMP_HEIGHT_DUCKING : JUMP_HEIGHT;
-							SDKHooks_TakeDamage(g_iEntity[client], client, client, 50.0, DMG_GENERIC);
+							g_iTicks[client] = GetGameTickCount() - g_iTicks[client];
+							g_fDifference[client] = fDifference;
 							g_bIsCB_RootKey[client] = true;
+							g_vecPlayer[client] = vecVel;
+							vecVel[0] = Cosine(g_fAngles_Player[client])*SEQ_VEL_SHOVED_BACKWARD;
+							vecVel[1] = Sine(g_fAngles_Player[client])*SEQ_VEL_SHOVED_BACKWARD;
+							vecVel[2] = 0.0;
+							AddVectors(g_vecPlayer[client], vecVel, g_vecPlayer[client]);
+							SDKHooks_TakeDamage(g_iEntity[client], client, client, 50.0, DMG_GENERIC);
 						}
 					}
 				}
@@ -138,18 +147,27 @@ public Action:OnPlayerRunCmd(int client, int &buttons)
 		{
 			if (IsPlayerAlive(client) && !GetEntProp(client, Prop_Send, "m_isIncapacitated"))
 			{
-				decl Float:vecVel[3];
-				new Float:fVelocity = GetConVarFloat(g_ConVar_CB_ConstSpeed);
-				new Float:fRad = (g_fAngles_Entity[client] + g_fAngles_Player[client])/2;
-				if ((g_fAngles_Entity[client] - g_fAngles_Player[client]) > FLOAT_PI || (g_fAngles_Player[client] - g_fAngles_Entity[client]) > FLOAT_PI) fRad -= FLOAT_PI;
-				if (fVelocity == 0) fVelocity = g_fSpeed_Entity[client] + g_fSpeed_Player[client] + SEQ_VEL_SHOVED_BACKWARD;
-				vecVel[0] = Cosine(fRad)*fVelocity;
-				vecVel[1] = Sine(fRad)*fVelocity;
-				vecVel[2] = g_fJumpHeight[client];
-				TeleportEntity(client, NULL_VECTOR, NULL_VECTOR, vecVel);
-				
-				char sEntName[128];
+				decl Float:vecVel[3], Float:vecAng[3], String:sEntName[128]; sEntName[0] = 0;
 				if (IsValidEntity(g_iEntity[client])) GetEntPropString(g_iEntity[client], Prop_Data, "m_iName", sEntName, sizeof(sEntName));
+				GetEntPropVector(client, Prop_Data, "m_vecVelocity", vecVel);
+				NegateVector(g_vecEntity[client]);
+				AddVectors(g_vecEntity[client], g_vecPlayer[client], g_vecPlayer[client]);
+				vecVel[0] = g_vecPlayer[client][0];
+				vecVel[1] = g_vecPlayer[client][1];
+				TeleportEntity(client, NULL_VECTOR, NULL_VECTOR, vecVel);
+				GetVectorAngles(vecVel, vecAng);
+				
+				PrintToConsole(client, "[SM] Completed AutoCB successfully.\n------------------- Debug Info -------------------");
+				PrintToConsole(client, "Velocity CB  : %.03f\nSpeedEntity  : %.03f", SquareRoot(Pow(vecVel[0], 2.0) + Pow(vecVel[1], 2.0)), g_fSpeed_Entity[client]);
+				PrintToConsole(client, "SpeedPlayer  : %.03f\nSpeedSeq     : %.03f", g_fSpeed_Player[client], SEQ_VEL_SHOVED_BACKWARD);
+				PrintToConsole(client, "AngEntity    : %.03f (%.03f)", g_fAngles_Entity[client], RadToDeg(g_fAngles_Entity[client]));
+				PrintToConsole(client, "AngPlayer    : %.03f (%.03f)", g_fAngles_Player[client], RadToDeg(g_fAngles_Player[client]));
+				PrintToConsole(client, "Idx          : %d\nDirection    : %.03f (%.03f)", g_iEntity[client], DegToRad(vecAng[1]), vecAng[1]);
+				PrintToConsole(client, "Difference   : %.03f (%.03f)", g_fDifference[client], RadToDeg(g_fDifference[client]));
+				PrintToConsole(client, "Ticks        : %d\nName         : %s", g_iTicks[client], sEntName);
+				PrintToConsole(client, "m_vecVelocity: Vector(%.03f, %.03f, %.03f)", vecVel[0], vecVel[1], vecVel[2]);
+				PrintToConsole(client, "Length       : %.03f\nVersion      : %s\n---------------------------------------------------", GetVectorLength(vecVel), PLUGIN_VER);
+				
 				Call_StartForward(g_hOnAutoCB);
 				Call_PushCell(client);
 				Call_PushString(sEntName);
@@ -157,16 +175,6 @@ public Action:OnPlayerRunCmd(int client, int &buttons)
 				Format(sEntName, sizeof(sEntName), "if (\"OnAutoCB\" in getroottable()) OnAutoCB(self, \"%s\")", sEntName);
 				SetVariantString(sEntName);
 				AcceptEntityInput(client, "RunScriptCode");
-				PrintToConsole(client, "[SM] Completed AutoCB successfully.\n---------- Debug Info ----------");
-				PrintToConsole(client, "Velocity CB : %.03f", fVelocity);
-				PrintToConsole(client, "Entity speed: %.03f", g_fSpeed_Entity[client]);
-				PrintToConsole(client, "Player speed: %.03f", g_fSpeed_Player[client]);
-				PrintToConsole(client, "Entity index: %d", g_iEntity[client]);
-				PrintToConsole(client, "Entity angle: %.03f (%.03f)", g_fAngles_Entity[client], RadToDeg(g_fAngles_Entity[client]));
-				PrintToConsole(client, "Player angle: %.03f (%.03f)", g_fAngles_Player[client], RadToDeg(g_fAngles_Player[client]));
-				PrintToConsole(client, "Direction   : %.03f (%.03f)", fRad, RadToDeg(fRad));
-				PrintToConsole(client, "Difference  : %.03f (%.03f)", g_fDifference[client], RadToDeg(g_fDifference[client]));
-				PrintToConsole(client, "--------------------------------");
 			}
 			g_bIsCB_RootKey[client] = false;
 		}

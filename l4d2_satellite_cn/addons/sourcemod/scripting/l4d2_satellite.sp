@@ -1,6 +1,7 @@
 /******************************************************
-* 			L4D2: Satellite Cannon v1.3
+* 			L4D2: Satellite Cannon v1.4
 *					Author: ztar
+*					Modifier: Zakikun
 * 			Web: http://ztar.blog7.fc2.com/
 *******************************************************/
 #include <sourcemod>

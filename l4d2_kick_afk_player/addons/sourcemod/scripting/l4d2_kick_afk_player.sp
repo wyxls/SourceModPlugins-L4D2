@@ -19,16 +19,16 @@ Handle kickPlayerTimer[MAXPLAYERS+1];
 
 public Plugin myinfo = 
 {
-	name 			= "l4d2_z_difficulty",
-	author 			= "豆瓣酱な",
-	description 	= "管理员!admid指令更改游戏难度",
+	name 			= "[L4D2]Auto Kick AFK Player",
+	author 			= "Zakikun",
+	description 	= "管理员!afk_kick开关闲置超时踢出玩家",
 	version 		= PLUGIN_VERSION,
-	url 			= "N/A"
+	url 			= "https://github.com/wyxls/SourceModPlugins-L4D2"
 }
 
 public void OnPluginStart()
 {
-	RegConsoleCmd("sm_timer", l4d2_timer_kick_switch, "管理员开启或关闭普通玩家闲置超时踢出.");
+	RegConsoleCmd("sm_afk_kick", l4d2_timer_kick_switch, "管理员开启或关闭普通玩家闲置超时踢出.");
 	
 	Kickafk		= CreateConVar("l4d2_afk_kick", "1", "启用普通玩家或管理员闲置超时踢出? (总开关,禁用后指令开关也不可用) 0=禁用, 1=启用(管理员免疫), 2=启用(包括管理员).", FCVAR_NOTIFY);
 	Switch		= CreateConVar("l4d2_afk_kick_switch", "1", "设置默认开启或关闭自动踢出玩家或管理员? (输入指令 !timer 关闭或开启) 0=关闭, 1=开启.", FCVAR_NOTIFY);

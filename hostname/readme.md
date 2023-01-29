@@ -1,12 +1,12 @@
-Description
-
-To trigger name changing before game start, you need to add `sm_hostname` in `cfg/sourcemod/server.cfg` .
+# Description
 
 This plugin will automatically change hostname and supports unicode characters (like simplified Chinese). It also supports multiple servers.
 
+To trigger name changing before game start, you need to add `sm_hostname` in `cfg/sourcemod/server.cfg` .
+
 Configuration
 
-```json
+```plaintext
 "Settings"
 {
 	"HostName"

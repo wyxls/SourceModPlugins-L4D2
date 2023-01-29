@@ -1,6 +1,6 @@
 # Description
 
-A rewritten vote manager like madcap's original version. 
+Manages its own system of automatic infected spawning. Change a specific special infected's chance of spawn by changing its weight. The higher the weight, the higher the chance it spawns, vice versa.
 
 Origin from : [[L4D &amp; L4D2] Auto Infected Spawner](https://forums.alliedmods.net/showpost.php?p=2685563&postcount=95)
 

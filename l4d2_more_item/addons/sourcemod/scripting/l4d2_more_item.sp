@@ -163,65 +163,69 @@ void IsSetUpdateEntCount(int client, int g_Multiple, bool g_bPrompt, bool g_bCon
 	if(g_iMoreItem == 0)
 		return;
 
-	char g_sMedical[32];
-	IntToString(g_Multiple, g_sMedical, sizeof(g_sMedical));
 	g_bPlayerPrompt = false;
 
+	char g_sMultiple[32];
+	IntToString(g_Multiple, g_sMultiple, sizeof(g_sMultiple));
 	if(g_iMoreItem & SurvivorsSound)
 	{
 		if(g_bPrompt)
 			IsPlaySound(g_bContent);//播放声音.
 	}
+
 	if(g_iMoreItem & SurvivorsMultiple)
 	{
 		g_bPlayerPrompt = true;
+		PrintToChatAll("\x04[MoreItem]\x03当前人数为\x05:\x04(\x05%i\x03/\x05%d\x04)\x03,\x03更改为\x05%s\x03倍物品.", g_iClientNumber, g_iSurvivorLimit, g_sMultiple);
 
 		// 枪械
 		if(g_iMoreGuns)
 		{
-			SetUpdateEntCount("weapon_autoshotgun_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_pumpshotgun_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_hunting_rifle_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_pistol_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_pistol_magnum_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_rifle_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_rifle_ak47_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_rifle_desert_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_rifle_sg552_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_shotgun_chrome_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_shotgun_spas_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_smg_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_smg_mp5_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_smg_silenced_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_sniper_awp_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_sniper_military_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_sniper_scout_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_grenade_launcher_spawn", g_sMedical);
-			SetUpdateEntCount("weapon_spawn", g_sMedical);						// 随机二代武器
+			char buffer[32];
+			IntToString(g_Multiple * 4, buffer, sizeof(buffer));
+			SetUpdateEntCount("weapon_autoshotgun_spawn", buffer);
+			SetUpdateEntCount("weapon_pumpshotgun_spawn", buffer);
+			SetUpdateEntCount("weapon_hunting_rifle_spawn", buffer);
+			SetUpdateEntCount("weapon_pistol_spawn", buffer);
+			SetUpdateEntCount("weapon_pistol_magnum_spawn", buffer);
+			SetUpdateEntCount("weapon_rifle_spawn", buffer);
+			SetUpdateEntCount("weapon_rifle_ak47_spawn", buffer);
+			SetUpdateEntCount("weapon_rifle_desert_spawn", buffer);
+			SetUpdateEntCount("weapon_rifle_sg552_spawn", buffer);
+			SetUpdateEntCount("weapon_shotgun_chrome_spawn", buffer);
+			SetUpdateEntCount("weapon_shotgun_spas_spawn", buffer);
+			SetUpdateEntCount("weapon_smg_spawn", buffer);
+			SetUpdateEntCount("weapon_smg_mp5_spawn", buffer);
+			SetUpdateEntCount("weapon_smg_silenced_spawn", buffer);
+			SetUpdateEntCount("weapon_sniper_awp_spawn", buffer);
+			SetUpdateEntCount("weapon_sniper_military_spawn", buffer);
+			SetUpdateEntCount("weapon_sniper_scout_spawn", buffer);
+			SetUpdateEntCount("weapon_grenade_launcher_spawn", buffer);
+			SetUpdateEntCount("weapon_spawn", buffer);						// 随机二代武器
 		}
 
 		// 近战武器
 		if(g_iMoreMelees)
 		{
-			SetUpdateEntCount("weapon_chainsaw_spawn", g_sMedical);				//燃油链锯
-			SetUpdateEntCount("weapon_melee_spawn", g_sMedical);
+			SetUpdateEntCount("weapon_chainsaw_spawn", g_sMultiple);				//燃油链锯
+			SetUpdateEntCount("weapon_melee_spawn", g_sMultiple);
 		}
 
 		// 投掷物
 		if(g_iMoreThrows)
 		{
-			SetUpdateEntCount("weapon_molotov_spawn", g_sMedical);					//燃烧瓶
-			SetUpdateEntCount("weapon_vomitjar_spawn", g_sMedical);					//胆汁罐
-			SetUpdateEntCount("weapon_pipe_bomb_spawn", g_sMedical);				//土质炸弹
+			SetUpdateEntCount("weapon_molotov_spawn", g_sMultiple);					//燃烧瓶
+			SetUpdateEntCount("weapon_vomitjar_spawn", g_sMultiple);					//胆汁罐
+			SetUpdateEntCount("weapon_pipe_bomb_spawn", g_sMultiple);				//土质炸弹
 		}
 
 		// 医疗物品
 		if(g_iMoreMedics)
 		{
-			SetUpdateEntCount("weapon_adrenaline_spawn", g_sMedical);				//肾上腺素
-			SetUpdateEntCount("weapon_defibrillator_spawn", g_sMedical);			//电击器
-			SetUpdateEntCount("weapon_first_aid_kit_spawn", g_sMedical);			//医疗包
-			SetUpdateEntCount("weapon_pain_pills_spawn", g_sMedical);				//止痛药
+			SetUpdateEntCount("weapon_adrenaline_spawn", g_sMultiple);				//肾上腺素
+			SetUpdateEntCount("weapon_defibrillator_spawn", g_sMultiple);			//电击器
+			SetUpdateEntCount("weapon_first_aid_kit_spawn", g_sMultiple);			//医疗包
+			SetUpdateEntCount("weapon_pain_pills_spawn", g_sMultiple);				//止痛药
 		}
 
 	}
@@ -232,9 +236,9 @@ void IsSetUpdateEntCount(int client, int g_Multiple, bool g_bPrompt, bool g_bCon
 			if(!g_bPlayerPrompt)
 				PrintToChatAll("\x04[MoreItem]\x03%N\x05%s\x04(\x03%i\x05/\x03%d\x04)\x03...\x04%s", client, g_bContent ? "正在连接" : "离开游戏", g_iPlayerNumber, g_iSurvivorLimit, g_bContent);
 			else
-				PrintToChatAll("\x04[MoreItem]\x03%N\x05%s\x04(\x03%i\x05/\x03%d\x04)\x03,\x05更改为\x03%s\x05倍物资.", client, g_bContent ? "正在连接" : "离开游戏", g_iPlayerNumber, g_iSurvivorLimit, g_sMedical);
+				PrintToChatAll("\x04[MoreItem]\x03%N\x05%s\x04(\x03%i\x05/\x03%d\x04)\x03,\x05更改为\x03%s\x05倍物品.", client, g_bContent ? "正在连接" : "离开游戏", g_iPlayerNumber, g_iSurvivorLimit, g_sMultiple);
 		else
-			PrintToChatAll("\x04[MoreItem]\x05当前人数为\x03:\x04(\x03%i\x05/\x03%d\x04)\x03,\x05更改为\x03%s\x05倍物资.", g_iClientNumber, g_iSurvivorLimit, g_sMedical);
+			PrintToChatAll("\x04[MoreItem]\x03当前人数为\x05:\x04(\x05%i\x03/\x05%d\x04)\x03,\x03更改为\x05%s\x03倍物品.", g_iClientNumber, g_iSurvivorLimit, g_sMultiple);
 	}
 }
 

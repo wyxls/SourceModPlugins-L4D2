@@ -7,12 +7,14 @@
 
 new Handle:g_hCounter = INVALID_HANDLE;
 new Handle:g_hInterval = INVALID_HANDLE;
+new Handle:g_hHintType = INVALID_HANDLE;
 new Handle:g_hTimer = INVALID_HANDLE;
 new Handle:g_hCookie = INVALID_HANDLE;
 new Handle:friendlyfire=INVALID_HANDLE;
 new Handle:friendly=INVALID_HANDLE;
 new bool:g_bDisplay[MAXPLAYERS+1];
 new g_iData[MAXPLAYERS+1][3];
+new g_iHintType = 0;
 
 public Plugin:myinfo =
 {
@@ -29,16 +31,18 @@ public void OnPluginStart()
 	CreateConVar("sm_killcounter_version", PLUGIN_VERSION, "Kill Counter Version", FCVAR_NONE);
 	g_hCounter = CreateConVar("sm_killcounter", "1", "Determines plugin functionality. (0 = Off, 1 = All Kills, 2 = Headshots Only)", FCVAR_NONE, true, 0.0, true, 2.0);
 	g_hInterval = CreateConVar("sm_killcounter_ad_interval", "30.0", "Amount of seconds between advertisements. ( 0 = off )", FCVAR_NONE, true, 0.0);
+	g_hHintType = CreateConVar("sm_killcounter_hint_type", "1", "Determines plugin hint type. (0 = Off, 1 = Center Text, 2 = Hint Text, 3 = Chat Text)", FCVAR_NONE, true, 0.0, true, 3.0);
 	friendly = CreateConVar("sm_killcounter_f", "1", "Friendly Fire message. 0: Off 1: On",FCVAR_NONE,true,0.0,true,1.0);
 	friendlyfire = CreateConVar("sm_killcounter_ff", "1", "Print to attacker. 0: Off 1: Hint",FCVAR_NONE,true,0.0,true,1.0);
 	
 	//Generate a configuration file
-	AutoExecConfig(true, "L4D2_Kill_Counter");
+	AutoExecConfig(true, "L4D2_KillCounter");
 
 	//Register the death event so we can track kills
 	HookEvent("player_death", Event_OnPlayerDeath, EventHookMode_Pre);
 	HookEvent("player_hurt", Event_Player_Hurt, EventHookMode_Post);
 	HookConVarChange(g_hInterval, ConVarChange_Interval);
+	HookConVarChange(g_hHintType, ConVarChange_HintType);
 
 	
 	//Create the commands for the plugin
@@ -48,6 +52,10 @@ public void OnPluginStart()
 	
 	//Used in ClientPrefs, for saving counter settings
 	g_hCookie = RegClientCookie("Kill_Counter_Status", "Display Kill Counter", CookieAccess_Protected);
+
+	// Store Hint Type Int
+	g_iHintType = GetConVarInt(g_hHintType);
+
 	SetCookieMenuItem(Menu_Status, 0, "Display Kill Counter");
 
 	AutoExecConfig(true, "l4d2_killcounter");//生成指定文件名的CFG.
@@ -148,9 +156,29 @@ public PrintKillInfo(attacker, bool:g_bHeadshot)
 			if(g_bDisplay[attacker])
 			{
 				if(g_iTemp >= 1)
-					PrintHintText(attacker, "击杀: %d", g_iTemp);
+				{
+					switch (g_iHintType)
+					{
+						case 1:
+							PrintCenterText(attacker, "击杀: %d", g_iTemp);
+						case 2:
+							PrintHintText(attacker, "击杀: %d", g_iTemp);
+						case 3:
+							PrintToChat(attacker, "击杀: %d", g_iTemp);
+					}
+				}
 				else
-					PrintHintText(attacker, "击杀!");
+				{
+					switch (g_iHintType)
+					{
+						case 1:
+							PrintCenterText(attacker, "击杀!");
+						case 2:
+							PrintHintText(attacker, "击杀!");
+						case 3:
+							PrintToChat(attacker, "击杀!");
+					}
+				}
 			}
 
 			if(g_bHeadshot)
@@ -160,9 +188,29 @@ public PrintKillInfo(attacker, bool:g_bHeadshot)
 				if(g_bDisplay[attacker])
 				{
 					if(g_iTemp > 1)
-						PrintHintText(attacker, "爆头: %d", g_iTemp);
+					{
+						switch (g_iHintType)
+						{
+							case 1:
+								PrintCenterText(attacker, "爆头: %d", g_iTemp);
+							case 2:
+								PrintHintText(attacker, "爆头: %d", g_iTemp);
+							case 3:
+								PrintToChat(attacker, "爆头: %d", g_iTemp);
+						}
+					}
 					else
-						PrintHintText(attacker, "爆头!");
+					{
+						switch (g_iHintType)
+						{
+							case 1:
+								PrintCenterText(attacker, "爆头!");
+							case 2:
+								PrintHintText(attacker, "爆头!");
+							case 3:
+								PrintToChat(attacker, "爆头!");
+						}
+					}
 				}
 			}
 		}
@@ -175,9 +223,29 @@ public PrintKillInfo(attacker, bool:g_bHeadshot)
 				if(g_bDisplay[attacker])
 				{
 					if(g_iTemp > 1)
-						PrintHintText(attacker, "爆头: %d", g_iTemp);
+					{
+						switch (g_iHintType)
+						{
+							case 1:
+								PrintCenterText(attacker, "爆头: %d", g_iTemp);
+							case 2:
+								PrintHintText(attacker, "爆头: %d", g_iTemp);
+							case 3:
+								PrintToChat(attacker, "爆头: %d", g_iTemp);
+						}
+					}
 					else
-						PrintHintText(attacker, "爆头!");
+					{
+						switch (g_iHintType)
+						{
+							case 1:
+								PrintCenterText(attacker, "爆头!");
+							case 2:
+								PrintHintText(attacker, "爆头!");
+							case 3:
+								PrintToChat(attacker, "爆头!");
+						}
+					}
 				}
 			}
 		}
@@ -198,7 +266,7 @@ public Action:Command_Counter(client, args)
 	{
 		//Display is off, turn on
 		SetClientCookie(client, g_hCookie, "1");
-		PrintToChat(client, "%ss你已启用击杀提示.", PLUGIN_PREFIX);
+		PrintToChat(client, "%s你已启用击杀提示.", PLUGIN_PREFIX);
 	}
 
 	g_bDisplay[client] = !g_bDisplay[client];
@@ -399,6 +467,12 @@ public TeamKillsPanelHandler(Handle:menu, MenuAction:action, param1, param2)
 {
 
 }
+
+//Called when hooked settings are changed.
+public ConVarChange_HintType(Handle:convar, const String:oldValue[], const String:newValue[])
+{
+	g_iHintType = GetConVarInt(g_hHintType);
+}  
 
 //Called when hooked settings are changed.
 public ConVarChange_Interval(Handle:convar, const String:oldValue[], const String:newValue[])

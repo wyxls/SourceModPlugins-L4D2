@@ -11,7 +11,7 @@ EngineVersion g_eGame;
 //定义插件信息
 #define NAME 			"[L4D2]Auto grab laser sight"
 #define AUTHOR 			"Zakikun"
-#define DESCRIPTION 	"Auto grab laser sight"
+#define DESCRIPTION 	"Make survivors can auto grab/remove laser sight when pickup/drop primary weapon. Support admin global toggle and individual player toggle."
 #define	VERSION 		"1.0"
 #define URL 			"https://github.com/wyxls/SourceModPlugins-L4D2"
 

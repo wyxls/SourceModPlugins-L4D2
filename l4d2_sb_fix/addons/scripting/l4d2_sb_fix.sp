@@ -4,6 +4,7 @@
 #include <sourcemod>
 #include <sdktools>
 #include <sdkhooks>
+#include <multicolors>
 
 public Plugin myinfo =
 {
@@ -216,11 +217,11 @@ int g_Stock_NextThinkTick[MAXPLAYERS1];
 // ====================================================================================================
 bool g_bFixTarget[MAXPLAYERS1];
 
-bool g_bDanger[MAXPLAYERS1] = false;
+bool g_bDanger[MAXPLAYERS1] = {false};
 
 bool g_bWitchActive = false;
 
-bool g_bCommonWithinMelee[MAXPLAYERS1] = false;
+bool g_bCommonWithinMelee[MAXPLAYERS1] = {false};
 bool g_bShove[MAXPLAYERS1][MAXPLAYERS1];
 
 // ====================================================================================================
@@ -512,16 +513,18 @@ public Action Event_RoundStart(Event event, const char[] name, bool dontBroadcas
 	}
 	
 	InitTimers();
+	return Plugin_Handled;
 }
 
 public Action Event_BotAndPlayerReplace(Event event, const char[] name, bool dontBroadcast)
 {
-	if (!LeftSafeRoom) return;
+	if (!LeftSafeRoom) return Plugin_Handled;
 	
 	int bot = GetClientOfUserId(event.GetInt("bot"));
 	if (g_bFixTarget[bot]) {
 		SelectImprovedTarget();
 	}
+	return Plugin_Handled;
 }
 
 void InitTimers()
@@ -594,10 +597,10 @@ void SelectImprovedTarget()
 	
 	
 	if (c_iSelectType == 0) {
-		PrintToChatAll("\x04[sb_fix]已加强全部机器人");
+		CPrintToChatAll("{green}[sb_fix] {lightgreen}已加强全部机器人");
 	}
 	else if (c_iSelectType == 1) {
-		PrintToChatAll("\x04[sb_fix]已加强 %d 个机器人", c_iSelectNumber);
+		CPrintToChatAll("{green}[sb_fix] {lightgreen}已加强 {olive}%d 个机器人", c_iSelectNumber);
 		
 		int count;
 		for (int x = 1; x <= MaxClients; x++) {
@@ -615,7 +618,7 @@ void SelectImprovedTarget()
 		static char sSelectName[256];
 		GetConVarString(sb_fix_select_character_name, sSelectName, sizeof(sSelectName));
 		
-		PrintToChatAll("\x04[sb_fix]已加强机器人 %s", sSelectName);
+		CPrintToChatAll("{green}[sb_fix] {lightgreen}已加强机器人 {olive}%s", sSelectName);
 
 		int count;
 		for (int x = 1; x <= MaxClients; x++) {
@@ -658,6 +661,7 @@ public Action Timer_ShoveChance(Handle Timer)
 			}
 		}
 	}
+	return Plugin_Handled;
 }
 
 
@@ -1909,6 +1913,7 @@ public Action Event_WitchRage(Event event, const char[] name, bool dontBroadcast
 		// CallBotstoWitch(attacker);
 		g_bWitchActive = true;
 	}	
+	return Plugin_Handled;
 }
 
 public void OnEntityCreated(int entity, const char[] classname)

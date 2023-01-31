@@ -145,7 +145,7 @@ ConVar l4d2_lw_chargedsound;
 ConVar l4d2_lw_moveandcharge;
 ConVar l4d2_lw_chargeparticle;
 ConVar l4d2_lw_useammo;
-ConVar l4d2_lw_useammocount;
+ConVar l4d2_lw_useammo_count;
 ConVar l4d2_lw_shake;
 ConVar l4d2_lw_shake_intensity;
 ConVar l4d2_lw_shake_shooteronly;
@@ -264,7 +264,7 @@ public void OnPluginStart()
 	l4d2_lw_moveandcharge		= CreateConVar("l4d2_lw_moveandcharge", "1", "Enable charging while crouched and moving");
 	l4d2_lw_chargeparticle		= CreateConVar("l4d2_lw_chargeparticle", "1", "Enable showing electric particles when charged");
 	l4d2_lw_useammo				= CreateConVar("l4d2_lw_useammo", "1", "Enable and require use of addtional ammunition");
-	l4d2_lw_useammocount		= CreateConVar("l4d2_lw_useammo_count", "999", "Number of ammo to use on each lethal shoot");
+	l4d2_lw_useammo_count		= CreateConVar("l4d2_lw_useammo_count", "999", "Number of ammo to use on each lethal shoot");
 	l4d2_lw_shake				= CreateConVar("l4d2_lw_shake", "1", "Enable screen shake during explosion");
 	l4d2_lw_shake_intensity		= CreateConVar("l4d2_lw_shake_intensity", "50.0", "Intensity of screen shake");
 	l4d2_lw_shake_shooteronly	= CreateConVar("l4d2_lw_shake_shooteronly", "0", "Only the shooter experiences screen shake");
@@ -466,7 +466,7 @@ public Action OnTakeDamage(int victim, int &attacker, int &inflictor, float &dam
 			}
 		}
 	}
-	return Plugin_Handled;
+	return Plugin_Continue;
 }
 
 public Action Event_Player_Spawn(Event event, const char[] name, bool dontBroadcast)
@@ -688,7 +688,7 @@ public Action ReleaseTimer(Handle timer, any client)
 		
 		char weapon[32];
 		GetClientWeapon(client, weapon, 32);
-		int iAmmoSpend = GetConVarInt(l4d2_lw_useammocount);
+		int iAmmoSpend = GetConVarInt(l4d2_lw_useammo_count);
 		int iAmmoLeft, iAmmoOffsetToAdd;
 		int iAmmoClip = GetEntProp(g_iCurWeapon[client], Prop_Send, "m_iClip1", 0);
 
@@ -762,7 +762,7 @@ public Action ChargeTimer(Handle timer, any client)
 	int WeaponClass = GetEntDataEnt2(client, CurrentWeapon);
 	char weapon[32];
 	GetClientWeapon(client, weapon, 32);
-	int iAmmoSpend = GetConVarInt(l4d2_lw_useammocount);
+	int iAmmoSpend = GetConVarInt(l4d2_lw_useammo_count);
 	int iAmmoLeft, iAmmoOffsetToAdd;
 
 	if (g_bLeft4Dead2)
@@ -786,7 +786,7 @@ public Action ChargeTimer(Handle timer, any client)
 	/* Check how much ammunition left in the weapon */
 	iAmmoLeft = GetEntData(client, g_iAmmoOffset + iAmmoOffsetToAdd);
 
-	/* Check if "l4d2_lw_useammocount" > iAmmoLeft , reset it */
+	/* Check if "l4d2_lw_useammo_count" > iAmmoLeft , reset it */
 	if (iAmmoLeft < iAmmoSpend)
 		iAmmoSpend = iAmmoLeft;
 

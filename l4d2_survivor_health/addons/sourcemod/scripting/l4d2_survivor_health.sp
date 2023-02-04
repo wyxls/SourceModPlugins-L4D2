@@ -40,8 +40,8 @@ char g_sZombieName[][] =
 	"坦克"
 };
 
-int    g_iKill[array], g_iHead[array], g_iOneshotWitch, g_iLimitHealth, g_iReviveSuccess, g_iSurvivorRescued, g_iHealSuccess, g_iDefibrillator;
-ConVar g_hKill[array], g_hHead[array], g_hOneshotWitch, g_hLimitHealth, g_hReviveSuccess, g_hSurvivorRescued, g_hHealSuccess, g_hDefibrillator;
+int    g_iKill[array], g_iHead[array], g_iOneshotWitch, g_iLimitHealth, g_iReviveSuccess, g_iSurvivorRescued, g_iHealSuccess, g_iDefibrillator, g_iEnabled;
+ConVar g_hKill[array], g_hHead[array], g_hOneshotWitch, g_hLimitHealth, g_hReviveSuccess, g_hSurvivorRescued, g_hHealSuccess, g_hDefibrillator, g_hEnabled;
 
 public Plugin myinfo =
 {
@@ -63,6 +63,9 @@ public void OnPluginStart()
 	HookEvent("survivor_rescued", Event_SurvivorRescued);//幸存者在营救门复活.
 	HookEvent("heal_success", Event_HealSuccess);//幸存者治疗
 	HookEvent("adrenaline_used", Event_AdrenalineUsed, EventHookMode_Pre);//使用肾上腺素.
+
+
+	g_hEnabled	= CreateConVar("l4d2_health_Enabled", "1", "是否开启回血插件. 0=禁用, 1=启用.", FCVAR_NOTIFY);
 
 	char bar[2][64], buffers[2][64],value[2][64];
 	for (int i = 0; i < array; i++)
@@ -88,6 +91,8 @@ public void OnPluginStart()
 	g_hSurvivorRescued	= CreateConVar("l4d2_health_survivorRescued", "3", "营救队友的幸存者奖励多少血. 0=禁用.", FCVAR_NOTIFY);
 	g_hHealSuccess		= CreateConVar("l4d2_health_healSuccess", "15", "治愈队友的幸存者奖励多少血. 0=禁用.", FCVAR_NOTIFY);
 	g_hDefibrillator	= CreateConVar("l4d2_health_defibrillator", "20", "电击器复活队友的幸存者奖励多少血. 0=禁用.", FCVAR_NOTIFY);
+
+	g_hEnabled.AddChangeHook(ConVarChangedHealth);
 
 	for (int i = 0; i < array; i++)
 		g_hKill[i].AddChangeHook(ConVarChangedHealth);
@@ -119,6 +124,8 @@ public void ConVarChangedHealth(ConVar convar, const char[] oldValue, const char
 
 void GetConVarChange()
 {
+	g_iEnabled = g_hEnabled.IntValue;
+
 	for (int i = 0; i < array; i++)
 		g_iKill[i] = g_hKill[i].IntValue;
 	for (int i = 0; i < array; i++)
@@ -143,6 +150,11 @@ public void OnClientDisconnect(int client)
 //使用肾上腺素.
 public void Event_AdrenalineUsed(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 
 	if(IsValidClient(client) && GetClientTeam(client) == 2)
@@ -158,6 +170,11 @@ public void Event_AdrenalineUsed(Event event, const char[] name, bool dontBroadc
 
 public void Event_DefibrillatorUsed(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	int subject = GetClientOfUserId(event.GetInt("subject"));
 
@@ -169,6 +186,11 @@ public void Event_DefibrillatorUsed(Event event, const char[] name, bool dontBro
 
 public void Event_ReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	int subject = GetClientOfUserId(event.GetInt("subject"));
 
@@ -180,6 +202,11 @@ public void Event_ReviveSuccess(Event event, const char[] name, bool dontBroadca
 
 public void Event_HealSuccess(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	int subject = GetClientOfUserId(event.GetInt("subject"));
 
@@ -192,6 +219,11 @@ public void Event_HealSuccess(Event event, const char[] name, bool dontBroadcast
 //幸存者在营救门复活.
 public void Event_SurvivorRescued(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int rescuer = GetClientOfUserId(event.GetInt("rescuer"));
 	int client = GetClientOfUserId(event.GetInt("victim"));
 
@@ -213,6 +245,11 @@ public void Event_WitchHarasserSet(Event event, const char[] name, bool dontBroa
 
 public void Event_Witchkilled(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	int iOneshot = event.GetBool("oneshot");
 	int witchid = event.GetInt("witchid" );
@@ -227,6 +264,11 @@ public void Event_Witchkilled(Event event, const char[] name, bool dontBroadcast
 
 public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	int attacker = GetClientOfUserId(event.GetInt("attacker"));
 	int headshot = event.GetBool("headshot");
@@ -261,6 +303,11 @@ public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast
 
 void IsGetStruckType(DataPack hPack)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	hPack.Reset();
 	char sName[32];
 	int  attacker = hPack.ReadCell();
@@ -280,6 +327,11 @@ void IsGetStruckType(DataPack hPack)
 
 void SetSurvivorHealth(int attacker, int iReward, int iMaxHealth, char[] sType, char[] sName, bool bPlayerState, bool bAllTheDisplay)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	int iBot = IsClientIdle(attacker);
 	int iHealth = GetClientHealth(attacker);
 	int tHealth = GetPlayerTempHealth(attacker);
@@ -310,6 +362,11 @@ void SetSurvivorHealth(int attacker, int iReward, int iMaxHealth, char[] sType, 
 
 void IsPrintToChat(int attacker, int iTotalHealth, int iReward, int iMaxHealth, char[] sType, char[] sName, bool bPlayerState)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	if (!IsClientInGame(attacker))
 		return;
 
@@ -326,6 +383,11 @@ void IsPrintToChat(int attacker, int iTotalHealth, int iReward, int iMaxHealth, 
 
 void IsPrintToChatAll(int attacker, int iTotalHealth, int iReward, int iMaxHealth, char[] sType, char[] sName, bool bPlayerState)
 {
+	if(!g_iEnabled)
+	{
+		return;
+	}
+	
 	if (bPlayerState)
 	{
 		if (iTotalHealth < iMaxHealth)
